@@ -1,0 +1,1774 @@
+{
+  "schema": "site-reforge/image-optimisation@1",
+  "generated": "2026-11-11T01:36:11.905Z",
+  "build": "dist",
+  "mode": "audit",
+  "encoder": "not-used",
+  "settings": {
+    "quality": 82,
+    "maxWidth": 2560
+  },
+  "totals": {
+    "images": 173,
+    "bytesBefore": 15872420,
+    "bytesAfter": 15872420,
+    "converted": 0,
+    "refsRewritten": 0
+  },
+  "formats": {
+    "webp": 173
+  },
+  "images": [
+    {
+      "file": "assets/img/arches-1792.webp",
+      "format": "webp",
+      "width": 1792,
+      "height": 2368,
+      "bytesBefore": 242078,
+      "bytesAfter": 242078,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/award-badge-1000.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 500,
+      "bytesBefore": 21956,
+      "bytesAfter": 21956,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/backdrop-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1344,
+      "bytesBefore": 383868,
+      "bytesAfter": 383868,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/boulevard-3136.webp",
+      "format": "webp",
+      "width": 3136,
+      "height": 1344,
+      "bytesBefore": 313206,
+      "bytesAfter": 313206,
+      "flags": [
+        "OVERSIZED",
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-a-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 371344,
+      "bytesAfter": 371344,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-a-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 127656,
+      "bytesAfter": 127656,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-b-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 267688,
+      "bytesAfter": 267688,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-b-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 89516,
+      "bytesAfter": 89516,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-box-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1247,
+      "bytesBefore": 97424,
+      "bytesAfter": 97424,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-c-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 270232,
+      "bytesAfter": 270232,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/bud-c-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 95410,
+      "bytesAfter": 95410,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-drink-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 34986,
+      "bytesAfter": 34986,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-drink-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 10278,
+      "bytesAfter": 10278,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-edible-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 103896,
+      "bytesAfter": 103896,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-edible-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 31776,
+      "bytesAfter": 31776,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-extract-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 107012,
+      "bytesAfter": 107012,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-extract-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 32220,
+      "bytesAfter": 32220,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-flower-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 155704,
+      "bytesAfter": 155704,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-flower-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 48286,
+      "bytesAfter": 48286,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-preroll-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 60058,
+      "bytesAfter": 60058,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-preroll-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 21304,
+      "bytesAfter": 21304,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-tincture-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 57918,
+      "bytesAfter": 57918,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-tincture-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 20626,
+      "bytesAfter": 20626,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-topical-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 23030,
+      "bytesAfter": 23030,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-topical-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 8802,
+      "bytesAfter": 8802,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-vape-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 29938,
+      "bytesAfter": 29938,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/cat-vape-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 10920,
+      "bytesAfter": 10920,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/clothing-shop-854.webp",
+      "format": "webp",
+      "width": 854,
+      "height": 480,
+      "bytesBefore": 33154,
+      "bytesAfter": 33154,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/crown-black-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 597,
+      "bytesBefore": 25244,
+      "bytesAfter": 25244,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/farmers-cup-768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 779,
+      "bytesBefore": 87380,
+      "bytesAfter": 87380,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/film-poster-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 720,
+      "bytesBefore": 38338,
+      "bytesAfter": 38338,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/flyer-carshow-1880.webp",
+      "format": "webp",
+      "width": 1880,
+      "height": 1058,
+      "bytesBefore": 374040,
+      "bytesAfter": 374040,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/gelato-box-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 93156,
+      "bytesAfter": 93156,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/gelato-box-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 32390,
+      "bytesAfter": 32390,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/gelato-jar-599.webp",
+      "format": "webp",
+      "width": 599,
+      "height": 599,
+      "bytesBefore": 65996,
+      "bytesAfter": 65996,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/grow-real-640.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 639,
+      "bytesBefore": 171438,
+      "bytesAfter": 171438,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/grow-room-3136.webp",
+      "format": "webp",
+      "width": 3136,
+      "height": 1344,
+      "bytesBefore": 623560,
+      "bytesAfter": 623560,
+      "flags": [
+        "OVERSIZED",
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/hof-graphic-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1280,
+      "bytesBefore": 83698,
+      "bytesAfter": 83698,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/hof-mixer-617.webp",
+      "format": "webp",
+      "width": 617,
+      "height": 246,
+      "bytesBefore": 15784,
+      "bytesAfter": 15784,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/la-lockup-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 450,
+      "bytesBefore": 19738,
+      "bytesAfter": 19738,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-cbx-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 196,
+      "bytesBefore": 5176,
+      "bytesAfter": 5176,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-jeeter-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 175,
+      "bytesBefore": 7458,
+      "bytesAfter": 7458,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-lime-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 137,
+      "bytesBefore": 1954,
+      "bytesAfter": 1954,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-roach-154.webp",
+      "format": "webp",
+      "width": 154,
+      "height": 70,
+      "bytesBefore": 1562,
+      "bytesAfter": 1562,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-roach-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 400,
+      "bytesBefore": 1652,
+      "bytesAfter": 1652,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-stiiizy-186.webp",
+      "format": "webp",
+      "width": 186,
+      "height": 91,
+      "bytesBefore": 2008,
+      "bytesAfter": 2008,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-stiiizy-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 400,
+      "bytesBefore": 1706,
+      "bytesAfter": 1706,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-wcc-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 294,
+      "bytesBefore": 7302,
+      "bytesAfter": 7302,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/loop-arches-720.webp",
+      "format": "webp",
+      "width": 720,
+      "height": 950,
+      "bytesBefore": 42440,
+      "bytesAfter": 42440,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/loop-grow-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 684,
+      "bytesBefore": 183776,
+      "bytesAfter": 183776,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/loop-stage-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 712,
+      "bytesBefore": 32494,
+      "bytesAfter": 32494,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/lowrider-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 514,
+      "bytesBefore": 54950,
+      "bytesAfter": 54950,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/lowrider-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1029,
+      "bytesBefore": 150916,
+      "bytesAfter": 150916,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/lowrider-640.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 274,
+      "bytesBefore": 20826,
+      "bytesAfter": 20826,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/night-street-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 670,
+      "bytesBefore": 121488,
+      "bytesAfter": 121488,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/night-street-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1340,
+      "bytesBefore": 303028,
+      "bytesAfter": 303028,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/12082021-CureCo-Originals-HoF_03-scaled.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 160042,
+      "bytesAfter": 160042,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/12082021-CureCo-Originals-HoF_11_opt-1-768x512.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "bytesBefore": 76174,
+      "bytesAfter": 76174,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/12082021-CureCo-Originals-HoF_21-scaled.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 195158,
+      "bytesAfter": 195158,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1614029061-Garlic-Starship_INDICA_DOM_3.5g_JAR__2_-768x768-f37189bf.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 27258,
+      "bytesAfter": 27258,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1621357830-mac-1_hybrid_35g_jar.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 640,
+      "bytesBefore": 21362,
+      "bytesAfter": 21362,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1626875926-01_wcc_cureibles_supergrape_30mg-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 22498,
+      "bytesAfter": 22498,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1626910790-jelly-fish_cbd_35g_jar-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 24820,
+      "bytesAfter": 24820,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1630528880-iq4tuoaq-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 68556,
+      "bytesAfter": 68556,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/1632169817-hybridmylar-1-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 39546,
+      "bytesAfter": 39546,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/2021-05-18-1-.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 924,
+      "bytesBefore": 111844,
+      "bytesAfter": 111844,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/280766_Enjoyable-ProductImages-100-1.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 640,
+      "bytesBefore": 31936,
+      "bytesAfter": 31936,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/33efc9b4-2764-49fe-954e-116da5e8a331-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 43352,
+      "bytesAfter": 43352,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/443775029_blob.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 900,
+      "bytesBefore": 251924,
+      "bytesAfter": 251924,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/CrownPNG.webp",
+      "format": "webp",
+      "width": 455,
+      "height": 454,
+      "bytesBefore": 15470,
+      "bytesAfter": 15470,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Dodi-Vip-Experience-.webp",
+      "format": "webp",
+      "width": 1080,
+      "height": 1920,
+      "bytesBefore": 183652,
+      "bytesAfter": 183652,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/E37C5D9A-82DE-4421-872E-366E773BA15E-1980x1286.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1039,
+      "bytesBefore": 67944,
+      "bytesAfter": 67944,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Farmers-Cup-768x779.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 779,
+      "bytesBefore": 80598,
+      "bytesAfter": 80598,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/GELATO--1536x1024.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "bytesBefore": 53272,
+      "bytesAfter": 53272,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/GLASS-HOUSE-FARMS--1536x1024.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "bytesBefore": 54816,
+      "bytesAfter": 54816,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/HOF-ORIGINALS-AND-CURE-.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 56984,
+      "bytesAfter": 56984,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Jack-Herer-768x392w.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 392,
+      "bytesBefore": 45448,
+      "bytesAfter": 45448,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Jack-Herer-768x432.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 432,
+      "bytesBefore": 25250,
+      "bytesAfter": 25250,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Jeeter-Guide.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 72764,
+      "bytesAfter": 72764,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/KanhaCBN-BlueRaspberryTranquility_1-1-1_Pkg_740x.webp",
+      "format": "webp",
+      "width": 720,
+      "height": 808,
+      "bytesBefore": 68356,
+      "bytesAfter": 68356,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/N62qIsrLQZSRHSbiwQof_video-new.v2.0000000-1920w.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 720,
+      "bytesBefore": 33494,
+      "bytesAfter": 33494,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/OakstradamOG.webp",
+      "format": "webp",
+      "width": 1070,
+      "height": 752,
+      "bytesBefore": 15210,
+      "bytesAfter": 15210,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Originals-Backdrop-copy-1920w.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1120,
+      "bytesBefore": 290500,
+      "bytesAfter": 290500,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Originals-Backdrop-copy.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1120,
+      "bytesBefore": 278658,
+      "bytesAfter": 278658,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Originals-Flower---Gelato---3.5g.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "bytesBefore": 136688,
+      "bytesAfter": 136688,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Originals-dispensary.webp",
+      "format": "webp",
+      "width": 730,
+      "height": 439,
+      "bytesBefore": 41572,
+      "bytesAfter": 41572,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/OriginalsOG-300x182-4767cb30.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 182,
+      "bytesBefore": 2606,
+      "bytesAfter": 2606,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Picture-of-Originals-SD-Building.webp",
+      "format": "webp",
+      "width": 483,
+      "height": 450,
+      "bytesBefore": 30126,
+      "bytesAfter": 30126,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/STIIIZY-copy.webp",
+      "format": "webp",
+      "width": 500,
+      "height": 500,
+      "bytesBefore": 2068,
+      "bytesAfter": 2068,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-27-at-8.30.59-PM-300x228-1-.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 228,
+      "bytesBefore": 2834,
+      "bytesAfter": 2834,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-27-at-8.30.59-PM-300x228-c4686577.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 228,
+      "bytesBefore": 2834,
+      "bytesAfter": 2834,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-27-at-8.33.09-PM-300x192.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 192,
+      "bytesBefore": 3020,
+      "bytesAfter": 3020,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-27-at-8.33.09-PM-a99435df.webp",
+      "format": "webp",
+      "width": 1522,
+      "height": 974,
+      "bytesBefore": 28988,
+      "bytesAfter": 28988,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-27-at-8.33.09-PM.webp",
+      "format": "webp",
+      "width": 1522,
+      "height": 974,
+      "bytesBefore": 28988,
+      "bytesAfter": 28988,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-31-at-6.57.09-AM-1-300x231-1-.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 231,
+      "bytesBefore": 2682,
+      "bytesAfter": 2682,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-31-at-6.57.09-AM-1-300x231.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 231,
+      "bytesBefore": 2682,
+      "bytesAfter": 2682,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-31-at-6.57.09-AM-300x231.webp",
+      "format": "webp",
+      "width": 300,
+      "height": 231,
+      "bytesBefore": 2682,
+      "bytesAfter": 2682,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-31-at-8.31.52-AM-1-.webp",
+      "format": "webp",
+      "width": 736,
+      "height": 584,
+      "bytesBefore": 14810,
+      "bytesAfter": 14810,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-08-31-at-8.31.52-AM-3f3665da.webp",
+      "format": "webp",
+      "width": 736,
+      "height": 584,
+      "bytesBefore": 14810,
+      "bytesAfter": 14810,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-09-01-at-8.37.28-AM.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 766,
+      "bytesBefore": 93286,
+      "bytesAfter": 93286,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2021-12-12-at-12.52.02-PM.webp",
+      "format": "webp",
+      "width": 1514,
+      "height": 944,
+      "bytesBefore": 25000,
+      "bytesAfter": 25000,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2022-04-08-at-2.46.50-PM-640w.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 639,
+      "bytesBefore": 164884,
+      "bytesAfter": 164884,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Screen-Shot-2022-04-08-at-2.48.02-PM.webp",
+      "format": "webp",
+      "width": 1064,
+      "height": 576,
+      "bytesBefore": 107082,
+      "bytesAfter": 107082,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/WHITELOGOCROWN.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 835,
+      "bytesBefore": 99586,
+      "bytesAfter": 99586,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/Wyld-Gummies_Guide-3-768x663.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 663,
+      "bytesBefore": 67394,
+      "bytesAfter": 67394,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/affordable-brands-at-Originals--1536x924.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 924,
+      "bytesBefore": 81484,
+      "bytesAfter": 81484,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/awardwinning_vers2.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 500,
+      "bytesBefore": 21996,
+      "bytesAfter": 21996,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/big_la_wm_logo-3f6e9e31-74c97722.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 450,
+      "bytesBefore": 18512,
+      "bytesAfter": 18512,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/blackhero-logo-copy.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1592,
+      "bytesBefore": 76006,
+      "bytesAfter": 76006,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/brand-guide-EDIBLES-ORIGINALS--1536x1024.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "bytesBefore": 178840,
+      "bytesAfter": 178840,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/cannabiotic-lowres.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 800,
+      "bytesBefore": 7410,
+      "bytesAfter": 7410,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/cannabislegalstates.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 600,
+      "bytesBefore": 152380,
+      "bytesAfter": 152380,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/cannabisreads.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 600,
+      "bytesBefore": 52810,
+      "bytesAfter": 52810,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/carshowflyerlowrider.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 900,
+      "bytesBefore": 257326,
+      "bytesAfter": 257326,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/guide-to-buying-cure-.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 108446,
+      "bytesAfter": 108446,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/image-2-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 22792,
+      "bytesAfter": 22792,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/intailbox-new-b0d5b2c2.webp",
+      "format": "webp",
+      "width": 854,
+      "height": 480,
+      "bytesBefore": 93622,
+      "bytesAfter": 93622,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/intailbox-new.webp",
+      "format": "webp",
+      "width": 854,
+      "height": 480,
+      "bytesBefore": 93622,
+      "bytesAfter": 93622,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/jeeter.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 1000,
+      "bytesBefore": 13290,
+      "bytesAfter": 13290,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/lime2.0_logo-1-copy.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 900,
+      "bytesBefore": 4406,
+      "bytesAfter": 4406,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/liteupthenight.webp",
+      "format": "webp",
+      "width": 617,
+      "height": 246,
+      "bytesBefore": 14682,
+      "bytesAfter": 14682,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/origfav.webp",
+      "format": "webp",
+      "width": 32,
+      "height": 32,
+      "bytesBefore": 574,
+      "bytesAfter": 574,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originals-clothings-new-img.webp",
+      "format": "webp",
+      "width": 854,
+      "height": 480,
+      "bytesBefore": 30744,
+      "bytesAfter": 30744,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originals-factory-weed-shop-dispensary-2-1980x1320.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 253804,
+      "bytesAfter": 253804,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originals_ca-Gelato.webp",
+      "format": "webp",
+      "width": 599,
+      "height": 599,
+      "bytesBefore": 59160,
+      "bytesAfter": 59160,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originalspreroll1-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 27026,
+      "bytesAfter": 27026,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originalspreroll2-768x768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 18342,
+      "bytesAfter": 18342,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/originalssandiego.webp",
+      "format": "webp",
+      "width": 512,
+      "height": 397,
+      "bytesBefore": 27618,
+      "bytesAfter": 27618,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/pre-rolls-originals-.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 87762,
+      "bytesAfter": 87762,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/roach.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 400,
+      "bytesBefore": 1534,
+      "bytesAfter": 1534,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/store-sleeper-shooting-view2.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 1000,
+      "bytesBefore": 33676,
+      "bytesAfter": 33676,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/store-sleeper-shooting.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 1000,
+      "bytesBefore": 28482,
+      "bytesAfter": 28482,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/sugar-free-edibles-1536x1024.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "bytesBefore": 55808,
+      "bytesAfter": 55808,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/thcextract.webp",
+      "format": "webp",
+      "width": 1075,
+      "height": 600,
+      "bytesBefore": 50776,
+      "bytesAfter": 50776,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/posts/wcc_logo-copy.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 13816,
+      "bytesAfter": 13816,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/preroll-1-768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 19840,
+      "bytesAfter": 19840,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/preroll-3-768.webp",
+      "format": "webp",
+      "width": 768,
+      "height": 768,
+      "bytesBefore": 30236,
+      "bytesAfter": 30236,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/sd-banner-1605.webp",
+      "format": "webp",
+      "width": 1605,
+      "height": 903,
+      "bytesBefore": 276082,
+      "bytesAfter": 276082,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/sd-palms-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 670,
+      "bytesBefore": 79814,
+      "bytesAfter": 79814,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/sd-palms-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1340,
+      "bytesBefore": 196156,
+      "bytesAfter": 196156,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/sd-script-1900.webp",
+      "format": "webp",
+      "width": 1900,
+      "height": 910,
+      "bytesBefore": 125012,
+      "bytesAfter": 125012,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/stage-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 670,
+      "bytesBefore": 42768,
+      "bytesAfter": 42768,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/stage-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1340,
+      "bytesBefore": 97416,
+      "bytesAfter": 97416,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/stage-wide-3136.webp",
+      "format": "webp",
+      "width": 3136,
+      "height": 1344,
+      "bytesBefore": 151128,
+      "bytesAfter": 151128,
+      "flags": [
+        "OVERSIZED"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-floor-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1280,
+      "bytesBefore": 351502,
+      "bytesAfter": 351502,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-front-730.webp",
+      "format": "webp",
+      "width": 730,
+      "height": 439,
+      "bytesBefore": 45336,
+      "bytesAfter": 45336,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-interior-854.webp",
+      "format": "webp",
+      "width": 854,
+      "height": 480,
+      "bytesBefore": 102392,
+      "bytesAfter": 102392,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-building-483.webp",
+      "format": "webp",
+      "width": 483,
+      "height": 450,
+      "bytesBefore": 33372,
+      "bytesAfter": 33372,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/trichomes-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 514,
+      "bytesBefore": 66544,
+      "bytesAfter": 66544,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/trichomes-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1029,
+      "bytesBefore": 239912,
+      "bytesAfter": 239912,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-basketball-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 258316,
+      "bytesAfter": 258316,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-basketball-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 54848,
+      "bytesAfter": 54848,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-brushes-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 165932,
+      "bytesAfter": 165932,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-brushes-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 48222,
+      "bytesAfter": 48222,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-crown-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 175970,
+      "bytesAfter": 175970,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-crown-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 56680,
+      "bytesAfter": 56680,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-gloves-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 378520,
+      "bytesAfter": 378520,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-gloves-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 93800,
+      "bytesAfter": 93800,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-mic-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 43460,
+      "bytesAfter": 43460,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-mic-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 14408,
+      "bytesAfter": 14408,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-records-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 144388,
+      "bytesAfter": 144388,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-records-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 48384,
+      "bytesAfter": 48384,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-reels-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 123562,
+      "bytesAfter": 123562,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-reels-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 56540,
+      "bytesAfter": 56540,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-reels-alt-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 191860,
+      "bytesAfter": 191860,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-reels-alt-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 59192,
+      "bytesAfter": 59192,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-trumpet-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 121692,
+      "bytesAfter": 121692,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-trumpet-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 47810,
+      "bytesAfter": 47810,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-typewriter-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 162088,
+      "bytesAfter": 162088,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-typewriter-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 61202,
+      "bytesAfter": 61202,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-wheel-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1490,
+      "bytesBefore": 215492,
+      "bytesAfter": 215492,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-wheel-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 745,
+      "bytesBefore": 82486,
+      "bytesAfter": 82486,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/warehouse-3136.webp",
+      "format": "webp",
+      "width": 3136,
+      "height": 1344,
+      "bytesBefore": 592020,
+      "bytesAfter": 592020,
+      "flags": [
+        "OVERSIZED",
+        "HEAVY"
+      ],
+      "action": "none"
+    }
+  ]
+}

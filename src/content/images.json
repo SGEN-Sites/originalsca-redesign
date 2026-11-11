@@ -1,0 +1,1058 @@
+{
+ "warehouse": {
+  "alt": "Illustration: an empty brick warehouse at dusk, tall arched windows glowing gold above a mirror-polished concrete floor",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/warehouse-3136.webp",
+    "w": 3136,
+    "h": 1344,
+    "bytes": 592020
+   }
+  ],
+  "source": "private/gen/warehouse-hero.result.json"
+ },
+ "arches": {
+  "alt": "Illustration: shafts of light through tall arched warehouse windows onto a concrete floor",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/arches-1792.webp",
+    "w": 1792,
+    "h": 2368,
+    "bytes": 242078
+   }
+  ],
+  "source": "private/gen/warehouse-arches.result.json"
+ },
+ "boulevard": {
+  "alt": "Illustration: a palm-lined Los Angeles boulevard at sunset under an orange, pink and violet sky",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/boulevard-3136.webp",
+    "w": 3136,
+    "h": 1344,
+    "bytes": 313206
+   }
+  ],
+  "source": "private/gen/la-boulevard-sunset.result.json"
+ },
+ "sd-palms": {
+  "alt": "Illustration: a palm-lined San Diego street at sunset",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/sd-palms-2400.webp",
+    "w": 2400,
+    "h": 1340,
+    "bytes": 196156
+   },
+   {
+    "file": "img/sd-palms-1200.webp",
+    "w": 1200,
+    "h": 670,
+    "bytes": 79814
+   }
+  ],
+  "source": "private/gen/sd-palms-sunset.result.json"
+ },
+ "night-street": {
+  "alt": "Illustration: a Los Angeles warehouse street at night, wet asphalt glowing red and violet",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/night-street-2400.webp",
+    "w": 2400,
+    "h": 1340,
+    "bytes": 303028
+   },
+   {
+    "file": "img/night-street-1200.webp",
+    "w": 1200,
+    "h": 670,
+    "bytes": 121488
+   }
+  ],
+  "source": "private/gen/la-night-street.result.json"
+ },
+ "grow-room": {
+  "alt": "Illustration: rows of flowering cannabis plants under magenta grow lights",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/grow-room-3136.webp",
+    "w": 3136,
+    "h": 1344,
+    "bytes": 623560
+   }
+  ],
+  "source": "private/gen/grow-room.result.json"
+ },
+ "trichomes": {
+  "alt": "Illustration: macro view of cannabis trichomes in amber and violet light",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/trichomes-2400.webp",
+    "w": 2400,
+    "h": 1029,
+    "bytes": 239912
+   },
+   {
+    "file": "img/trichomes-1200.webp",
+    "w": 1200,
+    "h": 514,
+    "bytes": 66544
+   }
+  ],
+  "source": "private/gen/trichome-field.result.json"
+ },
+ "stage": {
+  "alt": "Illustration: an empty stage lit by purple and pink spotlights through haze",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/stage-2400.webp",
+    "w": 2400,
+    "h": 1340,
+    "bytes": 97416
+   },
+   {
+    "file": "img/stage-1200.webp",
+    "w": 1200,
+    "h": 670,
+    "bytes": 42768
+   }
+  ],
+  "source": "private/gen/stage-crown.result.json"
+ },
+ "stage-wide": {
+  "alt": "Illustration: an empty festival stage under a fan of purple and pink light beams",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/stage-wide-3136.webp",
+    "w": 3136,
+    "h": 1344,
+    "bytes": 151128
+   }
+  ],
+  "source": "private/gen/stage-wide-b.result.json"
+ },
+ "lowrider": {
+  "alt": "Illustration: a candy-red lowrider convertible with chrome trim and wire wheels",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/lowrider-2400.webp",
+    "w": 2400,
+    "h": 1029,
+    "bytes": 150916
+   },
+   {
+    "file": "img/lowrider-1200.webp",
+    "w": 1200,
+    "h": 514,
+    "bytes": 54950
+   },
+   {
+    "file": "img/lowrider-640.webp",
+    "w": 640,
+    "h": 274,
+    "bytes": 20826
+   }
+  ],
+  "source": "private/gen/lowrider-cut.result.json"
+ },
+ "bud-a": {
+  "alt": "Illustration: a frosty cannabis flower",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/bud-a-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 371344
+   },
+   {
+    "file": "img/bud-a-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 127656
+   }
+  ],
+  "source": "private/gen/bud-a-cut.result.json"
+ },
+ "bud-b": {
+  "alt": "Illustration: a lime-green cannabis flower with lavender tips",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/bud-b-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 267688
+   },
+   {
+    "file": "img/bud-b-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 89516
+   }
+  ],
+  "source": "private/gen/bud-b-cut.result.json"
+ },
+ "bud-c": {
+  "alt": "Illustration: a deep purple cannabis flower dusted with frost",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/bud-c-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 270232
+   },
+   {
+    "file": "img/bud-c-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 95410
+   }
+  ],
+  "source": "private/gen/bud-c-cut.result.json"
+ },
+ "cat-flower": {
+  "alt": "Illustration: a frosty cannabis flower on a black mirror",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-flower-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 155704
+   },
+   {
+    "file": "img/cat-flower-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 48286
+   }
+  ],
+  "source": "private/gen/cat-flower.result.json"
+ },
+ "cat-preroll": {
+  "alt": "Illustration: three cannabis pre-roll cones on black glass",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-preroll-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 60058
+   },
+   {
+    "file": "img/cat-preroll-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 21304
+   }
+  ],
+  "source": "private/gen/cat-preroll.result.json"
+ },
+ "cat-vape": {
+  "alt": "Illustration: a blank vape cartridge of amber oil",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-vape-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 29938
+   },
+   {
+    "file": "img/cat-vape-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 10920
+   }
+  ],
+  "source": "private/gen/cat-vape.result.json"
+ },
+ "cat-extract": {
+  "alt": "Illustration: amber cannabis resin shards on slate",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-extract-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 107012
+   },
+   {
+    "file": "img/cat-extract-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 32220
+   }
+  ],
+  "source": "private/gen/cat-extract.result.json"
+ },
+ "cat-edible": {
+  "alt": "Illustration: squares of dark chocolate on slate",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-edible-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 103896
+   },
+   {
+    "file": "img/cat-edible-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 31776
+   }
+  ],
+  "source": "private/gen/cat-edible.result.json"
+ },
+ "cat-drink": {
+  "alt": "Illustration: a plain black beverage can with condensation",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-drink-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 34986
+   },
+   {
+    "file": "img/cat-drink-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 10278
+   }
+  ],
+  "source": "private/gen/cat-drink.result.json"
+ },
+ "cat-tincture": {
+  "alt": "Illustration: an amber dropper bottle",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-tincture-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 57918
+   },
+   {
+    "file": "img/cat-tincture-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 20626
+   }
+  ],
+  "source": "private/gen/cat-tincture.result.json"
+ },
+ "cat-topical": {
+  "alt": "Illustration: an open jar of balm",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/cat-topical-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 23030
+   },
+   {
+    "file": "img/cat-topical-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 8802
+   }
+  ],
+  "source": "private/gen/cat-topical.result.json"
+ },
+ "wall-gloves": {
+  "alt": "Black-and-white illustration: boxing gloves hanging on a brick wall",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-gloves-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 378520
+   },
+   {
+    "file": "img/wall-gloves-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 93800
+   }
+  ],
+  "source": "private/gen/wall-gloves.result.json"
+ },
+ "wall-mic": {
+  "alt": "Black-and-white illustration: a vintage microphone in a spotlight",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-mic-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 43460
+   },
+   {
+    "file": "img/wall-mic-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 14408
+   }
+  ],
+  "source": "private/gen/wall-mic.result.json"
+ },
+ "wall-basketball": {
+  "alt": "Black-and-white illustration: a basketball on an outdoor court",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-basketball-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 258316
+   },
+   {
+    "file": "img/wall-basketball-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 54848
+   }
+  ],
+  "source": "private/gen/wall-basketball.result.json"
+ },
+ "wall-wheel": {
+  "alt": "Black-and-white illustration: a chrome wire-spoke wheel",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-wheel-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 215492
+   },
+   {
+    "file": "img/wall-wheel-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 82486
+   }
+  ],
+  "source": "private/gen/wall-wheel.result.json"
+ },
+ "wall-trumpet": {
+  "alt": "Black-and-white illustration: a trumpet resting on a chair",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-trumpet-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 121692
+   },
+   {
+    "file": "img/wall-trumpet-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 47810
+   }
+  ],
+  "source": "private/gen/wall-trumpet.result.json"
+ },
+ "wall-brushes": {
+  "alt": "Black-and-white illustration: paint brushes in a paint can",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-brushes-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 165932
+   },
+   {
+    "file": "img/wall-brushes-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 48222
+   }
+  ],
+  "source": "private/gen/wall-brushes.result.json"
+ },
+ "wall-typewriter": {
+  "alt": "Black-and-white illustration: a vintage typewriter",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-typewriter-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 162088
+   },
+   {
+    "file": "img/wall-typewriter-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 61202
+   }
+  ],
+  "source": "private/gen/wall-typewriter.result.json"
+ },
+ "wall-crown": {
+  "alt": "Black-and-white illustration: an antique crown on velvet",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-crown-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 175970
+   },
+   {
+    "file": "img/wall-crown-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 56680
+   }
+  ],
+  "source": "private/gen/wall-crown.result.json"
+ },
+ "wall-records": {
+  "alt": "Black-and-white illustration: vinyl records leaning on a turntable",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-records-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 144388
+   },
+   {
+    "file": "img/wall-records-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 48384
+   }
+  ],
+  "source": "private/gen/wall-records.result.json"
+ },
+ "wall-reels": {
+  "alt": "Black-and-white illustration: vintage film reels on a table",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-reels-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 123562
+   },
+   {
+    "file": "img/wall-reels-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 56540
+   }
+  ],
+  "source": "private/gen/wall-reels-a.result.json"
+ },
+ "wall-reels-alt": {
+  "alt": "Black-and-white illustration: vintage film reels on a table",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/wall-reels-alt-1200.webp",
+    "w": 1200,
+    "h": 1490,
+    "bytes": 191860
+   },
+   {
+    "file": "img/wall-reels-alt-600.webp",
+    "w": 600,
+    "h": 745,
+    "bytes": 59192
+   }
+  ],
+  "source": "private/gen/wall-reels-b.result.json"
+ },
+ "store-la-interior": {
+  "alt": "Inside Originals Los Angeles: arched windows, timber trusses, glass cases and the black-and-white wall",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/store-la-interior-854.webp",
+    "w": 854,
+    "h": 480,
+    "bytes": 102392
+   }
+  ],
+  "source": "private/client-media/intailbox-new.jpeg"
+ },
+ "store-la-floor": {
+  "alt": "The sales floor at Originals Los Angeles",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/store-la-floor-1920.webp",
+    "w": 1920,
+    "h": 1280,
+    "bytes": 351502
+   }
+  ],
+  "source": "private/client-media/originals-factory-weed-shop-dispensary-2-1980x1320.jpeg"
+ },
+ "store-la-front": {
+  "alt": "Originals Los Angeles storefront with its giant ORIGINALS letters",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/store-la-front-730.webp",
+    "w": 730,
+    "h": 439,
+    "bytes": 45336
+   }
+  ],
+  "source": "private/client-media/Originals-dispensary.jpeg"
+ },
+ "store-sd-building": {
+  "alt": "The Originals San Diego building on Federal Blvd",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/store-sd-building-483.webp",
+    "w": 483,
+    "h": 450,
+    "bytes": 33372
+   }
+  ],
+  "source": "private/client-media/Picture-of-Originals-SD-Building.png"
+ },
+ "sd-banner": {
+  "alt": "Originals San Diego banner: sunset palms, the crown and 50% off for first-time customers",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/sd-banner-1605.webp",
+    "w": 1605,
+    "h": 903,
+    "bytes": 276082
+   }
+  ],
+  "source": "private/client-media/443775029_blob.jpg"
+ },
+ "sd-script": {
+  "alt": "Originals San Diego graphic",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/sd-script-1900.webp",
+    "w": 1900,
+    "h": 910,
+    "bytes": 125012
+   }
+  ],
+  "source": "private/client-media/Screen-Shot-2021-09-01-at-8.37.28-AM.png"
+ },
+ "flyer-carshow": {
+  "alt": "Lowrider car show flyer: Los Angeles 2026 Finale",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/flyer-carshow-1880.webp",
+    "w": 1880,
+    "h": 1058,
+    "bytes": 374040
+   }
+  ],
+  "source": "private/client-media/carshowflyerlowrider.jpg"
+ },
+ "hof-graphic": {
+  "alt": "Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/hof-graphic-1920.webp",
+    "w": 1920,
+    "h": 1280,
+    "bytes": 83698
+   }
+  ],
+  "source": "private/client-media/HOF-ORIGINALS-AND-CURE-.jpeg"
+ },
+ "hof-mixer": {
+  "alt": "Lite Up The Nite: Hall of Flowers welcome mixer graphic",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/hof-mixer-617.webp",
+    "w": 617,
+    "h": 246,
+    "bytes": 15784
+   }
+  ],
+  "source": "private/client-media/liteupthenight.png"
+ },
+ "farmers-cup": {
+  "alt": "Farmers Cup 2021: first place, licensed flower, Originals Gelato",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/farmers-cup-768.webp",
+    "w": 768,
+    "h": 779,
+    "bytes": 87380
+   }
+  ],
+  "source": "private/client-media/Farmers-Cup-768x779.png"
+ },
+ "gelato-box": {
+  "alt": "Originals Gelato 3.5g packaging",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/gelato-box-1200.webp",
+    "w": 1200,
+    "h": 1200,
+    "bytes": 93156
+   },
+   {
+    "file": "img/gelato-box-600.webp",
+    "w": 600,
+    "h": 600,
+    "bytes": 32390
+   }
+  ],
+  "source": "private/client-media/Originals-Flower---Gelato---3.5g.png"
+ },
+ "gelato-jar": {
+  "alt": "Originals Gelato flower with its jar",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/gelato-jar-599.webp",
+    "w": 599,
+    "h": 599,
+    "bytes": 65996
+   }
+  ],
+  "source": "private/client-media/originals_ca-Gelato.png"
+ },
+ "preroll-3": {
+  "alt": "Originals pre-roll three-pack",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/preroll-3-768.webp",
+    "w": 768,
+    "h": 768,
+    "bytes": 30236
+   }
+  ],
+  "source": "private/client-media/originalspreroll1-768x768.jpeg"
+ },
+ "preroll-1": {
+  "alt": "Originals single pre-roll pack",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/preroll-1-768.webp",
+    "w": 768,
+    "h": 768,
+    "bytes": 19840
+   }
+  ],
+  "source": "private/client-media/originalspreroll2-768x768.jpeg"
+ },
+ "bud-box": {
+  "alt": "Originals Family Farms flower beside its box",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/bud-box-1920.webp",
+    "w": 1920,
+    "h": 1247,
+    "bytes": 97424
+   }
+  ],
+  "source": "private/client-media/E37C5D9A-82DE-4421-872E-366E773BA15E-1980x1286.jpeg"
+ },
+ "grow-real": {
+  "alt": "Cannabis plants in an indoor grow room",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/grow-real-640.webp",
+    "w": 640,
+    "h": 639,
+    "bytes": 171438
+   }
+  ],
+  "source": "private/client-media/Screen-Shot-2022-04-08-at-2.46.50-PM-640w.webp"
+ },
+ "backdrop": {
+  "alt": "The Originals crown and leaf pattern",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/backdrop-1920.webp",
+    "w": 1920,
+    "h": 1344,
+    "bytes": 383868
+   }
+  ],
+  "source": "private/client-media/Originals-Backdrop-copy.jpg"
+ },
+ "clothing-shop": {
+  "alt": "The Originals Clothing online store",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/clothing-shop-854.webp",
+    "w": 854,
+    "h": 480,
+    "bytes": 33154
+   }
+  ],
+  "source": "private/client-media/originals-clothings-new-img.jpeg"
+ },
+ "award-badge": {
+  "alt": "Award Winning",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/award-badge-1000.webp",
+    "w": 1000,
+    "h": 500,
+    "bytes": 21956
+   }
+  ],
+  "source": "private/client-media/awardwinning_vers2.png"
+ },
+ "crown-black": {
+  "alt": "Originals crown",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/crown-black-600.webp",
+    "w": 600,
+    "h": 597,
+    "bytes": 25244
+   }
+  ],
+  "source": "private/client-media/blackhero-logo-copy.png"
+ },
+ "la-lockup": {
+  "alt": "Originals Los Angeles logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/la-lockup-800.webp",
+    "w": 800,
+    "h": 450,
+    "bytes": 19738
+   }
+  ],
+  "source": "private/client-media/big_la_wm_logo-3f6e9e31-74c97722.png"
+ },
+ "film-poster": {
+  "alt": "Originals brand film",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/film-poster-1280.webp",
+    "w": 1280,
+    "h": 720,
+    "bytes": 38338
+   }
+  ],
+  "source": "private/client-media/N62qIsrLQZSRHSbiwQof_video-new.v2.0000000-1920w.jpg"
+ },
+ "logo-jeeter": {
+  "alt": "JEETER logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-jeeter-400.webp",
+    "w": 400,
+    "h": 175,
+    "bytes": 7458
+   }
+  ],
+  "source": "private/client-media/jeeter.jpg"
+ },
+ "logo-stiiizy": {
+  "alt": "STIIIZY logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-stiiizy-186.webp",
+    "w": 186,
+    "h": 91,
+    "bytes": 2008
+   }
+  ],
+  "source": "private/client-media/STIIIZY-copy.jpg"
+ },
+ "logo-wcc": {
+  "alt": "WCC logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-wcc-400.webp",
+    "w": 400,
+    "h": 294,
+    "bytes": 7302
+   }
+  ],
+  "source": "private/client-media/wcc_logo-copy.jpg"
+ },
+ "logo-lime": {
+  "alt": "LIME logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-lime-400.webp",
+    "w": 400,
+    "h": 137,
+    "bytes": 1954
+   }
+  ],
+  "source": "private/client-media/lime2.0_logo-1-copy.jpg"
+ },
+ "logo-roach": {
+  "alt": "ROACH logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-roach-154.webp",
+    "w": 154,
+    "h": 70,
+    "bytes": 1562
+   }
+  ],
+  "source": "private/client-media/roach.jpg"
+ },
+ "logo-cbx": {
+  "alt": "CBX logo",
+  "ai": false,
+  "kind": "client",
+  "files": [
+   {
+    "file": "img/logo-cbx-400.webp",
+    "w": 400,
+    "h": 196,
+    "bytes": 5176
+   }
+  ],
+  "source": "private/client-media/cannabiotic-lowres.jpg"
+ },
+ "loop-stage": {
+  "alt": "Illustration: first frame of a generated stage loop",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/loop-stage-1280.webp",
+    "w": 1280,
+    "h": 712,
+    "bytes": 32494
+   }
+  ],
+  "source": "private/gen/vid-stage.result.json"
+ },
+ "loop-grow": {
+  "alt": "Illustration: first frame of a generated grow loop",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/loop-grow-1600.webp",
+    "w": 1600,
+    "h": 684,
+    "bytes": 183776
+   }
+  ],
+  "source": "private/gen/vid-grow.result.json"
+ },
+ "loop-arches": {
+  "alt": "Illustration: first frame of a generated arches loop",
+  "ai": true,
+  "kind": "generated",
+  "files": [
+   {
+    "file": "img/loop-arches-720.webp",
+    "w": 720,
+    "h": 950,
+    "bytes": 42440
+   }
+  ],
+  "source": "private/gen/vid-arches.result.json"
+ }
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "site-reforge/project@1",
+  "name": "originalsca-com",
+  "targetUrl": "https://originalsca.com/",
+  "origin": "https://originalsca.com",
+  "createdAt": "2026-11-10T23:23:26.974Z",
+  "updatedAt": "2026-11-11T01:36:30.465Z",
+  "config": {
+    "maxPages": 400,
+    "concurrency": 2,
+    "includeSubdomains": false,
+    "breakpoints": [
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "pixelDiffThreshold": 0.02,
+    "contentRecallFloor": 0.95,
+    "requestDelayMs": 150,
+    "requestHeaders": {}
+  },
+  "tooling": {
+    "browser": "unknown",
+    "imageGen": "unknown",
+    "detectedAt": null
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-11-10T23:23:26.979Z",
+      "note": "workspace created"
+    },
+    "crawl": {
+      "status": "done",
+      "at": "2026-11-10T23:38:29.383Z",
+      "note": "726 pages, 2 failed"
+    },
+    "extract": {
+      "status": "done",
+      "at": "2026-11-10T23:39:04.214Z",
+      "note": "724 pages extracted"
+    },
+    "assets": {
+      "status": "partial",
+      "at": "2026-11-11T00:46:00.909Z",
+      "note": "8970/8974 assets on disk"
+    },
+    "capture": {
+      "status": "done",
+      "at": "2026-11-10T23:47:41.871Z",
+      "note": "captures merged"
+    },
+    "tokens": {
+      "status": "done",
+      "at": "2026-11-10T23:47:51.082Z",
+      "note": "computed (browser capture)"
+    },
+    "motion": {
+      "status": "done",
+      "at": "2026-11-11T00:49:33.161Z",
+      "note": "64 keyframes, 2572 animated elements"
+    },
+    "presets": {
+      "status": "done",
+      "at": "2026-11-10T23:48:11.372Z",
+      "note": "186 presets from 27 files"
+    },
+    "ux": {
+      "status": "partial",
+      "at": "2026-11-10T23:48:16.184Z",
+      "note": "1122 rows, 1122 UNSET"
+    },
+    "brand": {
+      "status": "partial",
+      "at": "2026-11-10T23:47:51.082Z",
+      "note": "tokens emitted; brand-system.md still owed"
+    },
+    "implement": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "clone": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "cloneVerify": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "responsive": {
+      "status": "fail",
+      "at": "2026-11-11T01:31:02.095Z",
+      "note": "212 sweeps at 1024/1440/390/768"
+    },
+    "seo": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "performance": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "decontaminate": {
+      "status": "done",
+      "at": "2026-11-11T01:36:11.785Z",
+      "note": "CLEAN (0 traces)"
+    },
+    "parity": {
+      "status": "fail",
+      "at": "2026-11-11T01:36:10.531Z",
+      "note": "DRIFT — 806 findings"
+    },
+    "fabrication": {
+      "status": "done",
+      "at": "2026-11-11T01:36:11.440Z",
+      "note": "SOURCED — 0 findings"
+    },
+    "pixeldiff": {
+      "status": "fail",
+      "at": "2026-11-11T01:36:10.213Z",
+      "note": "DRIFT — 64/64 pairs over threshold"
+    },
+    "sweep": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "functional": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "gate": {
+      "status": "fail",
+      "at": "2026-11-11T01:36:30.465Z",
+      "note": "NOT-READY — 21/29 passing"
+    },
+    "package": {
+      "status": "pending",
+      "at": null,
+      "note": ""
+    },
+    "presetMatch": {
+      "status": "partial",
+      "at": "2026-11-10T23:48:17.093Z",
+      "note": "0 matched, 653 undecided, 469 unmeasurable"
+    }
+  },
+  "notes": []
+}

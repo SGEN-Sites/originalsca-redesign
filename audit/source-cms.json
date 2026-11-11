@@ -1,0 +1,36 @@
+{
+  "schema": "site-reforge/source-cms@1",
+  "generated": "2026-11-10T23:39:04.213Z",
+  "detected": [
+    {
+      "id": "duda",
+      "label": "Duda",
+      "matchedPatterns": 2,
+      "evidence": [
+        "/dudamobile|dmAlbum|d-page/i",
+        "/irp\\.cdn-website\\.com/i"
+      ],
+      "pages": 724
+    },
+    {
+      "id": "nextjs",
+      "label": "Next.js",
+      "matchedPatterns": 2,
+      "evidence": [
+        "/__NEXT_DATA__/",
+        "/\\/_next\\/static\\//i"
+      ],
+      "pages": 668
+    },
+    {
+      "id": "webflow",
+      "label": "Webflow",
+      "matchedPatterns": 1,
+      "evidence": [
+        "/w-(?:container|row|col|nav|slider)\\b/i"
+      ],
+      "pages": 86
+    }
+  ],
+  "note": "Every id listed here MUST be absent from dist/ before packaging. sr-decontaminate.mjs enforces it."
+}

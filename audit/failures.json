@@ -1,0 +1,128 @@
+{
+  "schema": "site-reforge/failures@1",
+  "items": [
+    {
+      "stage": "crawl:page",
+      "target": "https://originalsca.com/events",
+      "reason": "status 404",
+      "extra": {
+        "chain": []
+      },
+      "at": "2026-11-10T23:38:24.700Z",
+      "accepted": true,
+      "acceptedWhy": "The source itself returns 404 for this URL (it is linked from the live nav/footer). Nothing to fetch; the rebuild serves a real page here (ADD row in the ledger).",
+      "acceptedAt": "2026-11-11T01:14:24.156Z"
+    },
+    {
+      "stage": "crawl:page",
+      "target": "https://originalsca.com/wholesale",
+      "reason": "status 404",
+      "extra": {
+        "chain": []
+      },
+      "at": "2026-11-10T23:38:29.368Z",
+      "accepted": true,
+      "acceptedWhy": "The source itself returns 404 for this URL (it is linked from the live nav/footer). Nothing to fetch; the rebuild serves a real page here (ADD row in the ledger).",
+      "acceptedAt": "2026-11-11T01:14:24.165Z"
+    },
+    {
+      "stage": "assets:css",
+      "target": "https://app.tymber.me/fonts/originals/NewsGothic.css",
+      "reason": "fetch failed: ERR_TLS_CERT_ALTNAME_INVALID: Hostname/IP does not match certificate's altnames: Host: app.tymber.me. is not in the cert's altnames: DNS:*.hostgator.com, DNS:hostgator.com",
+      "at": "2026-11-10T23:40:35.148Z",
+      "accepted": true,
+      "acceptedWhy": "The Tymber stylesheet host serves a TLS certificate for another domain; refused, not evaded. Its NewsGothic face is commercial, so open stand-ins are used (docs/BRAND-SYSTEM.md).",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:font",
+      "target": "https://static-cdn.dwhitelabel.com/fonts/dm-social-font.svg?mxo7pn",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-10T23:41:45.495Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:font",
+      "target": "https://static-cdn.dwhitelabel.com/fonts/dm-font.svg?v=12",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-10T23:41:47.536Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:font",
+      "target": "https://static.cdn-website.com/fonts/dm-font.svg?v=12",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-10T23:42:23.173Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:data",
+      "target": "https://originalsca.com/_next/static/chunks/pages/api/v2/store/settings",
+      "reason": "status 404",
+      "at": "2026-11-10T23:42:48.172Z",
+      "accepted": true,
+      "acceptedWhy": "Tymber Next.js runtime chunk that 404s on the source. Platform runtime, not content; the menu stays on Tymber.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:data",
+      "target": "https://originalsca.com/_next/static/chunks/pages/api/v1/store/site?",
+      "reason": "status 404",
+      "at": "2026-11-10T23:42:48.483Z",
+      "accepted": true,
+      "acceptedWhy": "Tymber Next.js runtime chunk that 404s on the source. Platform runtime, not content; the menu stays on Tymber.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:data",
+      "target": "https://originalsca.com/_next/static/chunks/pages/_blank",
+      "reason": "status 404",
+      "at": "2026-11-10T23:42:48.894Z",
+      "accepted": true,
+      "acceptedWhy": "Tymber Next.js runtime chunk that 404s on the source. Platform runtime, not content; the menu stays on Tymber.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:image",
+      "target": "https://irp.cdn-website.com/md/dmtmpl/9d3c743f-7d9f-4e8c-8c93-96000df26b1b/dms3rep/multi/opt/pexels-maksim-goncharenok-4348636-739709a3-2880w.jpg?jxl&v=jxl",
+      "reason": "status 404",
+      "at": "2026-11-10T23:44:37.889Z",
+      "accepted": true,
+      "acceptedWhy": "Duda template stock photo (Pexels) that 404s on the source; stock imagery is not reused.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:image",
+      "target": "https://static.cdn-website.com/fonts/dm-font.svg?v=12",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-11T00:42:25.388Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:image",
+      "target": "https://irp.cdn-website.com/editor/nee/images/common/2ColumnsArrows.png",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-11T00:46:00.448Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    },
+    {
+      "stage": "assets:image",
+      "target": "https://irp.cdn-website.com/editor/nee/images/common/bluePic.png",
+      "reason": "refused: HTTP 403",
+      "at": "2026-11-11T00:46:00.829Z",
+      "accepted": true,
+      "acceptedWhy": "Duda platform asset (editor icon font / editor image), refused with 403. Platform runtime is removed by design; nothing on the rebuild needs it.",
+      "acceptedAt": "2026-11-11T01:14:24.166Z"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schema": "site-reforge/client-facts@1",
+  "note": "Declared facts. ONLY facts recorded here or present in audit/content-inventory.json may appear as claims on the rebuild. Everything else is a fabrication and sr-fabrication.mjs fails the gate.",
+  "source": "Operator brief of 2026-11-11 (research relayed by the SGEN operator for the redesign pitch). Items marked confirm:true are carried in the page source as [CONFIRM WITH CLIENT] and must be confirmed by Originals before launch.",
+  "legalName": "",
+  "brand": "Originals",
+  "brandNames": [
+    "Originals",
+    "Originals Factory & Weed Shop",
+    "Originals Family Farms",
+    "Originals Los Angeles",
+    "Originals San Diego",
+    "Originals Clothing"
+  ],
+  "phone": [
+    {
+      "store": "Originals Los Angeles",
+      "number": "(323) 696-9680"
+    },
+    {
+      "store": "Originals San Diego",
+      "number": "(619) 310-5232"
+    }
+  ],
+  "email": [],
+  "addresses": [
+    {
+      "store": "Originals Los Angeles",
+      "street": "6500 Stanford Ave",
+      "city": "Los Angeles",
+      "region": "CA",
+      "postal": "90001",
+      "line": "6500 Stanford Ave, Los Angeles, CA 90001"
+    },
+    {
+      "store": "Originals San Diego",
+      "street": "6220 Federal Blvd",
+      "city": "San Diego",
+      "region": "CA",
+      "postal": "92114",
+      "line": "6220 Federal Blvd, San Diego, CA 92114"
+    },
+    {
+      "store": null,
+      "line": "1450 Mirasol St, Los Angeles, CA 90023",
+      "confirm": true,
+      "note": "Listed by the client; role unknown. Carried as [CONFIRM WITH CLIENT] in page source, never shown as a store."
+    }
+  ],
+  "hours": "Originals Los Angeles: Mon–Sat 7AM–9:45PM, Sun 8AM–7:45PM. Originals San Diego: Mon–Sat 8AM–9PM, Sun 9AM–9PM.",
+  "hoursStructured": {
+    "Originals Los Angeles": {
+      "mon-sat": "7AM–9:45PM",
+      "sun": "8AM–7:45PM"
+    },
+    "Originals San Diego": {
+      "mon-sat": "8AM–9PM",
+      "sun": "9AM–9PM"
+    }
+  },
+  "storeAttributes": {
+    "Originals Los Angeles": [
+      "veteran-owned (identifies as veteran-owned; confirm)",
+      "brick warehouse with tall arched windows, wood trusses and reflective polished concrete",
+      "giant freestanding ORIGINALS letters in front of a huge black-and-white wall of cultural originals: civil rights leaders, artists, athletes, icons",
+      "a living family wall: when legends visit, they sign it as another true original"
+    ],
+    "Originals San Diego": [
+      "pets welcome"
+    ]
+  },
+  "licences": [
+    "C10-0000367-LIC"
+  ],
+  "certifications": [],
+  "awards": [
+    "Award winners 47 times",
+    "47 times"
+  ],
+  "statistics": [
+    "100% family owned and operated since 2006",
+    "100% family owned",
+    "since 2006",
+    "won awards 47 times"
+  ],
+  "brandLines": [
+    "The Brand Behind The Brands",
+    "Best Cultivators in California",
+    "Best Cultivators in California.",
+    "Mastering Our Craft – Always Room For Improvement – Good, Better, Best – California's Best",
+    "Mastering Our Craft",
+    "Always Room For Improvement",
+    "Good, Better, Best",
+    "Good, Better, Best.",
+    "Best – California's Best",
+    "California's Best",
+    "California's Best.",
+    "#beoriginal",
+    "#comingforthecrown",
+    "#grownbyogsforogs",
+    "#yourockthecrown",
+    "The highest quality cannabis, grown by OGs, for the masses",
+    "the highest quality cannabis, grown by OGs, for the masses.",
+    "Mastering Our Craft, Always Room For Improvement, Good, Better, Best, California's Best.",
+    "Good, Better, Best. California's Best."
+  ],
+  "story": [
+    "Originals started with a group of elementary school friends, many from the same Los Angeles block, who pooled what they had to build a proud, world-class company driven by their Mexican American family values.",
+    "Brothers, parents and neighbors all pitched in.",
+    "100% family owned and operated since 2006.",
+    "They grow their own flower in-house.",
+    "They have won awards 47 times.",
+    "They built a cult following in LA for their OG cuts and Gelato.",
+    "They have turned down offers to sell.",
+    "Honoring the originals and adding to the family."
+  ],
+  "houseStrains": [
+    "Originals OG",
+    "King Louie",
+    "Skywalker",
+    "Oaksterdam OG",
+    "Gelato",
+    "SFV OG",
+    "Paris OG",
+    "Bussin'"
+  ],
+  "collabs": [
+    {
+      "partner": "Chris Brown",
+      "product": "Bussin'",
+      "with": "OHB Farms",
+      "confirm": true
+    },
+    {
+      "partner": "Xzibit",
+      "product": "Napalm",
+      "confirm": true
+    },
+    {
+      "partner": "Ice Cube",
+      "product": "Caviar Gold",
+      "confirm": true
+    },
+    {
+      "partner": "Mike Tyson",
+      "product": "Tyson Ranch",
+      "confirm": true
+    },
+    {
+      "partner": "Nipsey Hussle",
+      "product": "Marathon OG",
+      "confirm": true
+    },
+    {
+      "partner": "Royal Blunts",
+      "confirm": true
+    },
+    {
+      "partner": "Beast Mode",
+      "confirm": true,
+      "note": "most recent"
+    },
+    {
+      "partner": "Dodi Oakland",
+      "confirm": true,
+      "note": "most recent"
+    }
+  ],
+  "events": [
+    "Lowrider Magazine Super Show",
+    "Hall of Flowers",
+    "PuffCon LA Block Party",
+    "Green Street Festival",
+    "Private 4/20 events",
+    "Originals Takeover in Palm Springs (coming to a city near you)",
+    "Bussin' strain release party",
+    "Employee appreciation night",
+    "BIG3 basketball support",
+    "Fighter sponsorships"
+  ],
+  "deals": [
+    "All-day Sunday happy hour",
+    "San Diego daily deals"
+  ],
+  "channels": {
+    "clothingShop": "https://www.originalsclothingshop.com/",
+    "sanDiegoStoreSite": "https://www.originalssandiego.com/",
+    "laMenu": "https://originalsca.com/menu/los-angeles/",
+    "instagram": [
+      "@originalsfamilyfarms",
+      "@la__originals__shop",
+      "@originalssdshop"
+    ]
+  },
+  "distribution": [
+    "The Originals house brand is stocked at many other dispensaries in California and Massachusetts."
+  ],
+  "expansion": [
+    {
+      "note": "Building a large cultivation facility in Massachusetts",
+      "confirm": true
+    }
+  ],
+  "ageGate": "21+ age gate, with an 18+ medical recommendation option (as the live site uses).",
+  "testimonials": [],
+  "clients": [],
+  "guarantees": [],
+  "pricing": [],
+  "services": [
+    "In-house cultivation (they grow their own flower)",
+    "Retail stores in Los Angeles and San Diego",
+    "Wholesale",
+    "Rewards program",
+    "Originals Clothing online shop",
+    "Events"
+  ],
+  "directionsLinks": {
+    "note": "Google Maps directions for the two store addresses in the operator brief (the sticky dash, store cards and footer link to them). Built from the addresses; not a review or credential profile.",
+    "source": "operator brief, 2026-11-11",
+    "la": "https://www.google.com/maps/search/?api=1&query=Originals%2C%206500%20Stanford%20Ave%2C%20Los%20Angeles%2C%20CA%2090001",
+    "sd": "https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114"
+  }
+}

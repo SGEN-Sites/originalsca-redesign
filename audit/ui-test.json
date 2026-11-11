@@ -1,0 +1,148 @@
+{
+  "at": "2026-11-11T01:36:30.016Z",
+  "build": "dist",
+  "pass": 28,
+  "total": 28,
+  "results": [
+    {
+      "name": "gate shows on first visit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "gate copy offers 18+ medical option",
+      "ok": true,
+      "detail": "I'm 18+ with a medical recommendation"
+    },
+    {
+      "name": "\"Not yet\" keeps the gate up with a message",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "21+ answer closes the gate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "gate answer remembered on reload",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no script errors (home, phone)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "18+ medical answer enters the site",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dash hidden over the hero, shown past it (390px)",
+      "ok": true,
+      "detail": "{\"top\":726,\"bottom\":844,\"h\":118,\"vh\":844,\"on\":true}"
+    },
+    {
+      "name": "dash tap targets at least 44x44 (390px)",
+      "ok": true,
+      "detail": "[{\"t\":\"LA\",\"w\":48,\"h\":44},{\"t\":\"SD\",\"w\":48,\"h\":44},{\"t\":\"CALL\",\"w\":107,\"h\":46},{\"t\":\"DIRECTIONS\",\"w\":107,\"h\":46},{\"t\":\"SHOP NOW\",\"w\":139,\"h\":46}]"
+    },
+    {
+      "name": "switching to San Diego rewires Shop/Call/Directions/hours/categories (390px)",
+      "ok": true,
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Open now · until 9 PM\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"chip\":\"San Diego\"}"
+    },
+    {
+      "name": "store choice remembered on reload (390px)",
+      "ok": true,
+      "detail": "sd"
+    },
+    {
+      "name": "switching back to Los Angeles (390px)",
+      "ok": true,
+      "detail": "{\"shop\":\"https://originalsca.com/menu/los-angeles/\",\"tel\":\"tel:+13236969680\"}"
+    },
+    {
+      "name": "no sideways scroll on the home page (390px)",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "drawer opens (390px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dash hides while the drawer is open (390px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "drawer closes (390px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dash hidden over the hero, shown past it (360px)",
+      "ok": true,
+      "detail": "{\"top\":622,\"bottom\":740,\"h\":118,\"vh\":740,\"on\":true}"
+    },
+    {
+      "name": "dash tap targets at least 44x44 (360px)",
+      "ok": true,
+      "detail": "[{\"t\":\"LA\",\"w\":48,\"h\":44},{\"t\":\"SD\",\"w\":48,\"h\":44},{\"t\":\"CALL\",\"w\":102,\"h\":46},{\"t\":\"DIRECTIONS\",\"w\":97,\"h\":46},{\"t\":\"SHOP NOW\",\"w\":125,\"h\":46}]"
+    },
+    {
+      "name": "switching to San Diego rewires Shop/Call/Directions/hours/categories (360px)",
+      "ok": true,
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Open now · until 9 PM\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"chip\":\"San Diego\"}"
+    },
+    {
+      "name": "store choice remembered on reload (360px)",
+      "ok": true,
+      "detail": "sd"
+    },
+    {
+      "name": "switching back to Los Angeles (360px)",
+      "ok": true,
+      "detail": "{\"shop\":\"https://originalsca.com/menu/los-angeles/\",\"tel\":\"tel:+13236969680\"}"
+    },
+    {
+      "name": "no sideways scroll on the home page (360px)",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "drawer opens (360px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dash hides while the drawer is open (360px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "drawer closes (360px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Shop mega panel opens on hover",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header store chip toggles the store",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "LA store page category tiles stay on the LA menu even with San Diego selected",
+      "ok": true,
+      "detail": "https://originalsca.com/menu/los-angeles/categories/flower/ , https://originalsca.com/menu/los-angeles/categories/preroll/"
+    }
+  ]
+}

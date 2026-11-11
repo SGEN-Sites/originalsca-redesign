@@ -1,0 +1,667 @@
+{
+  "at": "2026-11-11T01:37:34.289Z",
+  "build": "dist-preview",
+  "destinations": 33,
+  "pass": 33,
+  "fail": 0,
+  "gates": {
+    "originalsca.com": "Originals Family Farms",
+    "weedmaps.com": "This website uses cookies to enhance and analyze your experience and deliver advertising on our platform and across the web. If you wish to opt out of the sale or sharing of your personal information for the purpose of cross-context behavioral advertising, you may do so by clicking \"Manage\". When you access and use our Services, you agree to the current applicable Terms of Use and Privacy Policy. "
+  },
+  "results": [
+    {
+      "url": "https://originalsca.com/menu/los-angeles/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/",
+      "status": 200,
+      "ok": true,
+      "add": 1,
+      "cart": true,
+      "prices": 1,
+      "emptyText": false,
+      "title": "Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": "Yes",
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/alien-labs-91626/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/alien-labs-91626/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Alien labs - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/caviar-gold-61396/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/caviar-gold-61396/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Caviar gold - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/heritage-hash-co-774181/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/heritage-hash-co-774181/",
+      "status": 200,
+      "ok": true,
+      "add": 4,
+      "cart": true,
+      "prices": 4,
+      "emptyText": false,
+      "title": "Heritage hash co. - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/jeeter-61405/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/jeeter-61405/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Jeeter - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/kanha-61343/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/kanha-61343/",
+      "status": 200,
+      "ok": true,
+      "add": 5,
+      "cart": true,
+      "prices": 5,
+      "emptyText": false,
+      "title": "Kanha - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/maven-genetics-813769/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/maven-genetics-813769/",
+      "status": 200,
+      "ok": true,
+      "add": 5,
+      "cart": true,
+      "prices": 5,
+      "emptyText": false,
+      "title": "Maven genetics - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/originals-61320/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/originals-61320/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Originals - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "find-originals.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/pacific-stone-61426/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/pacific-stone-61426/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Pacific stone - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/papa-barkley-61401/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/papa-barkley-61401/",
+      "status": 200,
+      "ok": true,
+      "add": 5,
+      "cart": true,
+      "prices": 5,
+      "emptyText": false,
+      "title": "Papa & barkley - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/raw-garden-61365/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/raw-garden-61365/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Raw garden - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/rove-61393/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/rove-61393/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Rove - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/stiiizy-61331/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/stiiizy-61331/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Stiiizy - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/the-cure-company-61318/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/the-cure-company-61318/",
+      "status": 200,
+      "ok": true,
+      "add": 1,
+      "cart": true,
+      "prices": 1,
+      "emptyText": false,
+      "title": "The cure company - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/west-coast-cure-91619/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/west-coast-cure-91619/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "West coast cure - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/wizard-trees-824116/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/wizard-trees-824116/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "Wizard trees - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/brands/wyld-61369/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/brands/wyld-61369/",
+      "status": 200,
+      "ok": true,
+      "add": 3,
+      "cart": true,
+      "prices": 3,
+      "emptyText": false,
+      "title": "Wyld - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "brands.html",
+        "index.html",
+        "shop.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/beverage/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/beverage/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "BEVERAGE - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/cartridge/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/cartridge/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "CARTRIDGE - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/edible/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/edible/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "EDIBLE - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/extract/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/extract/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "EXTRACT - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/flower/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/flower/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "FLOWER - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/merch/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/merch/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "MERCH - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/preroll/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/preroll/",
+      "status": 200,
+      "ok": true,
+      "add": 6,
+      "cart": true,
+      "prices": 6,
+      "emptyText": false,
+      "title": "PREROLL - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/tincture/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/tincture/",
+      "status": 200,
+      "ok": true,
+      "add": 2,
+      "cart": true,
+      "prices": 2,
+      "emptyText": false,
+      "title": "TINCTURE - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/topical/",
+      "finalUrl": "https://originalsca.com/menu/los-angeles/categories/topical/",
+      "status": 200,
+      "ok": true,
+      "add": 3,
+      "cart": true,
+      "prices": 3,
+      "emptyText": false,
+      "title": "TOPICAL - Los Angeles Dispensary Menu - Originals",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: la)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Menu, Reviews, Deals - Weed Dispensary in San Diego, California",
+      "gateAnswered": null,
+      "usedOn": [
+        "404.html",
+        "(store switch: sd)",
+        "affordable-cannabis-brands-originals-factory-weed-shop.html",
+        "blog.html",
+        "brands.html",
+        "bussin-merch.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/concentrates",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego/concentrates",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Concentrates & THC Wax | Order Online",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "san-diego-store.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/deals",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego#deals",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Special Deals & Coupons | Weedmaps",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "deals.html",
+        "index.html",
+        "san-diego-store.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/edibles",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego/edibles",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Edibles | Order Online",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "san-diego-store.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/flower",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego/flower",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Weed Flower | Order Online",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "san-diego-store.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/pre-roll",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego/pre-roll",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Pre Rolls & Joints | Order Online",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "san-diego-store.html"
+      ],
+      "error": null
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/vape-pens",
+      "finalUrl": "https://weedmaps.com/dispensaries/originals-san-diego/vape-pens",
+      "status": 200,
+      "ok": true,
+      "add": 24,
+      "cart": true,
+      "prices": 31,
+      "emptyText": true,
+      "title": "Originals San Diego Vape Pens | Order Online",
+      "gateAnswered": null,
+      "usedOn": [
+        "(store switch: sd)",
+        "san-diego-store.html"
+      ],
+      "error": null
+    }
+  ],
+  "cartTests": [
+    {
+      "url": "https://originalsca.com/menu/los-angeles/categories/flower/",
+      "clicked": "Add ORIGINALS | KING LOUIE - 14G FLOWER to cart",
+      "after": {
+        "cartText": [
+          "Close cart",
+          "Remove ORIGINALS | KING LOUIE - 14G FLOWER from cart",
+          "Open cart 1",
+          "CARTRIDGE",
+          "Add ORIGINALS | SKYWALKER 3.5G FLOWER to cart",
+          "Add ORIGINALS | SKYWALKER - 14G FLOWER to cart"
+        ],
+        "subtotal": null,
+        "count": null
+      },
+      "ok": true,
+      "before": null,
+      "addedText": "added to cart.",
+      "screenshot": "audit/menu-cart-la.png"
+    },
+    {
+      "url": "https://weedmaps.com/dispensaries/originals-san-diego/flower",
+      "clicked": "Add to bag",
+      "after": {
+        "cartText": [
+          "Add to bag",
+          "Add to bag",
+          "Add to bag",
+          "Add to bag",
+          "Donny Burger | Buds | 3.5g product detail page BUDS Donny Burger | Buds | 3.5g Dime Bag 5.0 star average rating from 1 review 5.0 (1)",
+          "Add to bag"
+        ],
+        "subtotal": null,
+        "count": "5"
+      },
+      "ok": true,
+      "before": "5",
+      "addedText": "Added to bag from",
+      "screenshot": "audit/menu-cart-sd.png"
+    }
+  ]
+}

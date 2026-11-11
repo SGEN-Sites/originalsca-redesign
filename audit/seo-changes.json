@@ -1,0 +1,3700 @@
+{
+  "schema": "site-reforge/seo-changes@1",
+  "generated": "2026-11-11T01:28:44.192Z",
+  "note": "Every field written into the build by sr-seo --apply. Each carries where its value came from. A field the source already filled is never rewritten here.",
+  "siteUrl": "https://originalsca.com",
+  "siteName": "Originals Family Farms",
+  "siteLang": "en",
+  "pagesTouched": 53,
+  "changes": [
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Page not found | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "This page took a wrong turn. Head back to Originals.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "jsonld:BreadcrumbList",
+      "from": null,
+      "to": "2 levels",
+      "source": "derived:url-path"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "title",
+      "from": null,
+      "to": "Page not found | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "description",
+      "from": null,
+      "to": "This page took a wrong turn. Head back to Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/404",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Page not found | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:description",
+      "from": null,
+      "to": "This page took a wrong turn. Head back to Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/404",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/404.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Best-Selling Affordable Cannabis Brands At Originals Factory &amp; Weed Shop",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals LA is one of the valley’s OG dispensary and cultivation companies, providing quality cannabis to Los Angeles and surrounding communities since 2006. Today, Originals has become the area’s expert cannabis dispensary, offering affordable cannabis brands with premium quality.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/affordable-cannabis-brands-originals-factory-weed-shop",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Blog | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Read our cannabis blog and get valuable information about general topics related to cannaculture in a short, relatable format that's perfect for a morning read.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "alt",
+      "from": null,
+      "to": "22 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "22 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "img-lazy",
+      "from": null,
+      "to": "22 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/blog",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Brands | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Learn about our favorite cannabis brands that are being highlighted for their consistent product and ongoing customer satisfaction.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "alt",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "img-lazy",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/brands",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Bussin' | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Bussin': the Originals collab strain, its release party and the merch.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "description",
+      "from": null,
+      "to": "Bussin': the Originals collab strain, its release party and the merch.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "og:title",
+      "from": null,
+      "to": "Bussin' | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "og:description",
+      "from": null,
+      "to": "Bussin': the Originals collab strain, its release party and the merch.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/bussin-merch",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "twitter:title",
+      "from": null,
+      "to": "COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS SAN DIEGO",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The second official retailer of Originals has just opened at 6220 Federal Blvd in sunny San Diego this past Cinco de Mayo.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "alt",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "img-lazy",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/buying-originals-weed-at-originals-san-diego",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "twitter:title",
+      "from": null,
+      "to": "California Opt-in | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Opt-in to learn about special events, rewards, deals, and new drops from Originals.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "description",
+      "from": null,
+      "to": "Opt-in to learn about special events, rewards, deals, and new drops from Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "og:description",
+      "from": null,
+      "to": "Opt-in to learn about special events, rewards, deals, and new drops from Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/california-opt-in",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Books For Handy Reference",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Cannabis books are sweeping the nation. The legalization of cannabis is causing the cannabis industry to explode with new ideas and here is a list of some of our favorite cannabis books for handy reference for any cannabis connoisseur.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-books-for-handy-reference",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Complete Guide to Buying Edibles At Originals Factory &amp; Weed Shop",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Consuming cannabis edibles may provide different effects than smoking flower.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "alt",
+      "from": null,
+      "to": "18 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "18 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "18 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-edibles-guide-originals-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Legal States And Economic Growth",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "twitter:description",
+      "from": null,
+      "to": "While regulations vary greatly from state to state, cannabis legal states have seen some significant economic benefits. Let’s take a closer look.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cannabis-legal-states-and-economic-growth",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Originals Clothing | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals Clothing: shop Originals merch online, open 24/7.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "title",
+      "from": null,
+      "to": "Originals Clothing | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "description",
+      "from": null,
+      "to": "Originals Clothing: shop Originals merch online, open 24/7.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/clothing",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Originals Clothing | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Originals Clothing: shop Originals merch online, open 24/7.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/clothing",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/clothing.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Collabs | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Brand Behind The Brands: Originals collabs with the family it builds with.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "title",
+      "from": null,
+      "to": "Collabs | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "description",
+      "from": null,
+      "to": "The Brand Behind The Brands: Originals collabs with the family it builds with.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/collabs",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Collabs | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:description",
+      "from": null,
+      "to": "The Brand Behind The Brands: Originals collabs with the family it builds with.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/collabs",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/collabs.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Dispensary Downtown LA | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Reach out to our dispensary downtown LA by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "jsonld:LocalBusiness",
+      "from": null,
+      "to": "3 × LocalBusiness",
+      "source": "client-facts:addresses"
+    },
+    {
+      "page": "https://originalsca.com/contact",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/cookie-policy",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/cookie-policy",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cookie Policy | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/cookie-policy",
+      "field": "twitter:description",
+      "from": null,
+      "to": "How the Originals website uses cookies.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/cookie-policy",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/cookie-policy",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Deals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "We value our cannabis community and we want to show our appreciation for our fam by offering the best and boldest cannabis deals in California.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/deals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/disclaimer",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/disclaimer",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Disclaimer | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/disclaimer",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Originals website disclaimer.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/disclaimer",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/disclaimer",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Drop List | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Get on the Originals drop list: new strain and merch drops, special events, rewards and deals.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "title",
+      "from": null,
+      "to": "The Drop List | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "description",
+      "from": null,
+      "to": "Get on the Originals drop list: new strain and merch drops, special events, rewards and deals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/drops",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:title",
+      "from": null,
+      "to": "The Drop List | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Get on the Originals drop list: new strain and merch drops, special events, rewards and deals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/drops",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/drops.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Events | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals events: car shows, block parties, release nights, takeovers and the family behind them.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "alt",
+      "from": null,
+      "to": "2 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "2 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "2 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "title",
+      "from": null,
+      "to": "Events | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "description",
+      "from": null,
+      "to": "Originals events: car shows, block parties, release nights, takeovers and the family behind them.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/events",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Events | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Originals events: car shows, block parties, release nights, takeovers and the family behind them.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/events",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/events.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "twitter:title",
+      "from": null,
+      "to": "West Coast Dispensary | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Get answers to the most common West coast dispensary questions and learn about our dispensary policies. Find information about proper ID, payment, and more.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/faqs",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Find Originals | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Find Originals flower: the Originals house brand is stocked at many other dispensaries in California and Massachusetts.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "alt",
+      "from": null,
+      "to": "3 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "3 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "3 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "title",
+      "from": null,
+      "to": "Find Originals | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "description",
+      "from": null,
+      "to": "Find Originals flower: the Originals house brand is stocked at many other dispensaries in California and Massachusetts.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/find-originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Find Originals | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Find Originals flower: the Originals house brand is stocked at many other dispensaries in California and Massachusetts.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/find-originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/find-originals.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Preview: form not sent | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "This redesign preview does not send forms yet.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "jsonld:BreadcrumbList",
+      "from": null,
+      "to": "2 levels",
+      "source": "derived:url-path"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "title",
+      "from": null,
+      "to": "Preview: form not sent | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "description",
+      "from": null,
+      "to": "This redesign preview does not send forms yet.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/form-sent",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Preview: form not sent | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:description",
+      "from": null,
+      "to": "This redesign preview does not send forms yet.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/form-sent",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/form-sent.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "5 Reasons Why Originals Gelato And Oakstradam OG Is The Best Weed In Los Angeles",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Originals team is no stranger to California’s cannabis industry.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-oakstradam-og-originals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Part Sunset Sherbert, part Thin Mint Girl Scout Cookies, the Gelato strain is a celebrated cultivar among cannabis connoisseurs. Gelato is a mid-to-high THC, typically balanced hybrid. The strain has a sweet, doughy, and citrusy taste. Originals crafts one of the purest and most potent cuts of Gelato you can find in California.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "alt",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/gelato-strain-originals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Complete Guide To Buying Glass House Farms at Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Glass House Farms is at Originals! This popular brand is the perfect addition to the shelves of Originals’ LA dispensary. Glass House Farms places focus on more than growing huge amounts of cannabis at their massive greenhouse grow. They work day in and day out to make their impact on the community huge while making their environmental impact small.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "alt",
+      "from": null,
+      "to": "15 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "15 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "15 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/glass-house-farms-guide-originals-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Complete Guide To Buying The Cure Company Flower At Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Cure Company has been growing LA’s finest cannabis since 1996. A California staple, The Cure company has celebrity endorsements and some of the most sought-after weed in the state. From their dedication to the craft of growing to their partnerships and community outreach, The Cure Company has paved the way for the California cannabis industry in more ways than one.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/he-cure-company-flower-guide-originals-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Best Dispensary in Los Angeles | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals: family owned and operated since 2006, award-winning flower grown in-house. Shop Originals Los Angeles and Originals San Diego by category, brand and deal.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "jsonld:LocalBusiness",
+      "from": null,
+      "to": "3 × LocalBusiness",
+      "source": "client-facts:addresses"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "alt",
+      "from": null,
+      "to": "42 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "42 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "img-lazy",
+      "from": null,
+      "to": "42 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Jack Herer Strain by Originals: Robust Fruity Flavors And Pure Sativa Power",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Jack Herer is a sativa-dominant strain named after the famous hemp activist and author of The Emperor Wears No Clothes. Part Northern Lights #5, part Shiva Skunk, and part Haze, this cultivar was developed in Amsterdam in the 1990s. Originals is known for crafting one of the most potent cuts of this legendary strain.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "alt",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jack-herer-strain-originals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls, Blunts, and Vapes at Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Jeeter is arguably the most popular creator of infused pre-rolls (and more recently vapes) in California. From their expansive genetics library to their master infusion process, Jeeter knows just how to craft a premium infused pre-roll. Jeeters use their top-shelf indoor-grown flower alongside potent distillate oil and premium kief. This winning combination brings you a long-lasting burn, tremendous flavor, and high THC percentages.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jeeter-brand-guide-originals-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "twitter:title",
+      "from": null,
+      "to": "California Cannabis Industry Jobs | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Reach out to us if you think you'd be a good fit for one of our California cannabis industry jobs. We seek friendly and dependable people to join our team.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/jobs",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The King Louie Strain By Originals Has A Funky Lemon Stench And Royal Highs",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The King Louie strain, aka King Louis XIII, is one of the most popular OG Kush varieties that has become legendary on the West Coast.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/king-louie-strain-originals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Los Angeles Store | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Shop one of our Southern California cannabis stores for top-quality brands offering popular strains in a variety of lab tested products.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "alt",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "img-lazy",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles-store",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Dispensary Downtown LA | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Reach out to our dispensary downtown LA by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/los-angeles",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Media | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Originals brand film, flyers and graphics from the family album.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "alt",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "title",
+      "from": null,
+      "to": "Media | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "description",
+      "from": null,
+      "to": "The Originals brand film, flyers and graphics from the family album.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/media",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Media | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:description",
+      "from": null,
+      "to": "The Originals brand film, flyers and graphics from the family album.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/media",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/media.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "twitter:title",
+      "from": null,
+      "to": "OPT IN for MORE INFO",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Opt in to receive exclusive deals and event info from Originals.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "description",
+      "from": null,
+      "to": "Opt in to receive exclusive deals and event info from Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "og:title",
+      "from": null,
+      "to": "OPT IN for MORE INFO",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "og:description",
+      "from": null,
+      "to": "Opt in to receive exclusive deals and event info from Originals.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/membership_agreement",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Oakstradam OG Strain by Originals Is One Of California’s Strongest Indicas",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals’ Oakstradam OG strain is a celebrity cut of OG Kush made by Oaksterdam University in Oakland, the first college for cannabis.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/oakstradam-og-strain",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Popular Gelato Strain by Originals Is Sweet, Doughy, And Strong",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "twitter:description",
+      "from": null,
+      "to": "A cross between Sunset Sherbet and Thin Mint GSC, Originals’ Gelato is the poster child of the famed genetics.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-gelato-strain-profile",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Originals Official Hall of Flowers Palm Springs Recap",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Last month, Originals made a big impression at Hall of Flowersprings alongside our sister brand, The Cure Company. Hall of Flowers is one of the premier B2B cannabis events in California, usually taking place in Santa Rosa. From lavish pre-parties to immersive activations, live music, and a Ferris wheel, we definitely made our mark. This was also the place where our brand new line of premium 1-gram pre-rolls had its soft launch. You can now find them available at our flagship stores as well as City Compassionate Caregivers and DTPG.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "alt",
+      "from": null,
+      "to": "17 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "17 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "img-lazy",
+      "from": null,
+      "to": "17 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-hall-of-flowers-palm-springs-recap",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Originals San Diego Is Now Open For Business!",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals is proud to announce the grand opening of our second retail location in San Diego on Cinco de Mayo.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-san-diego-cannabis-dispensary",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS FACTORY &amp; WEED SHOP",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Originals Factory & Weed Shop is our flagship dispensary located in the heart of Los Angeles, California.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "alt",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "16 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/originals-weed-originals-factory-weed-shop-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Our Story | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals started with elementary school friends from one Los Angeles block. 100% family owned and operated since 2006, growing award-winning flower in-house.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "alt",
+      "from": null,
+      "to": "6 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "6 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "6 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "title",
+      "from": null,
+      "to": "Our Story | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "description",
+      "from": null,
+      "to": "Originals started with elementary school friends from one Los Angeles block. 100% family owned and operated since 2006, growing award-winning flower in-house.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/our-story",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Our Story | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Originals started with elementary school friends from one Los Angeles block. 100% family owned and operated since 2006, growing award-winning flower in-house.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/our-story",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/our-story.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Originals Factory &amp; Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "twitter:description",
+      "from": null,
+      "to": "It’s the holiday season once again and time to fill those stockings with fun mini-gifts. For the consummate cannabis consumer in your life, there’s nothing better than a Christmas morning wake and bake. Originals Factory & Weed Shop in downtown LA has all of the pre-rolled goodies you need to pick up last second. Check out our official gift guide below to see our top five picks for the best pre-roll stocking stuffers in California.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/pre-roll-stocking-stuffer-gift-guide",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/privacy-policy",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/privacy-policy",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Privacy Policy | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/privacy-policy",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Read the Originals privacy notice: what information is collected, how it is used and your rights.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/privacy-policy",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/privacy-policy",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/prop-65-warning",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/prop-65-warning",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Prop 65 Warning | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/prop-65-warning",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Read our Prop 65 warning here.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/prop-65-warning",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/prop-65-warning",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Cannabis Stores | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Shop one of our Southern California cannabis stores for top-quality brands offering popular strains in a variety of lab tested products.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "alt",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "img-lazy",
+      "from": null,
+      "to": "4 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/retail",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Rewards Program | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Join the Originals Rewards Program today: VIP Program login and join.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "description",
+      "from": null,
+      "to": "Join the Originals Rewards Program today: VIP Program login and join.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "og:description",
+      "from": null,
+      "to": "Join the Originals Rewards Program today: VIP Program login and join.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/rewards-program-and-opt-in",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "twitter:title",
+      "from": null,
+      "to": "San Diego Store | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Shop one of our Southern California cannabis stores for top-quality brands offering popular strains in a variety of lab tested products.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "alt",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "img-lazy",
+      "from": null,
+      "to": "12 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/san-diego-store",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Shop Cannabis | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Shop Originals Los Angeles or Originals San Diego: flower, pre-rolls, cartridges, extracts, edibles, drinks, tinctures, topicals and merch, straight to the live menu.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "alt",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "13 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "title",
+      "from": null,
+      "to": "Shop Cannabis | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "description",
+      "from": null,
+      "to": "Shop Originals Los Angeles or Originals San Diego: flower, pre-rolls, cartridges, extracts, edibles, drinks, tinctures, topicals and merch, straight to the live menu.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/shop",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Shop Cannabis | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Shop Originals Los Angeles or Originals San Diego: flower, pre-rolls, cartridges, extracts, edibles, drinks, tinctures, topicals and merch, straight to the live menu.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/shop",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/shop.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Strain Library | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The Originals strain library: house genetics grown in-house, from Originals OG and King Louie to Gelato, Oaksterdam OG and Bussin'.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "title",
+      "from": null,
+      "to": "Strain Library | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "description",
+      "from": null,
+      "to": "The Originals strain library: house genetics grown in-house, from Originals OG and King Louie to Gelato, Oaksterdam OG and Bussin'.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/strains",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Strain Library | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:description",
+      "from": null,
+      "to": "The Originals strain library: house genetics grown in-house, from Originals OG and King Louie to Gelato, Oaksterdam OG and Bussin'.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/strains",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/strains.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Four Sugar-Free Cannabis Edibles Worth Trying At Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "twitter:description",
+      "from": null,
+      "to": "For customers wanting to try healthier alternatives to their favorite products, Originals carries a wide array of sugar-free edibles. Whether you’re looking to watch your sugar intake or can’t consume sugar for health reasons, we have options that cater to your needs.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/sugar-free-edibles-originals-la",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/terms-of-service",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/terms-of-service",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Terms Of Service | Originals LA",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/terms-of-service",
+      "field": "twitter:description",
+      "from": null,
+      "to": "The terms of service for the Originals website.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/terms-of-service",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/terms-of-service",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "twitter:title",
+      "from": null,
+      "to": "THC Extract For Fast Relief",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "twitter:description",
+      "from": null,
+      "to": "There is a broad category of products called extracts. They can be full-spectrum extracts, or they can be isolates like THC extract. These products are becoming increasingly more popular as users discover their potency and versatility. \n‌",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/thc-extract-for-fast-relief",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "twitter:title",
+      "from": null,
+      "to": "The Wedding Cake Strain by Originals Has Tart, Vanilla Flavors And High-THC",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Our Wedding Cake strain is definitely worth celebrating and may turn any day into a special occasion",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "alt",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "img-lazy",
+      "from": null,
+      "to": "11 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wedding-cake-strain-originals",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "robots",
+      "from": null,
+      "to": "index, follow",
+      "source": "default:index"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "twitter:title",
+      "from": null,
+      "to": "Wholesale | Originals",
+      "source": "derived:title"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "twitter:description",
+      "from": null,
+      "to": "Originals wholesale: The Brand Behind The Brands. Carry Originals flower, grown in-house, in your dispensary.",
+      "source": "derived:description"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "jsonld:Organization",
+      "from": null,
+      "to": "Originals",
+      "source": "client-facts"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "alt",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "img-dimensions",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "img-lazy",
+      "from": null,
+      "to": "1 images",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "title",
+      "from": null,
+      "to": "Wholesale | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "description",
+      "from": null,
+      "to": "Originals wholesale: The Brand Behind The Brands. Carry Originals flower, grown in-house, in your dispensary.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "canonical",
+      "from": null,
+      "to": "https://originalsca.com/wholesale",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "lang",
+      "from": null,
+      "to": "en",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:title",
+      "from": null,
+      "to": "Wholesale | Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:description",
+      "from": null,
+      "to": "Originals wholesale: The Brand Behind The Brands. Carry Originals flower, grown in-house, in your dispensary.",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:type",
+      "from": null,
+      "to": "website",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:image",
+      "from": null,
+      "to": "https://originalsca.com/assets/img/og-default.webp",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:url",
+      "from": null,
+      "to": "https://originalsca.com/wholesale",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "og:site_name",
+      "from": null,
+      "to": "Originals",
+      "source": "present-from-an-earlier-seo-pass"
+    },
+    {
+      "page": "https://originalsca.com/wholesale.html",
+      "field": "twitter:card",
+      "from": null,
+      "to": "summary_large_image",
+      "source": "present-from-an-earlier-seo-pass"
+    }
+  ]
+}

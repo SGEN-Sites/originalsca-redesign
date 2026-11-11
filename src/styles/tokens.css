@@ -1,0 +1,248 @@
+/* tokens.css — derived by sr-tokens.mjs from computed (browser capture).
+   Every value below traces to audit/design-baseline.json. Change values HERE,
+   never at a call site: one source, or the system is not a system. */
+:root {
+  /* --- colour ------------------------------------------------------ */
+  --c-1: #000000;
+  --c-2: #ffffff;
+  --c-3: #000000e6;
+  --c-4: #eeeeee;
+  --c-5: #f5f5f5;
+  --c-6: #282828;
+  --c-7: #463939;
+  --c-8: #666666;
+  --c-9: #000503;
+
+  /* --- type -------------------------------------------------------- */
+  --font-body: "ParaType - News Gothic Demi";
+  --font-display: Arial;
+  --fs-1: 11px;
+  --fs-2: 12px;
+  --fs-3: 13px;
+  --fs-4: 13.3333px;
+  --fs-5: 14px;
+  --fs-6: 14.6667px;
+  --fs-7: 15px;
+  --fs-8: 16px;
+  --fs-9: 18px;
+  --fs-10: 19px;
+  --fs-11: 20px;
+  --fs-12: 22px;
+  --fs-13: 24px;
+  --fs-14: 28px;
+  --fs-15: 36px;
+  --fs-16: 40px;
+  --fs-17: 42px;
+  --fs-18: 45px;
+  --fs-19: 48px;
+  --fs-20: 60px;
+  --fs-21: 72px;
+
+  /* --- space ------------------------------------------------------- */
+  --sp-1: 1px;
+  --sp-2: 2px;
+  --sp-3: 6px;
+  --sp-4: 8px;
+  --sp-5: 9px;
+  --sp-6: 10px;
+  --sp-7: 10.3125px;
+  --sp-8: 11px;
+  --sp-9: 12px;
+  --sp-10: 13px;
+  --sp-11: 14.1562px;
+  --sp-12: 14.2188px;
+  --sp-13: 15px;
+  --sp-14: 16px;
+  --sp-15: 17px;
+  --sp-16: 18px;
+  --sp-17: 20px;
+  --sp-18: 23px;
+  --sp-19: 24px;
+  --sp-20: 26px;
+  --sp-21: 30px;
+  --sp-22: 35px;
+  --sp-23: 36px;
+  --sp-24: 40px;
+  --sp-25: 50px;
+  --sp-26: 60px;
+  --sp-27: 66px;
+  --sp-28: 71px;
+  --sp-29: 72.5px;
+  --sp-30: 75px;
+  --sp-31: 80px;
+  --sp-32: 90px;
+  --sp-33: 100px;
+  --sp-34: 126px;
+  --sp-35: 130px;
+  --sp-36: 147px;
+  --sp-37: 152px;
+  --sp-38: 160px;
+  --sp-39: 168px;
+  --sp-40: 173.5px;
+  --sp-41: 174px;
+  --sp-42: 180px;
+  --sp-43: 183px;
+  --sp-44: 200px;
+  --sp-45: 215px;
+  --sp-46: 275px;
+  --sp-47: 293px;
+  --sp-48: 486.5px;
+  --sp-49: 487px;
+
+  /* --- shape ------------------------------------------------------- */
+  --radius-1: 8px;
+  --radius-2: 4px;
+  --radius-3: 50%;
+  --radius-4: 25px;
+  --shadow-1: rgba(0, 56, 255, 0.22) 0px 0px 0px 4px;
+  --shadow-2: rgba(0, 0, 0, 0.25) 0px 3px 11px 0px;
+  --shadow-3: rgb(128, 128, 128) 0px 0px 5px 0px;
+
+  /* --- layout ------------------------------------------------------ */
+  --container: 100%;
+  --bp-1: 0px;
+  --bp-2: 98px;
+  --bp-3: 320px;
+  --bp-4: 359px;
+  --bp-5: 444px;
+  --bp-6: 467px;
+  --bp-7: 468px;
+  --bp-8: 480px;
+  --bp-9: 600px;
+  --bp-10: 650px;
+  --bp-11: 689px;
+  --bp-12: 690px;
+  --bp-13: 767px;
+  --bp-14: 768px;
+  --bp-15: 860px;
+  --bp-16: 1024px;
+  --bp-17: 1025px;
+  --bp-18: 1140px;
+  --bp-19: 1150px;
+  --bp-20: 1200px;
+  --bp-21: 1259px;
+  --bp-22: 1400px;
+  --bp-23: 1440px;
+  --bp-24: 1560px;
+}
+
+/* ===========================================================================================
+   SUNDAY CRUISE: the redesign's brand layer (docs/DESIGN.md). Built ON the measured tokens above:
+   the live site measures monochrome (ink #282828 = --c-6, warm dark #463939 = --c-7); the operator
+   brief adds Originals red #E11D2C. Every colour the authored sheets use is declared here.
+   Contrast notes are against --ink unless stated. FOUNDATION may tune values; nobody renames a token.
+   =========================================================================================== */
+:root {
+  /* grounds */
+  --ink: #0a0a0b;            /* main ground; --text on it 17.97:1 (measured) */
+  --ink-2: #121214;          /* raised ground */
+  --ink-3: #1b1b1f;          /* cards on ink */
+  --concrete: #2b2b2f;       /* concrete bands */
+  --concrete-2: #3a3a40;
+  --live-ink: var(--c-6);    /* measured live text colour #282828 */
+  --warm-dark: var(--c-7);   /* measured live #463939: hairlines, muted text on paper (9.77:1 on --paper) */
+  --paper: #f3f1ec;          /* the one "lights on" band (family wall); --text-on-paper on it 15.99:1 */
+  --paper-2: #e7e3da;
+  --white: #ffffff;
+  --black: #000000;
+  /* text */
+  --text: #f4f4f2;           /* 17.97:1 on --ink */
+  --steel: #a3a3ab;          /* secondary text, 7.90:1 on --ink, 6.85:1 on --ink-3 */
+  --steel-2: #7d7d86;        /* tertiary, large text only (4.85:1 on --ink) */
+  --text-on-paper: #16161a;  /* 15.99:1 on --paper */
+  --muted-on-paper: #4d4646; /* 8.16:1 on --paper */
+  /* the accent */
+  --red: #e11d2c;            /* Originals red; large text and fills only (4.16:1 on --ink); white label on it 4.76:1 */
+  --red-hi: #ff3b47;         /* hover, links on ink (5.62:1) */
+  --red-deep: #9e0f1b;       /* links on paper (7.33:1 on --paper) */
+  --red-ink: #2a0508;        /* red shadow on dark */
+  /* candy paint (hover colour shifts, never body text) */
+  --candy-1: #e11d2c;
+  --candy-2: #ff3d6e;
+  --candy-3: #7b2cbf;
+  --candy-4: #ff8a3d;
+  /* stage light (pools and beams only) */
+  --stage-violet: #8b3dff;
+  --stage-pink: #ff2e93;
+  --stage-blue: #3d5cff;
+  /* window light (shafts only) */
+  --dusk: #f2b15c;
+  --dusk-2: #ffd9a0;
+  /* grow light */
+  --grow: #e04bff;
+  /* chrome ramp (display only) */
+  --chrome-1: #fdfdfe;
+  --chrome-2: #e4e8ed;
+  --chrome-3: #a7aeb6;
+  --chrome-4: #2b2f35;
+  --chrome-5: #c3c9cf;
+  --chrome-6: #ffffff;
+  --chrome-7: #737a82;
+  --plate-1: #5c6168;
+  --plate-2: #121316;
+  --shine-0: rgba(255, 255, 255, 0);
+  --shine-1: rgba(255, 255, 255, 0.15);
+  --shine-2: rgba(255, 255, 255, 0.95);
+  /* scrims and glass */
+  --scrim-1: rgba(10, 10, 11, 0.86);
+  --scrim-2: rgba(10, 10, 11, 0.6);
+  --scrim-3: rgba(10, 10, 11, 0.32);
+  --glass: rgba(20, 20, 23, 0.72);
+  --glass-edge: rgba(255, 255, 255, 0.14);
+  --hair: rgba(255, 255, 255, 0.12);
+  --hair-2: rgba(255, 255, 255, 0.22);
+  --hair-paper: rgba(22, 22, 26, 0.14);
+  --shadow-deep: 0 30px 60px -20px rgba(0, 0, 0, 0.75), 0 12px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 18px 40px -18px rgba(0, 0, 0, 0.8);
+  --shadow-paper: 0 22px 40px -22px rgba(30, 20, 20, 0.45), 0 2px 6px rgba(30, 20, 20, 0.12);
+  --glow-red: 0 0 0 1px rgba(225, 29, 44, 0.5), 0 10px 30px -8px rgba(225, 29, 44, 0.55);
+  --status-open: #39d98a;
+  --status-closed: #ff5a5f;
+  --focus: #ffd166;
+
+  /* type */
+  --f-black: 'UnifrakturCook', 'Old English Text MT', serif;
+  --f-display: 'League Gothic', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --f-ui: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --f-body: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+  --f-script: 'Yellowtail', 'Brush Script MT', cursive;
+  --f-sign: 'Mrs Saint Delafield', 'Brush Script MT', cursive;
+  --fs-body: 1.0625rem;      /* 17px */
+  --fs-small: 0.9375rem;     /* 15px */
+  --fs-kicker: 0.8125rem;    /* 13px: the floor for visible text */
+  --fs-h3: clamp(1.6rem, 1.1rem + 1.6vw, 2.4rem);
+  --fs-h2: clamp(2.6rem, 1.6rem + 3.6vw, 5.4rem);
+  --fs-h1: clamp(3rem, 1.6rem + 5vw, 6.6rem);
+  --fs-mega: clamp(4.2rem, 2rem + 9vw, 11rem);
+  --lh-display: 0.92;
+  --lh-body: 1.65;
+  --track-kicker: 0.16em;
+
+  /* space + layout */
+  --gutter: clamp(16px, 4vw, 56px);
+  --wrap: 1320px;
+  --wrap-narrow: 860px;
+  --band-y: clamp(72px, 9vw, 150px);
+  --radius: 14px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+  --header-h: 72px;
+  --dash-h: 64px;
+  --bottom-stack: var(--dash-h);
+
+  /* motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-1: 0.25s;
+  --t-2: 0.5s;
+  --t-3: 1s;
+  --t-slow: 2.4s;
+  --z-header: 50;
+  --z-dash: 60;
+  --z-drawer: 80;
+  --z-gate: 100;
+}
+@media (max-width: 760px) {
+  :root { --header-h: 62px; --dash-h: 72px; --radius-lg: 20px; }
+}

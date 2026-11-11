@@ -1,0 +1,1255 @@
+{
+  "schema": "site-reforge/pixeldiff-report@1",
+  "generated": "2026-11-11T01:36:10.207Z",
+  "threshold": 0.02,
+  "tolerance": 8,
+  "pairCount": 64,
+  "verdict": "DRIFT",
+  "worst": [
+    {
+      "file": "privacy-policy.1024.png",
+      "ratio": 0.994021,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "privacy-policy.390.png",
+      "ratio": 0.993826,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "privacy-policy.768.png",
+      "ratio": 0.992537,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "privacy-policy.1440.png",
+      "ratio": 0.989964,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "brands.390.png",
+      "ratio": 0.979407,
+      "verdict": "SIZE-MISMATCH"
+    }
+  ],
+  "unpairedBaseline": [],
+  "unpairedRebuild": [],
+  "pairs": [
+    {
+      "file": "blog.1024.png",
+      "slug": "blog",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2548577,
+      "compared": 2842624,
+      "ratio": 0.896558,
+      "baselineSize": [
+        1024,
+        2776
+      ],
+      "rebuildSize": [
+        1024,
+        5499
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/blog.1024.png"
+    },
+    {
+      "file": "blog.1440.png",
+      "slug": "blog",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3457924,
+      "compared": 3924000,
+      "ratio": 0.881224,
+      "baselineSize": [
+        1440,
+        2725
+      ],
+      "rebuildSize": [
+        1440,
+        6072
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/blog.1440.png"
+    },
+    {
+      "file": "blog.390.png",
+      "slug": "blog",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3613347,
+      "compared": 3757824,
+      "ratio": 0.961553,
+      "baselineSize": [
+        768,
+        4893
+      ],
+      "rebuildSize": [
+        780,
+        25738
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/blog.390.png"
+    },
+    {
+      "file": "blog.768.png",
+      "slug": "blog",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2099440,
+      "compared": 2278656,
+      "ratio": 0.92135,
+      "baselineSize": [
+        768,
+        2967
+      ],
+      "rebuildSize": [
+        768,
+        7852
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/blog.768.png"
+    },
+    {
+      "file": "brands.1024.png",
+      "slug": "brands",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1531174,
+      "compared": 1626112,
+      "ratio": 0.941617,
+      "baselineSize": [
+        1024,
+        1588
+      ],
+      "rebuildSize": [
+        1024,
+        3295
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/brands.1024.png"
+    },
+    {
+      "file": "brands.1440.png",
+      "slug": "brands",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2094652,
+      "compared": 2286720,
+      "ratio": 0.916007,
+      "baselineSize": [
+        1440,
+        1588
+      ],
+      "rebuildSize": [
+        1440,
+        3451
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/brands.1440.png"
+    },
+    {
+      "file": "brands.390.png",
+      "slug": "brands",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1256900,
+      "compared": 1283328,
+      "ratio": 0.979407,
+      "baselineSize": [
+        768,
+        1671
+      ],
+      "rebuildSize": [
+        780,
+        10778
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/brands.390.png"
+    },
+    {
+      "file": "brands.768.png",
+      "slug": "brands",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1239958,
+      "compared": 1283328,
+      "ratio": 0.966205,
+      "baselineSize": [
+        768,
+        1671
+      ],
+      "rebuildSize": [
+        768,
+        4247
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/brands.768.png"
+    },
+    {
+      "file": "bussin-merch.1024.png",
+      "slug": "bussin-merch",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2247609,
+      "compared": 2863104,
+      "ratio": 0.785025,
+      "baselineSize": [
+        1024,
+        2963
+      ],
+      "rebuildSize": [
+        1024,
+        2796
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/bussin-merch.1024.png"
+    },
+    {
+      "file": "bussin-merch.1440.png",
+      "slug": "bussin-merch",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3557893,
+      "compared": 4227840,
+      "ratio": 0.841539,
+      "baselineSize": [
+        1440,
+        3227
+      ],
+      "rebuildSize": [
+        1440,
+        2936
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/bussin-merch.1440.png"
+    },
+    {
+      "file": "bussin-merch.390.png",
+      "slug": "bussin-merch",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1763975,
+      "compared": 1981440,
+      "ratio": 0.890249,
+      "baselineSize": [
+        768,
+        2580
+      ],
+      "rebuildSize": [
+        780,
+        8832
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/bussin-merch.390.png"
+    },
+    {
+      "file": "bussin-merch.768.png",
+      "slug": "bussin-merch",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1481664,
+      "compared": 1981440,
+      "ratio": 0.747771,
+      "baselineSize": [
+        768,
+        2580
+      ],
+      "rebuildSize": [
+        768,
+        3765
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/bussin-merch.768.png"
+    },
+    {
+      "file": "contact.1024.png",
+      "slug": "contact",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1763193,
+      "compared": 2344960,
+      "ratio": 0.751907,
+      "baselineSize": [
+        1024,
+        2290
+      ],
+      "rebuildSize": [
+        1024,
+        3083
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.1024.png"
+    },
+    {
+      "file": "contact.1440.png",
+      "slug": "contact",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2439568,
+      "compared": 3263040,
+      "ratio": 0.747637,
+      "baselineSize": [
+        1440,
+        2266
+      ],
+      "rebuildSize": [
+        1440,
+        3197
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.1440.png"
+    },
+    {
+      "file": "contact.390.png",
+      "slug": "contact",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1730034,
+      "compared": 1800192,
+      "ratio": 0.961027,
+      "baselineSize": [
+        768,
+        2344
+      ],
+      "rebuildSize": [
+        780,
+        9752
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.390.png"
+    },
+    {
+      "file": "contact.768.png",
+      "slug": "contact",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1531199,
+      "compared": 1800192,
+      "ratio": 0.850575,
+      "baselineSize": [
+        768,
+        2344
+      ],
+      "rebuildSize": [
+        768,
+        3988
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.768.png"
+    },
+    {
+      "file": "deals.1024.png",
+      "slug": "deals",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3709371,
+      "compared": 4552704,
+      "ratio": 0.814762,
+      "baselineSize": [
+        1024,
+        4711
+      ],
+      "rebuildSize": [
+        1024,
+        4446
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/deals.1024.png"
+    },
+    {
+      "file": "deals.1440.png",
+      "slug": "deals",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 5305048,
+      "compared": 6454080,
+      "ratio": 0.821968,
+      "baselineSize": [
+        1440,
+        5161
+      ],
+      "rebuildSize": [
+        1440,
+        4482
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/deals.1440.png"
+    },
+    {
+      "file": "deals.390.png",
+      "slug": "deals",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3284694,
+      "compared": 3594240,
+      "ratio": 0.913877,
+      "baselineSize": [
+        768,
+        4680
+      ],
+      "rebuildSize": [
+        780,
+        11882
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/deals.390.png"
+    },
+    {
+      "file": "deals.768.png",
+      "slug": "deals",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2814153,
+      "compared": 3594240,
+      "ratio": 0.782962,
+      "baselineSize": [
+        768,
+        4680
+      ],
+      "rebuildSize": [
+        768,
+        5240
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/deals.768.png"
+    },
+    {
+      "file": "faqs.1024.png",
+      "slug": "faqs",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2181947,
+      "compared": 2648064,
+      "ratio": 0.823978,
+      "baselineSize": [
+        1024,
+        2586
+      ],
+      "rebuildSize": [
+        1024,
+        3600
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.1024.png"
+    },
+    {
+      "file": "faqs.1440.png",
+      "slug": "faqs",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3383291,
+      "compared": 3723840,
+      "ratio": 0.908549,
+      "baselineSize": [
+        1440,
+        2586
+      ],
+      "rebuildSize": [
+        1440,
+        3836
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.1440.png"
+    },
+    {
+      "file": "faqs.390.png",
+      "slug": "faqs",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1995979,
+      "compared": 2095872,
+      "ratio": 0.952338,
+      "baselineSize": [
+        768,
+        2729
+      ],
+      "rebuildSize": [
+        780,
+        10752
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.390.png"
+    },
+    {
+      "file": "faqs.768.png",
+      "slug": "faqs",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1844772,
+      "compared": 2095872,
+      "ratio": 0.880193,
+      "baselineSize": [
+        768,
+        2729
+      ],
+      "rebuildSize": [
+        768,
+        4418
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.768.png"
+    },
+    {
+      "file": "index.1024.png",
+      "slug": "index",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4492349,
+      "compared": 4974592,
+      "ratio": 0.903059,
+      "baselineSize": [
+        1024,
+        4858
+      ],
+      "rebuildSize": [
+        1024,
+        14328
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.1024.png"
+    },
+    {
+      "file": "index.1440.png",
+      "slug": "index",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 6477421,
+      "compared": 7060320,
+      "ratio": 0.91744,
+      "baselineSize": [
+        1440,
+        4903
+      ],
+      "rebuildSize": [
+        1440,
+        15199
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.1440.png"
+    },
+    {
+      "file": "index.390.png",
+      "slug": "index",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3883399,
+      "compared": 4297728,
+      "ratio": 0.903593,
+      "baselineSize": [
+        768,
+        5596
+      ],
+      "rebuildSize": [
+        780,
+        36112
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.390.png"
+    },
+    {
+      "file": "index.768.png",
+      "slug": "index",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3424364,
+      "compared": 3815424,
+      "ratio": 0.897505,
+      "baselineSize": [
+        768,
+        4968
+      ],
+      "rebuildSize": [
+        768,
+        17465
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.768.png"
+    },
+    {
+      "file": "jobs.1024.png",
+      "slug": "jobs",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3391217,
+      "compared": 4000768,
+      "ratio": 0.847642,
+      "baselineSize": [
+        1024,
+        3907
+      ],
+      "rebuildSize": [
+        1024,
+        4585
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/jobs.1024.png"
+    },
+    {
+      "file": "jobs.1440.png",
+      "slug": "jobs",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4571179,
+      "compared": 5544000,
+      "ratio": 0.824527,
+      "baselineSize": [
+        1440,
+        3850
+      ],
+      "rebuildSize": [
+        1440,
+        4655
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/jobs.1440.png"
+    },
+    {
+      "file": "jobs.390.png",
+      "slug": "jobs",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2985878,
+      "compared": 3052800,
+      "ratio": 0.978078,
+      "baselineSize": [
+        768,
+        3975
+      ],
+      "rebuildSize": [
+        780,
+        13718
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/jobs.390.png"
+    },
+    {
+      "file": "jobs.768.png",
+      "slug": "jobs",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2620371,
+      "compared": 3052800,
+      "ratio": 0.85835,
+      "baselineSize": [
+        768,
+        3975
+      ],
+      "rebuildSize": [
+        768,
+        5441
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/jobs.768.png"
+    },
+    {
+      "file": "los-angeles-store.1024.png",
+      "slug": "los-angeles-store",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1388518,
+      "compared": 1597440,
+      "ratio": 0.869214,
+      "baselineSize": [
+        1024,
+        1560
+      ],
+      "rebuildSize": [
+        1024,
+        5618
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles-store.1024.png"
+    },
+    {
+      "file": "los-angeles-store.1440.png",
+      "slug": "los-angeles-store",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1963039,
+      "compared": 2246400,
+      "ratio": 0.87386,
+      "baselineSize": [
+        1440,
+        1560
+      ],
+      "rebuildSize": [
+        1440,
+        5478
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles-store.1440.png"
+    },
+    {
+      "file": "los-angeles-store.390.png",
+      "slug": "los-angeles-store",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1192831,
+      "compared": 1241088,
+      "ratio": 0.961117,
+      "baselineSize": [
+        768,
+        1616
+      ],
+      "rebuildSize": [
+        780,
+        14872
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles-store.390.png"
+    },
+    {
+      "file": "los-angeles-store.768.png",
+      "slug": "los-angeles-store",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1099671,
+      "compared": 1241088,
+      "ratio": 0.886054,
+      "baselineSize": [
+        768,
+        1616
+      ],
+      "rebuildSize": [
+        768,
+        7166
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles-store.768.png"
+    },
+    {
+      "file": "los-angeles.1024.png",
+      "slug": "los-angeles",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1578697,
+      "compared": 1856512,
+      "ratio": 0.850356,
+      "baselineSize": [
+        1024,
+        1813
+      ],
+      "rebuildSize": [
+        1024,
+        3576
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles.1024.png"
+    },
+    {
+      "file": "los-angeles.1440.png",
+      "slug": "los-angeles",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2151405,
+      "compared": 2610720,
+      "ratio": 0.824066,
+      "baselineSize": [
+        1440,
+        1813
+      ],
+      "rebuildSize": [
+        1440,
+        3724
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles.1440.png"
+    },
+    {
+      "file": "los-angeles.390.png",
+      "slug": "los-angeles",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1209196,
+      "compared": 1433856,
+      "ratio": 0.843318,
+      "baselineSize": [
+        768,
+        1867
+      ],
+      "rebuildSize": [
+        780,
+        11368
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles.390.png"
+    },
+    {
+      "file": "los-angeles.768.png",
+      "slug": "los-angeles",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1226804,
+      "compared": 1433856,
+      "ratio": 0.855598,
+      "baselineSize": [
+        768,
+        1867
+      ],
+      "rebuildSize": [
+        768,
+        4524
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/los-angeles.768.png"
+    },
+    {
+      "file": "originals-gelato-strain-profile.1024.png",
+      "slug": "originals-gelato-strain-profile",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3825703,
+      "compared": 4586496,
+      "ratio": 0.834123,
+      "baselineSize": [
+        1024,
+        4479
+      ],
+      "rebuildSize": [
+        1024,
+        5165
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-gelato-strain-profile.1024.png"
+    },
+    {
+      "file": "originals-gelato-strain-profile.1440.png",
+      "slug": "originals-gelato-strain-profile",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 5329720,
+      "compared": 6311520,
+      "ratio": 0.844443,
+      "baselineSize": [
+        1440,
+        4383
+      ],
+      "rebuildSize": [
+        1440,
+        5388
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-gelato-strain-profile.1440.png"
+    },
+    {
+      "file": "originals-gelato-strain-profile.390.png",
+      "slug": "originals-gelato-strain-profile",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4801591,
+      "compared": 5020416,
+      "ratio": 0.956413,
+      "baselineSize": [
+        768,
+        6537
+      ],
+      "rebuildSize": [
+        780,
+        15722
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-gelato-strain-profile.390.png"
+    },
+    {
+      "file": "originals-gelato-strain-profile.768.png",
+      "slug": "originals-gelato-strain-profile",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3221865,
+      "compared": 3590400,
+      "ratio": 0.897355,
+      "baselineSize": [
+        768,
+        4675
+      ],
+      "rebuildSize": [
+        768,
+        6345
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-gelato-strain-profile.768.png"
+    },
+    {
+      "file": "originals-hall-of-flowers-palm-springs-recap.1024.png",
+      "slug": "originals-hall-of-flowers-palm-springs-recap",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 5460716,
+      "compared": 5819392,
+      "ratio": 0.938365,
+      "baselineSize": [
+        1024,
+        5683
+      ],
+      "rebuildSize": [
+        1024,
+        9060
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.1024.png"
+    },
+    {
+      "file": "originals-hall-of-flowers-palm-springs-recap.1440.png",
+      "slug": "originals-hall-of-flowers-palm-springs-recap",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 7503648,
+      "compared": 7981920,
+      "ratio": 0.940081,
+      "baselineSize": [
+        1440,
+        5543
+      ],
+      "rebuildSize": [
+        1440,
+        9292
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.1440.png"
+    },
+    {
+      "file": "originals-hall-of-flowers-palm-springs-recap.390.png",
+      "slug": "originals-hall-of-flowers-palm-springs-recap",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 5398044,
+      "compared": 5970432,
+      "ratio": 0.90413,
+      "baselineSize": [
+        768,
+        7774
+      ],
+      "rebuildSize": [
+        780,
+        22502
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.390.png"
+    },
+    {
+      "file": "originals-hall-of-flowers-palm-springs-recap.768.png",
+      "slug": "originals-hall-of-flowers-palm-springs-recap",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4100865,
+      "compared": 4539648,
+      "ratio": 0.903344,
+      "baselineSize": [
+        768,
+        5911
+      ],
+      "rebuildSize": [
+        768,
+        10289
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.768.png"
+    },
+    {
+      "file": "privacy-policy.1024.png",
+      "slug": "privacy-policy",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 15453409,
+      "compared": 15546368,
+      "ratio": 0.994021,
+      "baselineSize": [
+        1024,
+        15182
+      ],
+      "rebuildSize": [
+        1024,
+        23853
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/privacy-policy.1024.png"
+    },
+    {
+      "file": "privacy-policy.1440.png",
+      "slug": "privacy-policy",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 21157995,
+      "compared": 21372480,
+      "ratio": 0.989964,
+      "baselineSize": [
+        1440,
+        14842
+      ],
+      "rebuildSize": [
+        1440,
+        23985
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/privacy-policy.1440.png"
+    },
+    {
+      "file": "privacy-policy.390.png",
+      "slug": "privacy-policy",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 15110229,
+      "compared": 15204096,
+      "ratio": 0.993826,
+      "baselineSize": [
+        768,
+        19797
+      ],
+      "rebuildSize": [
+        780,
+        66738
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/privacy-policy.390.png"
+    },
+    {
+      "file": "privacy-policy.768.png",
+      "slug": "privacy-policy",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 15090626,
+      "compared": 15204096,
+      "ratio": 0.992537,
+      "baselineSize": [
+        768,
+        19797
+      ],
+      "rebuildSize": [
+        768,
+        24569
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/privacy-policy.768.png"
+    },
+    {
+      "file": "retail.1024.png",
+      "slug": "retail",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1809489,
+      "compared": 1932288,
+      "ratio": 0.936449,
+      "baselineSize": [
+        1024,
+        1887
+      ],
+      "rebuildSize": [
+        1024,
+        3782
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/retail.1024.png"
+    },
+    {
+      "file": "retail.1440.png",
+      "slug": "retail",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2464655,
+      "compared": 2715840,
+      "ratio": 0.907511,
+      "baselineSize": [
+        1440,
+        1886
+      ],
+      "rebuildSize": [
+        1440,
+        3766
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/retail.1440.png"
+    },
+    {
+      "file": "retail.390.png",
+      "slug": "retail",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1425470,
+      "compared": 1485312,
+      "ratio": 0.959711,
+      "baselineSize": [
+        768,
+        1934
+      ],
+      "rebuildSize": [
+        780,
+        12410
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/retail.390.png"
+    },
+    {
+      "file": "retail.768.png",
+      "slug": "retail",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1389204,
+      "compared": 1485312,
+      "ratio": 0.935294,
+      "baselineSize": [
+        768,
+        1934
+      ],
+      "rebuildSize": [
+        768,
+        4436
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/retail.768.png"
+    },
+    {
+      "file": "rewards-program-and-opt-in.1024.png",
+      "slug": "rewards-program-and-opt-in",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1292708,
+      "compared": 1361920,
+      "ratio": 0.949181,
+      "baselineSize": [
+        1024,
+        1330
+      ],
+      "rebuildSize": [
+        1024,
+        2809
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/rewards-program-and-opt-in.1024.png"
+    },
+    {
+      "file": "rewards-program-and-opt-in.1440.png",
+      "slug": "rewards-program-and-opt-in",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1716719,
+      "compared": 1915200,
+      "ratio": 0.896365,
+      "baselineSize": [
+        1440,
+        1330
+      ],
+      "rebuildSize": [
+        1440,
+        2984
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/rewards-program-and-opt-in.1440.png"
+    },
+    {
+      "file": "rewards-program-and-opt-in.390.png",
+      "slug": "rewards-program-and-opt-in",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 990971,
+      "compared": 1048320,
+      "ratio": 0.945294,
+      "baselineSize": [
+        768,
+        1365
+      ],
+      "rebuildSize": [
+        780,
+        9046
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/rewards-program-and-opt-in.390.png"
+    },
+    {
+      "file": "rewards-program-and-opt-in.768.png",
+      "slug": "rewards-program-and-opt-in",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 984276,
+      "compared": 1048320,
+      "ratio": 0.938908,
+      "baselineSize": [
+        768,
+        1365
+      ],
+      "rebuildSize": [
+        768,
+        3679
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/rewards-program-and-opt-in.768.png"
+    },
+    {
+      "file": "san-diego-store.1024.png",
+      "slug": "san-diego-store",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1215715,
+      "compared": 1554432,
+      "ratio": 0.782096,
+      "baselineSize": [
+        1024,
+        1518
+      ],
+      "rebuildSize": [
+        1024,
+        5614
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/san-diego-store.1024.png"
+    },
+    {
+      "file": "san-diego-store.1440.png",
+      "slug": "san-diego-store",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1729315,
+      "compared": 2185920,
+      "ratio": 0.791115,
+      "baselineSize": [
+        1440,
+        1518
+      ],
+      "rebuildSize": [
+        1440,
+        5503
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/san-diego-store.1440.png"
+    },
+    {
+      "file": "san-diego-store.390.png",
+      "slug": "san-diego-store",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1073000,
+      "compared": 1220352,
+      "ratio": 0.879255,
+      "baselineSize": [
+        768,
+        1589
+      ],
+      "rebuildSize": [
+        780,
+        14620
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/san-diego-store.390.png"
+    },
+    {
+      "file": "san-diego-store.768.png",
+      "slug": "san-diego-store",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 963637,
+      "compared": 1220352,
+      "ratio": 0.789639,
+      "baselineSize": [
+        768,
+        1589
+      ],
+      "rebuildSize": [
+        768,
+        7191
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/san-diego-store.768.png"
+    }
+  ]
+}

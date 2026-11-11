@@ -1,0 +1,121 @@
+[
+  {
+    "name": "wall-reels-a",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: two vintage aluminium film reels, one half spooled with dark film that curls loosely across a dark wooden table, raking window light, deep shadow. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces, no silhouettes of people and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no labels, no engraving, no watermark. The reels are plain metal with no markings.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-reels-b",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: two vintage aluminium film reels, one half spooled with dark film that curls loosely across a dark wooden table, raking window light, deep shadow. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces, no silhouettes of people and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no labels, no engraving, no watermark. The reels are plain metal with no markings.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "stage-wide-b",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A very wide view of an empty, dark festival stage: a fan of purple, magenta and white light beams sweeps up and out through thick haze from a low row of spotlights along the front edge, black sky above, a glossy black floor below reflecting the beams. The stage platform is completely empty: no performers, no crew, no crowd, no equipment cases, nobody standing anywhere. The middle of the frame is calm for a headline. No people, no hands, no arms, no faces, no silhouettes of people and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no labels, no engraving, no watermark.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "lowrider-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "input": {
+      "image_url": "result:lowrider-side#0",
+      "model": "General Use (Heavy)",
+      "operating_resolution": "2048x2048",
+      "output_format": "png",
+      "refine_foreground": true
+    }
+  },
+  {
+    "name": "bud-a-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "input": {
+      "image_url": "result:bud-macro-a#0",
+      "model": "General Use (Heavy)",
+      "operating_resolution": "2048x2048",
+      "output_format": "png",
+      "refine_foreground": true
+    }
+  },
+  {
+    "name": "bud-b-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "input": {
+      "image_url": "result:bud-macro-b#0",
+      "model": "General Use (Heavy)",
+      "operating_resolution": "2048x2048",
+      "output_format": "png",
+      "refine_foreground": true
+    }
+  },
+  {
+    "name": "bud-c-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "input": {
+      "image_url": "result:bud-macro-c#0",
+      "model": "General Use (Heavy)",
+      "operating_resolution": "2048x2048",
+      "output_format": "png",
+      "refine_foreground": true
+    }
+  },
+  {
+    "name": "vid-stage",
+    "endpoint": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "input": {
+      "prompt": "The purple and pink spotlights sweep slowly and smoothly through drifting haze over the empty stage, panning gently left and right and pulsing softly; thin haze rolls across the glossy floor; the camera stays completely still; nobody appears; the shot ends exactly as it began.",
+      "image_url": "result:stage-crown#0",
+      "tail_image_url": "result:stage-crown#0",
+      "duration": "5",
+      "negative_prompt": "people, person, crowd, silhouettes of people, hands, faces, text, letters, logos, camera shake, strobing, morphing objects, distortion, blur, low quality",
+      "cfg_scale": 0.5
+    }
+  },
+  {
+    "name": "vid-grow",
+    "endpoint": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "input": {
+      "prompt": "The leaves of the cannabis plants stir very slightly in a gentle airflow while the magenta and white grow lights stay steady; the camera stays still; nobody appears; the shot ends exactly as it began.",
+      "image_url": "result:grow-room#0",
+      "tail_image_url": "result:grow-room#0",
+      "duration": "5",
+      "negative_prompt": "people, person, crowd, silhouettes of people, hands, faces, text, letters, logos, camera shake, strobing, morphing objects, distortion, blur, low quality",
+      "cfg_scale": 0.5
+    }
+  },
+  {
+    "name": "vid-arches",
+    "endpoint": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "input": {
+      "prompt": "Dust motes drift slowly upward through the shafts of light from the tall arched windows, and the light breathes very softly as if a thin cloud passes the sun; the camera stays completely still; nobody appears; the shot ends exactly as it began.",
+      "image_url": "result:warehouse-arches#0",
+      "tail_image_url": "result:warehouse-arches#0",
+      "duration": "5",
+      "negative_prompt": "people, person, crowd, silhouettes of people, hands, faces, text, letters, logos, camera shake, strobing, morphing objects, distortion, blur, low quality",
+      "cfg_scale": 0.5
+    }
+  }
+]

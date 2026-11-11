@@ -1,0 +1,15 @@
+node_modules/
+/dist/
+/dist-preview/
+/publish/
+/private/
+/assets/
+/audit/raw/
+/audit/screens/
+/audit/sweeps-raw/
+/audit/capture/
+/audit/css/
+.mcp.json
+.env*
+.DS_Store
+*.zip

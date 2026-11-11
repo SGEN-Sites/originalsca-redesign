@@ -1,0 +1,431 @@
+[
+  {
+    "name": "warehouse-hero",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. The interior of a vast old red-brick warehouse at dusk, seen straight on from the middle of the room: a back wall of very tall arched windows with black steel mullions pours dramatic shafts of hazy golden light down into the room, heavy dark timber roof trusses cross overhead, and a mirror-polished grey concrete floor reflects the arched windows like still water. The middle third of the frame and the whole lower half are open, calm and uncluttered: an empty floor waiting for a large sculpture, with soft haze in the light shafts. A faint purple and hot pink stage-light glow only at the very edges of the frame. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. No furniture, no shelves, no products, no sculptures.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "warehouse-arches",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Close view of two very tall arched warehouse windows in an old red-brick wall, black steel mullions, low sun streaming through them in solid shafts of dusty light that fall across a polished concrete floor, floating dust motes caught in the beams, deep shadow around the windows. The lower 40 percent of the frame is calm dark floor for a headline. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "3:4",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "lowrider-side",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A classic early-1960s American lowrider convertible with the top down, painted in deep candy-apple red with metal-flake sparkle, long chrome side trim, chrome wire-spoke wheels with thin whitewall tires, the body sitting very low over the wheels, shown in an exact side profile facing to the right, centered with space on both ends. It stands on a pure black seamless studio background with a glossy black floor giving a clean mirror reflection under the car; a long soft strip light rakes along the chrome and the candy paint. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No driver, no passengers, nobody inside the car. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. No badges, no emblems, no plates.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "la-boulevard-sunset",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A wide, empty Los Angeles boulevard at the end of a golden-hour sunset, rows of very tall skinny palm trees silhouetted against a sky that grades from deep orange at the horizon through hot pink to violet, low flat-roofed stucco storefronts and telephone wires in silhouette, the asphalt glowing with reflected sunset light, long shadows. The lower third of the frame is open, empty road, clear for a car to drive across. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No cars, no traffic. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "sd-palms-sunset",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A quiet San Diego neighborhood street at sunset lined on both sides with tall palm trees, the sun low at the far end of the street throwing warm orange light and long shadows down the road, hazy pink and purple sky, a calm, warm feeling. The left half of the frame is darker and calmer for text. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No cars. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "16:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "la-night-street",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A Los Angeles industrial side street at night after rain: brick warehouse walls, a chain-link fence, wet black asphalt reflecting a deep red and violet glow from somewhere off frame, a single sodium streetlight, mist. The right half of the frame is dark and calm for text. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No cars. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "16:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "grow-room",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Inside a spotless indoor cannabis cultivation room: long, even rows of tall, healthy flowering cannabis plants under ranks of LED grow lights that cast a soft magenta and white glow, symmetrical one-point perspective straight down the center aisle, the far end fading into darkness, deep shadows at the edges. The center of the frame stays calm for a headline. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. No equipment labels, no screens.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "bud-macro-a",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Extreme macro photograph of one dense, frosty cannabis flower covered in glistening trichomes, deep forest green leaves with purple edges and bright orange pistils, lit by a single hard rim light from the upper left, set against a pure black background with nothing else in frame. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "bud-macro-b",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Extreme macro photograph of one lime-green cannabis flower with lavender tips, heavily frosted with sparkling trichomes and copper pistils, a cool white rim light from the right, isolated on a pure black background. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "bud-macro-c",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Extreme macro photograph of one very dark purple, almost black cannabis flower dusted with bright white trichome frost and a few amber pistils, a single magenta rim light from behind, isolated on a pure black background. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "trichome-field",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Ultra macro view across the surface of a cannabis flower: a forest of crystal-clear trichome heads like tiny glass mushrooms, shallow depth of field, amber and violet light, the background melting into black. The left half is darker and calmer for text. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "stage-crown",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. An empty concert stage at night seen from the middle of an empty floor: purple and hot pink moving-head spotlights cut through thick haze in sharp beams that converge at center stage, a glossy black stage floor reflects the beams, a truss rig of lights across the top of the frame. The center of the stage is open and glowing, empty, as if waiting for the headliner. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No crowd, no performers, no instruments. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. No screens.",
+      "aspect_ratio": "16:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "stage-beams-wide",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. A very wide view of a dark festival stage with a fan of purple, magenta and white light beams sweeping up and out through haze from a low row of spotlights, the beams forming a crown-like silhouette of rays, black sky above, a glossy floor below. The middle of the frame is calm for a headline. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No crowd, no performers. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "21:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "bandana-red",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Flat-lay textile macro photograph of a classic red cotton paisley bandana filling the entire frame edge to edge: the traditional white and black paisley teardrop, flower and dot motif, soft natural folds, even soft studio light, rich deep red, crisp printed pattern. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "16:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "bandana-black",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Flat-lay textile macro photograph of a classic black cotton paisley bandana filling the entire frame edge to edge: the traditional white paisley teardrop, flower and dot motif printed on black, gentle folds, low raking studio light so the folds show, deep blacks. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "16:9",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": true,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-gloves",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a pair of worn leather boxing gloves hanging by their laces from a nail on a whitewashed brick wall, dramatic side light, long shadow. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-mic",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a vintage chrome stage microphone on a tall stand, caught in a single hard spotlight on a dark stage. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-basketball",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a worn leather basketball resting on the painted line of an outdoor court at dusk, a long low shadow. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-wheel",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a gleaming chrome wire-spoke lowrider wheel with a whitewall tire, close up, studio light tracing every spoke. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-trumpet",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a well-used brass trumpet resting on a wooden chair in an empty club, a single soft spotlight. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-brushes",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: paint brushes and spray paint cans standing in a dented coffee can on a scaffold board, paint drips, a blank wall behind. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-typewriter",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a vintage manual typewriter on a wooden desk with a blank sheet of paper in it, window light. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-crown",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a simple antique metal crown resting on a folded velvet cloth, one hard key light, deep shadow. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-camera",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a vintage rangefinder film camera with a worn leather strap on a dark table, raking light. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "wall-records",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Black and white fine-art gallery print, silver gelatin look, deep blacks, soft paper grain. Fine-art still life photograph: a stack of vinyl records in paper sleeves leaning against a turntable, soft lamp light. Calm, honest, monumental, like a portrait of an object in a museum. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark. The record sleeves and paper are plain.",
+      "aspect_ratio": "4:5",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-flower",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a single large frosty cannabis flower resting on a black mirror surface, its reflection below. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-preroll",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: three hand-rolled cannabis cones lying side by side on black glass, made of plain unbleached rolling paper twisted at the tip, the open wide end of each showing green ground cannabis flower, clearly cannabis cones and not cigarettes, no filters. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-vape",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a single blank clear-glass vape cartridge with a black mouthpiece, filled with golden amber oil, standing on a black mirror surface, no markings. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-extract",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a few translucent amber shards of cannabis resin, glassy like stained glass, on a matte black slate, backlit so the amber glows. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-edible",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: four squares of plain dark chocolate stacked loosely on a black slate, a dusting of cocoa, nothing written on them. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-drink",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a single plain matte black aluminum beverage can with cold condensation droplets, standing on a black mirror surface, completely blank. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-tincture",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a single small amber glass dropper bottle with a black dropper top, a drop of golden oil on the glass beside it, completely unlabeled. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  },
+  {
+    "name": "cat-topical",
+    "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+    "input": {
+      "prompt": "Cinematic fine-art photograph for a Los Angeles lowrider and street-culture gallery: deep black shadows, polished chrome highlights, one hard key light, high contrast, rich blacks, fine 35mm film grain, shot on a full-frame camera. Product-free studio still life: a small round black glass jar of balm with its lid set beside it, the balm smooth and pale gold, completely unlabeled. One hard key light from the upper left, a thin chrome rim light, a pure black background, the object centered with generous black space around it. No people, no hands, no arms, no faces and no body parts anywhere in the frame. No text, no letters, no numbers, no words, no logos, no signs, no license plates, no labels, no watermark.",
+      "aspect_ratio": "1:1",
+      "num_images": 1,
+      "output_format": "png",
+      "safety_tolerance": "2",
+      "raw": false,
+      "enable_safety_checker": true
+    }
+  }
+]
