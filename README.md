@@ -36,6 +36,8 @@ The build reads the live site's words from `src/content/capture.json` (recorded 
 | every shop, category and brand destination shows products with add-to-cart and a cart | 33/33 pass, cart reacted in both stores | `audit/menu-verification.json`, `audit/menu-cart-*.png` |
 | 21+ gate, store bar, store switch, drawer (phone and desktop) | 28/28 pass | `audit/ui-test.json` |
 | site-reforge gate | 21 pass, 8 fail, 0 unproven | `audit/gate.json`, `docs/PUBLISH.md` |
+| the live preview: every page answers with noindex; on a phone the gate, store bar and store switch work | 11/11 pass | `audit/preview-smoke.json` |
+
 
 The verification tools drive headless Chromium through `playwright-core`: set `PW_CORE` to an install of it, or
 install it next to `tools/`.

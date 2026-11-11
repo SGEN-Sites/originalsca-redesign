@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-11T01:42:13.412Z",
+  "url": "https://sgen-sites.github.io/originalsca-redesign/",
+  "pass": 11,
+  "total": 11,
+  "results": [
+    {
+      "name": "every page answers 200 with its own title and noindex (53 pages)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "assets/css/site.css answers 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "assets/js/site.js answers 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "assets/fonts/league-gothic-normal-400.woff2 answers 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "robots.txt answers 200",
+      "ok": true,
+      "detail": "200 User-agent: * Disallow: / "
+    },
+    {
+      "name": "21+ gate shows on first visit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "\"21+\" closes the gate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "store bar hidden over the hero, shown past it, inside the screen",
+      "ok": true,
+      "detail": "{\"on\":true,\"top\":726,\"bottom\":844}"
+    },
+    {
+      "name": "store bar: Shop Now, Call, Directions and today's hours for Los Angeles",
+      "ok": true,
+      "detail": "{\"on\":true,\"top\":726,\"bottom\":844,\"vh\":844,\"shop\":\"https://originalsca.com/menu/los-angeles/\",\"call\":\"tel:+13236969680\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%2C%206500%20Stanford%20Ave%2C%20Los%20Angeles%2C%20CA%2090001\",\"hours\":\"Los Angeles · Open now · until 9:45 PM\"}"
+    },
+    {
+      "name": "switching to San Diego moves Shop Now, Call and Directions to San Diego",
+      "ok": true,
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"call\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"hours\":\"San Diego · Open now · until 9 PM\"}"
+    },
+    {
+      "name": "no script errors on the live preview (phone)",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

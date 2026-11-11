@@ -43,3 +43,20 @@ site-reforge gate: **NOT-READY**, 21 PASS, 8 FAIL, 0 UNPROVEN (`audit/gate.json`
 - **C23**: 64 sweep majors, all on the home page, all decoration that bleeds past the screen edge inside a clipped
   band (the hashtag tapes, the light shafts, the collab tape, the cruise sky, a parallax bud). No page scrolls
   sideways at any width.
+
+## Deploy (2026-11-11)
+
+| step | result |
+|---|---|
+| repository | `SGEN-Sites/originalsca-redesign`, public; `main` holds the source tree above, scanned clean before every push |
+| preview | `gh-pages` commit 0f00056; GitHub Pages built it in about 20 s |
+| the live preview | 11/11 pass at https://sgen-sites.github.io/originalsca-redesign/: all 53 pages answer 200 with their own title and `noindex`; the CSS, JS, a font and robots.txt answer; on a phone the 21+ gate shows and closes, the store bar appears past the hero with Shop Now, Call, Directions and today's hours, and switching to San Diego moves all three to San Diego; no script errors (`audit/preview-smoke.json`) |
+| the fal key in the public repository | a fresh mirror clone of both branches with every git object scanned: 0 hits, whole or in part; no other credential shape; no operator identity or machine path |
+
+## The handoff zip
+
+Not produced. `sr-package` writes zips without ZIP64 and refuses an archive over 4 GB (`lib/zip.mjs`). This
+project's package would be 5.18 GB in 10,099 entries; 5.08 GB of that is the source site's downloaded images
+(`assets/source`), nearly all product photos from the 668 Tymber menu pages, which stay on Tymber. Producing one
+needs a decision: a ZIP64-capable packager, or a package that leaves those menu images out (they remain on disk as
+the gate's evidence).
