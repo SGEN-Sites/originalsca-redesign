@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <!-- Paisley bandana tile drawn for the Originals redesign (white motif on transparent; the ground colour comes from CSS). -->
+  <defs>
+    <g id="boteh" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke-width="2.4" d="M57 6c-13-2-20 9-15 19C22 29 8 48 11 68c3 18 21 27 39 22 22-6 33-28 28-49-3-14-11-24-22-29 4-1 6-4 1-6z"/>
+      <path stroke-width="1.5" d="M54 22c-14 4-26 18-24 34 2 13 14 20 27 16 15-5 21-21 17-35-2-8-8-14-15-16"/>
+      <path stroke-width="2.2" stroke-dasharray="0.1 5.2" d="M44 34c-10 6-15 17-12 27 3 8 11 12 19 9 9-3 13-13 10-22-2-6-6-10-11-12"/>
+      <circle cx="49" cy="51" r="4.2" stroke-width="1.6"/>
+      <circle cx="49" cy="51" r="1.2" fill="#fff" stroke="none"/>
+      <path stroke-width="1.3" d="M40 40c-2 3-2 6 0 8M60 40c2 3 2 6 0 8M42 64c4 3 10 3 14 0"/>
+    </g>
+    <g id="bloom" fill="#fff">
+      <circle cx="0" cy="-5" r="2.6"/><circle cx="4.8" cy="-1.5" r="2.6"/><circle cx="3" cy="4.2" r="2.6"/><circle cx="-3" cy="4.2" r="2.6"/><circle cx="-4.8" cy="-1.5" r="2.6"/>
+      <circle cx="0" cy="0" r="1.6" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </defs>
+  <use href="#boteh" transform="translate(8 6)"/>
+  <use href="#boteh" transform="translate(152 154) rotate(180)"/>
+  <use href="#bloom" transform="translate(120 34)"/>
+  <use href="#bloom" transform="translate(40 128) scale(.8)"/>
+  <g fill="#fff">
+    <circle cx="104" cy="14" r="1.6"/><circle cx="138" cy="62" r="1.6"/><circle cx="96" cy="58" r="1.2"/><circle cx="148" cy="12" r="1.2"/>
+    <circle cx="12" cy="104" r="1.6"/><circle cx="64" cy="146" r="1.2"/><circle cx="22" cy="150" r="1.6"/><circle cx="82" cy="104" r="1.2"/>
+  </g>
+</svg>
