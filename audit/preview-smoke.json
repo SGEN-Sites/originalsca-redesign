@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-11T01:42:13.412Z",
+  "at": "2026-11-12T12:23:46.974Z",
   "url": "https://sgen-sites.github.io/originalsca-redesign/",
   "pass": 11,
   "total": 11,
@@ -47,12 +47,12 @@
     {
       "name": "store bar: Shop Now, Call, Directions and today's hours for Los Angeles",
       "ok": true,
-      "detail": "{\"on\":true,\"top\":726,\"bottom\":844,\"vh\":844,\"shop\":\"https://originalsca.com/menu/los-angeles/\",\"call\":\"tel:+13236969680\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%2C%206500%20Stanford%20Ave%2C%20Los%20Angeles%2C%20CA%2090001\",\"hours\":\"Los Angeles · Open now · until 9:45 PM\"}"
+      "detail": "{\"on\":true,\"top\":726,\"bottom\":844,\"vh\":844,\"shop\":\"https://originalsca.com/menu/los-angeles/\",\"call\":\"tel:+13236969680\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%2C%206500%20Stanford%20Ave%2C%20Los%20Angeles%2C%20CA%2090001\",\"hours\":\"Los Angeles · Closed · opens 7 AM today\"}"
     },
     {
       "name": "switching to San Diego moves Shop Now, Call and Directions to San Diego",
       "ok": true,
-      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"call\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"hours\":\"San Diego · Open now · until 9 PM\"}"
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"call\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"hours\":\"San Diego · Closed · opens 8 AM today\"}"
     },
     {
       "name": "no script errors on the live preview (phone)",

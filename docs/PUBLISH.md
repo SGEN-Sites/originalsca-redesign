@@ -14,6 +14,46 @@ Preview: https://sgen-sites.github.io/originalsca-redesign/ (GitHub Pages from t
   assets (`assets/`), generated renders and design references (`private/`), the large inventories, the research
   tools and the publish scanner (it names what it searches for). The handoff zip carries the full evidence set.
 
+## Republish (2026-11-12)
+
+The owner-approved batch of 2026-11-12: on the home page the category wall, the deals reel, the story album, the Family
+Wall, the Sunday Cruise ("The Roadside Sign", with From the farm merged in), the stores ("Editorial"), the lenticular
+events, the brand marquee, the compact drop list and the editorial footer, with the creed removed everywhere; on /deals
+the concave deals wall and Save now; the inner pages (culture, info, blog, legal, shop) in the design language
+(`docs/DESIGN-LANGUAGE.md`); and the Daily deals card's vertical jar photo on every card taller than wide
+(`docs/MEDIA.md`). The decisions are rows in `audit/change-control.json` (`docs/CHANGE-LOG.md`).
+
+### Checks run before publishing (2026-11-12)
+
+| check | result | evidence |
+|---|---|---|
+| the built site's interactive parts (gate, store bar, store switch, header, home sections, /deals wall, footer, legal, shop, culture, blog and info pages) | 487/487 pass | `audit/ui-test.json` |
+| every Shop, category and brand destination shows products with a cart | the build links the same 33 destinations verified on 2026-11-11 (0 added, 0 dropped); the live menus were not visited again | `audit/menu-verification.json` (2026-11-11) |
+| tap targets at least 44 x 44 px | the sweep lists 5 under 44 px, all read while their entrance animation ran; settled, the deal card buttons are 50 px tall, the /deals buttons 46 px and the footer store links 44 px | `audit/sweep-findings.json`; settled measurement 2026-11-12 |
+| no API key or credential in any published file | 0 hits in 714 files of both trees (110.4 MB): the fal key in use (whole and each half), and GitHub, `sk-`, Google, AWS, Slack, private-key and `KEY=value` shapes | publish scan |
+| no reference brand or other client named, no operator identity or machine path | 0 hits (the other-client pattern widened on 2026-11-12 to catch spaced spellings) | publish scan |
+| the preview stays out of search | 53/53 pages `noindex, nofollow`; robots.txt `Disallow: /` | publish scan |
+| the public source rebuilds the preview without the raw capture | 335/335 files identical, apart from the build-time `?v=` stamp on the CSS and JS links of the 53 pages | clean-copy rebuild |
+
+### The gate (2026-11-12)
+
+site-reforge gate: **NOT-READY**, 21 PASS, 8 FAIL, 0 UNPROVEN, the same eight as on 2026-11-11 (C03, C04, C05, C07,
+C16, C17, C22, C23; explained below). Parity is unchanged: the same counts and a mean recall of 78.0% (77.9% before),
+no page worse than on 2026-11-11. C23 now counts 126 sweep majors: decoration and carousel panels that run past the
+screen edge inside clipped bands (the deals reel's glow, the /deals wall's turned panels, the collab tape, the
+lenticular cards, the cruise sky), 13 "control has no accessible name" on the brand marquee's duplicate loop track
+(it is `aria-hidden` with `tabindex="-1"` links, so assistive technology never reaches it) and the 5 tap targets read
+mid-animation above. The sweep finds no blocker: no page scrolls sideways at any width.
+
+### Deploy (2026-11-12)
+
+| step | result |
+|---|---|
+| repository | `main` commit 41c7af8, scanned clean before the push |
+| preview | `gh-pages` commit e3ba7da; GitHub Pages built it in about 49 s |
+| the live preview | 11/11 pass at https://sgen-sites.github.io/originalsca-redesign/: all 53 pages answer 200 with their own title and `noindex`; the CSS, JS, a font and robots.txt answer; on a phone the 21+ gate shows and closes, the store bar appears past the hero with Shop Now, Call, Directions and today's hours, and switching to San Diego moves all three; no script errors (`audit/preview-smoke.json`). /deals and the home page serve the vertical jar photo (`daily-jar-tall`, 3 sizes, 200) |
+| the fal key in the public repository | a fresh mirror clone of both branches, 584 git objects scanned: 0 hits, whole or in part; no other credential shape; no operator identity or machine path in any file |
+
 ## Checks run before publishing (2026-11-11)
 
 | check | result | evidence |
@@ -26,7 +66,7 @@ Preview: https://sgen-sites.github.io/originalsca-redesign/ (GitHub Pages from t
 | the preview stays out of search | 53/53 pages `noindex, nofollow`; robots.txt `Disallow: /` | publish scan |
 | the public source rebuilds the preview without the raw capture | 248/248 files identical | clean-clone rebuild |
 
-## The gate
+## The gate (2026-11-11)
 
 site-reforge gate: **NOT-READY**, 21 PASS, 8 FAIL, 0 UNPROVEN (`audit/gate.json`, `audit/reports/`). The eight:
 
