@@ -1,0 +1,229 @@
+/* nav.css: the header, "Nav 4: Shop bar" (the owner's pick; approved prototype src/lab/nav-4.html). Shopping first: the
+   menu categories sit in the bar and open the selected store's menu; everything else lives under More. Flat black and
+   white, tokens only. Rows: one on desktop, two below 1280px. Markup: layout.mjs header(); behaviour: site.js "header". */
+:root {
+  --nx-r1: 76px;                                   /* row 1: the bar */
+  --nx-r2: 0px;                                    /* row 2: the category row (tablet, phone) */
+  --header-h: calc(var(--nx-r1) + var(--nx-r2));   /* the page below spaces itself from this */
+  --nx-pad: clamp(16px, 2.6vw, 40px);
+  --nx-cx: 10px;                                   /* category link side padding; the underline matches the text */
+}
+@media (max-width: 1439.98px) { :root { --nx-cx: 7px; } }
+@media (max-width: 1279.98px) { :root { --nx-r1: 68px; --nx-r2: 50px; --nx-cx: 12px; } }
+@media (max-width: 759.98px)  { :root { --nx-r1: 60px; --nx-r2: 54px; --nx-cx: 15px; } }
+
+.nx { position: fixed; inset: 0 0 auto 0; z-index: var(--z-header); color: var(--text); }
+.nx.nx-open { z-index: var(--z-drawer); }
+.nx-bar { position: relative; isolation: isolate; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto auto;
+  grid-template-rows: var(--nx-r1); grid-template-areas: 'logo cats store now more'; align-items: center; padding-inline: var(--nx-pad); }
+/* over the film: dark at the top edge, clear below; once the page moves: solid ink with one hairline */
+.nx-bar::before { content: ''; position: absolute; inset: 0 0 -40px 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, var(--scrim-1), var(--scrim-3) 58%, transparent); transition: opacity var(--t-2) var(--ease); }
+.nx-bar::after { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--ink); box-shadow: inset 0 -1px 0 var(--hair);
+  opacity: 0; transition: opacity var(--t-1) var(--ease); }
+.nx.nx-solid .nx-bar::after, .nx.nx-open .nx-bar::after { opacity: 1; }
+.nx.nx-solid .nx-bar::before, .nx.nx-open .nx-bar::before { opacity: 0; }
+
+/* the logo: the crown alone (owner decision); header() renders no wordmark, and this keeps one out of the bar */
+.nx .brand { grid-area: logo; gap: 10px; margin-right: clamp(14px, 1.8vw, 30px); }
+.nx .brand__crown { width: 42px; height: 37px; }
+.nx .brand__word { display: none; }
+.nx .brand { min-width: 44px; min-height: 44px; justify-content: center; }
+
+/* ---- the categories: quick links to the selected store's menu ---- */
+.nx-cats { grid-area: cats; display: flex; align-items: center; min-width: 0; }
+.nx-cats::before { content: ''; flex: none; width: 1px; height: 26px; margin-right: clamp(6px, 1vw, 16px); background: var(--hair-2); }
+.nx-cats__label { display: none; }
+.nx-cats__list { display: flex; align-items: center; margin: 0; padding: 0; list-style: none; }
+.nx-cats__list li { display: flex; align-items: center; }
+.nx-cat { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--nx-cx);
+  font: 700 .875rem/1 var(--f-ui); letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; text-decoration: none; color: var(--text); }
+.nx-cat::after { content: ''; position: absolute; left: var(--nx-cx); right: calc(var(--nx-cx) + .14em); bottom: 9px; height: 2px;
+  background: var(--white); transform: scaleX(0); transform-origin: left; transition: transform var(--t-1) var(--ease); }
+.nx-cat:focus-visible::after, .nx-cat[aria-current='page']::after { transform: scaleX(1); }
+@media (hover: hover) { .nx-cat:hover { color: var(--white); } .nx-cat:hover::after { transform: scaleX(1); } }
+.nx-cats__deals::before { content: ''; flex: none; width: 1px; height: 18px; margin-inline: 6px; background: var(--hair-2); }
+
+/* ---- the store: LA | SD, then what you are shopping and whether it is open ---- */
+.nx-store { grid-area: store; display: flex; align-items: center; gap: 12px; margin-left: 20px; }
+.nx-switch { display: flex; border-radius: 12px; box-shadow: inset 0 0 0 1.5px var(--hair-2); }
+.nx-seg { position: relative; display: inline-flex; align-items: center; justify-content: center; min-width: 48px; min-height: 44px; padding: 0 10px;
+  border: 0; border-radius: 12px; background: transparent; color: var(--steel); font: 700 .9375rem/1 var(--f-ui); letter-spacing: .1em; cursor: pointer;
+  transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease); }
+.nx-seg[aria-pressed='true'] { background: var(--white); color: var(--ink); cursor: default; }
+@media (hover: hover) { .nx-seg[aria-pressed='false']:hover { color: var(--white); } }
+.nx-seg .nx-dot { display: none; }
+.nx-store__text { display: grid; gap: 6px; margin: 0; font: 700 var(--fs-kicker)/1.1 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+.nx-store__k { color: var(--steel); }
+.nx-store__st { display: flex; align-items: center; gap: 7px; color: var(--steel); font-weight: 600; letter-spacing: .06em; }
+.nx-st--sd { display: none; }
+html[data-store='sd'] .nx-st--la { display: none; }
+html[data-store='sd'] .nx-st--sd { display: inline; }
+.nx-dot { display: inline-block; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--steel-2); }
+.nx-dot[data-open='1'] { background: var(--status-open); }
+.nx-dot[data-open='0'] { background: var(--status-closed); }
+/* the flat confirmation when the store changes: the store name turns into a white tag for a moment */
+.nx-flashname { display: inline-block; padding: 1px 4px; margin: -1px -4px -1px 2px; border-radius: 4px; color: var(--white);
+  transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease); }
+.nx-flash .nx-flashname { background: var(--white); color: var(--ink); }
+.nx-flash .nx-cat { animation: nx-ripple .7s var(--ease) both; animation-delay: calc(var(--i, 0) * 55ms); }
+@keyframes nx-ripple { from { opacity: .15; } }
+
+.nx-now.btn { grid-area: now; min-height: 44px; margin-left: 18px; padding: 0 18px 0 20px; border-radius: 12px; font-size: .875rem; letter-spacing: .12em; }
+.nx-now .ico { width: 16px; height: 16px; }
+
+.nx-more { grid-area: more; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-width: 44px; min-height: 44px;
+  margin-left: 8px; padding: 0 16px 0 18px; border: 0; border-radius: 12px; background: transparent; color: var(--white);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--white) 70%, transparent);
+  font: 700 .875rem/1 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; cursor: pointer;
+  transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease); }
+@media (hover: hover) { .nx-more:hover { background: color-mix(in srgb, var(--white) 10%, transparent); } }
+.nx-more[aria-expanded='true'] { background: var(--white); color: var(--ink); }
+.nx-more__icon { position: relative; flex: none; width: 12px; height: 12px; transition: transform var(--t-1) var(--ease); }
+.nx-more__icon::before, .nx-more__icon::after { content: ''; position: absolute; left: 0; top: 5px; width: 12px; height: 2px; background: currentColor; }
+.nx-more__icon::after { transform: rotate(90deg); }
+.nx-more[aria-expanded='true'] .nx-more__icon { transform: rotate(45deg); }
+
+/* ---- More: one flat full-width panel ---- */
+.nx-scrim { position: fixed; inset: var(--header-h) 0 0 0; background: var(--scrim-2); animation: nx-fade .3s var(--ease) both; }
+.nx-panel { position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - var(--header-h)); max-height: calc(100dvh - var(--header-h));
+  overflow-y: auto; overscroll-behavior: contain; background: var(--ink); box-shadow: inset 0 1px 0 var(--hair), 0 1px 0 var(--hair-2);
+  animation: nx-wipe .42s var(--ease) both; }
+.nx-scrim[hidden], .nx-panel[hidden] { display: none; }
+@keyframes nx-wipe { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes nx-fade { from { opacity: 0; } }
+@keyframes nx-up { from { opacity: 0; transform: translateY(8px); } }
+.nx-panel__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) repeat(3, minmax(0, .9fr)); padding: 34px var(--nx-pad) 30px; }
+.nx-col { min-width: 0; padding-inline: clamp(18px, 2.2vw, 36px); animation: nx-up .5s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms + 60ms); }
+.nx-col:first-child { padding-left: 0; }
+.nx-col:last-child { padding-right: 0; }
+.nx-col + .nx-col { border-left: 1px solid var(--hair); }
+.nx-k { margin-bottom: 14px; }
+.nx-big { margin: -8px 0 0; padding: 0; list-style: none; }
+.nx-big a { display: inline-flex; align-items: center; min-height: 54px; font: 400 clamp(2.3rem, 1.5rem + 1.2vw, 3rem)/1 var(--f-display);
+  letter-spacing: .01em; text-transform: uppercase; text-decoration: none; color: var(--white); }
+.nx-links { margin: 0; padding: 0; list-style: none; }
+.nx-links a { display: flex; align-items: center; min-height: 44px; font: 600 1.0625rem/1.1 var(--f-ui); letter-spacing: .07em;
+  text-transform: uppercase; text-decoration: none; color: var(--text); }
+/* the link to this page (or its section) carries the hover underline */
+.nx-big a[aria-current='page'], .nx-links a[aria-current='page'], .nx-loc__name a[aria-current='page'] {
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+@media (hover: hover) {
+  .nx-big a:hover, .nx-links a:hover, .nx-loc__name a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+}
+.nx-links--row { display: flex; flex-wrap: wrap; gap: 0 24px; margin-top: 6px; }
+.nx-loc { padding-bottom: 14px; }
+.nx-loc + .nx-loc { padding-top: 12px; border-top: 1px solid var(--hair); }
+.nx-loc + .nx-links { border-top: 1px solid var(--hair); padding-top: 4px; }
+.nx-loc p { margin: 0; }
+.nx-loc__name { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+.nx-loc__name a { display: inline-flex; align-items: center; min-height: 44px; font: 400 1.75rem/1 var(--f-display); text-transform: uppercase;
+  text-decoration: none; color: var(--white); }
+.nx-tag { display: none; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: var(--white); color: var(--ink);
+  font: 700 var(--fs-kicker)/1 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; }
+html:not([data-store='sd']) .nx-loc--la .nx-tag, html[data-store='sd'] .nx-loc--sd .nx-tag { display: inline-flex; }
+.nx-loc__addr { color: var(--steel); font-size: var(--fs-small); line-height: 1.4; }
+.nx-loc__st { display: flex; align-items: center; gap: 8px; margin-top: 6px !important; font: 600 .9375rem/1.2 var(--f-ui); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--text); }
+.nx-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 12px var(--nx-pad);
+  border-top: 1px solid var(--hair); background: var(--ink-2); }
+.nx-today { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0; font: 600 .9375rem/1.2 var(--f-ui); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--text); }
+.nx-today .nx-k { margin: 0 8px 0 0; }
+.nx-today__st { display: inline-flex; align-items: center; gap: 8px; }
+.nx-acts { display: flex; gap: 8px; }
+.nx-act.btn { min-height: 44px; border-radius: 12px; font-size: .875rem; }
+/* while More is open the sticky store bar steps away (its Call and Directions are in the panel), and phones lock the page */
+html.nx-menu-open .dash { transform: translateY(130%); }
+html.nx-lock, html.nx-lock body { overflow: hidden; }
+
+/* ---- small desktop (1280-1439): the same single bar, tighter ---- */
+@media (min-width: 1280px) and (max-width: 1439.98px) {
+  .nx .brand { margin-right: 14px; }
+  .nx-cats::before { margin-right: 6px; }
+  .nx-cat { letter-spacing: .1em; }
+  .nx-cat::after { right: calc(var(--nx-cx) + .1em); }
+  .nx-store { margin-left: 14px; gap: 10px; }
+  .nx-store__st { letter-spacing: .03em; }
+  .nx-now.btn { margin-left: 12px; padding: 0 18px; }
+  .nx-now .ico { display: none; }
+}
+
+/* ---- tablet: two rows; the categories become a full-width strip ---- */
+@media (max-width: 1279.98px) {
+  .nx-bar { grid-template-rows: var(--nx-r1) var(--nx-r2); grid-template-areas: 'logo . store now more' 'cats cats cats cats cats'; }
+  .nx-cats { align-self: stretch; margin-inline: calc(-1 * var(--nx-pad)); padding-inline: calc(var(--nx-pad) - var(--nx-cx)); border-top: 1px solid var(--hair);
+    overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+  .nx-cats::-webkit-scrollbar { display: none; }
+  .nx-cats::before { display: none; }
+  .nx-cat:focus-visible { outline-offset: -3px; }
+  .nx-panel__in { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .nx-col--loc { grid-column: span 2; padding-right: 0; }
+  .nx-col:nth-child(n+3) { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--hair); }
+  .nx-col:nth-child(3) { border-left: 0; padding-left: 0; }
+}
+/* wide tablet / small laptop: the stores side by side and two-column lists, so the panel fits a landscape screen */
+@media (min-width: 960px) and (max-width: 1279.98px) {
+  .nx-col--loc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-content: start; }
+  .nx-col--loc > .nx-k, .nx-col--loc > .nx-links { grid-column: 1 / -1; }
+  .nx-loc + .nx-loc { padding: 0 0 14px 28px; border-top: 0; border-left: 1px solid var(--hair); }
+  .nx-loc:first-of-type { padding-right: 28px; }
+  .nx-loc__name a { font-size: 1.55rem; }
+  .nx-col--culture .nx-links, .nx-col--more .nx-links { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 16px; }
+}
+
+/* ---- phone: row 1 the crown, LA | SD, Shop Now, More; row 2 the categories as a scrolling row of pills ---- */
+@media (max-width: 759.98px) {
+  .nx .brand { gap: 6px; margin-right: 0; }
+  .nx .brand__crown { width: 32px; height: 28px; }
+  .nx-store { margin-left: 0; }
+  .nx-store__text { display: none; }
+  .nx-seg { min-width: 44px; padding: 0; }
+  .nx-seg .nx-dot { display: block; position: absolute; top: 7px; right: 7px; width: 6px; height: 6px; }
+  .nx-now.btn { margin-left: 6px; padding: 0 12px; font-size: .8125rem; letter-spacing: .1em; }
+  .nx-now .ico { display: none; }
+  .nx-more { width: 44px; margin-left: 6px; padding: 0; }
+  .nx-more__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nx-cats { gap: 12px; padding-inline: var(--nx-pad); border-top: 0; scroll-padding-inline: var(--nx-pad);
+    -webkit-mask-image: linear-gradient(90deg, transparent, var(--black) 18px, var(--black) calc(100% - 40px), transparent);
+    mask-image: linear-gradient(90deg, transparent, var(--black) 18px, var(--black) calc(100% - 40px), transparent); }
+  .nx-cats.nx-at-start { -webkit-mask-image: linear-gradient(90deg, var(--black), var(--black) calc(100% - 40px), transparent);
+    mask-image: linear-gradient(90deg, var(--black), var(--black) calc(100% - 40px), transparent); }
+  .nx-cats.nx-at-end { -webkit-mask-image: linear-gradient(90deg, transparent, var(--black) 18px); mask-image: linear-gradient(90deg, transparent, var(--black) 18px); }
+  .nx-cats.nx-at-start.nx-at-end { -webkit-mask-image: none; mask-image: none; }
+  .nx-cats__label { display: grid; flex: none; gap: 3px; margin: 0; font: 700 var(--fs-kicker)/1.05 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--steel); }
+  .nx-cats__label .nx-flashname { margin-left: -4px; justify-self: start; }
+  .nx-cats__list { gap: 6px; padding-right: 8px; }
+  .nx-cat { padding: 0 15px; letter-spacing: .1em; }
+  .nx-cat::after { left: 0; right: 0; top: 5px; bottom: 5px; z-index: -1; height: auto; border-radius: var(--radius-pill); transform: none;
+    background: var(--scrim-2); box-shadow: inset 0 0 0 1px var(--hair-2); transition: background-color var(--t-1) var(--ease); }
+  .nx.nx-solid .nx-cat::after { background: var(--ink-3); }
+  /* pressed, and the link to this page (Deals on /deals): a white pill, over the film and on solid ink alike */
+  .nx .nx-cats .nx-cat:active, .nx .nx-cats .nx-cat[aria-current='page'] { color: var(--ink); }
+  .nx .nx-cats .nx-cat:active::after, .nx .nx-cats .nx-cat[aria-current='page']::after { background: var(--white); }
+  .nx-cat:focus-visible { outline: none; }
+  .nx-cat:focus-visible::after { outline: 2px solid var(--focus); outline-offset: 1px; }
+  .nx-cats__deals::before { height: 22px; margin: 0 6px 0 0; }
+
+  .nx-scrim { display: none; }
+  .nx-panel { position: fixed; top: var(--header-h); bottom: 0; max-height: none; display: flex; flex-direction: column; box-shadow: inset 0 1px 0 var(--hair-2); }
+  .nx-panel__in { display: block; padding: 4px var(--nx-pad) 30px; }
+  .nx-col, .nx-col:nth-child(n) { margin: 0; padding: 0; border: 0; }
+  .nx-col + .nx-col { margin-top: 30px; }
+  .nx-big { margin: 0; }
+  .nx-big a { display: flex; justify-content: space-between; width: 100%; min-height: 60px; font-size: 2.5rem; border-bottom: 1px solid var(--hair); }
+  .nx-big a::after { content: ''; width: 11px; height: 11px; margin-right: 6px; border-top: 2px solid var(--steel); border-right: 2px solid var(--steel); transform: rotate(45deg); }
+  .nx-col--culture .nx-links, .nx-col--more .nx-links { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+  .nx-col--shop .nx-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nx-col--shop .nx-links a { padding: 0 16px; border-radius: var(--radius-pill); box-shadow: inset 0 0 0 1px var(--hair-2); font-weight: 700; font-size: .875rem; letter-spacing: .1em; }
+  .nx-loc__name a { font-size: 1.6rem; }
+  .nx-foot { position: sticky; bottom: 0; margin-top: auto; display: grid; gap: 10px; padding: 12px var(--nx-pad) calc(14px + env(safe-area-inset-bottom)); border-top-color: var(--hair-2); }
+  .nx-today { font-size: .875rem; }
+  .nx-acts { display: grid; grid-template-columns: 1fr 1fr; }
+  .nx-act.btn { min-height: 50px; }
+}
+@media (max-width: 389.98px) { .nx-now.btn { padding: 0 10px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .nx *, .nx *::before, .nx *::after { transition: none !important; animation: none !important; }
+}

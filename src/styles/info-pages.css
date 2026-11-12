@@ -1,0 +1,164 @@
+/* info-pages.css: the info pages, redesigned 2026-11-12 to the owner-approved design language (docs/DESIGN-LANGUAGE.md:
+   flat black and white, photos in colour, gold only on interaction, compact sections that hug their content, no
+   containers for their own sake). Markup: stores.mjs (/contact and /los-angeles: contactBlock, storeFacts; the San Diego
+   store hero), misc.mjs (/faqs, 404, /form-sent), business.mjs (/jobs, /wholesale). Patterns reused, not invented:
+   - the split head (home category head): kicker and title on the left, the lede beside them from 900px, over a hairline;
+   - the editorial fact grid (home stores, lab option C, stores.css): a dateline with the number (or "Today") and the
+     live status site.js fills in, the name set very large under "Originals", a ruled ADDRESS / HOURS / CALL grid
+     (site.js marks today's hours row: data-hours inside data-store-card);
+   - the home drop list's compact FAQ accordion (droplist.css) for /faqs, numbered like the editorial items;
+   - CONTACT INFO as ruled link rows in place of the boxed cards; forms as a flat panel (no glass, no blur), gold focus.
+   Loaded after components.css and pages.css, so equal-specificity rules here win; the shared files are never edited.
+   Every effect has a reduced-motion state; without JS everything is shown (the FAQs are real details/summary).
+   Tokens only (gate C13). */
+
+/* ---------- bands, heads, columns ---------- */
+.info-band { padding-block: clamp(40px, 4.6vw, 68px); }
+.info-band--facts { padding-bottom: 0; }                       /* /los-angeles: the store's facts sit right on the contact band */
+.info-head { display: grid; gap: 14px 56px; align-items: end; margin-bottom: clamp(22px, 2.6vw, 36px); padding-bottom: 18px; border-bottom: 1px solid var(--hair-2); }
+.info-head .kicker { margin-bottom: 10px; }
+.info-head .lede { max-width: 54ch; }
+@media (min-width: 900px) { .info-head { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.info-rule { margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--hair-2); }   /* a title over a hairline */
+.info-rule .kicker { margin-bottom: 10px; }
+.info-split { display: grid; gap: clamp(28px, 4vw, 64px); align-items: start; }
+.info-split > * { min-width: 0; }
+.info-split__side > .kicker { margin-bottom: 12px; }
+.info-split__side > .prose { margin-bottom: 24px; color: var(--chrome-2); }
+@media (min-width: 900px) {
+  .info-split { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+  .info-split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .info-split__side--pin { position: sticky; top: calc(var(--header-h) + 24px); }   /* /jobs: the contact rows stay by the long form */
+}
+
+/* the compact ink hero (/contact): the title band hugs its words */
+.phero--compact { min-height: 0; padding-bottom: 0; }
+/* these pages' photo heroes: the kicker and the current crumb in white, not steel, so they stay 4.5:1 or more over the
+   photos' brightest parts (the grow lights, the arches' light, the storefront's wall), measured on rendered pixels */
+:is(.is-faqs, .is-jobs, .is-wholesale, .is-contact) .phero--photo :is(.kicker, .crumbs ol), .phero--sd :is(.kicker, .crumbs ol) { color: var(--white); }
+
+/* ---------- forms: a flat panel; the focus frame is the gold exception ---------- */
+.info-form.form { margin-top: 0; border-radius: var(--radius); background: var(--ink-2); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: inset 0 0 0 1px var(--hair-2); }
+.info-form .form__grid { gap: 12px 14px; }
+.info-form .field input:not([type='radio'], [type='checkbox']):focus, .info-form .field textarea:focus { box-shadow: inset 0 0 0 2px var(--gold); }
+.info-form .field input[type='file'] { padding-block: 10px; }
+
+/* ---------- CONTACT INFO: ruled rows, each one whole link (no boxes) ---------- */
+.irows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair-2); }
+.irows > li { border-bottom: 1px solid var(--hair-2); }
+.irow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "ico k go" "ico v go"; align-items: center; gap: 3px 16px; min-height: 72px; padding: 12px 2px;
+  color: var(--text); text-decoration: none; }
+.irow > .ico:first-child { grid-area: ico; width: 24px; height: 24px; color: var(--white); }
+.irow__k { grid-area: k; font: 700 var(--fs-kicker)/1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--steel); }
+.irow__v { grid-area: v; font: 700 clamp(1.1rem, 1rem + .4vw, 1.35rem)/1.2 var(--f-ui); letter-spacing: .04em; color: var(--white); overflow-wrap: anywhere; transition: color .3s var(--ease); }
+.irow__go { grid-area: go; width: 20px; height: 20px; color: var(--steel); transition: color .3s var(--ease), translate .3s var(--ease); }
+.irow:focus-visible { outline-offset: 2px; }
+.irow:focus-visible :is(.irow__v, .irow__go) { color: var(--gold); }
+@media (hover: hover) { .irow:hover :is(.irow__v, .irow__go) { color: var(--gold); } .irow:hover .irow__go { translate: 4px 0; } }
+
+/* ---------- a store's facts: the editorial fact grid ---------- */
+.ifacts { --if-gap: clamp(24px, 4.2vw, 60px); display: grid; gap: 28px var(--if-gap); margin-top: clamp(36px, 4.4vw, 60px); }
+@media (min-width: 900px) {
+  .ifacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ifacts > .ifact + .ifact::before { content: ''; position: absolute; top: 0; bottom: 0; left: calc(var(--if-gap) / -2); width: 1px; background: var(--hair-2); }
+}
+.ifact { position: relative; container-type: inline-size; border-top: 1px solid var(--hair-2); }
+.ifact__body { display: grid; gap: 12px; align-content: start; padding-top: 14px; }
+.ifact__tab { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+.ifact__no { font: 700 .8rem/1 var(--f-ui); letter-spacing: .24em; text-transform: uppercase; color: var(--white); }
+.ifact__status { display: flex; align-items: center; gap: 8px; margin: 0; font: 700 .95rem/1.2 var(--f-ui); letter-spacing: .05em; color: var(--chrome-2); }
+.ifact__dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--steel-2); }
+.ifact__dot[data-open='1'] { background: var(--status-open); box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-open) 25%, transparent); }
+.ifact__dot[data-open='0'] { background: var(--status-closed); }
+.ifact__name { line-height: .84; }
+.ifact__name a { display: inline-block; color: var(--white); text-decoration: none; }
+.ifact__pre { display: block; margin-bottom: 8px; font: 700 .8rem/1 var(--f-ui); letter-spacing: .32em; text-transform: uppercase; color: var(--steel); }
+.ifact__city { display: block; font: 400 clamp(3rem, 15cqi, 7rem)/.84 var(--f-display); white-space: nowrap; transition: color .35s var(--ease); }
+.ifact__name a:is(:hover, :focus-visible) .ifact__city { color: var(--gold); }   /* the gold exception: hover and focus only */
+.ifact__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; padding-top: 12px; border-top: 1px solid var(--hair-2); }
+.ifact__cell--call { grid-column: 1 / -1; }
+@container (min-width: 520px) {
+  .ifact__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, .9fr); }
+  .ifact__cell--call { grid-column: auto; }
+}
+.ifact__label { margin: 0 0 8px; font: 700 .72rem/1 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--steel); }
+.ifact__addr { font-style: normal; font-size: .95rem; line-height: 1.45; color: var(--chrome-2); }
+.ifact__hours { display: grid; gap: 4px; margin: 0; }
+.ifact__hours > div { display: flex; flex-wrap: wrap; gap: 0 10px; font: 700 .95rem/1.3 var(--f-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--steel); }
+.ifact__hours dt { min-width: 4.4em; }
+.ifact__hours dd { margin: 0; }
+.ifact__hours > .is-today { color: var(--white); }
+.ifact__tel { display: inline-flex; align-items: center; min-height: 44px; margin-top: -12px; font: 700 1.1rem/1 var(--f-ui); letter-spacing: .05em; color: var(--white);
+  text-decoration: none; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.ifact__tel:is(:hover, :focus-visible) { text-decoration: underline; text-decoration-color: var(--gold); }
+.ifact__acts { display: flex; flex-wrap: wrap; gap: 10px; margin: 2px 0 0; }
+/* with a photo (/los-angeles): the facts beside a strictly cropped store photo from 900px; phones: the photo first */
+.ifact--photo { display: grid; gap: 18px clamp(28px, 4vw, 56px); }
+.ifact__photo { position: relative; order: -1; overflow: hidden; aspect-ratio: 16 / 9; background: var(--black); }
+.ifact__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+@media (min-width: 900px) {
+  .ifact--photo { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .ifact--photo .ifact__body { padding-bottom: 4px; }
+  .ifact__photo { order: 0; aspect-ratio: auto; margin-top: 14px; }
+}
+
+/* ---------- /faqs: the compact accordion (the home drop list's rows), numbered ---------- */
+.info-faqs__grid { display: grid; gap: clamp(24px, 3.4vw, 56px); align-items: start; }
+.info-faqs__intro h2 { margin-bottom: 16px; font-size: clamp(2.4rem, 1.4rem + 2.6vw, 3.8rem); }
+.info-faqs__intro .lede { font-size: clamp(1rem, .95rem + .25vw, 1.125rem); }
+.info-faqs__intro .btn-row { margin-top: 20px; }
+@media (min-width: 900px) {
+  .info-faqs__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); }
+  .info-faqs__intro { position: sticky; top: calc(var(--header-h) + 24px); }
+}
+.info-faqs .faq { gap: 8px; counter-reset: ifaq; }
+.info-faqs .faq__item { transition: box-shadow .35s var(--ease); }
+.info-faqs .faq__q { justify-content: flex-start; min-height: 50px; padding: 8px 18px; font-size: 1rem; line-height: 1.25; }
+.info-faqs .faq__q > span { flex: 1; }
+.info-faqs .faq__q::before { counter-increment: ifaq; content: counter(ifaq, decimal-leading-zero) / ''; flex: none; min-width: 2.4em; font: 700 .8rem/1 var(--f-ui); letter-spacing: .2em; color: var(--steel); }
+.info-faqs .faq__a { padding: 0 18px 16px; }
+@media (min-width: 600px) { .info-faqs .faq__a { padding-left: calc(18px + 2.4 * .8rem + 16px); } }   /* under the question, past its number */
+@media (hover: hover) { .info-faqs .faq__item:has(> .faq__q:hover) { box-shadow: inset 0 0 0 1px var(--gold); } }
+.info-faqs .faq__item:has(> .faq__q:focus-visible) { box-shadow: inset 0 0 0 1px var(--gold); }
+
+/* the newsletter: one compact band, the title beside the form from 1000px, the form on one line from 700px */
+.info-news.band { padding-block: clamp(40px, 4.6vw, 64px); }
+.info-news__bandana { position: absolute; inset: 0; opacity: .5; }
+.info-news__scrim { position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 92%, transparent), color-mix(in srgb, var(--ink) 80%, transparent)); }
+.info-news__grid { display: grid; gap: 18px clamp(28px, 4vw, 64px); align-items: center; }
+.info-news h2 { font-size: clamp(1.9rem, 1rem + 2.1vw, 2.9rem); line-height: .9; }
+@media (min-width: 1000px) { .info-news__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); } }
+.info-news__form.form { display: grid; grid-template-columns: minmax(0, 1fr); padding: clamp(16px, 1.7vw, 22px); }
+.info-news__form .form__note { margin-top: 12px; font-size: var(--fs-kicker); line-height: 1.4; }
+@media (min-width: 700px) {
+  .info-news__form.form { grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; align-items: end; }
+  .info-news__form .form__actions { margin: 0; }
+  .info-news__form .form__note { grid-column: 1 / -1; }
+}
+
+/* ---------- /wholesale: the copy column ---------- */
+.info-ws__copy .prose { color: var(--chrome-2); }
+.info-ws__copy .prose > br { display: none; }                  /* the live answer's spacer breaks: paragraph spacing does it */
+.info-ws__copy .prose > p + p { margin-top: 12px; }
+.info-ws__line { margin: 14px 0 22px; color: var(--chrome-2); }
+
+/* ---------- 404 and /form-sent: small, flat, the title very large over a hairline ---------- */
+.info-nf { padding: calc(var(--header-h) + clamp(48px, 7vw, 104px)) 0 clamp(48px, 6vw, 88px); }
+.info-nf__head { display: grid; justify-items: start; gap: 14px; padding-bottom: clamp(16px, 2vw, 24px); border-bottom: 1px solid var(--hair-2); }
+.info-nf__head .kicker { margin: 0; }
+.info-nf__crown { width: clamp(52px, 5vw, 72px); height: auto; color: var(--white); }
+.info-nf__title { font-size: var(--fs-mega); line-height: .88; }
+.info-nf__foot { display: grid; gap: 18px 48px; padding-top: clamp(18px, 2vw, 26px); }
+@media (min-width: 900px) { .info-nf__foot { grid-template-columns: minmax(0, 1fr) auto; align-items: center; } }
+
+/* ---------- the San Diego store hero: the business's own storefront photo (store-sd-exterior), its signs in frame ---------- */
+/* Wide: the photo is drawn full width, so the façade's big sign and the 6220 sit clear to the right of the title. Up to
+   900px the photo is drawn about twice the viewport wide (sizes 200vw), so it is moved over to keep that sign whole in
+   frame on the right. */
+.phero--sd .phero__clip img { object-position: 50% 40%; }
+@media (max-width: 900px) { .phero--sd .phero__clip img { object-position: 62% 50%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .irow__v, .irow__go, .ifact__city, .info-faqs .faq__item { transition: none; }
+  .irow:hover .irow__go { translate: none; }
+}

@@ -1,0 +1,141 @@
+/* stores.css: the home stores (home.mjs section 9, script site.js "the stores"). Owner-picked lab option C, "Editorial"
+   (2026-11-12; reference src/lab/parts/stores-c.html), with the owner's tweaks the same day: "merch should follow the
+   same large layout and make it scrollable". A magazine spread led by type. The title sits over a hairline, with the
+   "Scroll" hint and the prev/next buttons beside it. Then three numbered columns in a sideways scroller, split by
+   hairlines: 01 Los Angeles, 02 San Diego, 03 Originals Clothing. Each column has:
+   - a strictly cropped photo;
+   - an ink dateline tab notched into the photo's top-left corner: the number and the live status that site.js fills
+     in (the clothing shop's says "Online");
+   - the name set very large in League Gothic under "Originals";
+   - a ruled fact grid (site.js marks today's hours row, set in white);
+   - a foot with the chips and the buttons.
+   900px and up: two columns in view, lined up with the page's wrap. Phones: one column (84vw) with the next peeking.
+   The scroller is the family wall's (signature.css section 6): native scrolling, here with x mandatory snap; the edges
+   fade only where more is hidden (.is-start / .is-end, set by site.js); round prev/next buttons and a "Scroll" hint.
+   Without JS: a plain scrolling row with its scrollbar, the buttons hidden. Motion, armed by site.js only when motion
+   is allowed: as each column comes into view its photo opens from the top, its name rises and its fact rule draws
+   from the left. Tokens only. */
+@property --st-fl { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --st-fr { syntax: '<length>'; inherits: false; initial-value: 0px; }
+.band.stores { padding-block: clamp(36px, 4vw, 52px); container-type: inline-size;
+  --st-side: max(var(--gutter), (100cqw - var(--wrap)) / 2);   /* band edge to .wrap edge, as .wrap computes it */
+  --st-gap: clamp(24px, 4.2vw, 60px);                           /* between two columns; their hairline sits in its middle */
+  --st-col: min(84vw, 560px); }                                  /* phones and tablets: one column, the next peeking past it */
+@media (min-width: 900px) { .band.stores { --st-col: calc((100cqw - 2 * var(--st-side) - var(--st-gap)) / 2); } }   /* two in the wrap */
+
+/* the head: the title on the left, the hint and the buttons on the right (phones: under it), over a hairline */
+.stores__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 32px; padding-bottom: 14px; border-bottom: 1px solid var(--hair-2); }
+.stores__title .kicker { margin-bottom: 10px; }
+.stores__ctrl { display: flex; align-items: center; gap: 16px; min-height: 48px; }
+.stores.is-static .stores__ctrl { display: none; }   /* everything fits: nothing to scroll */
+.stores__hint { display: inline-flex; align-items: center; gap: .7em; margin: 0; font: 700 var(--fs-kicker)/1 var(--f-ui); text-transform: uppercase; letter-spacing: var(--track-kicker); color: var(--steel); transition: opacity var(--t-2) var(--ease); }
+.stores__hint .ico { width: 18px; height: 18px; }
+html.js .stores:not(.is-start) .stores__hint { opacity: 0; }   /* it has done its job once the row moves */
+@media (prefers-reduced-motion: no-preference) { html.js .stores__hint.is-in .ico { animation: wall-nudge 1.2s var(--ease-io) .9s 3; } }   /* the family wall's nudge */
+.stores__btns { display: flex; gap: 10px; }
+.stores__btns[hidden] { display: none; }
+.stores__btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--white);
+  box-shadow: inset 0 0 0 1.5px currentColor; cursor: pointer; transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease), opacity var(--t-1) var(--ease), scale var(--t-1) var(--ease); }
+.stores__btn:focus-visible { border-radius: 50%; }
+.stores__btn .ico { width: 20px; height: 20px; stroke-width: 2; }
+.stores__btn[data-stores-step='-1'] .ico { rotate: 180deg; }
+.stores__btn:disabled { opacity: .3; cursor: default; }
+.stores__btn:not(:disabled):active { scale: .94; }
+@media (hover: hover) { .stores__btn:not(:disabled):hover { background: var(--white); color: var(--ink); } }
+
+/* the scroller: full-bleed, its columns lined up with the wrap (the row's side padding and the snap padding are the
+   band's side gutter) */
+.stores__frame { position: relative; }
+.stores__view { --st-fl: 0px; --st-fr: var(--st-side); overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scroll-padding-inline: var(--st-side);
+  -webkit-mask-image: linear-gradient(90deg, transparent, var(--black) var(--st-fl), var(--black) calc(100% - var(--st-fr)), transparent);
+          mask-image: linear-gradient(90deg, transparent, var(--black) var(--st-fl), var(--black) calc(100% - var(--st-fr)), transparent);
+  transition: --st-fl var(--t-2) var(--ease), --st-fr var(--t-2) var(--ease); }
+html.js .stores:not(.is-start) .stores__view { --st-fl: var(--st-side); }
+html.js .stores.is-end .stores__view { --st-fr: 0px; }
+html.js .stores__view { scrollbar-width: none; }   /* without JS the native scrollbar stays */
+html.js .stores__view::-webkit-scrollbar { display: none; }
+.stores__view.is-dragging { scroll-snap-type: none; }   /* a mouse drag follows the pointer; site.js lets go onto a column */
+/* the mask would hide the row's own focus ring: its frame draws it instead */
+.stores__view:focus-visible { outline: none; border-radius: 0; }
+.stores__frame:has(> .stores__view:focus-visible) { outline: 2px solid var(--focus); outline-offset: -2px; }
+@media (hover: hover) and (pointer: fine) {
+  html.js .stores__view { cursor: grab; }
+  html.js .stores__view.is-dragging { cursor: grabbing; }
+  html.js .stores.is-static .stores__view { cursor: auto; }
+  html.js .stores__row { user-select: none; -webkit-user-select: none; }   /* a drag moves the row; it never selects text */
+}
+.stores__row { display: flex; gap: var(--st-gap); width: max-content; margin: 0; padding: 0 var(--st-side); }
+
+/* a column */
+.stores__col { position: relative; flex: none; width: var(--st-col); scroll-snap-align: start; container-type: inline-size;
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "name" "facts" "foot"; grid-template-rows: auto auto auto 1fr;
+  gap: 12px; padding-block: 14px 4px; }   /* the columns share the row's height; each foot sits on the bottom, so the buttons line up */
+.stores__col + .stores__col::before { content: ''; position: absolute; top: 0; bottom: 0; left: calc(var(--st-gap) / -2); width: 1px; background: var(--hair-2); }
+.stores__col > .stores__photo { grid-area: media; }
+.stores__col > .stores__tab { grid-area: media; align-self: start; justify-self: start; position: relative; z-index: 1; }
+.stores__col > .stores__name { grid-area: name; }
+.stores__col > .stores__facts { grid-area: facts; }
+.stores__col > .stores__foot { grid-area: foot; align-self: end; }
+
+/* the dateline tab: the number and the live status, notched into the photo's top-left corner */
+.stores__tab { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; max-width: 100%; margin: 0; padding: 0 16px 10px 0; background: var(--ink); }
+.stores__no { font: 700 .8rem/1 var(--f-ui); letter-spacing: .24em; color: var(--white); }
+.stores__status { display: flex; align-items: center; gap: 8px; margin: 0; font: 700 .95rem/1.2 var(--f-ui); letter-spacing: .05em; color: var(--chrome-2); }
+.stores__dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--steel-2); }
+.stores__dot[data-open='1'], .stores__dot--on { background: var(--status-open); box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-open) 25%, transparent); }
+.stores__dot[data-open='0'] { background: var(--status-closed); }
+
+/* the photo: a strict crop, square corners */
+.stores__photo { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: var(--black); }
+@container (min-width: 520px) { .stores__photo { aspect-ratio: 3.4 / 1; } }
+.stores__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; }
+.stores__photo--la img { object-position: 50% 56%; }
+.stores__photo--sd img { object-position: 50% 38%; }
+.stores__photo--clothing { background: var(--white); }
+.stores__photo--clothing img { object-position: 50% 63%; }   /* the shop's graphic: its monitors, with its faint lower product labels whole, not cut */
+
+/* the name: "Originals" small, the city (or "Clothing") very large */
+.stores__name { line-height: .84; }
+.stores__name a { display: inline-block; color: var(--white); text-decoration: none; }
+.stores__pre { display: block; margin-bottom: 8px; font: 700 .8rem/1 var(--f-ui); letter-spacing: .32em; color: var(--steel); }
+.stores__city { display: block; font: 400 clamp(3rem, 16cqi, 8rem)/.84 var(--f-display); white-space: nowrap; transition: color .35s var(--ease); }
+.stores__name a:is(:hover, :focus-visible) .stores__city { color: var(--gold); }   /* the gold exception: hover and focus only */
+
+/* the fact grid, ruled */
+.stores__facts { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; padding-top: 12px; }
+.stores__facts::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--hair-2); transform-origin: 0 50%; }
+.stores__cell--call, .stores__cell--wide { grid-column: 1 / -1; }
+@container (min-width: 520px) {
+  .stores__facts { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, .9fr); }
+  .stores__cell--call { grid-column: auto; }
+}
+.stores__label { margin: 0 0 8px; font: 700 .72rem/1 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--steel); }
+.stores__addr { font-style: normal; font-size: .95rem; line-height: 1.45; color: var(--chrome-2); }
+.stores__hours { display: grid; gap: 4px; margin: 0; }
+.stores__hours > div { display: flex; flex-wrap: wrap; gap: 0 10px; font: 700 .95rem/1.3 var(--f-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--steel); }
+.stores__hours dt { min-width: 4.4em; }
+.stores__hours dd { margin: 0; }
+.stores__hours > .is-today { color: var(--white); }
+.stores__tel { display: inline-flex; align-items: center; min-height: 44px; margin-top: -12px; font: 700 1.1rem/1 var(--f-ui); letter-spacing: .05em; color: var(--white);
+  text-decoration: none; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.stores__tel:hover { text-decoration: underline; text-decoration-color: var(--gold); }
+.stores__line { margin: 0; font: 700 .95rem/1.3 var(--f-ui); letter-spacing: .08em; color: var(--chrome-2); }
+
+/* the foot: the chips on the left, the buttons on the right (narrow columns: under them) */
+.stores__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 0; }
+.stores__acts { display: flex; flex-wrap: wrap; gap: 10px; }
+@container (min-width: 520px) { .stores__acts { margin-left: auto; } }
+
+/* the reveal (site.js adds .is-armed to the band only when motion is allowed, and .is-in to each column it sees) */
+@media (prefers-reduced-motion: no-preference) {
+  .stores.is-armed .stores__photo { clip-path: inset(0 0 100% 0); transition: clip-path 1.1s var(--ease); }
+  .stores.is-armed .stores__photo img { scale: 1.06; transition: scale 1.6s var(--ease); }
+  .stores.is-armed .stores__name { opacity: 0; translate: 0 .3em; transition: opacity .9s var(--ease) .15s, translate .9s var(--ease) .15s; }
+  .stores.is-armed .stores__facts::before { transform: scaleX(0); transition: transform 1.2s var(--ease) .25s; }
+  .stores.is-armed .is-in .stores__photo { clip-path: inset(0); }
+  .stores.is-armed .is-in .stores__photo img { scale: 1; }
+  .stores.is-armed .is-in .stores__name { opacity: 1; translate: none; }
+  .stores.is-armed .is-in .stores__facts::before { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .stores__view { scroll-behavior: auto; } }

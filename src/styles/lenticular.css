@@ -1,0 +1,106 @@
+/* lenticular.css: the home events' lenticular carousel (home.mjs section 10; owner request 2026-11-12, "use this effect
+   for this section", with a reference link). An original build of the effect from
+   its public description, no third-party code: cards that turn over like a lenticular print.
+   Each card is cut into vertical strips (site.js "lenticular" builds them: 40-56 on a fine pointer, fewer on touch), each
+   a two-faced 3D slice: the front is the artwork in black and white (a luminosity blend over white, the site's
+   black-and-white-until-touched language), the back the artwork in colour under a silver foil (8 bands). The card's --f
+   (0 the front, 1 turned over) is the only value the script sets per frame; every strip derives its own turn from it
+   here (staggered across the card by --ln-sweep), with refraction (its slice shifts as it turns), rib shading and glint
+   (--ln-ridge), and the card tilts toward the pointer and lifts toward the viewer as it turns. The label (or the
+   Takeover card's lettering) sits above the strips; a label is revealed on its scrim as the turn crosses it.
+   The carousel: the active card in front, the others at .9 and dimmed; prev/next, the rail, drag or swipe, arrow keys.
+   Without .is-live (no script) the cards are the plain row: the colour artwork and its label. .is-still (reduced
+   motion): the carousel without strips, the colour face shown still. Transforms and opacity only. Tokens only. ln-. */
+
+.ln { --ln-gap: 26px; --ln-r: var(--radius); --ln-ar: 8 / 5; --ln-sweep: .6; --ln-refract: .32; --ln-ridge: .5;
+  position: relative; margin: 0 0 clamp(28px, 4vw, 48px); }
+.ln-viewport { position: relative; }
+.ln-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--ln-gap); margin: 0; padding: 0; list-style: none; }
+.ln-slide { position: relative; min-width: 0; border-radius: var(--ln-r); }
+.ln-card { position: relative; display: block; aspect-ratio: var(--ln-ar); overflow: hidden; border-radius: var(--ln-r); isolation: isolate;
+  background: var(--ink-3); color: var(--text); text-decoration: none; -webkit-tap-highlight-color: transparent;
+  box-shadow: var(--shadow-deep), inset 0 0 0 1px var(--hair-2); }
+.ln-card:focus-visible { outline-offset: 4px; border-radius: var(--ln-r); }
+.ln-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* the colour face's label on its scrim */
+.ln-reveal { position: absolute; inset: 0; z-index: 2; display: flex; align-items: flex-end; padding: 14px; pointer-events: none;
+  background: linear-gradient(to top, color-mix(in srgb, var(--ink) 85%, transparent), color-mix(in srgb, var(--ink) 40%, transparent) 34%, transparent 58%); }
+.ln-label { font: 700 clamp(.85rem, .78rem + .22vw, 1rem) / 1.25 var(--f-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--white); }
+
+/* the Takeover card: its lettering over the stage, on its own scrim */
+.ln-card--type::before { content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: radial-gradient(75% 85% at 50% 50%, color-mix(in srgb, var(--ink) 74%, transparent), color-mix(in srgb, var(--ink) 52%, transparent) 70%, color-mix(in srgb, var(--ink) 40%, transparent)); }
+.ln-type { position: absolute; inset: 0; z-index: 3; display: grid; align-content: center; justify-items: center; gap: 6px; padding: 18px; text-align: center; pointer-events: none; }
+.ln-type__k { font: 700 var(--fs-kicker) / 1.3 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--chrome-2); }
+.ln-type__t { font: 700 clamp(1.9rem, 1.3rem + 1.5vw, 3rem) / 1 var(--f-black); color: var(--white); }
+.ln-type__s { font: 400 clamp(1.5rem, 1.15rem + .9vw, 2.1rem) / 1 var(--f-script); color: var(--accent-hi); }
+
+/* the controls (shown by the script) */
+.ln-ctrl { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: clamp(18px, 2.4vw, 28px); }
+.ln-ctrl[hidden] { display: none; }
+.ln-btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: var(--radius-pill); cursor: pointer;
+  color: var(--white); background: var(--glass); box-shadow: inset 0 0 0 1px var(--glass-edge); transition: background-color .25s var(--ease), color .25s var(--ease); }
+.ln-btn .ico { width: 20px; height: 20px; stroke-width: 2.2; }
+.ln-btn--prev .ico { rotate: 180deg; }
+@media (hover: hover) { .ln-btn:hover { background: var(--white); color: var(--ink); } }
+.ln-btn:focus-visible { border-radius: var(--radius-pill); }
+.ln-rail { display: flex; gap: 6px; }
+.ln-rail i { width: 34px; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--white) 26%, transparent); transition: background-color .4s var(--ease); }
+.ln-rail i.is-on { background: var(--white); }
+
+/* phones without the script: a sideways scroll-snap row */
+@media (max-width: 719px) {
+  .ln-track { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 80%; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); scrollbar-width: none; }
+  .ln-track::-webkit-scrollbar { display: none; }
+  .ln-slide { scroll-snap-align: start; }
+  .ln { --ln-ar: 3 / 2; --ln-gap: 16px; }
+}
+
+/* ---------- live (.is-live): the carousel ---------- */
+.ln.is-live { container-type: inline-size; }
+.ln.is-live .ln-viewport { --ln-w: clamp(240px, (100cqi - 2 * var(--ln-gap)) / 3, 420px); }   /* three across the row's width */
+.ln.is-live .ln-viewport { overflow-x: clip; overflow-y: visible; margin-inline: calc(-1 * var(--gutter)); padding: 22px var(--gutter);
+  touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.ln.is-live .ln-track { display: flex; width: max-content; overflow: visible; margin: 0; padding: 0; transform: translate3d(var(--ln-tx, 0px), 0, 0);
+  transition: transform .6s var(--ease); }
+.ln.is-live.is-dragging .ln-track { transition: none; }
+.ln.is-live .ln-slide { flex: none; width: var(--ln-w); scale: .9; perspective: 1200px; transition: scale .5s var(--ease); }
+.ln.is-live .ln-slide::after { content: ''; position: absolute; inset: 0; z-index: 4; border-radius: var(--ln-r); background: var(--ink); opacity: .45; pointer-events: none;
+  transition: opacity .5s var(--ease); }   /* inactive cards dim to .55 */
+.ln.is-live .ln-slide.is-active { scale: 1; z-index: 1; }
+.ln.is-live .ln-slide.is-active::after { opacity: 0; }
+@media (max-width: 719px) { .ln.is-live .ln-viewport { --ln-w: min(74vw, 330px); } }   /* the next card peeks in */
+
+/* the turn: the card tilts and lifts; its strips turn from --f */
+.ln.is-live:not(.is-still) .ln-card { transform: rotateX(var(--ln-rx, 0deg)) rotateY(var(--ln-ry, 0deg)) translateZ(calc(var(--f, 0) * 40px)); will-change: transform; }
+.ln.is-live:not(.is-still) .ln-art { opacity: 0; }   /* kept for its alt text; the strips paint it */
+.ln-lens { position: absolute; inset: 0; z-index: 1; display: flex; perspective: 900px; pointer-events: none; }
+.ln-strip { position: relative; flex: 1 1 0; min-width: 0; transform-style: preserve-3d;
+  --s: clamp(0, (var(--f, 0) - var(--u) * var(--ln-sweep)) / (1 - var(--ln-sweep)), 1);
+  transform: rotateY(calc(var(--s) * -180deg)); }
+.ln-strip > i { position: absolute; inset: 0 -.5px; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  --rf: calc(sin(var(--s) * 180deg) * var(--ln-refract) * var(--sw, 6px) * 4); }
+.ln-strip > i:first-child {   /* the front: the artwork in black and white */
+  background: var(--ln-art, none) calc(var(--bx, 0px) - var(--k) * var(--sw, 6px) + .5px + var(--rf)) var(--by, 0px) / var(--bw, 100%) var(--bh, 100%) no-repeat var(--white);
+  background-blend-mode: luminosity; }
+.ln-strip > i:last-child {    /* the back: the artwork in colour under the foil */
+  transform: rotateY(180deg);
+  background:
+    repeating-linear-gradient(100deg, color-mix(in srgb, var(--chrome-1) 70%, transparent) 0, color-mix(in srgb, var(--chrome-7) 50%, transparent) 4%,
+      color-mix(in srgb, var(--white) 80%, transparent) 7%, color-mix(in srgb, var(--chrome-3) 45%, transparent) 10%, color-mix(in srgb, var(--chrome-1) 70%, transparent) 12.5%)
+      calc(var(--fx, 0px) - var(--k) * var(--sw, 6px) + .5px) 0 / var(--cw, 100%) 100% no-repeat,
+    var(--ln-art, none) calc(var(--bx, 0px) - var(--k) * var(--sw, 6px) + .5px - var(--rf)) var(--by, 0px) / var(--bw, 100%) var(--bh, 100%) no-repeat var(--ink-3);
+  background-blend-mode: soft-light, normal; }
+.ln-strip > i::after { content: ''; position: absolute; inset: 0; pointer-events: none;   /* the rib: shading at its edges, a glint down its middle */
+  background: linear-gradient(90deg, color-mix(in srgb, var(--black) 60%, transparent), transparent 32%, color-mix(in srgb, var(--white) 75%, transparent) 50%, transparent 68%, color-mix(in srgb, var(--black) 60%, transparent));
+  opacity: calc(var(--ln-ridge) * (.16 + .84 * sin(var(--s) * 180deg))); }
+/* the label shows on the colour face as the turn crosses it */
+.ln.is-live:not(.is-still) .ln-reveal { --ln-edge: calc((var(--f, 0) - .2) / .6 * 116%);
+  -webkit-mask-image: linear-gradient(90deg, var(--black) calc(var(--ln-edge) - 16%), transparent var(--ln-edge));
+          mask-image: linear-gradient(90deg, var(--black) calc(var(--ln-edge) - 16%), transparent var(--ln-edge)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ln.is-live .ln-track, .ln.is-live .ln-slide, .ln.is-live .ln-slide::after, .ln-btn, .ln-rail i { transition: none; }
+}

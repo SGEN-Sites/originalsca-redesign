@@ -1,0 +1,444 @@
+/* deals.css: the home page deals, "Spotlight Reel" (owner-approved lab option B, src/lab/deals-b.html), 2026-11-11.
+   Markup home.mjs section 4, script site.js "deals reel". Tokens only.
+   Wide screens get a short pin (owner requests, 2026-11-12; it replaced a long pin that played every deal by scroll):
+   the opening titles (the neon sign, the heading, the lede; no kicker, owner request) fill the stage, and the next 80vh of scroll docks
+   them into the top of the rail, above the tabs, while the tabs and the card area fade in; scrolling back undocks them
+   to the same opening screen. Once they have docked the picked deal (01 at first) plays as a huge title card; after that
+   a deal takes the stage only when it is picked on the rail, a tablist (no auto-advance), and nothing on a card follows
+   the scroll. A card on stage opens its photo like a projector shutter and slowly zooms it, its texts smoke in (the
+   site's smoke text: site.js smokeArm/smokePlay, home.css .fx-u), then the button rises and its sheen sweeps. The rail's
+   bar under the picked deal fills over that sequence; the pointer tilts the card, lights its glass and nudges the
+   spotlight. Phones and short windows get a swipeable card stack with the same tabs above it. Without JS, or with
+   reduced motion, the section is its calm end state: four cards in a grid (one column on phones), no rail.
+   Owner changes on the port: the eyebrows are text only (no dash); the Happy Hour card carries the owner's photo
+   (.dl-photo--side), which fills the whole card (owner requests, 2026-11-12), both heads clear of the text, which stays
+   stacked on the left; every card has a dark gradient (.dl-shade) behind its text column, so white text
+   clears WCAG AA against the brightest photo pixel behind it; no cursor halo here; the card texts smoke in (replacing the
+   lab's count-ups, slams and rises, and the slam's flash, shake and outline echo). */
+
+/* ---------- static: the calm end state (no JS, reduced motion) ---------- */
+.dl { position: relative; isolation: isolate; background: var(--ink); color: var(--text); overflow-x: clip; }
+.dl-stage { position: relative; isolation: isolate; padding-block: var(--band-y); }
+.dl-back { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.dl-back img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.dl-base { scale: 1.04; filter: brightness(.5) saturate(1.1); transition: opacity 1.2s var(--ease); }
+.dl-amb, .dl-spot, .dl-beam { display: none; }
+.dl-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, var(--ink), color-mix(in srgb, var(--ink) 50%, transparent) 30%, color-mix(in srgb, var(--ink) 75%, transparent) 75%, var(--ink)); }
+.dl-in { position: relative; z-index: 2; width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto; }
+
+/* the opening titles */
+.dl-intro { max-width: 860px; margin: 0 auto clamp(36px, 5vw, 64px); text-align: center; }
+.dl-intro h2 { margin-top: 12px; }
+.dl-intro .lede { margin: 18px auto 0; }
+.dl-sign { display: grid; justify-items: center; gap: 4px; margin-bottom: 26px; }
+/* solid white lettering; the glow is white only (the mono build sets the --stage-* and --accent-tint glows to transparent) */
+.dl-neon { font: 400 clamp(3.4rem, 2rem + 6vw, 7.5rem)/1 var(--f-script); color: var(--white);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--white) 70%, transparent), 0 0 22px color-mix(in srgb, var(--white) 40%, transparent), 0 0 64px color-mix(in srgb, var(--white) 22%, transparent); }
+.dl-neon--sub { font: 400 clamp(1.4rem, 1rem + 1.4vw, 2.2rem)/1 var(--f-ui); text-transform: uppercase; letter-spacing: .3em; margin-right: -.3em;
+  color: var(--white); text-shadow: 0 0 10px color-mix(in srgb, var(--white) 40%, transparent); }
+
+/* the rail (shown only while live: a tablist beside the reel, or above the stack; site.js sets aria-selected and the
+   roving tabindex, and the cards become its tabpanels) */
+.dl-rail { display: none; }
+.dl-rail ol { list-style: none; margin: 0; padding: 0; }
+.dl-tab { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; column-gap: 14px; width: 100%; min-height: 64px;
+  padding: 12px 16px 17px; border: 0; border-radius: 14px; background: transparent; color: var(--steel); text-align: start; cursor: pointer;
+  transition: color var(--t-1) var(--ease), background-color var(--t-1) var(--ease); }
+.dl-tab__n { grid-row: 1 / 3; font: 700 .8125rem/1 var(--f-ui); letter-spacing: .16em; }
+.dl-tab__store { font: 700 var(--fs-kicker)/1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; }
+.dl-tab__big { grid-column: 2; font: 400 1.9rem/1 var(--f-display); letter-spacing: .01em; text-transform: uppercase; }
+.dl-tab__bar { position: absolute; left: 16px; right: 16px; bottom: 7px; height: 2px; border-radius: 2px; background: var(--hair); overflow: hidden; }
+.dl-tab__bar i { position: absolute; inset: 0; background: var(--white); transform-origin: 0 50%; transform: scaleX(0); transition: transform .3s var(--ease); }
+.dl-tab:hover, .dl-tab[aria-selected="true"] { color: var(--white); }
+.dl-tab[aria-selected="true"] { background: color-mix(in srgb, var(--white) 8%, transparent); }
+
+/* the cards */
+.dl-reel { display: grid; gap: clamp(16px, 2vw, 28px); }
+@media (min-width: 720px) { .dl-reel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* .dl-card is the layout box (and the stack's snap target, so it is never transformed); .dl-face is what you see */
+.dl-card { position: relative; container-type: inline-size; display: grid; min-height: clamp(460px, 42vw, 580px); border-radius: var(--radius-lg); color: var(--white); }
+.dl-face { position: relative; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(22px, 3vw, 40px); border-radius: var(--radius-lg); }
+.dl-face::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: var(--radius-lg); pointer-events: none;
+  box-shadow: var(--shadow-deep), 0 0 70px -26px color-mix(in srgb, var(--white) 34%, transparent); }
+.dl-card:focus-visible { outline-offset: 5px; border-radius: var(--radius-lg); }
+.dl-media { position: absolute; inset: 0; overflow: hidden; border-radius: var(--radius-lg); background: var(--ink-3); }
+.dl-photo { position: absolute; inset: 0; }
+.dl-photo img { width: 100%; height: 100%; object-fit: cover; scale: var(--z0, 1); }
+/* the text column's dark gradient: the copy sits at the foot of the card here, so it rises from the bottom and the left.
+   Every card's gradient is eased (owner request, 2026-11-12: "more natural and gradual"): its ink falls along a
+   smoothstep curve over 12 stops, so it has no edge and no band where it ends */
+.dl-shade { position: absolute; inset: 0; background: 
+  linear-gradient(0deg, color-mix(in srgb, var(--ink) 88%, transparent) 20%, color-mix(in srgb, var(--ink) 86%, transparent) 27.27%, color-mix(in srgb, var(--ink) 80.3%, transparent) 34.55%,
+    color-mix(in srgb, var(--ink) 71.9%, transparent) 41.82%, color-mix(in srgb, var(--ink) 61.6%, transparent) 49.09%, color-mix(in srgb, var(--ink) 50%, transparent) 56.36%,
+    color-mix(in srgb, var(--ink) 38%, transparent) 63.64%, color-mix(in srgb, var(--ink) 26.4%, transparent) 70.91%, color-mix(in srgb, var(--ink) 16.1%, transparent) 78.18%,
+    color-mix(in srgb, var(--ink) 7.7%, transparent) 85.45%, color-mix(in srgb, var(--ink) 2%, transparent) 92.73%, transparent 100%),
+  linear-gradient(90deg, color-mix(in srgb, var(--ink) 50%, transparent) 0%, color-mix(in srgb, var(--ink) 48.8%, transparent) 9.09%, color-mix(in srgb, var(--ink) 45.6%, transparent) 18.18%,
+    color-mix(in srgb, var(--ink) 40.9%, transparent) 27.27%, color-mix(in srgb, var(--ink) 35%, transparent) 36.36%, color-mix(in srgb, var(--ink) 28.4%, transparent) 45.45%,
+    color-mix(in srgb, var(--ink) 21.6%, transparent) 54.55%, color-mix(in srgb, var(--ink) 15%, transparent) 63.64%, color-mix(in srgb, var(--ink) 9.1%, transparent) 72.73%,
+    color-mix(in srgb, var(--ink) 4.4%, transparent) 81.82%, color-mix(in srgb, var(--ink) 1.2%, transparent) 90.91%, transparent 100%); }
+.dl-glare { display: none; }
+.dl-rim { position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 1px var(--hair-2), inset 0 1px 0 color-mix(in srgb, var(--white) 30%, transparent); }
+/* the deal number sits on a soft dark pool of its own, so it reads over any photo */
+.dl-idx { position: absolute; top: clamp(18px, 2.6vw, 30px); right: clamp(20px, 2.8vw, 34px); z-index: 1; padding: 5px 4px 5px 7px; border-radius: var(--radius-pill);
+  font: 700 .8125rem/1 var(--f-ui); letter-spacing: .2em; color: var(--chrome-2);
+  background: color-mix(in srgb, var(--ink) 72%, transparent); box-shadow: 0 0 12px 5px color-mix(in srgb, var(--ink) 56%, transparent); }
+.dl-copy { position: relative; z-index: 1; display: grid; justify-items: start; gap: 8px; }
+.dl-copy > * { margin: 0; }
+/* the eyebrow: text only (owner change) */
+.dl-store { font: 700 var(--fs-kicker)/1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--chrome-1); }
+.dl-fig { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 4px .45em; }
+.dl-big { position: relative; display: block; font: 400 clamp(5.4rem, 34cqw, 10rem)/.8 var(--f-display); letter-spacing: .005em; text-transform: uppercase;
+  color: var(--white); text-shadow: 0 0 36px color-mix(in srgb, var(--white) 26%, transparent); }
+[data-kind="words"] .dl-big { font-size: clamp(3.6rem, 18cqw, 7rem); }
+[data-kind="word"] .dl-big { font-size: clamp(5rem, 30cqw, 10rem); }
+.dl-small { padding-bottom: .55em; font: 700 clamp(1rem, 4.4cqw, 1.45rem)/1 var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--white); }
+.dl-small abbr { text-decoration: none; cursor: help; }
+.dl-title { margin-top: 6px; font-size: clamp(1.7rem, 7cqw, 2.5rem); color: var(--white); }
+.dl-body { max-width: 44ch; font-size: var(--fs-small); line-height: 1.45; color: var(--chrome-2); }
+.dl-copy > .dl-go { margin-top: 12px; }
+.dl-all { margin: clamp(28px, 4vw, 48px) 0 0; text-align: center; }
+
+/* the Happy Hour card (owner change, 2026-11-12, afternoon: the owner's new photo, happy-hour-lowrider). The photo fills
+   the whole card in every layout. Its subjects stand in its right part; head boxes, hair to chin, re-measured on the
+   1600px file: the woman x 80.5-92%, y 18.5-31%; the dog, tongue included, x 83.5-97.5%, y 64-87%. Its left 54% is an AI
+   extension of the street. So the photo is anchored to the card's right edge and slowly zooms from there, a little below
+   the heads' middle height (on a card wider than 3:2 it is held a little above its centre, so the woman's head stays
+   below the deal number); the words stack on the left (HAPPY / HOUR / ALL DAY / title / button), over the extension, on a dark
+   gradient from the left that eases out at the heads' edge (on a phone its last 20% of ink or less touches the woman's
+   hair: the words end about 40px short of her); the copy is kept narrow enough to stay left of the dog's head. */
+.dl-card--side { min-height: clamp(520px, 42vw, 580px); }
+.dl-photo--side img { object-position: 100% 20%; transform-origin: 100% 56%; }
+.dl-card--side .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 80%, transparent) 30%, color-mix(in srgb, var(--ink) 78.1%, transparent) 33.09%, color-mix(in srgb, var(--ink) 73%, transparent) 36.18%,
+  color-mix(in srgb, var(--ink) 65.4%, transparent) 39.27%, color-mix(in srgb, var(--ink) 56%, transparent) 42.36%, color-mix(in srgb, var(--ink) 45.4%, transparent) 45.45%,
+  color-mix(in srgb, var(--ink) 34.6%, transparent) 48.55%, color-mix(in srgb, var(--ink) 24%, transparent) 51.64%, color-mix(in srgb, var(--ink) 14.6%, transparent) 54.73%,
+  color-mix(in srgb, var(--ink) 7%, transparent) 57.82%, color-mix(in srgb, var(--ink) 1.9%, transparent) 60.91%, transparent 64%); }
+@container (min-width: 520px) { .dl-card--side .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 84%, transparent) 30%, color-mix(in srgb, var(--ink) 82.1%, transparent) 33.64%, color-mix(in srgb, var(--ink) 76.6%, transparent) 37.27%,
+    color-mix(in srgb, var(--ink) 67.5%, transparent) 40.91%, color-mix(in srgb, var(--ink) 57.3%, transparent) 44.55%, color-mix(in srgb, var(--ink) 47.1%, transparent) 48.18%,
+    color-mix(in srgb, var(--ink) 36.9%, transparent) 51.82%, color-mix(in srgb, var(--ink) 26.7%, transparent) 55.45%, color-mix(in srgb, var(--ink) 16.5%, transparent) 59.09%,
+    color-mix(in srgb, var(--ink) 7.4%, transparent) 62.73%, color-mix(in srgb, var(--ink) 1.9%, transparent) 66.36%, transparent 70%); } }   /* the heads sit further right on a wide card */
+.dl-card--side .dl-copy { max-width: 52%; }
+.dl-card--side .dl-fig { flex-direction: column; align-items: flex-start; gap: 10px; }
+.dl-card--side .dl-big { width: min-content; line-height: .84; }
+.dl-card--side .dl-small { padding-bottom: 0; }
+
+/* the San Diego card (owner request, 2026-11-12): the owner's golden-hour photo of the storefront (store-sd-front, 4:3).
+   From its left: the sun and its flare (at the left edge, about 45% down), a neighbour's sign (x 2-14%), then the
+   storefront from x 25%: the ORIGINALS / DISPENSARY sign (x 27-50%, y 30-43%), a promo banner (x 46-53%), the doors
+   (x 66-79%), the number 6220 (x 76-80%, y 46-56%). Its grade is the golden hour the owner asked for, so this card's
+   gradient is only as dark as its words need, and only where they are. A narrow card (a phone, the still grid's one
+   column) shows x 27-77% of the photo, the sign and the doors. The copy sits below the sign (smaller numerals keep it
+   short enough) and keeps 70% of the card so the doors stay clear; its gradient rises from the foot and eases out
+   across the 20px between the eyebrow and the sign (its last 20% of ink or less on DISPENSARY's foot), and fades out
+   before the doors (an eased mask across it), so the storefront keeps its warmth */
+#deal-sd .dl-photo img { object-position: 50% 50%; transform-origin: 0% 50%; }   /* x 25-75%; the zoom grows away from the sign */
+#deal-sd .dl-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 66%, transparent) 48%, color-mix(in srgb, var(--ink) 64.5%, transparent) 49.27%, color-mix(in srgb, var(--ink) 60.2%, transparent) 50.55%,
+  color-mix(in srgb, var(--ink) 53%, transparent) 51.82%, color-mix(in srgb, var(--ink) 45%, transparent) 53.09%, color-mix(in srgb, var(--ink) 37%, transparent) 54.36%,
+  color-mix(in srgb, var(--ink) 29%, transparent) 55.64%, color-mix(in srgb, var(--ink) 21%, transparent) 56.91%, color-mix(in srgb, var(--ink) 13%, transparent) 58.18%,
+  color-mix(in srgb, var(--ink) 5.8%, transparent) 59.45%, color-mix(in srgb, var(--ink) 1.5%, transparent) 60.73%, transparent 62%);
+  -webkit-mask-image: var(--sd-fade); mask-image: var(--sd-fade);
+  --sd-fade: linear-gradient(90deg, var(--black) 50%, color-mix(in srgb, var(--black) 96.6%, transparent) 54.44%, color-mix(in srgb, var(--black) 87.4%, transparent) 58.89%,
+    color-mix(in srgb, var(--black) 74.1%, transparent) 63.33%, color-mix(in srgb, var(--black) 58.3%, transparent) 67.78%, color-mix(in srgb, var(--black) 41.7%, transparent) 72.22%,
+    color-mix(in srgb, var(--black) 25.9%, transparent) 76.67%, color-mix(in srgb, var(--black) 12.6%, transparent) 81.11%, color-mix(in srgb, var(--black) 3.4%, transparent) 85.56%,
+    transparent 90%); }
+#deal-sd .dl-copy { max-width: 70%; }
+#deal-sd .dl-big { font-size: clamp(5.4rem, 27cqw, 5.75rem); }   /* short enough that the copy stays below the sign */
+.dl:not(.is-live) #deal-sd { min-height: clamp(520px, 42vw, 580px); }   /* the still grid: room for the copy below the sign */
+/* a mid-width card (the still grid's two columns on a tablet-sized screen): the photo, 1.1 times its cover size from its
+   bottom left, lifts the sign clear of the copy and keeps it whole; the gradient eases out between the copy's top and the sign */
+@container (min-width: 420px) and (max-width: 519.98px) {
+  #deal-sd .dl-photo img { transform-origin: 0% 100%; --z0: 1.1; }
+  #deal-sd .dl-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 66%, transparent) 54%, color-mix(in srgb, var(--ink) 64.5%, transparent) 55.27%, color-mix(in srgb, var(--ink) 60.2%, transparent) 56.55%,
+    color-mix(in srgb, var(--ink) 53%, transparent) 57.82%, color-mix(in srgb, var(--ink) 45%, transparent) 59.09%, color-mix(in srgb, var(--ink) 37%, transparent) 60.36%,
+    color-mix(in srgb, var(--ink) 29%, transparent) 61.64%, color-mix(in srgb, var(--ink) 21%, transparent) 62.91%, color-mix(in srgb, var(--ink) 13%, transparent) 64.18%,
+    color-mix(in srgb, var(--ink) 5.8%, transparent) 65.45%, color-mix(in srgb, var(--ink) 1.5%, transparent) 66.73%, transparent 68%); }
+}
+/* a wide still card (two columns on a wide screen) shows the storefront from x 16-23% (by the card's shape): the photo,
+   1.1 times its cover size from its bottom left, lifts the sign clear of the copy, which keeps 55%, and keeps the sign
+   whole; the gradient eases out between the copy's top and the sign */
+@container (min-width: 520px) {
+  #deal-sd .dl-photo img { object-position: 100% 50%; transform-origin: 0% 100%; --z0: 1.1; }
+  #deal-sd .dl-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 76%, transparent) 48%, color-mix(in srgb, var(--ink) 74.3%, transparent) 50%, color-mix(in srgb, var(--ink) 69.3%, transparent) 52%,
+    color-mix(in srgb, var(--ink) 61%, transparent) 54%, color-mix(in srgb, var(--ink) 51.8%, transparent) 56%, color-mix(in srgb, var(--ink) 42.6%, transparent) 58%,
+    color-mix(in srgb, var(--ink) 33.4%, transparent) 60%, color-mix(in srgb, var(--ink) 24.2%, transparent) 62%, color-mix(in srgb, var(--ink) 15%, transparent) 64%,
+    color-mix(in srgb, var(--ink) 6.7%, transparent) 66%, color-mix(in srgb, var(--ink) 1.7%, transparent) 68%, transparent 70%); }   /* the lifted sign's foot is at 37% of the card */
+  #deal-sd .dl-copy { max-width: 55%; }
+  #deal-sd .dl-big { font-size: 6.5rem; }
+}
+
+/* the Daily deals card (owner request, 2026-11-12): the owner's photo of an ORIGINALS glass jar on a reflective counter
+   (daily-jar, 16:9). The jar, lid to base, stands at x 65.5-90% and y 18-72% of it, its reflection runs down to y 98%,
+   and its left two thirds are soft warm bokeh. The whole jar stays clear of the words at every card shape. Off the wide
+   stage (the stack, the still grid) the photo is a band across the card's top, anchored to the photo's right edge so
+   the jar stands at the band's right, its counter fading out into the card below the jar's foot, and the words sit
+   under the jar: the band is the room above the copy (the card's least height, --dj-h, less the copy, about 178px +
+   33cqw with its padding, and 42px of air, so the jar's reflection is gone before the word) over .72 (the jar's
+   foot), kept between the whole photo (56.25cqw, its foot
+   then 40.5cqw down, on a wide card where the words keep left of the jar) and 84cqw (on a phone, a jar about 160px
+   tall). On the wide stage (below, the reel) the photo covers the card */
+#deal-daily { --dj-h: clamp(460px, 42vw, 580px);
+  /* the band's counter fades out from just below the jar's foot (73%) by 92%, along a smoothstep, so the jar's
+     reflection is gone before the words */
+  --dj-fade: linear-gradient(180deg, var(--black) 73%, color-mix(in srgb, var(--black) 96.6%, transparent) 75.11%, color-mix(in srgb, var(--black) 87.4%, transparent) 77.22%,
+    color-mix(in srgb, var(--black) 74.1%, transparent) 79.33%, color-mix(in srgb, var(--black) 58.3%, transparent) 81.44%, color-mix(in srgb, var(--black) 41.7%, transparent) 83.56%,
+    color-mix(in srgb, var(--black) 25.9%, transparent) 85.67%, color-mix(in srgb, var(--black) 12.6%, transparent) 87.78%, color-mix(in srgb, var(--black) 3.4%, transparent) 89.89%, transparent 92%); }
+@media (min-width: 720px) { .dl:not(.is-live) #deal-daily { --dj-h: clamp(520px, 42vw, 580px); } }   /* the still grid's row with the San Diego card */
+.dl.is-stack #deal-daily { --dj-h: min(540px, 66svh); }
+/* --dj-band, the band's height; --dj-jl, where the jar's left edge falls in it (the photo, anchored right, is drawn
+   max(100cqw, 1.7768 times the band) wide; the jar's left edge is .345 of that short of the right edge) */
+.dl:not(.is-reel) #deal-daily { --dj-band: clamp(56.25cqw, (var(--dj-h) - 220px - 33cqw) / .72, 84cqw); --dj-jl: calc(100cqw - .345 * max(100cqw, 1.7768 * var(--dj-band))); }
+#deal-daily .dl-photo img { object-position: 100% 0%; transform-origin: 72% 20%; }   /* the zoom grows from the jar's lid height, so the lid stays put */
+.dl:not(.is-reel) #deal-daily .dl-photo { inset: 0 0 auto; height: var(--dj-band);
+  -webkit-mask-image: var(--dj-fade); mask-image: var(--dj-fade); }
+/* its gradient: a ramp up from the foot that is gone at the jar's foot (.72 of the band down), and, on a wide card or a
+   short phone, where the words come up beside the band's bokeh, a ramp from the left that is gone at the jar's left edge */
+.dl:not(.is-reel) #deal-daily .dl-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 50%, transparent) 0%, color-mix(in srgb, var(--ink) 48.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.0909), color-mix(in srgb, var(--ink) 45.6%, transparent) calc((100% - .72 * var(--dj-band)) * 0.1818),
+  color-mix(in srgb, var(--ink) 40.2%, transparent) calc((100% - .72 * var(--dj-band)) * 0.2727), color-mix(in srgb, var(--ink) 34.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.3636), color-mix(in srgb, var(--ink) 28%, transparent) calc((100% - .72 * var(--dj-band)) * 0.4545),
+  color-mix(in srgb, var(--ink) 22%, transparent) calc((100% - .72 * var(--dj-band)) * 0.5455), color-mix(in srgb, var(--ink) 15.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.6364), color-mix(in srgb, var(--ink) 9.8%, transparent) calc((100% - .72 * var(--dj-band)) * 0.7273),
+  color-mix(in srgb, var(--ink) 4.4%, transparent) calc((100% - .72 * var(--dj-band)) * 0.8182), color-mix(in srgb, var(--ink) 1.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.9091), transparent calc((100% - .72 * var(--dj-band)) * 1)); }
+@container (min-width: 420px) { .dl:not(.is-reel) #deal-daily .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 60%, transparent) calc(var(--dj-jl) * 0.2), color-mix(in srgb, var(--ink) 58.6%, transparent) calc(var(--dj-jl) * 0.2727), color-mix(in srgb, var(--ink) 54.8%, transparent) calc(var(--dj-jl) * 0.3455),
+    color-mix(in srgb, var(--ink) 49%, transparent) calc(var(--dj-jl) * 0.4182), color-mix(in srgb, var(--ink) 42%, transparent) calc(var(--dj-jl) * 0.4909), color-mix(in srgb, var(--ink) 34.1%, transparent) calc(var(--dj-jl) * 0.5636),
+    color-mix(in srgb, var(--ink) 25.9%, transparent) calc(var(--dj-jl) * 0.6364), color-mix(in srgb, var(--ink) 18%, transparent) calc(var(--dj-jl) * 0.7091), color-mix(in srgb, var(--ink) 11%, transparent) calc(var(--dj-jl) * 0.7818),
+    color-mix(in srgb, var(--ink) 5.2%, transparent) calc(var(--dj-jl) * 0.8545), color-mix(in srgb, var(--ink) 1.4%, transparent) calc(var(--dj-jl) * 0.9273), transparent calc(var(--dj-jl) * 1)),
+    linear-gradient(0deg, color-mix(in srgb, var(--ink) 50%, transparent) 0%, color-mix(in srgb, var(--ink) 48.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.0909), color-mix(in srgb, var(--ink) 45.6%, transparent) calc((100% - .72 * var(--dj-band)) * 0.1818),
+    color-mix(in srgb, var(--ink) 40.2%, transparent) calc((100% - .72 * var(--dj-band)) * 0.2727), color-mix(in srgb, var(--ink) 34.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.3636), color-mix(in srgb, var(--ink) 28%, transparent) calc((100% - .72 * var(--dj-band)) * 0.4545),
+    color-mix(in srgb, var(--ink) 22%, transparent) calc((100% - .72 * var(--dj-band)) * 0.5455), color-mix(in srgb, var(--ink) 15.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.6364), color-mix(in srgb, var(--ink) 9.8%, transparent) calc((100% - .72 * var(--dj-band)) * 0.7273),
+    color-mix(in srgb, var(--ink) 4.4%, transparent) calc((100% - .72 * var(--dj-band)) * 0.8182), color-mix(in srgb, var(--ink) 1.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.9091), transparent calc((100% - .72 * var(--dj-band)) * 1)); } }
+@media (max-height: 817.98px) { .dl.is-stack #deal-daily .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 60%, transparent) calc(var(--dj-jl) * 0.2), color-mix(in srgb, var(--ink) 58.6%, transparent) calc(var(--dj-jl) * 0.2727), color-mix(in srgb, var(--ink) 54.8%, transparent) calc(var(--dj-jl) * 0.3455),
+    color-mix(in srgb, var(--ink) 49%, transparent) calc(var(--dj-jl) * 0.4182), color-mix(in srgb, var(--ink) 42%, transparent) calc(var(--dj-jl) * 0.4909), color-mix(in srgb, var(--ink) 34.1%, transparent) calc(var(--dj-jl) * 0.5636),
+    color-mix(in srgb, var(--ink) 25.9%, transparent) calc(var(--dj-jl) * 0.6364), color-mix(in srgb, var(--ink) 18%, transparent) calc(var(--dj-jl) * 0.7091), color-mix(in srgb, var(--ink) 11%, transparent) calc(var(--dj-jl) * 0.7818),
+    color-mix(in srgb, var(--ink) 5.2%, transparent) calc(var(--dj-jl) * 0.8545), color-mix(in srgb, var(--ink) 1.4%, transparent) calc(var(--dj-jl) * 0.9273), transparent calc(var(--dj-jl) * 1)),
+    linear-gradient(0deg, color-mix(in srgb, var(--ink) 50%, transparent) 0%, color-mix(in srgb, var(--ink) 48.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.0909), color-mix(in srgb, var(--ink) 45.6%, transparent) calc((100% - .72 * var(--dj-band)) * 0.1818),
+    color-mix(in srgb, var(--ink) 40.2%, transparent) calc((100% - .72 * var(--dj-band)) * 0.2727), color-mix(in srgb, var(--ink) 34.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.3636), color-mix(in srgb, var(--ink) 28%, transparent) calc((100% - .72 * var(--dj-band)) * 0.4545),
+    color-mix(in srgb, var(--ink) 22%, transparent) calc((100% - .72 * var(--dj-band)) * 0.5455), color-mix(in srgb, var(--ink) 15.9%, transparent) calc((100% - .72 * var(--dj-band)) * 0.6364), color-mix(in srgb, var(--ink) 9.8%, transparent) calc((100% - .72 * var(--dj-band)) * 0.7273),
+    color-mix(in srgb, var(--ink) 4.4%, transparent) calc((100% - .72 * var(--dj-band)) * 0.8182), color-mix(in srgb, var(--ink) 1.1%, transparent) calc((100% - .72 * var(--dj-band)) * 0.9091), transparent calc((100% - .72 * var(--dj-band)) * 1)); } }
+/* the vertical version (owner, 2026-11-12: "use this and replace all the vertical versions"). Wherever the card is taller
+   than wide off the wide stage (under 520px wide: the phone stack, the still grid's narrow cards), the owner's vertical
+   jar photo (daily-jar-tall, 2:3) covers the whole card in place of the band. Its jar, lid to base, stands at x 60-89%
+   and y 36.5-62.5% of it. The photo is anchored to the card's right edge and foot, so the jar stands at the card's right
+   with its reflection below it; the words stack in a column on the left (44cqw) over the potted plant and the sunlit
+   counter. The golden-hour photo is bright on all its left side, so the words sit on two eased ramps: one from the left
+   that holds to 34% and is gone at 59%, just short of the jar (60%); one from the foot, under the title,
+   the body and the button, gone at 36%, under the jar's foot (37.5% up on a phone). The wide stage keeps the 16:9
+   photo, and so does a card 520px or wider (the band) */
+.dl-photo .dl-tall { display: none; }
+@container (max-width: 519.98px) {
+  .dl:not(.is-reel) #deal-daily .dl-photo { inset: 0; height: auto; -webkit-mask-image: none; mask-image: none; }
+  .dl:not(.is-reel) #deal-daily .dl-photo .dl-wide { display: none; }
+  .dl:not(.is-reel) #deal-daily .dl-photo .dl-tall { display: block; object-position: 100% 100%; }
+  .dl:not(.is-reel) #deal-daily .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 88%, transparent) 34%, color-mix(in srgb, var(--ink) 86%, transparent) 36.27%, color-mix(in srgb, var(--ink) 80.3%, transparent) 38.55%,
+    color-mix(in srgb, var(--ink) 71.9%, transparent) 40.82%, color-mix(in srgb, var(--ink) 61.6%, transparent) 43.09%, color-mix(in srgb, var(--ink) 50%, transparent) 45.36%,
+    color-mix(in srgb, var(--ink) 38%, transparent) 47.64%, color-mix(in srgb, var(--ink) 26.4%, transparent) 49.91%, color-mix(in srgb, var(--ink) 16.1%, transparent) 52.18%,
+    color-mix(in srgb, var(--ink) 7.7%, transparent) 54.45%, color-mix(in srgb, var(--ink) 2%, transparent) 56.73%, transparent 59%),
+    linear-gradient(0deg, color-mix(in srgb, var(--ink) 80%, transparent) 12%, color-mix(in srgb, var(--ink) 78.1%, transparent) 14.18%, color-mix(in srgb, var(--ink) 73%, transparent) 16.36%,
+    color-mix(in srgb, var(--ink) 65.4%, transparent) 18.55%, color-mix(in srgb, var(--ink) 56%, transparent) 20.73%, color-mix(in srgb, var(--ink) 45.4%, transparent) 22.91%,
+    color-mix(in srgb, var(--ink) 34.6%, transparent) 25.09%, color-mix(in srgb, var(--ink) 24%, transparent) 27.27%, color-mix(in srgb, var(--ink) 14.6%, transparent) 29.45%,
+    color-mix(in srgb, var(--ink) 7%, transparent) 31.64%, color-mix(in srgb, var(--ink) 1.9%, transparent) 33.82%, transparent 36%); }
+  .dl:not(.is-reel) #deal-daily :is(.dl-store, .dl-fig, .dl-title, .dl-body) { max-width: 44cqw; }
+  .dl:not(.is-reel) #deal-daily .dl-fig { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .dl:not(.is-reel) #deal-daily .dl-big { font-size: 24cqw; line-height: .84; }
+  .dl:not(.is-reel) #deal-daily .dl-small { padding-bottom: 0; }
+}
+
+/* ---------- live (JS and motion): shared by the reel and the stack ---------- */
+.dl.is-live .dl-amb { display: block; inset: -8%; width: 116%; height: 116%; opacity: 0; filter: blur(42px) saturate(1.35) brightness(.45); transition: opacity 1.4s var(--ease); }
+.dl.is-live .dl-amb.is-on { opacity: .8; }
+.dl.is-live .dl-spot { display: block; position: absolute; width: 80vmax; height: 80vmax; left: calc(40% + var(--px, 0) * 9%); top: calc(52% + var(--py, 0) * 9%);
+  translate: -50% -50%; background: radial-gradient(closest-side, color-mix(in srgb, var(--white) 13%, transparent), transparent); mix-blend-mode: screen; }
+.dl.is-live .dl-beam { display: block; position: absolute; inset: 0; opacity: .6; mix-blend-mode: screen;
+  -webkit-mask: linear-gradient(180deg, var(--black), transparent 84%); mask: linear-gradient(180deg, var(--black), transparent 84%); }
+.dl.is-live .dl-beam--l { background: conic-gradient(from 148deg at 16% -14%, transparent 0deg, color-mix(in srgb, var(--white) 22%, transparent) 9deg, transparent 19deg);
+  transform-origin: 16% -14%; animation: dl-sway 11s ease-in-out infinite alternate; }
+.dl.is-live .dl-beam--r { background: conic-gradient(from 193deg at 84% -14%, transparent 0deg, color-mix(in srgb, var(--white) 22%, transparent) 9deg, transparent 19deg);
+  transform-origin: 84% -14%; animation: dl-sway 13s ease-in-out infinite alternate-reverse; }
+.dl.is-live .dl-sign:not(.is-lit) .dl-neon { opacity: .14; }
+.dl.is-live .dl-sign.is-lit .dl-neon { animation: dl-neon-on 1.6s steps(1, end) both; }
+.dl.is-live .dl-sign.is-lit .dl-neon--sub { animation-delay: .6s; }
+
+/* the glass glare lies under the text column's gradient, so the pointer's light never washes out the copy */
+.dl.is-live .dl-glare { display: block; position: absolute; inset: 0; pointer-events: none; opacity: 0; mix-blend-mode: screen;
+  background: radial-gradient(34% 48% at var(--gx, 50%) var(--gy, 30%), color-mix(in srgb, var(--white) 28%, transparent), transparent 70%); transition: opacity .5s var(--ease); }
+.dl.is-live .dl-photo img { transition: scale 1.2s var(--ease); }
+.dl.is-live .dl-card.is-on .dl-photo img { scale: calc(var(--z0, 1) * 1.13); transition: scale 16s cubic-bezier(.2, .55, .3, 1); }
+/* the Happy Hour photo zooms more gently: its two heads span two thirds of its height, so a full zoom on a stage wider
+   than 3:2 would carry the dog's tongue out of the card and the woman's head up to the deal number */
+.dl.is-live .dl-card--side.is-on .dl-photo img { scale: calc(var(--z0, 1) * 1.07); }
+/* and the San Diego storefront only a little, so its sign and number are never cropped */
+.dl.is-live #deal-sd.is-on .dl-photo img { scale: calc(var(--z0, 1) * 1.04); }
+.dl.is-stack #deal-sd.is-on .dl-photo img { scale: var(--z0, 1); }   /* on a phone not at all: its narrow window holds the sign and the doors with nothing to spare */
+.dl.is-stack #deal-daily.is-on .dl-photo img { scale: var(--z0, 1); }   /* nor the jar's band: the jar's foot stays above the copy */
+/* the texts (owner change): off stage they wait unseen; each time their card takes the stage site.js smokes them in
+   (smokeArm/smokePlay; the letters' fade is home.css .fx-u), in place of the lab's count-ups, slams and rises */
+.dl.is-live .dl-card :is(.dl-store, .dl-big, .dl-small, .dl-title, .dl-body) { transition: opacity .25s ease; }
+.dl.is-live .dl-card:not(.is-on) :is(.dl-store, .dl-big, .dl-small, .dl-title, .dl-body) { opacity: 0; }
+/* the button rises while the texts settle, then its sheen sweeps once */
+.dl.is-live .dl-card { --go: 1.25s; }
+.dl.is-live .dl-card .dl-rise { opacity: 0; translate: 0 18px; transition: opacity .25s ease, translate .25s ease; }
+.dl.is-live .dl-card.is-on .dl-rise { opacity: 1; translate: 0 0; transition: opacity .7s var(--ease) var(--d, 0s), translate .9s var(--ease) var(--d, 0s); }
+.dl.is-live .dl-card .dl-go { --d: var(--go); }
+.dl.is-live .dl-card:focus-within .dl-rise { opacity: 1; translate: 0 0; transition: none; } /* a focused button never waits for its entrance */
+.dl.is-live .dl-card.is-on .btn::after { left: 130%; transition: left 1s var(--ease) calc(var(--go) + .35s); }
+.dl.is-live .dl-card:focus-within { outline: none; }
+
+/* ---------- the reel (wide screens; JS sets is-reel): a short pin. The section is 80vh of scroll taller than its stage,
+   which sticks, and that scroll does one thing (owner request, 2026-11-12, afternoon): it docks the opening titles from
+   the middle of the stage into the top of the rail, above the tabs, and undocks them on the way back up. site.js writes
+   each title's transform and the fades of the tabs and the card area from the scroll; nothing on a card follows it.
+   data-act is the deal on stage: -1 until the titles have docked (the picked deal waits in its frame, is-next), then the
+   picked deal plays its timed sequence ---------- */
+.dl.is-reel { height: calc(100vh + 80vh); }
+.dl.is-reel .dl-stage { position: sticky; top: 0; height: 100vh; padding: 0; overflow: clip; }
+/* both edges blend into the ink of the sections around it (owner request): the background layers fade in from ink over
+   the stage's top 18% and back out over its foot */
+.dl.is-reel .dl-back { -webkit-mask-image: linear-gradient(180deg, transparent, var(--black) 18%, var(--black) 82%, transparent);
+  mask-image: linear-gradient(180deg, transparent, var(--black) 18%, var(--black) 82%, transparent); }
+.dl.is-reel:not([data-act="-1"]) .dl-base { opacity: .35; }
+.dl.is-reel .dl-scrim { background: radial-gradient(120% 95% at 42% 52%, transparent 30%, color-mix(in srgb, var(--ink) 80%, transparent) 100%),
+  linear-gradient(180deg, color-mix(in srgb, var(--ink) 70%, transparent), transparent 26%, transparent 70%, color-mix(in srgb, var(--ink) 80%, transparent)); }
+.dl.is-reel .dl-in { position: absolute; inset: 0; width: auto; margin: 0; padding: calc(var(--header-h) + 24px) var(--gutter) calc(var(--dash-h) + 24px);
+  display: grid; grid-template-columns: minmax(0, 1fr) clamp(220px, 19vw, 290px); grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-areas: 'reel rail' 'reel all'; gap: 18px clamp(28px, 3.4vw, 56px); }
+.dl.is-reel .dl-intro { grid-area: 1 / 1 / -1 / -1; align-self: center; justify-self: center; z-index: 3; margin: 0; pointer-events: none; }
+/* each title docks on its own (site.js): its box hugs its text, and it moves and scales from its top-left corner */
+.dl.is-reel .dl-intro > * { width: fit-content; margin-inline: auto; transform-origin: 0 0; }
+/* the docked titles' places: site.js builds an unseen copy of the titles (aria-hidden) at the top of the rail, sized to
+   fit it, and moves each title onto its copy; the tabs follow below it in the rail's own flow. Only the copy's lede is
+   shown: the lede cannot shrink into the narrow rail, so it fades out in the middle while its narrow copy fades in here */
+.dl-dock { display: none; }
+.dl.is-reel .dl-dock { display: grid; justify-items: start; margin: 0 16px 16px; text-align: start; }
+.dl.is-reel .dl-dock > * { margin: 0; }
+.dl.is-reel .dl-dock > :not(.lede) { visibility: hidden; white-space: nowrap; }
+.dl.is-reel .dl-dock .dl-sign { margin-bottom: 10px; }
+.dl.is-reel .dl-dock h2 { margin-top: 4px; }
+.dl.is-reel .dl-dock .lede { margin-top: 10px; max-width: none; line-height: 1.45; opacity: 0; }
+.dl.is-reel .dl-rail { display: block; grid-area: rail; align-self: start; }
+.dl.is-reel .dl-rail ol { display: grid; gap: 4px; }
+/* compact tabs, so the docked titles and the four tabs fit one screen */
+.dl.is-reel .dl-tab { min-height: 0; padding: 9px 14px 13px; }
+.dl.is-reel .dl-tab__big { font-size: 1.6rem; }
+.dl.is-reel .dl-tab__bar { left: 14px; right: 14px; bottom: 5px; }
+.dl.is-reel .dl-all { grid-area: all; margin: 0; padding-left: 16px; text-align: left; }
+/* until the titles have docked, the tabs and All deals are only fading in (site.js): they take no clicks yet */
+.dl.is-reel[data-act="-1"] :is(.dl-rail ol, .dl-all) { pointer-events: none; }
+/* the picked deal's bar fills over its sequence (shutter, smoke, button, sheen); there is no auto-advance */
+.dl.is-reel:not([data-act="-1"]) .dl-tab[aria-selected="true"] .dl-tab__bar i { transform: scaleX(1); transition: transform 2.6s linear; }
+.dl.is-reel .dl-reel { grid-area: reel; position: relative; display: block; container-type: size; }
+.dl.is-reel .dl-card { position: absolute; inset: 0; container-type: size; display: block; min-height: 0;
+  opacity: 0; pointer-events: none; translate: 0 7%; scale: 1.04; transition: opacity .45s var(--ease), translate .9s var(--ease), scale .9s var(--ease); }
+.dl.is-reel .dl-card.is-past { translate: 0 -6%; scale: .92; }
+.dl.is-reel .dl-card.is-on { opacity: 1; pointer-events: auto; translate: 0 0; scale: 1; transition: opacity .5s var(--ease) .1s, translate 1s var(--ease), scale 1s var(--ease);
+  transform: perspective(1600px) rotateX(calc(var(--py, 0) * -3.5deg)) rotateY(calc(var(--px, 0) * 5deg)); }
+.dl.is-reel .dl-face { position: absolute; inset: 0; display: block; padding: clamp(28px, 6.4cqh, 52px) clamp(28px, 5cqw, 60px); }
+.dl.is-reel .dl-face::before { opacity: 0; background: var(--ink-3); transition: opacity .4s var(--ease); }
+.dl.is-reel .dl-card.is-on .dl-face::before { opacity: 1; transition: opacity 1s var(--ease) .5s; }
+/* the card area fades in on the left as the titles dock (site.js sets the reel's opacity from the scroll): the picked
+   deal waits in it as a dark frame with its shutter shut, and plays its timed sequence once the titles have docked */
+.dl.is-reel .dl-card.is-next { opacity: 1; translate: 0 0; scale: 1; }
+.dl.is-reel .dl-card.is-next .dl-face::before { opacity: 1; }
+.dl.is-reel .dl-card .dl-media { clip-path: inset(42% 0 42% 0 round var(--radius-lg)); transition: clip-path .5s var(--ease); }
+.dl.is-reel .dl-card.is-on .dl-media { clip-path: inset(0 0 0 0 round var(--radius-lg)); transition: clip-path 1.05s var(--ease) .05s; }
+.dl.is-reel .dl-card.is-next .dl-media { clip-path: inset(50% 0 50% 0 round var(--radius-lg)); }
+.dl.is-reel .dl-photo { inset: -3%; translate: calc(var(--px, 0) * -16px) calc(var(--py, 0) * -12px); }
+/* the text column's dark gradient: the copy holds the left of the card here, so it runs from the left edge */
+.dl.is-reel .dl-shade { background: 
+  linear-gradient(90deg, color-mix(in srgb, var(--ink) 86%, transparent) 12%, color-mix(in srgb, var(--ink) 84%, transparent) 19.45%, color-mix(in srgb, var(--ink) 78.5%, transparent) 26.91%,
+    color-mix(in srgb, var(--ink) 70.3%, transparent) 34.36%, color-mix(in srgb, var(--ink) 60.2%, transparent) 41.82%, color-mix(in srgb, var(--ink) 48.8%, transparent) 49.27%,
+    color-mix(in srgb, var(--ink) 37.2%, transparent) 56.73%, color-mix(in srgb, var(--ink) 25.8%, transparent) 64.18%, color-mix(in srgb, var(--ink) 15.7%, transparent) 71.64%,
+    color-mix(in srgb, var(--ink) 7.5%, transparent) 79.09%, color-mix(in srgb, var(--ink) 2%, transparent) 86.55%, transparent 94%),
+  linear-gradient(0deg, color-mix(in srgb, var(--ink) 60%, transparent) 0%, color-mix(in srgb, var(--ink) 58.6%, transparent) 5.45%, color-mix(in srgb, var(--ink) 54.8%, transparent) 10.91%,
+    color-mix(in srgb, var(--ink) 49%, transparent) 16.36%, color-mix(in srgb, var(--ink) 42%, transparent) 21.82%, color-mix(in srgb, var(--ink) 34.1%, transparent) 27.27%,
+    color-mix(in srgb, var(--ink) 25.9%, transparent) 32.73%, color-mix(in srgb, var(--ink) 18%, transparent) 38.18%, color-mix(in srgb, var(--ink) 11%, transparent) 43.64%,
+    color-mix(in srgb, var(--ink) 5.2%, transparent) 49.09%, color-mix(in srgb, var(--ink) 1.4%, transparent) 54.55%, transparent 60%); }
+.dl.is-reel.is-hover .dl-card.is-on .dl-glare { opacity: 1; }
+.dl.is-reel .dl-idx { top: clamp(24px, 6.4cqh, 50px); right: clamp(28px, 5cqw, 58px); font-size: .9rem; }
+.dl.is-reel .dl-copy { height: 100%; max-width: 64%; grid-template-rows: auto minmax(0, 1fr) auto auto auto; align-items: end; gap: 10px; }
+.dl.is-reel .dl-store { align-self: start; font-size: clamp(.8125rem, 2.3cqh, 1rem); }
+.dl.is-reel .dl-fig { align-self: center; translate: calc(var(--px, 0) * 14px) calc(var(--py, 0) * 10px); }
+.dl.is-reel .dl-big { font-size: min(32cqw, 52cqh); }
+.dl.is-reel [data-kind="words"] .dl-big { font-size: min(16cqw, 27cqh); }
+.dl.is-reel [data-kind="word"] .dl-big { font-size: min(29cqw, 48cqh); }
+.dl.is-reel .dl-small { font-size: clamp(1.2rem, 4cqh, 2rem); }
+.dl.is-reel .dl-title { font-size: clamp(2rem, 7cqh, 3.4rem); }
+.dl.is-reel .dl-body { max-width: 60ch; font-size: clamp(.95rem, 2.6cqh, 1.1rem); }
+/* the Happy Hour card on the reel: the photo layer is the card itself, with no overscan and no pointer drift (the dog's
+   head sits too near the photo's right edge to spare any; the card still tilts and lights), so the slow zoom from the
+   right edge keeps both heads in the card. The copy keeps the left 40%; its gradient eases out by 70%, before both
+   heads (the woman's starts past 73% of the card at every stage shape here) */
+.dl.is-reel .dl-photo--side { inset: 0; translate: none; }
+.dl.is-reel .dl-card--side .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 90%, transparent) 6%, color-mix(in srgb, var(--ink) 88%, transparent) 11.82%, color-mix(in srgb, var(--ink) 82.1%, transparent) 17.64%,
+  color-mix(in srgb, var(--ink) 72.3%, transparent) 23.45%, color-mix(in srgb, var(--ink) 61.4%, transparent) 29.27%, color-mix(in srgb, var(--ink) 50.5%, transparent) 35.09%,
+  color-mix(in srgb, var(--ink) 39.5%, transparent) 40.91%, color-mix(in srgb, var(--ink) 28.6%, transparent) 46.73%, color-mix(in srgb, var(--ink) 17.7%, transparent) 52.55%,
+  color-mix(in srgb, var(--ink) 7.9%, transparent) 58.36%, color-mix(in srgb, var(--ink) 2%, transparent) 64.18%, transparent 70%); }
+.dl.is-reel .dl-card--side .dl-copy { max-width: 40%; }
+.dl.is-reel .dl-card--side .dl-big { font-size: min(15cqw, 24cqh); }
+/* the San Diego card on the reel: its photo box is sized from the card (cqw/cqh) so the whole storefront shows right of
+   the copy, with the sun and the neighbour under it. --sd-pw, the box's width: what puts the number 24px short of the
+   card's right edge at the end of the gentle zoom (x 1.04, from the box's left edge), or what covers the card if that is
+   more; its left edge (--sd-lx) stays 3% past the card's (room for its small pointer drift), or further left on a tall
+   stage, where the photo covers the height, so that the sign's right edge (x 50% of the photo) stays 24px inside the
+   card. Its top keeps the band from the sign to the doors' foot (y 30-86% of the photo) centred, but never so low that
+   the sign's top (the ORIGINALS letters, y 28%) is less than 24px inside the card (owner request: "this card should show
+   the logo"; on a wide, short stage the doors' foot is cropped instead), while the photo still covers the card. The slow
+   zoom grows from the sign's own middle (y 35.5%), so the sign hardly moves. --sd-sign is where the sign starts (x 27%
+   of the photo); the copy (--sd-col wide) ends 24px short of it and the numerals are sized to the copy ("50%" is
+   1.21em wide in League Gothic). Its gradient eases out (a smoothstep) from 56px before the sign's left edge to 12px past
+   it, no further: the eyebrow and the numerals need their ink right up to there (the photo's left part is bright), and
+   the sign stays bright (15% of ink at most on its left edge); a pool from the foot left darkens the title and body */
+.dl.is-reel #deal-sd {
+  --sd-pw: max(106cqw, 141.4cqh, (103cqw - 24px) / .832);
+  --sd-ph: calc(var(--sd-pw) * .75);
+  --sd-lx: min(-3cqw, 100cqw - 24px - var(--sd-pw) * .52);
+  --sd-sign: calc(var(--sd-lx) + var(--sd-pw) * .27);
+  --sd-col: calc(var(--sd-sign) - 24px - clamp(28px, 5cqw, 60px));
+}
+.dl.is-reel #deal-sd .dl-photo { inset: auto; left: var(--sd-lx); top: clamp(max(103cqh - var(--sd-ph), 24px - var(--sd-ph) * .28), 50cqh - var(--sd-ph) * .58, -3cqh);
+  width: var(--sd-pw); height: var(--sd-ph); translate: calc(var(--px, 0) * -6px) calc(var(--py, 0) * -6px); }
+.dl.is-reel #deal-sd .dl-photo img { object-position: 50% 50%; transform-origin: 0% 35.5%; --z0: 1; }   /* not the still grid's wide-card lift */
+.dl.is-reel #deal-sd .dl-shade { background: radial-gradient(80% 60% at 0% 100%, color-mix(in srgb, var(--ink) 62%, transparent) 0%, color-mix(in srgb, var(--ink) 60.6%, transparent) 9.09%, color-mix(in srgb, var(--ink) 56.6%, transparent) 18.18%,
+  color-mix(in srgb, var(--ink) 50.7%, transparent) 27.27%, color-mix(in srgb, var(--ink) 43.4%, transparent) 36.36%, color-mix(in srgb, var(--ink) 35.2%, transparent) 45.45%,
+  color-mix(in srgb, var(--ink) 26.8%, transparent) 54.55%, color-mix(in srgb, var(--ink) 18.6%, transparent) 63.64%, color-mix(in srgb, var(--ink) 11.3%, transparent) 72.73%,
+  color-mix(in srgb, var(--ink) 5.4%, transparent) 81.82%, color-mix(in srgb, var(--ink) 1.4%, transparent) 90.91%, transparent 100%),
+  linear-gradient(90deg, color-mix(in srgb, var(--ink) 86%, transparent) calc(var(--sd-sign) - 56px), color-mix(in srgb, var(--ink) 84%, transparent) calc(var(--sd-sign) - 49.8px), color-mix(in srgb, var(--ink) 78.5%, transparent) calc(var(--sd-sign) - 43.6px),
+    color-mix(in srgb, var(--ink) 70.3%, transparent) calc(var(--sd-sign) - 37.5px), color-mix(in srgb, var(--ink) 60.2%, transparent) calc(var(--sd-sign) - 31.3px), color-mix(in srgb, var(--ink) 48.8%, transparent) calc(var(--sd-sign) - 25.1px),
+    color-mix(in srgb, var(--ink) 37.2%, transparent) calc(var(--sd-sign) - 18.9px), color-mix(in srgb, var(--ink) 25.8%, transparent) calc(var(--sd-sign) - 12.7px), color-mix(in srgb, var(--ink) 15.7%, transparent) calc(var(--sd-sign) - 6.5px),
+    color-mix(in srgb, var(--ink) 7.5%, transparent) calc(var(--sd-sign) - 0.4px), color-mix(in srgb, var(--ink) 2%, transparent) calc(var(--sd-sign) + 5.8px), transparent calc(var(--sd-sign) + 12px));
+  -webkit-mask-image: none; mask-image: none; }
+.dl.is-reel #deal-sd .dl-copy { max-width: var(--sd-col); }
+.dl.is-reel #deal-sd :is(.dl-title, .dl-body) { max-width: var(--sd-col); }   /* the button may be wider than the copy: these still wrap inside it */
+.dl.is-reel #deal-sd .dl-big { font-size: min(32cqw, 52cqh, var(--sd-col) / 1.24); }
+.dl.is-reel #deal-sd .dl-fig { translate: calc(var(--px, 0) * 4px) calc(var(--py, 0) * 4px); }   /* a small drift: the copy ends close to the sign */
+/* the Daily deals card on the reel: the jar photo covers the card from its right edge (so the jar stands at the card's
+   right) and slowly zooms from 72% across and the lid's height down. --dj-l is where the jar's left edge is at the end
+   of the zoom, less the photo's pointer drift (16px): the photo is drawn max(106cqw, 188.3cqh) wide (the 3% overscan box
+   covered), the jar's left edge .345 of that short of the box's right edge, and the zoom of 1.13 from 72% of the box
+   carries it further left. The copy (--dj-col wide) keeps 70% of the room left of it, less 24px, so its gradient has the
+   rest to fade out in before the jar; the word is sized to the copy ("Daily" is about 1.56em wide in League Gothic, plus
+   the word's 14px drift) */
+.dl.is-reel #deal-daily { --dj-l: calc(106.86cqw - .39 * max(106cqw, 188.3cqh) - 16px); --dj-col: calc((var(--dj-l) - clamp(28px, 5cqw, 60px)) * .7 - 24px); }
+.dl.is-reel #deal-daily .dl-photo img { object-position: 100% 50%; }
+.dl.is-reel #deal-daily .dl-copy, .dl.is-reel #deal-daily :is(.dl-title, .dl-body) { max-width: var(--dj-col); }
+.dl.is-reel #deal-daily .dl-big { font-size: min(29cqw, 48cqh, (var(--dj-col) - 14px) / 1.6); }
+.dl.is-reel #deal-daily .dl-shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 76%, transparent) calc(var(--dj-l) * .3), color-mix(in srgb, var(--ink) 74.3%, transparent) calc(var(--dj-l) * 0.3636 + 0.9px), color-mix(in srgb, var(--ink) 69.3%, transparent) calc(var(--dj-l) * 0.4273 + 1.8px),
+  color-mix(in srgb, var(--ink) 61%, transparent) calc(var(--dj-l) * 0.4909 + 2.7px), color-mix(in srgb, var(--ink) 51.8%, transparent) calc(var(--dj-l) * 0.5545 + 3.6px), color-mix(in srgb, var(--ink) 42.6%, transparent) calc(var(--dj-l) * 0.6182 + 4.5px),
+  color-mix(in srgb, var(--ink) 33.4%, transparent) calc(var(--dj-l) * 0.6818 + 5.5px), color-mix(in srgb, var(--ink) 24.2%, transparent) calc(var(--dj-l) * 0.7455 + 6.4px), color-mix(in srgb, var(--ink) 15%, transparent) calc(var(--dj-l) * 0.8091 + 7.3px),
+  color-mix(in srgb, var(--ink) 6.7%, transparent) calc(var(--dj-l) * 0.8727 + 8.2px), color-mix(in srgb, var(--ink) 1.7%, transparent) calc(var(--dj-l) * 0.9364 + 9.1px), transparent calc(var(--dj-l) + 10px)); }
+
+/* ---------- the stack: a swipeable card stack (phones and small windows; JS sets is-stack) ---------- */
+.dl.is-stack .dl-rail { display: block; margin: 0 0 14px; }
+.dl.is-stack .dl-rail ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.dl.is-stack .dl-tab { display: grid; grid-template-columns: 1fr; place-items: center; min-height: 48px; padding: 4px 6px; border-radius: 12px; text-align: center;
+  box-shadow: inset 0 0 0 1px var(--hair-2); }
+.dl.is-stack .dl-tab__n, .dl.is-stack .dl-tab__bar { display: none; }
+.dl.is-stack .dl-tab__store { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.dl.is-stack .dl-tab__big { grid-column: auto; font-size: clamp(1.1rem, 4.6vw, 1.5rem); }
+.dl.is-stack .dl-tab[aria-selected="true"] { background: var(--white); color: var(--ink); box-shadow: none; }
+.dl.is-stack .dl-reel { display: flex; gap: 0; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none;
+  margin-inline: calc(-1 * var(--gutter)); padding: 6px var(--gutter) 50px; scroll-padding-inline: var(--gutter); }
+.dl.is-stack .dl-reel::-webkit-scrollbar { display: none; }
+.dl.is-stack .dl-card { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; min-height: min(540px, 66svh); }
+.dl.is-stack .dl-face { transform-origin: 50% 100%; will-change: transform, opacity; }
+.dl.is-stack .dl-face::after { content: ''; position: absolute; inset: 0; z-index: 4; border-radius: var(--radius-lg); background: var(--ink); opacity: var(--dim, 0); pointer-events: none; }
+.dl.is-stack .dl-all { margin-top: 6px; }
+
+@keyframes dl-neon-on { 0% { opacity: .14; } 10% { opacity: 1; } 14% { opacity: .2; } 22% { opacity: 1; } 26% { opacity: .35; } 34%, 100% { opacity: 1; } }
+@keyframes dl-sway { from { rotate: -6deg; } to { rotate: 6deg; } }

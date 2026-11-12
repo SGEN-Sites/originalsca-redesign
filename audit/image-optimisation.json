@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/image-optimisation@1",
-  "generated": "2026-11-11T01:36:11.905Z",
+  "generated": "2026-11-12T12:06:36.097Z",
   "build": "dist",
   "mode": "audit",
   "encoder": "not-used",
@@ -9,14 +9,14 @@
     "maxWidth": 2560
   },
   "totals": {
-    "images": 173,
-    "bytesBefore": 15872420,
-    "bytesAfter": 15872420,
+    "images": 256,
+    "bytesBefore": 27537246,
+    "bytesAfter": 27537246,
     "converted": 0,
     "refsRewritten": 0
   },
   "formats": {
-    "webp": 173
+    "webp": 256
   },
   "images": [
     {
@@ -317,6 +317,109 @@
       "action": "none"
     },
     {
+      "file": "assets/img/daily-jar-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 720,
+      "bytesBefore": 76806,
+      "bytesAfter": 76806,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 900,
+      "bytesBefore": 107524,
+      "bytesAfter": 107524,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1351,
+      "bytesBefore": 190418,
+      "bytesAfter": 190418,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-640.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 360,
+      "bytesBefore": 27288,
+      "bytesAfter": 27288,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-960.webp",
+      "format": "webp",
+      "width": 960,
+      "height": 540,
+      "bytesBefore": 50272,
+      "bytesAfter": 50272,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-tall-1024.webp",
+      "format": "webp",
+      "width": 1024,
+      "height": 1536,
+      "bytesBefore": 153888,
+      "bytesAfter": 153888,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-tall-640.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 960,
+      "bytesBefore": 75744,
+      "bytesAfter": 75744,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/daily-jar-tall-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 1200,
+      "bytesBefore": 102942,
+      "bytesAfter": 102942,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/family-wall-unit-1120.webp",
+      "format": "webp",
+      "width": 2862,
+      "height": 1120,
+      "bytesBefore": 384400,
+      "bytesAfter": 384400,
+      "flags": [
+        "OVERSIZED",
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/family-wall-unit-560.webp",
+      "format": "webp",
+      "width": 1431,
+      "height": 560,
+      "bytesBefore": 154780,
+      "bytesAfter": 154780,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/farmers-cup-768.webp",
       "format": "webp",
       "width": 768,
@@ -331,8 +434,18 @@
       "format": "webp",
       "width": 1280,
       "height": 720,
-      "bytesBefore": 38338,
-      "bytesAfter": 38338,
+      "bytesBefore": 41104,
+      "bytesAfter": 41104,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/film-poster-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1080,
+      "bytesBefore": 66196,
+      "bytesAfter": 66196,
       "flags": [],
       "action": "none"
     },
@@ -365,6 +478,26 @@
       "height": 600,
       "bytesBefore": 32390,
       "bytesAfter": 32390,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/gelato-bud-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 1200,
+      "bytesBefore": 172214,
+      "bytesAfter": 172214,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/gelato-bud-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 54858,
+      "bytesAfter": 54858,
       "flags": [],
       "action": "none"
     },
@@ -402,6 +535,60 @@
       "action": "none"
     },
     {
+      "file": "assets/img/happy-hour-lowrider-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytesBefore": 324124,
+      "bytesAfter": 324124,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/happy-hour-lowrider-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1600,
+      "bytesBefore": 628112,
+      "bytesAfter": 628112,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/happy-hour-lowrider-960.webp",
+      "format": "webp",
+      "width": 960,
+      "height": 640,
+      "bytesBefore": 136030,
+      "bytesAfter": 136030,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/happy-hour-meet-1405.webp",
+      "format": "webp",
+      "width": 1405,
+      "height": 1120,
+      "bytesBefore": 245054,
+      "bytesAfter": 245054,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/happy-hour-meet-900.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 717,
+      "bytesBefore": 109978,
+      "bytesAfter": 109978,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/hof-graphic-1920.webp",
       "format": "webp",
       "width": 1920,
@@ -432,6 +619,26 @@
       "action": "none"
     },
     {
+      "file": "assets/img/logo-alien-labs.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 12706,
+      "bytesAfter": 12706,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-beast-mode.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 6678,
+      "bytesAfter": 6678,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/logo-cbx-400.webp",
       "format": "webp",
       "width": 400,
@@ -452,12 +659,62 @@
       "action": "none"
     },
     {
+      "file": "assets/img/logo-kanha.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 9504,
+      "bytesAfter": 9504,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/logo-lime-400.webp",
       "format": "webp",
       "width": 400,
       "height": 137,
       "bytesBefore": 1954,
       "bytesAfter": 1954,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-maven-genetics.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 8720,
+      "bytesAfter": 8720,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-pacific-stone.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 12340,
+      "bytesAfter": 12340,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-papa-barkley.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 3914,
+      "bytesAfter": 3914,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-raw-garden.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 5572,
+      "bytesAfter": 5572,
       "flags": [],
       "action": "none"
     },
@@ -482,6 +739,26 @@
       "action": "none"
     },
     {
+      "file": "assets/img/logo-rove.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 4642,
+      "bytesAfter": 4642,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-royal-blunts.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 15742,
+      "bytesAfter": 15742,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/logo-stiiizy-186.webp",
       "format": "webp",
       "width": 186,
@@ -502,12 +779,52 @@
       "action": "none"
     },
     {
+      "file": "assets/img/logo-stiiizy.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 3996,
+      "bytesAfter": 3996,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-the-cure-company.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 12768,
+      "bytesAfter": 12768,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/logo-wcc-400.webp",
       "format": "webp",
       "width": 400,
       "height": 294,
       "bytesBefore": 7302,
       "bytesAfter": 7302,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-wyld-white.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 8272,
+      "bytesAfter": 8272,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/logo-wyld.webp",
+      "format": "webp",
+      "width": 576,
+      "height": 240,
+      "bytesBefore": 8646,
+      "bytesAfter": 8646,
       "flags": [],
       "action": "none"
     },
@@ -568,6 +885,26 @@
       "height": 274,
       "bytesBefore": 20826,
       "bytesAfter": 20826,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/merch-hoodie-1448.webp",
+      "format": "webp",
+      "width": 1448,
+      "height": 1086,
+      "bytesBefore": 222200,
+      "bytesAfter": 222200,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/merch-hoodie-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 600,
+      "bytesBefore": 62578,
+      "bytesAfter": 62578,
       "flags": [],
       "action": "none"
     },
@@ -1474,15 +1811,87 @@
       "action": "none"
     },
     {
+      "file": "assets/img/store-counter-400.webp",
+      "format": "webp",
+      "width": 400,
+      "height": 617,
+      "bytesBefore": 44426,
+      "bytesAfter": 44426,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-counter-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 925,
+      "bytesBefore": 81236,
+      "bytesAfter": 81236,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-counter-834.webp",
+      "format": "webp",
+      "width": 834,
+      "height": 1286,
+      "bytesBefore": 159286,
+      "bytesAfter": 159286,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-floor-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 811,
+      "bytesBefore": 280784,
+      "bytesAfter": 280784,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/store-la-floor-1920.webp",
       "format": "webp",
       "width": 1920,
-      "height": 1280,
-      "bytesBefore": 351502,
-      "bytesAfter": 351502,
+      "height": 1217,
+      "bytesBefore": 536188,
+      "bytesAfter": 536188,
       "flags": [
         "HEAVY"
       ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-floor-2560.webp",
+      "format": "webp",
+      "width": 2560,
+      "height": 1622,
+      "bytesBefore": 812508,
+      "bytesAfter": 812508,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-floor-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 507,
+      "bytesBefore": 126438,
+      "bytesAfter": 126438,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-front-480.webp",
+      "format": "webp",
+      "width": 480,
+      "height": 480,
+      "bytesBefore": 48088,
+      "bytesAfter": 48088,
+      "flags": [],
       "action": "none"
     },
     {
@@ -1492,6 +1901,48 @@
       "height": 439,
       "bytesBefore": 45336,
       "bytesAfter": 45336,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-front-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 800,
+      "bytesBefore": 107144,
+      "bytesAfter": 107144,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-interior-1200.webp",
+      "format": "webp",
+      "width": 1200,
+      "height": 800,
+      "bytesBefore": 240028,
+      "bytesAfter": 240028,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-interior-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1066,
+      "bytesBefore": 359528,
+      "bytesAfter": 359528,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-interior-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 533,
+      "bytesBefore": 125086,
+      "bytesAfter": 125086,
       "flags": [],
       "action": "none"
     },
@@ -1506,12 +1957,290 @@
       "action": "none"
     },
     {
+      "file": "assets/img/store-la-letters-bw-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 853,
+      "bytesBefore": 148476,
+      "bytesAfter": 148476,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-letters-bw-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1280,
+      "bytesBefore": 259482,
+      "bytesAfter": 259482,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-letters-bw-2560.webp",
+      "format": "webp",
+      "width": 2560,
+      "height": 1706,
+      "bytesBefore": 383456,
+      "bytesAfter": 383456,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-letters-bw-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 533,
+      "bytesBefore": 75190,
+      "bytesAfter": 75190,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-wall-1000.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 666,
+      "bytesBefore": 185428,
+      "bytesAfter": 185428,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-wall-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1066,
+      "bytesBefore": 361144,
+      "bytesAfter": 361144,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-window-1000.webp",
+      "format": "webp",
+      "width": 1000,
+      "height": 1001,
+      "bytesBefore": 282602,
+      "bytesAfter": 282602,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-la-window-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 600,
+      "bytesBefore": 123664,
+      "bytesAfter": 123664,
+      "flags": [],
+      "action": "none"
+    },
+    {
       "file": "assets/img/store-sd-building-483.webp",
       "format": "webp",
       "width": 483,
       "height": 450,
       "bytesBefore": 33372,
       "bytesAfter": 33372,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-exterior-1280.webp",
+      "format": "webp",
+      "width": 1280,
+      "height": 724,
+      "bytesBefore": 87642,
+      "bytesAfter": 87642,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-exterior-1920.webp",
+      "format": "webp",
+      "width": 1920,
+      "height": 1086,
+      "bytesBefore": 159406,
+      "bytesAfter": 159406,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-exterior-2560.webp",
+      "format": "webp",
+      "width": 2560,
+      "height": 1448,
+      "bytesBefore": 238822,
+      "bytesAfter": 238822,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-exterior-800.webp",
+      "format": "webp",
+      "width": 800,
+      "height": 452,
+      "bytesBefore": 43824,
+      "bytesAfter": 43824,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-front-1600.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1200,
+      "bytesBefore": 315806,
+      "bytesAfter": 315806,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-front-2400.webp",
+      "format": "webp",
+      "width": 2400,
+      "height": 1800,
+      "bytesBefore": 575008,
+      "bytesAfter": 575008,
+      "flags": [
+        "HEAVY"
+      ],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-front-960.webp",
+      "format": "webp",
+      "width": 960,
+      "height": 720,
+      "bytesBefore": 138680,
+      "bytesAfter": 138680,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-interior-1460.webp",
+      "format": "webp",
+      "width": 1460,
+      "height": 878,
+      "bytesBefore": 192024,
+      "bytesAfter": 192024,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-sd-interior-960.webp",
+      "format": "webp",
+      "width": 960,
+      "height": 577,
+      "bytesBefore": 85536,
+      "bytesAfter": 85536,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-wall-1535.webp",
+      "format": "webp",
+      "width": 1535,
+      "height": 1024,
+      "bytesBefore": 269118,
+      "bytesAfter": 269118,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/store-wall-900.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 600,
+      "bytesBefore": 104240,
+      "bytesAfter": 104240,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-family-farms-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 531,
+      "bytesBefore": 59890,
+      "bytesAfter": 59890,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-family-farms-676.webp",
+      "format": "webp",
+      "width": 676,
+      "height": 598,
+      "bytesBefore": 78814,
+      "bytesAfter": 78814,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-family-wall-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 692,
+      "bytesBefore": 96718,
+      "bytesAfter": 96718,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-family-wall-900.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 1038,
+      "bytesBefore": 180152,
+      "bytesAfter": 180152,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-grower-bud-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 338,
+      "bytesBefore": 27728,
+      "bytesAfter": 27728,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-grower-bud-900.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 506,
+      "bytesBefore": 48120,
+      "bytesAfter": 48120,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-pouch-600.webp",
+      "format": "webp",
+      "width": 600,
+      "height": 561,
+      "bytesBefore": 54018,
+      "bytesAfter": 54018,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/story-pouch-900.webp",
+      "format": "webp",
+      "width": 900,
+      "height": 842,
+      "bytesBefore": 85688,
+      "bytesAfter": 85688,
       "flags": [],
       "action": "none"
     },
@@ -1694,6 +2423,126 @@
       "height": 745,
       "bytesBefore": 59192,
       "bytesAfter": 59192,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-1-1120.webp",
+      "format": "webp",
+      "width": 586,
+      "height": 1120,
+      "bytesBefore": 109458,
+      "bytesAfter": 109458,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-1-560.webp",
+      "format": "webp",
+      "width": 293,
+      "height": 560,
+      "bytesBefore": 35966,
+      "bytesAfter": 35966,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-2-1120.webp",
+      "format": "webp",
+      "width": 674,
+      "height": 1120,
+      "bytesBefore": 117672,
+      "bytesAfter": 117672,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-2-560.webp",
+      "format": "webp",
+      "width": 337,
+      "height": 560,
+      "bytesBefore": 39868,
+      "bytesAfter": 39868,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-3-1120.webp",
+      "format": "webp",
+      "width": 649,
+      "height": 1120,
+      "bytesBefore": 132914,
+      "bytesAfter": 132914,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-3-560.webp",
+      "format": "webp",
+      "width": 324,
+      "height": 560,
+      "bytesBefore": 47074,
+      "bytesAfter": 47074,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-4-560.webp",
+      "format": "webp",
+      "width": 225,
+      "height": 560,
+      "bytesBefore": 36502,
+      "bytesAfter": 36502,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-4-878.webp",
+      "format": "webp",
+      "width": 352,
+      "height": 878,
+      "bytesBefore": 97716,
+      "bytesAfter": 97716,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-5-560.webp",
+      "format": "webp",
+      "width": 420,
+      "height": 560,
+      "bytesBefore": 57982,
+      "bytesAfter": 57982,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-5-878.webp",
+      "format": "webp",
+      "width": 658,
+      "height": 878,
+      "bytesBefore": 156796,
+      "bytesAfter": 156796,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-6-560.webp",
+      "format": "webp",
+      "width": 269,
+      "height": 560,
+      "bytesBefore": 37490,
+      "bytesAfter": 37490,
+      "flags": [],
+      "action": "none"
+    },
+    {
+      "file": "assets/img/wall-strip-6-878.webp",
+      "format": "webp",
+      "width": 422,
+      "height": 878,
+      "bytesBefore": 103802,
+      "bytesAfter": 103802,
       "flags": [],
       "action": "none"
     },

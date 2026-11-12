@@ -1,0 +1,41 @@
+/* droplist.css: the home Drop List (home.mjs section 12; owner 2026-11-12: "let's use this but make it more compact and
+   balanced"). From 900px the sign-up and the FAQs are two columns that start on one line and end on one line: both
+   columns are as tall as the taller one, the form card sits at the foot of the left column and ALL FAQS at the foot of
+   the right. From 1100px Name, Email and Phone share one row, with Subscribe under them and the preview note beside it.
+   Less padding, a smaller two-line heading with tighter leading, tighter FAQ rows (every row still 44px or more to tap),
+   and a quieter paisley. Phones: one column, compact. Replaces the droplist rules that were in signature.css. Tokens only. */
+
+.droplist.band { padding-block: clamp(48px, 6vw, 88px); }
+.droplist__bandana { position: absolute; inset: 0; opacity: .5; }   /* the paisley, calmer: half strength under the scrim */
+.droplist__scrim { position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 92%, transparent), color-mix(in srgb, var(--ink) 80%, transparent)); }
+
+.droplist__grid { align-items: stretch; }
+@media (min-width: 900px) { .droplist__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.droplist__join, .droplist__faqs { display: flex; flex-direction: column; min-width: 0; }
+.droplist .kicker { margin-bottom: 12px; }
+.droplist h2 { margin-bottom: 18px; font-size: clamp(1.9rem, 1rem + 2.1vw, 2.9rem); line-height: .88; }
+
+/* the form card: at the foot of its column, level with ALL FAQS. While an FAQ is open it stays where it was (it does not
+   ride down with the taller column). */
+.droplist .form { margin-top: auto; padding: clamp(16px, 1.7vw, 22px); display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: 16px; }
+.droplist:has(.faq__item[open]) .form { margin-top: 0; }
+.droplist .form__grid { grid-column: 1 / -1; gap: 12px; }
+.droplist .field { gap: 5px; }
+.droplist .field input { min-height: 48px; }
+.droplist .form__actions { margin-top: 14px; }
+.droplist .form__note { margin-top: 14px; font-size: var(--fs-kicker); line-height: 1.4; }
+@media (min-width: 1100px) { .droplist .form__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* the FAQs: tighter rows; ALL FAQS at the foot of the column */
+.droplist .faq { gap: 8px; }
+.droplist .faq__q { min-height: 50px; padding: 8px 18px; font-size: 1rem; line-height: 1.25; }
+.droplist .faq__a { padding: 0 18px 16px; }
+.droplist__all { display: flex; margin-top: auto; padding-top: 16px; }
+
+/* phones: one column; the button and the note stack */
+@media (max-width: 600px) {
+  .droplist h2 { margin-bottom: 14px; }
+  .droplist .form { grid-template-columns: minmax(0, 1fr); }
+  .droplist .form__grid { gap: 10px; }
+  .droplist .form__note { margin-top: 10px; }
+}

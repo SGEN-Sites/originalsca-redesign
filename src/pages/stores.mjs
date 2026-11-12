@@ -28,11 +28,13 @@ function storePage(id) {
     title: isLA ? 'LOS ANGELES <span class="chrome-word">store</span>' : 'SAN DIEGO ORIGINALS <span class="chrome-word">store</span>',
     crumbs: [{ label: 'Our Stores', href: '/retail' }, { label: s.name, href: s.page }],
     lede: `<p class="phero__name">${esc(s.name.toUpperCase())}</p>`,
-    media: isLA ? img('store-la-floor', { sizes: '100vw', alt: 'The sales floor at Originals Los Angeles', eager: true, priority: true }) : img('sd-palms', { sizes: '100vw', alt: '', decorative: true, eager: true, priority: true }),
-    variant: 'photo',
+    // the hero covers a box taller than the photo on phones, so it is drawn about twice the viewport wide there. San Diego:
+    // the business's own storefront photo (store-sd-exterior); info-pages.css .phero--sd keeps its ORIGINALS signs in frame
+    media: isLA ? img('store-la-floor', { sizes: '(max-width: 900px) 200vw, 100vw', alt: 'The sales floor at Originals Los Angeles', eager: true, priority: true }) : img('store-sd-exterior', { sizes: '(max-width: 900px) 200vw, 100vw', eager: true, priority: true }),
+    variant: 'photo', cls: isLA ? '' : 'phero--sd',
     actions: btn('Shop ' + s.short, s.menu) + btn('Directions', s.maps, { kind: 'ghost' }),
   })}
-${isLA ? confirm(CONFIRM.laHours) : confirm(CONFIRM.sdHours) + confirm(CONFIRM.sdMenu)}
+${isLA ? confirm(CONFIRM.laHours) : confirm(CONFIRM.sdHours) + confirm(CONFIRM.sdMenu) + confirm(CONFIRM.sdPhoto)}
 <section class="band band--tight">
   <div class="wrap">${infoStrip(id)}</div>
 </section>
@@ -53,8 +55,8 @@ ${isLA ? h`<section class="band storyband" aria-labelledby="la-wall-h">
       <p class="btn-row">${btn('See the family wall', '/#family-wall', { kind: 'chrome' })}${btn('Our story', '/our-story', { kind: 'ghost' })}</p>
     </div>
     <div class="photo-stack">
-      <figure class="media-frame photo-stack__a">${img('store-la-interior', { sizes: '(min-width: 900px) 40vw, 92vw' })}</figure>
-      <figure class="media-frame photo-stack__b">${img('store-la-front', { sizes: '(min-width: 900px) 26vw, 60vw' })}</figure>
+      <figure class="media-frame photo-stack__a">${img('store-la-wall', { sizes: '(min-width: 900px) 40vw, 92vw' })}</figure>
+      <figure class="media-frame photo-stack__b">${img('store-la-window', { sizes: '(min-width: 900px) 26vw, 92vw' })}</figure>
     </div>
   </div>
 </section>` : h`<section class="band storyband" aria-labelledby="sd-h">
@@ -71,8 +73,8 @@ ${isLA ? h`<section class="band storyband" aria-labelledby="la-wall-h">
       </div>
     </div>
     <div class="photo-stack">
-      <figure class="media-frame photo-stack__a">${img('sd-banner', { sizes: '(min-width: 900px) 40vw, 92vw' })}</figure>
-      <figure class="media-frame photo-stack__b">${img('store-sd-building', { sizes: '(min-width: 900px) 24vw, 60vw' })}</figure>
+      <figure class="media-frame photo-stack__a">${img('store-sd-interior', { sizes: '(min-width: 900px) 40vw, 92vw' })}</figure>
+      <figure class="media-frame photo-stack__b">${img('sd-script', { sizes: '(min-width: 900px) 24vw, 60vw', cls: 'is-graphic', alt: 'Originals San Diego graphic: the ORIGINALS wordmark, the crown and San Diego in script over a night skyline' })}</figure>
     </div>
   </div>
 </section>`}
@@ -101,22 +103,51 @@ ${isLA ? h`<section class="band storyband" aria-labelledby="la-wall-h">
   };
 }
 
-function contactBlock(kickerText, intro, id) {
-  return h`<section class="band contact">
-  <div class="wrap split split--wide-left">
-    <div>
-      ${kicker(kickerText)}
-      <h2>CONTACT <span class="chrome-word">Originals</span></h2>
+// ---- the info pages, /contact and /los-angeles (2026-11-12 redesign to docs/DESIGN-LANGUAGE.md; styles info-pages.css) ----
+// A store's facts as the home stores' editorial fact grid (lab option C, src/lab/parts/stores-c.html): a dateline (the
+// number, or "Today", and the live status), the name set very large under "Originals", a ruled ADDRESS / HOURS / CALL
+// grid, then the buttons. site.js fills the status (data-status-for / data-status-dot) and marks today's hours row (the
+// data-hours list inside data-store-card), as on the home stores. The buttons keep the store's own menu (no data-shop).
+function storeFacts(id, { tab = '', headingTag = 'h3', photo = '' } = {}) {
+  const s = STORES[id], pre = s.name.endsWith(s.short) ? s.name.slice(0, -s.short.length).trim() : s.name;
+  const facts = h`<div class="ifact__body">
+    <div class="ifact__tab"><span class="ifact__no"${/^\d+$/.test(tab) ? ' aria-hidden="true"' : ''}>${esc(tab)}</span><p class="ifact__status"><span class="ifact__dot" data-status-dot="${id}"></span><span data-status-for="${id}">See hours</span></p></div>
+    <${headingTag} class="ifact__name" id="ifact-${id}-n">${link(s.page, `<span class="ifact__pre">${esc(pre)}</span> <span class="ifact__city">${esc(s.short)}</span>`)}</${headingTag}>
+    <div class="ifact__grid">
+      <div class="ifact__cell"><p class="ifact__label">Address</p><address class="ifact__addr">${esc(s.street)}<br>${esc(s.city)}, ${s.region} ${s.postal}</address></div>
+      <div class="ifact__cell"><p class="ifact__label">Hours</p><dl class="ifact__hours" data-hours>${s.hoursText.map(([d, t]) => `<div><dt>${d}</dt><dd>${t}</dd></div>`).join('')}</dl></div>
+      <div class="ifact__cell ifact__cell--call"><p class="ifact__label">Call</p><a class="ifact__tel" href="tel:${s.tel}">${esc(s.phone)}</a></div>
+    </div>
+    <p class="ifact__acts">${btn('Shop ' + s.short + ' menu', s.menu, { size: 'sm' })}${btn('Directions', s.maps, { kind: 'ghost', size: 'sm' })}</p>
+  </div>`;
+  return h`<article class="ifact${photo ? ' ifact--photo' : ''}" data-store-card="${id}" aria-labelledby="ifact-${id}-n">${facts}${photo ? `<div class="ifact__photo">${photo}</div>` : ''}</article>`;
+}
+
+// The contact section: a split head (kicker and title, the lede beside them), then the form beside CONTACT INFO as ruled
+// rows (no boxes; the value turns gold on hover or focus). `stores` adds the stores' fact grids under it (/contact).
+function contactBlock(kickerText, intro, id, { stores = [] } = {}) {
+  const row = (href, ico, k, v) => `<li><a class="irow" href="${href}">${icon(ico)}<span class="irow__k">${k}</span><span class="irow__v">${v}</span>${icon('arrow', 'irow__go')}</a></li>`;
+  return h`<section class="band info-band contact" aria-labelledby="${id}-h">
+  <div class="wrap">
+    <div class="info-head">
+      <div>${kicker(kickerText)}<h2 id="${id}-h">CONTACT <span class="chrome-word">Originals</span></h2></div>
       ${intro ? `<p class="lede">${intro}</p>` : ''}
-      ${form({ id, fields: contactFields, submit: 'Send', confirmNote: 'contact form provider', ok: 'Thank you for contacting us. We will get back to you as soon as possible.', err: 'Oops, there was an error sending your message. Please try again later.' })}
     </div>
-    <div class="contact-cards">
-      <h2 class="kicker">CONTACT INFO</h2>
-      <a class="contact-card" href="tel:${STORES.la.tel}">${icon('phone')}<span class="contact-card__k">Call</span><span class="contact-card__v">${esc(STORES.la.phone)}</span></a>
-      ${confirm('Email: the live /contact page shows INFO@ORIGINALSCA.COM, but its email links and EMAIL button open support@originalsca.com. Kept as live; confirm which address customers should use.')}
-      <a class="contact-card" href="mailto:${SITE.contactMailto}">${icon('mail')}<span class="contact-card__k">Email</span><span class="contact-card__v">${esc(SITE.email.toUpperCase().replace('@', ' @').replace('.COM', ' . COM'))}</span></a>
-      <a class="contact-card" href="${u('/retail')}">${icon('pin')}<span class="contact-card__k">2 STORES</span><span class="contact-card__v">VIEW STORES</span></a>
+    <div class="info-split">
+      <div class="info-split__main">
+        ${form({ id, fields: contactFields, submit: 'Send', confirmNote: 'contact form provider', cls: 'info-form', ok: 'Thank you for contacting us. We will get back to you as soon as possible.', err: 'Oops, there was an error sending your message. Please try again later.' })}
+      </div>
+      <div class="info-split__side">
+        <h2 class="kicker">CONTACT INFO</h2>
+        <ul class="irows" role="list">
+          ${row('tel:' + STORES.la.tel, 'phone', 'Call', esc(STORES.la.phone))}
+          ${confirm('Email: the live /contact page shows INFO@ORIGINALSCA.COM, but its email links and EMAIL button open support@originalsca.com. Kept as live; confirm which address customers should use.')}
+          ${row('mailto:' + SITE.contactMailto, 'mail', 'Email', esc(SITE.email.toUpperCase().replace('@', ' @').replace('.COM', ' . COM')))}
+          ${row(u('/retail'), 'pin', '2 STORES', 'VIEW STORES')}
+        </ul>
+      </div>
     </div>
+    ${stores.length ? `<div class="ifacts">${stores.map((sid, i) => storeFacts(sid, { tab: String(i + 1).padStart(2, '0') })).join('')}</div>` : ''}
   </div>
 </section>`;
 }
@@ -125,13 +156,13 @@ export function pages() {
   const retail = {
     path: '/retail', title: 'Cannabis Stores | Originals LA', description: 'Shop one of our Southern California cannabis stores for top-quality brands offering popular strains in a variety of lab tested products.',
     jsonld: [...STORE_ORDER.map(storeLd), crumbsLd([{ name: 'Our Stores', path: '/retail' }])], active: '/retail', bodyClass: 'is-retail',
-    main: h`${pageHero({ kicker: 'Locations', title: 'OUR <span class="chrome-word">stores</span>', crumbs: [{ label: 'Our Stores', href: '/retail' }], lede: '<p>Two stores in Southern California, one family. Pick yours, check today\'s hours and shop its menu.</p>', media: img('warehouse', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
+    main: h`${pageHero({ kicker: 'Locations', title: 'OUR <span class="chrome-word">stores</span>', crumbs: [{ label: 'Our Stores', href: '/retail' }], lede: '<p>Two stores in Southern California, one family. Pick yours, check today\'s hours and shop its menu.</p>', media: img('store-la-letters-bw', { sizes: '(max-width: 900px) 200vw, 100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
 <section class="band" aria-labelledby="loc-h">
   <div class="wrap">
     <div class="section-head">${kicker('Southern California')}<h2 id="loc-h">OUR <span class="chrome-word">locations</span></h2></div>
     <div class="stores__grid">
       ${storeCard('la', { photo: img('store-la-interior', { sizes: '(min-width: 900px) 40vw, 92vw' }) })}
-      ${storeCard('sd', { photo: img('store-sd-building', { sizes: '(min-width: 900px) 40vw, 92vw' }) })}
+      ${storeCard('sd', { photo: img('store-sd-interior', { sizes: '(min-width: 900px) 40vw, 92vw' }) })}
       <article class="store-card store-card--clothing">
         <div class="store-card__media">${img('clothing-shop', { sizes: '(min-width: 900px) 24vw, 92vw' })}</div>
         <div class="store-card__body"><p class="kicker">Online</p><h3 class="store-card__name">${link(LINKS.clothing, 'SHOP MERCH')}</h3><p>OPEN 24/7</p><p class="store-card__actions">${btn('SHOP MERCH', LINKS.clothing, { size: 'sm', kind: 'chrome' })}</p></div>
@@ -151,14 +182,15 @@ export function pages() {
     jsonld: [storeLd('la'), crumbsLd([{ name: 'Dispensary Downtown LA', path: '/los-angeles' }])], active: '/retail', bodyClass: 'is-contact',
     main: h`${pageHero({ kicker: 'Originals Los Angeles', title: 'DISPENSARY <span class="chrome-word">downtown LA</span>', crumbs: [{ label: 'Dispensary Downtown LA', href: '/los-angeles' }], lede: `<p>${esc(s.street.toUpperCase())}<br>${esc(s.city.toUpperCase())}, ${s.region} ${s.postal}<br><a href="tel:${s.tel}">${esc(s.phone)}</a></p>`, media: img('night-street', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo', actions: btn('Shop LA', s.menu) + btn('Directions', s.maps, { kind: 'ghost' }) })}
 ${confirm(CONFIRM.laHours)}
-<section class="band band--tight"><div class="wrap">${infoStrip('la')}</div></section>
+<section class="band info-band info-band--facts"><div class="wrap">${storeFacts('la', { tab: 'Today', headingTag: 'h2', photo: img('store-la-wall', { sizes: '(min-width: 900px) 50vw, 92vw' }) })}</div></section>
 ${contactBlock('Contact', 'Reach out to our dispensary downtown LA by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.', 'la-contact')}`,
   };
   const contact = {
     path: '/contact', title: 'Dispensary Downtown LA | Originals LA', description: 'Reach out to our dispensary downtown LA by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.',
     jsonld: [crumbsLd([{ name: 'Contact', path: '/contact' }])], active: '/contact', bodyClass: 'is-contact',
-    main: h`${pageHero({ kicker: 'Contact', title: 'DISPENSARY <span class="chrome-word">downtown LA</span>', crumbs: [{ label: 'Contact', href: '/contact' }], variant: 'ink' })}
-${contactBlock('Contact Originals', 'Reach out to our LA Dispensary by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.', 'contact')}`,
+    main: h`${pageHero({ kicker: 'Contact', title: 'DISPENSARY <span class="chrome-word">downtown LA</span>', crumbs: [{ label: 'Contact', href: '/contact' }], variant: 'ink', cls: 'phero--compact' })}
+${confirm(CONFIRM.laHours) + confirm(CONFIRM.sdHours) + confirm(CONFIRM.sdMenu)}
+${contactBlock('Contact Originals', 'Reach out to our LA Dispensary by submitting a contact form. One of our cannabis experts will get back to you within 48 hours.', 'contact', { stores: STORE_ORDER })}`,
   };
   return [retail, la, sd, downtown, contact];
 }

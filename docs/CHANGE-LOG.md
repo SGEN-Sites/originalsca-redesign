@@ -12,7 +12,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 
 ## Totals
 
-1134 rows: REPLACE 4, IMPROVE 235, REMOVE 797, PRESERVE 86, ADD 12.
+1142 rows: REPLACE 5, IMPROVE 318, REMOVE 798, PRESERVE 4, ADD 17.
 
 ## Grouped decisions
 
@@ -26,24 +26,24 @@ One row per section of the source site, generated from `audit/change-control.jso
 | page | section | decision | narrative slot | why |
 |---|---|---|---|---|
 | / | Shop at the best dispensary in Los Angeles and have a top-level cannab | REPLACE | value-proposition | Operator direction: drop the generic SEO filler ("top-level cannabis experience every time"). H1 "Best Cultivators in California" kept; the hero is rebuilt as the Showroom (the brand film behind giant chrome ORIGINALS letters on a reflective floor) with "The Brand Behind The Brands" from declared facts. |
-| / | FLOWER | IMPROVE | benefits-solution | FLOWER tile kept; the "Lorem ipsim." placeholder removed; links straight to the selected store's Flower category with products and the cart. |
-| / | EXTRACTS | IMPROVE | benefits-solution | EXTRACTS tile kept, placeholder removed, deep link to the store's extracts / concentrates category. |
-| / | CARTRIDGES | IMPROVE | benefits-solution | CARTRIDGES tile kept, placeholder removed, deep link to the store's cartridges / vape pens category. |
-| / | DRINKS | IMPROVE | benefits-solution | DRINKS tile kept, placeholder removed, deep link to the store's beverages category. |
-| / | PREROLLS | IMPROVE | benefits-solution | PREROLLS tile kept, placeholder removed, deep link to the store's pre-roll category. EDIBLES (on the live menu but missing from the live home grid) added beside it. |
-| / | TINCTURES | IMPROVE | benefits-solution | TINCTURES tile kept, placeholder removed, deep link to the store's tinctures category. |
-| / | TOPICALS | IMPROVE | benefits-solution | TOPICALS tile kept, placeholder removed, deep link to the store's topicals category. |
+| / | FLOWER | IMPROVE | benefits-solution | FLOWER tile kept; the "Lorem ipsim." placeholder removed; links straight to the selected store's Flower category with products and the cart. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | EXTRACTS | IMPROVE | benefits-solution | EXTRACTS tile kept, placeholder removed, deep link to the store's extracts / concentrates category. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | CARTRIDGES | IMPROVE | benefits-solution | CARTRIDGES tile kept, placeholder removed, deep link to the store's cartridges / vape pens category. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | DRINKS | IMPROVE | benefits-solution | DRINKS tile kept, placeholder removed, deep link to the store's beverages category. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | PREROLLS | IMPROVE | benefits-solution | PREROLLS tile kept, placeholder removed, deep link to the store's pre-roll category. EDIBLES (on the live menu but missing from the live home grid) added beside it. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | TINCTURES | IMPROVE | benefits-solution | TINCTURES tile kept, placeholder removed, deep link to the store's tinctures category. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
+| / | TOPICALS | IMPROVE | benefits-solution | TOPICALS tile kept, placeholder removed, deep link to the store's topicals category. Home, 2026-11-12 (owner): shown on the bento category wall, which replaced the fan (the fan is in private/retired/2026-11-12-category-fan/). |
 | / | PILLS | REMOVE | benefits-solution | PILLS tile removed: no pills or capsules category or product exists on the live LA menu (0 of 581 products), and the live tile only opened the menu home. Showing it would send a shopper to a page without the products it names. |
-| / | DEALS | IMPROVE | strategic-cta | DEALS tile kept, "Lorem Ipsum" placeholder removed; becomes the Happy Hour deals band linking to /deals. |
+| / | DEALS | IMPROVE | strategic-cta | DEALS tile kept, "Lorem Ipsum" placeholder removed; becomes the Happy Hour deals band linking to /deals. Home deals, 2026-11-12 (owner): the tab-driven Spotlight Reel, with the new Happy Hour, San Diego storefront and Daily jar photos. |
 | / | REWARDS | IMPROVE | strategic-cta | REWARDS tile kept, placeholder removed; links to the Rewards Program page and its VIP enrolment. |
-| / | EVENTS | IMPROVE | strategic-cta | EVENTS tile kept, placeholder removed; now links to the new /events page (the live Events link 404s or opens a placeholder). |
-| / | SHOP BY BRAND | IMPROVE | trust-positioning | SHOP BY BRAND kept with its words; brand buttons deep link to each brand on the live menu; Originals house brand leads. |
+| / | EVENTS | IMPROVE | strategic-cta | EVENTS tile kept, placeholder removed; now links to the new /events page (the live Events link 404s or opens a placeholder). Home events, 2026-11-12 (owner): the three event cards turn over in a lenticular carousel (an original build of the effect), with the same links and labels. |
+| / | SHOP BY BRAND | IMPROVE | trust-positioning | SHOP BY BRAND kept with its words; brand buttons deep link to each brand on the live menu; Originals house brand leads. Home brand marquee, 2026-11-12 (owner): white logos, no containers. |
 | / | RECENT BLOGS | PRESERVE | benefits-solution | RECENT BLOGS (Cannablog) kept with its intro. |
 | / | THC Extract For Fast Relief | PRESERVE | benefits-solution | Blog teaser kept. |
 | / | Cannabis Books For Handy Reference | PRESERVE | benefits-solution | Blog teaser kept. |
 | / | Cannabis Legal States And Economic Growth | PRESERVE | benefits-solution | Blog teaser kept. |
-| / | SUBSCRIBE TO OUR NEWSLETTER AND GET THE LATEST UPDATE ON DEALS, EVENTS | IMPROVE | strategic-cta | Newsletter heading kept word for word as the drop list sign-up; preview form does not submit (no backend) [CONFIRM WITH CLIENT list provider]. |
-| /affordable-cannabis-brands-originals-factory-weed-shop | Best-Selling Affordable Cannabis Brands At Originals Factory & Weed Sh | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| / | SUBSCRIBE TO OUR NEWSLETTER AND GET THE LATEST UPDATE ON DEALS, EVENTS | IMPROVE | strategic-cta | Newsletter heading kept word for word as the drop list sign-up; preview form does not submit (no backend) [CONFIRM WITH CLIENT list provider]. Home drop list, 2026-11-12 (owner): made compact. |
+| /affordable-cannabis-brands-originals-factory-weed-shop | Best-Selling Affordable Cannabis Brands At Originals Factory & Weed Sh | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /affordable-cannabis-brands-originals-factory-weed-shop | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /affordable-cannabis-brands-originals-factory-weed-shop | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /affordable-cannabis-brands-originals-factory-weed-shop | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -54,19 +54,19 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /affordable-cannabis-brands-originals-factory-weed-shop | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /affordable-cannabis-brands-originals-factory-weed-shop | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /affordable-cannabis-brands-originals-factory-weed-shop | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /blog | THC Extract For Fast Relief | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Cannabis Books For Handy Reference | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Cannabis Legal States And Economic Growth | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Originals Factory & Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | The Complete Guide To Buying The Cure Company Flower At Originals LA | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Best-Selling Affordable Cannabis Brands At Originals Factory & Weed Sh | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | The Complete Guide To Buying Glass House Farms at Originals LA | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | Originals Official Hall of Flowers Palm Springs Recap | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
-| /blog | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | PRESERVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. |
+| /blog | THC Extract For Fast Relief | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Originals Factory & Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | The Complete Guide To Buying The Cure Company Flower At Originals LA | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Best-Selling Affordable Cannabis Brands At Originals Factory & Weed Sh | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /blog | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Cannablog index entry kept (title, byline, date, excerpt) on /blog. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
 | /brands | OUR BRANDS | IMPROVE | trust-positioning | OUR BRANDS kept with its words; the six live brand tiles become a brand wall with deep links per store (LA live menu brand pages; San Diego live menu). |
-| /bussin-merch | section 1 | REPLACE | benefits-solution | The live page is a Duda placeholder ("This is paragraph text. Click it or hit the Manage Text button...") titled EVENTS. Replaced on the same URL by a real Bussin' page (the collab strain and the release party, from declared facts) linking to Originals Clothing; the nav Events link now opens /events. |
-| /buying-originals-weed-at-originals-san-diego | COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS SAN DIEGO | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /bussin-merch | section 1 | REPLACE | benefits-solution | The live page is a Duda placeholder ("This is paragraph text. Click it or hit the Manage Text button...") titled EVENTS. Replaced on the same URL by a real Bussin' page (the collab strain and the release party, from declared facts) linking to Originals Clothing; the nav Events link now opens /events. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /buying-originals-weed-at-originals-san-diego | COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS SAN DIEGO | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /buying-originals-weed-at-originals-san-diego | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /buying-originals-weed-at-originals-san-diego | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /buying-originals-weed-at-originals-san-diego | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -77,19 +77,19 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /buying-originals-weed-at-originals-san-diego | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /buying-originals-weed-at-originals-san-diego | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /buying-originals-weed-at-originals-san-diego | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /california-opt-in | section 1 | PRESERVE | strategic-cta | California Opt-in copy kept word for word. |
-| /cannabis-books-for-handy-reference | Cannabis Books For Handy Reference | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
-| /cannabis-books-for-handy-reference | Cannabis Books You’ll Love | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 1. Great: A Field Guide to Marijuana | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | &zwnj; | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 2. Grass Roots: The Rise and Fall and Rise of Marijuana in America | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 3. Ask Ed: Marijuana Success | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 3. Bong Appetit: Mastering the Art of Cooking with Weed | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | &zwnj; | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 4. The Leafly Guide to Cannabis: A Handbook for the Modern Consumer | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | &zwnj; | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | 5. Stoned Beyond Belief | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-books-for-handy-reference | Cannabis Books Coming to a Coffee Table Near You | PRESERVE | benefits-solution | Article section kept word for word. |
+| /california-opt-in | section 1 | IMPROVE | strategic-cta | California Opt-in copy kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /cannabis-books-for-handy-reference | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | Cannabis Books You’ll Love | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 1. Great: A Field Guide to Marijuana | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | &zwnj; | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 2. Grass Roots: The Rise and Fall and Rise of Marijuana in America | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 3. Ask Ed: Marijuana Success | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 3. Bong Appetit: Mastering the Art of Cooking with Weed | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | &zwnj; | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 4. The Leafly Guide to Cannabis: A Handbook for the Modern Consumer | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | &zwnj; | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | 5. Stoned Beyond Belief | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-books-for-handy-reference | Cannabis Books Coming to a Coffee Table Near You | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /cannabis-books-for-handy-reference | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-books-for-handy-reference | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-books-for-handy-reference | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -100,7 +100,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /cannabis-books-for-handy-reference | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-books-for-handy-reference | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-books-for-handy-reference | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /cannabis-edibles-guide-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /cannabis-edibles-guide-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /cannabis-edibles-guide-originals-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-edibles-guide-originals-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-edibles-guide-originals-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -111,13 +111,13 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /cannabis-edibles-guide-originals-la | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-edibles-guide-originals-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-edibles-guide-originals-la | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /cannabis-legal-states-and-economic-growth | Cannabis Legal States And Economic Growth | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
-| /cannabis-legal-states-and-economic-growth | Legal Cannabis | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-legal-states-and-economic-growth | Economic Effects Realized By Cannabis Legal States | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-legal-states-and-economic-growth | Bringing in New Residents | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-legal-states-and-economic-growth | Creating Jobs | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-legal-states-and-economic-growth | Additional Tax Revenue | PRESERVE | benefits-solution | Article section kept word for word. |
-| /cannabis-legal-states-and-economic-growth | Will Cannabis Ever Become Legal at the Federal Level? | PRESERVE | benefits-solution | Article section kept word for word. |
+| /cannabis-legal-states-and-economic-growth | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Legal Cannabis | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Economic Effects Realized By Cannabis Legal States | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Bringing in New Residents | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Creating Jobs | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Additional Tax Revenue | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /cannabis-legal-states-and-economic-growth | Will Cannabis Ever Become Legal at the Federal Level? | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /cannabis-legal-states-and-economic-growth | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-legal-states-and-economic-growth | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-legal-states-and-economic-growth | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -128,32 +128,32 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /cannabis-legal-states-and-economic-growth | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-legal-states-and-economic-growth | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /cannabis-legal-states-and-economic-growth | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /contact | Wholesale Form | IMPROVE | strategic-cta | Contact form kept (Name, Email, Phone, How can we help?); its mislabelled "Wholesale Form" heading corrected; preview form does not submit [CONFIRM WITH CLIENT form provider]. |
-| /contact | CONTACT INFO | PRESERVE | strategic-cta | CONTACT INFO kept. |
-| /contact | (323) 696-9680 | PRESERVE | strategic-cta | LA phone kept. |
-| /contact | INFO @ORIGINALSCA . COM | PRESERVE | strategic-cta | info@ email kept. |
-| /contact | 2 STORES | PRESERVE | strategic-cta | "2 STORES / VIEW STORES" kept, linking to /retail. |
-| /cookie-policy | section 1 | PRESERVE | footer | Cookie Policy kept word for word. |
-| /deals | 30% OFF FTP | PRESERVE | strategic-cta | LA 30% OFF FTP kept. |
-| /deals | (EXCLUDES ORIGINALS & DODI BRAND PRODUCTS) | PRESERVE | strategic-cta | Exclusion line kept. |
-| /deals | 50% OFF FTP | PRESERVE | strategic-cta | San Diego 50% OFF FTP kept. |
-| /deals | (EXCLUDES ORIGINALS & DODI BRAND PRODUCTS) | PRESERVE | strategic-cta | Exclusion line kept. |
-| /deals | SAVE NOW | IMPROVE | strategic-cta | SAVE NOW kept; all-day Sunday happy hour and the San Diego daily deals added from declared facts, each linking to the live deals [CONFIRM WITH CLIENT days and discounts]. |
-| /deals | First Time Patient Deals | PRESERVE | strategic-cta | First Time Patient Deals kept. |
-| /deals | WEEDMAPS DEALS | PRESERVE | strategic-cta | WEEDMAPS DEALS kept, linking to each store's live Weedmaps deals. |
-| /deals | Changing weekly! | PRESERVE | strategic-cta | "Changing weekly!" kept. |
+| /contact | Wholesale Form | IMPROVE | strategic-cta | Contact form kept (Name, Email, Phone, How can we help?); its mislabelled "Wholesale Form" heading corrected; preview form does not submit [CONFIRM WITH CLIENT form provider]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /contact | CONTACT INFO | IMPROVE | strategic-cta | CONTACT INFO kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /contact | (323) 696-9680 | IMPROVE | strategic-cta | LA phone kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /contact | INFO @ORIGINALSCA . COM | IMPROVE | strategic-cta | info@ email kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /contact | 2 STORES | IMPROVE | strategic-cta | "2 STORES / VIEW STORES" kept, linking to /retail. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /cookie-policy | section 1 | IMPROVE | footer | Cookie Policy kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /deals | 30% OFF FTP | IMPROVE | strategic-cta | LA 30% OFF FTP kept. /deals, 2026-11-12 (owner): the deal plaques were replaced by the concave carousel; these words are kept word for word on its cards. |
+| /deals | (EXCLUDES ORIGINALS & DODI BRAND PRODUCTS) | IMPROVE | strategic-cta | Exclusion line kept. /deals, 2026-11-12 (owner): the deal plaques were replaced by the concave carousel; these words are kept word for word on its cards. |
+| /deals | 50% OFF FTP | IMPROVE | strategic-cta | San Diego 50% OFF FTP kept. /deals, 2026-11-12 (owner): the deal plaques were replaced by the concave carousel; these words are kept word for word on its cards. |
+| /deals | (EXCLUDES ORIGINALS & DODI BRAND PRODUCTS) | IMPROVE | strategic-cta | Exclusion line kept. /deals, 2026-11-12 (owner): the deal plaques were replaced by the concave carousel; these words are kept word for word on its cards. |
+| /deals | SAVE NOW | IMPROVE | strategic-cta | SAVE NOW kept; all-day Sunday happy hour and the San Diego daily deals added from declared facts, each linking to the live deals [CONFIRM WITH CLIENT days and discounts]. /deals, 2026-11-12 (owner): Save now is the bento (option A). |
+| /deals | First Time Patient Deals | IMPROVE | strategic-cta | First Time Patient Deals kept. /deals, 2026-11-12 (owner): kept word for word on the redesigned page (the concave carousel and the Save now bento). |
+| /deals | WEEDMAPS DEALS | IMPROVE | strategic-cta | WEEDMAPS DEALS kept, linking to each store's live Weedmaps deals. /deals, 2026-11-12 (owner): kept word for word on the redesigned page (the concave carousel and the Save now bento). |
+| /deals | Changing weekly! | IMPROVE | strategic-cta | "Changing weekly!" kept. /deals, 2026-11-12 (owner): kept word for word on the redesigned page (the concave carousel and the Save now bento). |
 | /deals | SUBSCRIBE TO OUR NEWSLETTER AND GET THE LATEST UPDATE ON DEALS, EVENTS | IMPROVE | strategic-cta | Newsletter heading kept as the drop list sign-up. |
-| /disclaimer | section 1 | PRESERVE | footer | Disclaimer kept word for word. |
-| /faqs | GENERAL FAQS | PRESERVE | objection-handling | GENERAL FAQS intro kept. |
-| /faqs | What are your hours? | IMPROVE | objection-handling | Hours answer: the live FAQ lists 9 AM to 10 PM, which matches neither store; the answer now gives each store's hours from the store records [CONFIRM WITH CLIENT]. |
-| /faqs | Do you take credit cards? | PRESERVE | objection-handling | Kept word for word. |
-| /faqs | Do you deliver? | PRESERVE | objection-handling | Kept word for word. |
-| /faqs | Do you offer any discounts? | PRESERVE | objection-handling | Kept word for word; Weedmaps and rewards links added. |
-| /faqs | Do I need to show I.D. to purchase marijuana at Originals? | PRESERVE | objection-handling | Kept word for word. |
-| /faqs | Is Originals hiring? | PRESERVE | objection-handling | Kept word for word; links to /jobs. |
-| /faqs | What is Originals? | PRESERVE | trust-positioning | What is Originals? kept word for word (established 2006, indoor cultivation scale) and reused on Our Story. |
-| /faqs | SUBSCRIBE TO OUR NEWSLETTER AND GET THE LATEST UPDATE ON DEALS, EVENTS | IMPROVE | strategic-cta | Newsletter heading kept as the drop list sign-up. |
-| /gelato-oakstradam-og-originals | 5 Reasons Why Originals Gelato And Oakstradam OG Is The Best Weed In L | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /disclaimer | section 1 | IMPROVE | footer | Disclaimer kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | GENERAL FAQS | IMPROVE | objection-handling | GENERAL FAQS intro kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | What are your hours? | IMPROVE | objection-handling | Hours answer: the live FAQ lists 9 AM to 10 PM, which matches neither store; the answer now gives each store's hours from the store records [CONFIRM WITH CLIENT]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | Do you take credit cards? | IMPROVE | objection-handling | Kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | Do you deliver? | IMPROVE | objection-handling | Kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | Do you offer any discounts? | IMPROVE | objection-handling | Kept word for word; Weedmaps and rewards links added. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | Do I need to show I.D. to purchase marijuana at Originals? | IMPROVE | objection-handling | Kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | Is Originals hiring? | IMPROVE | objection-handling | Kept word for word; links to /jobs. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | What is Originals? | IMPROVE | trust-positioning | What is Originals? kept word for word (established 2006, indoor cultivation scale) and reused on Our Story. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /faqs | SUBSCRIBE TO OUR NEWSLETTER AND GET THE LATEST UPDATE ON DEALS, EVENTS | IMPROVE | strategic-cta | Newsletter heading kept as the drop list sign-up. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /gelato-oakstradam-og-originals | 5 Reasons Why Originals Gelato And Oakstradam OG Is The Best Weed In L | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /gelato-oakstradam-og-originals | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-oakstradam-og-originals | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-oakstradam-og-originals | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -164,7 +164,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /gelato-oakstradam-og-originals | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-oakstradam-og-originals | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-oakstradam-og-originals | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /gelato-strain-originals | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /gelato-strain-originals | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /gelato-strain-originals | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-strain-originals | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-strain-originals | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -175,7 +175,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /gelato-strain-originals | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-strain-originals | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /gelato-strain-originals | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /glass-house-farms-guide-originals-la | The Complete Guide To Buying Glass House Farms at Originals LA | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /glass-house-farms-guide-originals-la | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /glass-house-farms-guide-originals-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /glass-house-farms-guide-originals-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /glass-house-farms-guide-originals-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -186,7 +186,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /glass-house-farms-guide-originals-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /glass-house-farms-guide-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /glass-house-farms-guide-originals-la | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /he-cure-company-flower-guide-originals-la | The Complete Guide To Buying The Cure Company Flower At Originals LA | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /he-cure-company-flower-guide-originals-la | The Complete Guide To Buying The Cure Company Flower At Originals LA | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /he-cure-company-flower-guide-originals-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /he-cure-company-flower-guide-originals-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /he-cure-company-flower-guide-originals-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -197,7 +197,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /he-cure-company-flower-guide-originals-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /he-cure-company-flower-guide-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /he-cure-company-flower-guide-originals-la | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /jack-herer-strain-originals | Jack Herer Strain by Originals: Robust Fruity Flavors And Pure Sativa  | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /jack-herer-strain-originals | Jack Herer Strain by Originals: Robust Fruity Flavors And Pure Sativa  | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /jack-herer-strain-originals | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jack-herer-strain-originals | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jack-herer-strain-originals | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -208,7 +208,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /jack-herer-strain-originals | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jack-herer-strain-originals | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jack-herer-strain-originals | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /jeeter-brand-guide-originals-la | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /jeeter-brand-guide-originals-la | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /jeeter-brand-guide-originals-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jeeter-brand-guide-originals-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jeeter-brand-guide-originals-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -219,12 +219,12 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /jeeter-brand-guide-originals-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jeeter-brand-guide-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /jeeter-brand-guide-originals-la | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /jobs | Wholesale Form | IMPROVE | strategic-cta | Job application form kept field for field; its mislabelled "Wholesale Form" heading corrected; preview form does not submit [CONFIRM WITH CLIENT form provider]. |
-| /jobs | CONTACT INFO | PRESERVE | strategic-cta | CONTACT INFO kept. |
-| /jobs | 555.555.5555 | REPLACE | strategic-cta | The live page shows the placeholder phone 555.555.5555; replaced by the store phones from the store records [CONFIRM WITH CLIENT hiring contact]. |
-| /jobs | SUPPORT@ORIGINALSCA . COM | PRESERVE | strategic-cta | support@ email kept. |
-| /jobs | 3 STORES | REPLACE | strategic-cta | The live page says "3 STORES"; Originals has two stores (Los Angeles, San Diego), so it reads "2 STORES" as on /contact. |
-| /king-louie-strain-originals | The King Louie Strain By Originals Has A Funky Lemon Stench And Royal  | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /jobs | Wholesale Form | IMPROVE | strategic-cta | Job application form kept field for field; its mislabelled "Wholesale Form" heading corrected; preview form does not submit [CONFIRM WITH CLIENT form provider]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /jobs | CONTACT INFO | IMPROVE | strategic-cta | CONTACT INFO kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /jobs | 555.555.5555 | REPLACE | strategic-cta | The live page shows the placeholder phone 555.555.5555; replaced by the store phones from the store records [CONFIRM WITH CLIENT hiring contact]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /jobs | SUPPORT@ORIGINALSCA . COM | IMPROVE | strategic-cta | support@ email kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /jobs | 3 STORES | REPLACE | strategic-cta | The live page says "3 STORES"; Originals has two stores (Los Angeles, San Diego), so it reads "2 STORES" as on /contact. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /king-louie-strain-originals | The King Louie Strain By Originals Has A Funky Lemon Stench And Royal  | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /king-louie-strain-originals | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /king-louie-strain-originals | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /king-louie-strain-originals | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -235,10 +235,10 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /king-louie-strain-originals | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /king-louie-strain-originals | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /king-louie-strain-originals | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /los-angeles | Wholesale Form | IMPROVE | strategic-cta | Dispensary Downtown LA contact page kept with its form and store details; hours from the store records (the live page shows a third set of LA hours) [CONFIRM WITH CLIENT]. |
+| /los-angeles | Wholesale Form | IMPROVE | strategic-cta | Dispensary Downtown LA contact page kept with its form and store details; hours from the store records (the live page shows a third set of LA hours) [CONFIRM WITH CLIENT]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
 | /los-angeles-store | section 1 | IMPROVE | trust-positioning | Los Angeles store page kept and expanded: address, phone, hours, directions, the LA menu by category, the warehouse and the family wall from declared facts. |
-| /membership_agreement | OPT IN to RECEIVE EXCLUSIVE DEALS & EVENT INFO | PRESERVE | strategic-cta | Opt-in form and consent terms kept word for word; preview form does not submit. |
-| /oakstradam-og-strain | The Oakstradam OG Strain by Originals Is One Of California’s Strongest | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /membership_agreement | OPT IN to RECEIVE EXCLUSIVE DEALS & EVENT INFO | IMPROVE | strategic-cta | Opt-in form and consent terms kept word for word; preview form does not submit. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /oakstradam-og-strain | The Oakstradam OG Strain by Originals Is One Of California’s Strongest | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /oakstradam-og-strain | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /oakstradam-og-strain | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /oakstradam-og-strain | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -249,7 +249,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /oakstradam-og-strain | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /oakstradam-og-strain | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /oakstradam-og-strain | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /originals-gelato-strain-profile | The Popular Gelato Strain by Originals Is Sweet, Doughy, And Strong | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /originals-gelato-strain-profile | The Popular Gelato Strain by Originals Is Sweet, Doughy, And Strong | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /originals-gelato-strain-profile | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-gelato-strain-profile | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-gelato-strain-profile | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -260,7 +260,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /originals-gelato-strain-profile | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-gelato-strain-profile | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-gelato-strain-profile | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /originals-hall-of-flowers-palm-springs-recap | Originals Official Hall of Flowers Palm Springs Recap | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /originals-hall-of-flowers-palm-springs-recap | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /originals-hall-of-flowers-palm-springs-recap | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-hall-of-flowers-palm-springs-recap | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-hall-of-flowers-palm-springs-recap | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -271,7 +271,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /originals-hall-of-flowers-palm-springs-recap | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-hall-of-flowers-palm-springs-recap | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-hall-of-flowers-palm-springs-recap | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /originals-san-diego-cannabis-dispensary | Originals San Diego Is Now Open For Business! | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /originals-san-diego-cannabis-dispensary | Originals San Diego Is Now Open For Business! | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /originals-san-diego-cannabis-dispensary | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-san-diego-cannabis-dispensary | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-san-diego-cannabis-dispensary | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -282,7 +282,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /originals-san-diego-cannabis-dispensary | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-san-diego-cannabis-dispensary | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-san-diego-cannabis-dispensary | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /originals-weed-originals-factory-weed-shop-la | COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS FACTORY & WEED SH | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /originals-weed-originals-factory-weed-shop-la | COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS FACTORY & WEED SH | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /originals-weed-originals-factory-weed-shop-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-weed-originals-factory-weed-shop-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-weed-originals-factory-weed-shop-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -293,7 +293,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /originals-weed-originals-factory-weed-shop-la | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-weed-originals-factory-weed-shop-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /originals-weed-originals-factory-weed-shop-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /pre-roll-stocking-stuffer-gift-guide | Originals Factory & Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /pre-roll-stocking-stuffer-gift-guide | Originals Factory & Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /pre-roll-stocking-stuffer-gift-guide | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /pre-roll-stocking-stuffer-gift-guide | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /pre-roll-stocking-stuffer-gift-guide | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -304,12 +304,12 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /pre-roll-stocking-stuffer-gift-guide | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /pre-roll-stocking-stuffer-gift-guide | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /pre-roll-stocking-stuffer-gift-guide | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /privacy-policy | section 1 | PRESERVE | footer | Privacy Policy kept word for word. |
-| /prop-65-warning | section 1 | IMPROVE | footer | The live page says only "Need info"; the California Prop 65 cannabis warning is shown here and in every footer [CONFIRM WITH CLIENT compliance wording]. |
+| /privacy-policy | section 1 | IMPROVE | footer | Privacy Policy kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /prop-65-warning | section 1 | IMPROVE | footer | The live page says only "Need info"; the California Prop 65 cannabis warning is shown here and in every footer [CONFIRM WITH CLIENT compliance wording]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
 | /retail | section 1 | IMPROVE | trust-positioning | OUR STORES / OUR LOCATIONS kept: both stores with address, phone, hours, directions and their own menus; SHOP MERCH (OPEN 24/7) kept for Originals Clothing. |
-| /rewards-program-and-opt-in | section 1 | IMPROVE | strategic-cta | "Join our Rewards Program Today!" and the VIP Program Login/Join link kept. |
+| /rewards-program-and-opt-in | section 1 | IMPROVE | strategic-cta | "Join our Rewards Program Today!" and the VIP Program Login/Join link kept. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
 | /san-diego-store | section 1 | IMPROVE | trust-positioning | San Diego store page kept and expanded: address, phone, hours, directions, the San Diego menu by category (its live online menu), pets welcome. |
-| /sugar-free-edibles-originals-la | Four Sugar-Free Cannabis Edibles Worth Trying At Originals LA | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /sugar-free-edibles-originals-la | Four Sugar-Free Cannabis Edibles Worth Trying At Originals LA | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /sugar-free-edibles-originals-la | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /sugar-free-edibles-originals-la | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /sugar-free-edibles-originals-la | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -320,16 +320,16 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /sugar-free-edibles-originals-la | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /sugar-free-edibles-originals-la | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /sugar-free-edibles-originals-la | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /terms-of-service | section 1 | PRESERVE | footer | Terms of Service kept word for word. |
-| /thc-extract-for-fast-relief | THC Extract For Fast Relief | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
-| /thc-extract-for-fast-relief | What’s THC Extract? | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Types of THC Extracts | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Ways to Use THC Extracts | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Dab Rig | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Vaping | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Adding a Bit to a Joint or Bowl | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Mixing into Edibles | PRESERVE | benefits-solution | Article section kept word for word. |
-| /thc-extract-for-fast-relief | Try THC Extract for Fast, Effective Relief | PRESERVE | benefits-solution | Article section kept word for word. |
+| /terms-of-service | section 1 | IMPROVE | footer | Terms of Service kept word for word. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /thc-extract-for-fast-relief | THC Extract For Fast Relief | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | What’s THC Extract? | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Types of THC Extracts | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Ways to Use THC Extracts | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Dab Rig | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Vaping | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Adding a Bit to a Joint or Bowl | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Mixing into Edibles | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
+| /thc-extract-for-fast-relief | Try THC Extract for Fast, Effective Relief | IMPROVE | benefits-solution | Article section kept word for word. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /thc-extract-for-fast-relief | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /thc-extract-for-fast-relief | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /thc-extract-for-fast-relief | Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls,  | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -340,7 +340,7 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /thc-extract-for-fast-relief | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /thc-extract-for-fast-relief | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /thc-extract-for-fast-relief | Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /wedding-cake-strain-originals | The Wedding Cake Strain by Originals Has Tart, Vanilla Flavors And Hig | PRESERVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. |
+| /wedding-cake-strain-originals | The Wedding Cake Strain by Originals Has Tart, Vanilla Flavors And Hig | IMPROVE | benefits-solution | Article kept word for word at its own URL, with the H1 the live page lacked. Post template redesign, 2026-11-12 (owner; in progress): the article kept word for word on the new template. |
 | /wedding-cake-strain-originals | THC Extract For Fast Relief | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /wedding-cake-strain-originals | Cannabis Books For Handy Reference | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /wedding-cake-strain-originals | Cannabis Legal States And Economic Growth | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
@@ -351,18 +351,26 @@ One row per section of the source site, generated from `audit/change-control.jso
 | /wedding-cake-strain-originals | The Complete Guide To Buying Glass House Farms at Originals LA | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /wedding-cake-strain-originals | Originals Official Hall of Flowers Palm Springs Recap | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
 | /wedding-cake-strain-originals | The Complete Guide to Buying Edibles At Originals Factory & Weed Shop | IMPROVE | benefits-solution | Related-posts list kept as a "Keep reading" rail under the article. |
-| /our-story | /our-story | ADD | trust-positioning | Our Story (the live site has no About page): the block, the family, since 2006, awards, in-house cultivation, from declared facts and the live FAQ. |
+| /our-story | /our-story | ADD | trust-positioning | Our Story (the live site has no About page): the block, the family, since 2006, awards, in-house cultivation, from declared facts and the live FAQ. 2026-11-12 (owner): its creed band is removed (the creed text stays in the site data). |
 | /strains | /strains | ADD | benefits-solution | Strain Library of the house genetics (Originals OG, King Louie, Skywalker, Oaksterdam OG, Gelato, SFV OG, Paris OG, Bussin'), linking to the live menu and the existing strain articles. |
-| /collabs | /collabs | ADD | trust-positioning | Collabs, text only, no artist photos [CONFIRM WITH CLIENT every partner]. |
-| /media | /media | ADD | benefits-solution | Media: the brand film and the brand's own event flyers and imagery; press contact. |
-| /drops | /drops | ADD | strategic-cta | Drop list: new strain and merch drops sign-up (preview form does not submit) [CONFIRM WITH CLIENT next drop]. |
-| /find-originals | /find-originals | ADD | strategic-cta | Find Originals: the house brand at other dispensaries in California and Massachusetts (retailer list [CONFIRM WITH CLIENT]) plus the two Originals stores. |
-| /events | /events | ADD | trust-positioning | Events (the live Events link 404s or opens a placeholder): past highlights from declared facts and an upcoming section held as [CONFIRM WITH CLIENT] placeholders. |
-| /wholesale | /wholesale | ADD | strategic-cta | Wholesale (the live footer link 404s): The Brand Behind The Brands, retailer inquiry form (preview does not submit) [CONFIRM WITH CLIENT]. |
-| /shop | /shop | ADD | benefits-solution | Shop hub: pick Los Angeles or San Diego, then every category and brand links straight to that store's live menu with the cart. |
-| /clothing | /clothing | ADD | benefits-solution | Originals Clothing: the online clothing shop (open 24/7) and merch, linking to originalsclothingshop.com. |
-| /404.html | /404.html | ADD | footer | Not-found page. |
-| /form-sent | /form-sent | ADD | strategic-cta | Preview form target: every preview form submits here (GET, nothing stored) and the page says plainly that nothing was sent; replaced by the client's form provider at launch [CONFIRM WITH CLIENT]. |
+| /collabs | /collabs | ADD | trust-positioning | Collabs, text only, no artist photos [CONFIRM WITH CLIENT every partner]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /media | /media | ADD | benefits-solution | Media: the brand film and the brand's own event flyers and imagery; press contact. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /drops | /drops | ADD | strategic-cta | Drop list: new strain and merch drops sign-up (preview form does not submit) [CONFIRM WITH CLIENT next drop]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /find-originals | /find-originals | ADD | strategic-cta | Find Originals: the house brand at other dispensaries in California and Massachusetts (retailer list [CONFIRM WITH CLIENT]) plus the two Originals stores. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /events | /events | ADD | trust-positioning | Events (the live Events link 404s or opens a placeholder): past highlights from declared facts and an upcoming section held as [CONFIRM WITH CLIENT] placeholders. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /wholesale | /wholesale | ADD | strategic-cta | Wholesale (the live footer link 404s): The Brand Behind The Brands, retailer inquiry form (preview does not submit) [CONFIRM WITH CLIENT]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /shop | /shop | ADD | benefits-solution | Shop hub: pick Los Angeles or San Diego, then every category and brand links straight to that store's live menu with the cart. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /clothing | /clothing | ADD | benefits-solution | Originals Clothing: the online clothing shop (open 24/7) and merch, linking to originalsclothingshop.com. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /404.html | /404.html | ADD | footer | Not-found page. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| /form-sent | /form-sent | ADD | strategic-cta | Preview form target: every preview form submits here (GET, nothing stored) and the page says plainly that nothing was sent; replaced by the client's form provider at launch [CONFIRM WITH CLIENT]. Page redesign, 2026-11-12 (owner; in progress): the same words and links on a new layout. |
+| / | Home: Our story | ADD | trust-positioning | Home "Our story" section (owner, 2026-11-12): its album shows four of the owner's photos. |
+| / | Home: Family Wall | ADD | trust-positioning | Home Family Wall (owner, 2026-11-12): a digital replica of the store's family photo wall, a sideways strip on a white band beside the texts; it replaced the salon frames. |
+| / | Home: Sunday Cruise, The Roadside Sign | ADD | benefits-solution | Home Sunday Cruise, "The Roadside Sign" (owner pick, 2026-11-12): a lit roadside pole sign on the boulevard lists the ten house strains, each a link, under the arched ORIGINALS wordmark, with the Strain library panel; the lowrider pulls up in front of its pole as you scroll. "From the farm" is merged in (next row). |
+| / | Home: From the farm | IMPROVE |  | Home "From the farm" (owner, 2026-11-12): merged into the Sunday Cruise; its kicker, title and lede and the ten house-strain links are kept word for word there (the separate grow band is retired: private/retired/2026-11-12-farm-section/). |
+| / | Home: the Creed | REMOVE |  | Owner, 2026-11-12: "I don't think we need the creed at all". The home creed section, the creed band on /our-story and the creed line in the footer are removed; the creed text stays in the site data (src/content/site.mjs). Retired markup: private/retired/2026-11-12-creed-section/. |
+| / | Home: Stores, Editorial | ADD | trust-positioning | Home stores, "Editorial" (owner pick, option C, 2026-11-12): Los Angeles, San Diego and Clothing as a third column, in a sideways scroller. |
+| / | Home: Culture (events and collabs) | ADD | trust-positioning | Home Culture (owner, 2026-11-12): the event cards as a lenticular carousel (an original build of the effect), the collab tape with partner logos, and the Events and Collabs buttons. |
+| / | Site footer | REPLACE | footer | Owner pick, option C, 2026-11-12: the editorial footer replaces the old footer layout on every page, with no creed line (the old footer's links are checked by tools/test-ui.mjs). |
 
 ## Copy that changed
 
@@ -371,7 +379,7 @@ AI may tighten wording. It may not change meaning, and it may not add a fact. Ev
 | where | original | rewritten | reason |
 |---|---|---|---|
 | / hero intro | Shop at the best dispensary in Los Angeles and have a top-level cannabis experience every time. We source our products from popular California brands offering the ultimate in customer satisfaction. | Removed; the hero carries the live H1 "Best Cultivators in California." and "The Brand Behind The Brands" (declared fact). | Operator direction: drop generic SEO filler. |
-| footer tagline (every page) | Shop the best dispensary in Los Angeles and have a top-level cannabis experience every time. | Replaced by the creed "Mastering Our Craft – Always Room For Improvement – Good, Better, Best – California's Best." (declared fact). | Operator direction: drop generic SEO filler; use the creed as the sign-off. |
+| footer tagline (every page) | Shop the best dispensary in Los Angeles and have a top-level cannabis experience every time. | Removed. The footer first carried the creed "Mastering Our Craft – Always Room For Improvement – Good, Better, Best – California's Best." (declared fact) as its sign-off; on 2026-11-12 the owner dropped the creed everywhere, so the editorial footer opens with the store and link columns. | Operator direction: drop generic SEO filler; owner, 2026-11-12: "I don't think we need the creed at all". |
 | / category tiles | "Lorem ipsim." under each category; "Lorem Ipsum" under DEALS / REWARDS / EVENTS | Placeholder text removed; tiles carry their label and the store they open. | Template placeholder text. |
 | /retail intro | Shop the best dispensary in Los Angeles and have a top-level cannabis experience every time. | Two stores in Southern California, one family. Pick yours, check today's hours and shop its menu. | Operator direction: drop generic SEO filler (neutral glue, no claims). |
 | /faqs "What are your hours?" | Monday to Saturday 9:00 AM - 10:00 PM, Sunday 10:00 AM - 8:00 PM | Each store's hours from the store records (LA Mon–Sat 7AM–9:45PM, Sun 8AM–7:45PM; SD Mon–Sat 8AM–9PM, Sun 9AM–9PM). | The live answer matches neither store [CONFIRM WITH CLIENT]. |
@@ -422,8 +430,13 @@ Per-asset decisions for the live site are in `audit/image-inventory.json`. The r
 | loop-stage | first frame of a generated stage loop | img/loop-stage-1280.webp |
 | loop-grow | first frame of a generated grow loop | img/loop-grow-1600.webp |
 | loop-arches | first frame of a generated arches loop | img/loop-arches-720.webp |
+| merch-hoodie | A folded taupe zip hoodie with the ORIGINALS wordmark and crown on the chest, resting on dark rock | img/merch-hoodie-1448.webp, img/merch-hoodie-800.webp |
+| store-wall | An Originals store wall: the ORIGINALS sign between two crowns over wood panelling, three screens and glass display cases | img/store-wall-1535.webp, img/store-wall-900.webp |
+| happy-hour-lowrider | A woman in a yellow top and sunglasses leans down holding a leashed bulldog in front of a red 1963 Chevrolet Impala lowrider and a long red brick building under a blue sky | img/happy-hour-lowrider-2400.webp, img/happy-hour-lowrider-1600.webp, img/happy-hour-lowrider-960.webp |
+| store-sd-front | The Originals San Diego storefront on Federal Blvd at golden hour, under its ORIGINALS DISPENSARY sign | img/store-sd-front-2400.webp, img/store-sd-front-1600.webp, img/store-sd-front-960.webp |
+| daily-jar-tall | An ORIGINALS glass jar of flower with a wooden lid on a reflective counter | img/daily-jar-tall-1024.webp, img/daily-jar-tall-800.webp, img/daily-jar-tall-640.webp |
 
-Client media (resized only, never AI-altered): store-la-interior, store-la-floor, store-la-front, store-sd-building, sd-banner, sd-script, flyer-carshow, hof-graphic, hof-mixer, farmers-cup, gelato-box, gelato-jar, preroll-3, preroll-1, bud-box, grow-real, backdrop, clothing-shop, award-badge, crown-black, la-lockup, film-poster, logo-jeeter, logo-stiiizy, logo-wcc, logo-lime, logo-roach, logo-cbx.
+Client media (resized only, never AI-altered): store-la-interior, store-la-floor, store-la-front, store-sd-building, sd-banner, sd-script, flyer-carshow, hof-graphic, hof-mixer, farmers-cup, gelato-box, gelato-jar, preroll-3, preroll-1, bud-box, grow-real, backdrop, clothing-shop, award-badge, crown-black, la-lockup, film-poster, logo-jeeter, logo-stiiizy, logo-wcc, logo-lime, logo-roach, logo-cbx, happy-hour-meet, story-family-wall, story-pouch, story-grower-bud, story-family-farms, wall-strip-1, wall-strip-2, wall-strip-3, wall-strip-4, wall-strip-5, wall-strip-6, store-la-wall, store-la-window, store-la-letters-bw, store-sd-interior, family-wall-unit, logo-originals, logo-the-cure-company, logo-raw-garden, logo-alien-labs, logo-kanha, logo-wyld, logo-papa-barkley, logo-pacific-stone, logo-maven-genetics, logo-rove, daily-jar, gelato-bud, logo-wyld-white, store-counter, logo-beast-mode, logo-royal-blunts, store-sd-exterior.
 
 ## Tool note
 

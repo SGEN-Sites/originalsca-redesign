@@ -1,8 +1,8 @@
 {
-  "at": "2026-11-11T01:36:30.016Z",
+  "at": "2026-11-12T12:20:40.979Z",
   "build": "dist",
-  "pass": 28,
-  "total": 28,
+  "pass": 487,
+  "total": 487,
   "results": [
     {
       "name": "gate shows on first visit",
@@ -52,7 +52,7 @@
     {
       "name": "switching to San Diego rewires Shop/Call/Directions/hours/categories (390px)",
       "ok": true,
-      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Open now · until 9 PM\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"chip\":\"San Diego\"}"
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Closed · opens 8 AM today\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"header\":\"San Diego\"}"
     },
     {
       "name": "store choice remembered on reload (390px)",
@@ -70,17 +70,37 @@
       "detail": "overflow 0px"
     },
     {
-      "name": "drawer opens (390px)",
+      "name": "the category wall: 9 cards, each opening its category on the LA menu in a new tab, a Shop Now inside each, photos black and white at rest (390px)",
       "ok": true,
-      "detail": ""
+      "detail": "[{\"shop\":\"flower\",\"href\":\"https://originalsca.com/menu/los-angeles/categories/flower/\",\"blank\":true,\"cta\":\"Shop Now\",\"ctaInside\":true,\"gray\":true},{\"shop\":\"preroll\",\"href\":\"https://originalsca.com/menu/los-angeles/categories/preroll/\",\"blank\":true,\"cta\":\"Shop Now\",\"ctaInside\":true,\"gray\":true}]"
     },
     {
-      "name": "dash hides while the drawer is open (390px)",
+      "name": "More opens the panel and moves focus into it (390px)",
       "ok": true,
-      "detail": ""
+      "detail": "{\"expanded\":\"true\",\"controls\":\"nx-more\",\"shown\":true,\"focus\":\"Shop\",\"focusInPanel\":true,\"menuOpen\":true,\"locked\":true}"
     },
     {
-      "name": "drawer closes (390px)",
+      "name": "store bar hides while More is open (390px)",
+      "ok": true,
+      "detail": "{\"before\":{\"top\":726,\"vh\":844,\"on\":true,\"menuOpen\":false},\"hid\":{\"top\":879,\"vh\":844,\"on\":true,\"menuOpen\":true}}"
+    },
+    {
+      "name": "header targets at least 44x44, More open (390px)",
+      "ok": true,
+      "detail": "36 targets; under 44: []"
+    },
+    {
+      "name": "Escape closes More and returns focus to it (390px)",
+      "ok": true,
+      "detail": "{\"expanded\":\"false\",\"controls\":\"nx-more\",\"shown\":false,\"focus\":\"nx-more-btn\",\"focusInPanel\":false,\"menuOpen\":false,\"locked\":false}"
+    },
+    {
+      "name": "store bar returns once More closes (390px)",
+      "ok": true,
+      "detail": "{\"top\":726,\"vh\":844,\"on\":true,\"menuOpen\":false}"
+    },
+    {
+      "name": "no script errors (home and header, 390px)",
       "ok": true,
       "detail": ""
     },
@@ -97,7 +117,7 @@
     {
       "name": "switching to San Diego rewires Shop/Call/Directions/hours/categories (360px)",
       "ok": true,
-      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Open now · until 9 PM\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"chip\":\"San Diego\"}"
+      "detail": "{\"store\":\"sd\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"tel\":\"tel:+16193105232\",\"maps\":\"https://www.google.com/maps/search/?api=1&query=Originals%20San%20Diego%2C%206220%20Federal%20Blvd%2C%20San%20Diego%2C%20CA%2092114\",\"today\":\"San Diego · Closed · opens 8 AM today\",\"flower\":\"https://weedmaps.com/dispensaries/originals-san-diego/flower\",\"header\":\"San Diego\"}"
     },
     {
       "name": "store choice remembered on reload (360px)",
@@ -115,34 +135,2309 @@
       "detail": "overflow 0px"
     },
     {
-      "name": "drawer opens (360px)",
+      "name": "the category wall: 9 cards, each opening its category on the LA menu in a new tab, a Shop Now inside each, photos black and white at rest (360px)",
+      "ok": true,
+      "detail": "[{\"shop\":\"flower\",\"href\":\"https://originalsca.com/menu/los-angeles/categories/flower/\",\"blank\":true,\"cta\":\"Shop Now\",\"ctaInside\":true,\"gray\":true},{\"shop\":\"preroll\",\"href\":\"https://originalsca.com/menu/los-angeles/categories/preroll/\",\"blank\":true,\"cta\":\"Shop Now\",\"ctaInside\":true,\"gray\":true}]"
+    },
+    {
+      "name": "More opens the panel and moves focus into it (360px)",
+      "ok": true,
+      "detail": "{\"expanded\":\"true\",\"controls\":\"nx-more\",\"shown\":true,\"focus\":\"Shop\",\"focusInPanel\":true,\"menuOpen\":true,\"locked\":true}"
+    },
+    {
+      "name": "store bar hides while More is open (360px)",
+      "ok": true,
+      "detail": "{\"before\":{\"top\":622,\"vh\":740,\"on\":true,\"menuOpen\":false},\"hid\":{\"top\":775,\"vh\":740,\"on\":true,\"menuOpen\":true}}"
+    },
+    {
+      "name": "header targets at least 44x44, More open (360px)",
+      "ok": true,
+      "detail": "36 targets; under 44: []"
+    },
+    {
+      "name": "Escape closes More and returns focus to it (360px)",
+      "ok": true,
+      "detail": "{\"expanded\":\"false\",\"controls\":\"nx-more\",\"shown\":false,\"focus\":\"nx-more-btn\",\"focusInPanel\":false,\"menuOpen\":false,\"locked\":false}"
+    },
+    {
+      "name": "store bar returns once More closes (360px)",
+      "ok": true,
+      "detail": "{\"top\":622,\"vh\":740,\"on\":true,\"menuOpen\":false}"
+    },
+    {
+      "name": "no script errors (home and header, 360px)",
       "ok": true,
       "detail": ""
     },
     {
-      "name": "dash hides while the drawer is open (360px)",
+      "name": "header store switch sets San Diego: html[data-store], aria-pressed, the store bar, the category links (1440px)",
       "ok": true,
-      "detail": ""
+      "detail": "{\"store\":\"sd\",\"pressed\":\"la:false sd:true\",\"dash\":{\"pressed\":\"true\",\"shop\":true,\"today\":\"San Diego · Closed · opens 8 AM today\"},\"name\":\"San Diego\",\"barCats\":6,\"onSd\":true,\"changed\":true,\"notSd\":[]}"
     },
     {
-      "name": "drawer closes (360px)",
+      "name": "More opens the panel and marks San Diego as your store (1440px)",
       "ok": true,
-      "detail": ""
+      "detail": "{\"opened\":{\"expanded\":\"true\",\"controls\":\"nx-more\",\"shown\":true,\"focus\":\"nx-more-btn\",\"focusInPanel\":false,\"menuOpen\":true,\"locked\":false},\"tag\":[\"nx-loc nx-loc--sd\"]}"
     },
     {
-      "name": "Shop mega panel opens on hover",
+      "name": "header targets at least 44x44, More open (1440px)",
       "ok": true,
-      "detail": ""
+      "detail": "36 targets; under 44: []"
     },
     {
-      "name": "header store chip toggles the store",
+      "name": "Escape closes More and returns focus to it (1440px)",
       "ok": true,
-      "detail": ""
+      "detail": "{\"expanded\":\"false\",\"controls\":\"nx-more\",\"shown\":false,\"focus\":\"nx-more-btn\",\"focusInPanel\":false,\"menuOpen\":false,\"locked\":false}"
+    },
+    {
+      "name": "a click outside the panel closes More (1440px)",
+      "ok": true,
+      "detail": "{\"expanded\":\"false\",\"controls\":\"nx-more\",\"shown\":false,\"focus\":\"Skip to content\\n\\n  \\n\",\"focusInPanel\":false,\"menuOpen\":false,\"locked\":false}"
+    },
+    {
+      "name": "header marks the current page with aria-current=\"page\"",
+      "ok": true,
+      "detail": "{\"/deals\":[\"Deals\"],\"/collabs\":[\"Collabs\"],\"/los-angeles-store\":[\"Originals Los Angeles\"]}"
     },
     {
       "name": "LA store page category tiles stay on the LA menu even with San Diego selected",
       "ok": true,
-      "detail": "https://originalsca.com/menu/los-angeles/categories/flower/ , https://originalsca.com/menu/los-angeles/categories/preroll/"
+      "detail": "store sd | https://originalsca.com/menu/los-angeles/categories/flower/ , https://originalsca.com/menu/los-angeles/categories/preroll/"
+    },
+    {
+      "name": "no script errors (desktop pages)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home has one H1, the hero's (1440px)",
+      "ok": true,
+      "detail": "[{\"t\":\"Best Cultivators in California.\",\"inHero\":true}]"
+    },
+    {
+      "name": "hero store switch sets html[data-store] to San Diego and moves the hero's Shop Now to the San Diego menu (1440px)",
+      "ok": true,
+      "detail": "{\"done\":true,\"store\":\"sd\",\"pressed\":\"la:false sd:true\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"sd\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"la\":\"https://originalsca.com/menu/los-angeles/\"}"
+    },
+    {
+      "name": "hero film toggle pauses and plays the film (1440px)",
+      "ok": true,
+      "detail": "{\"f0\":{\"shown\":true,\"state\":\"playing\",\"label\":\"Pause film\",\"paused\":false},\"f1\":{\"shown\":true,\"state\":\"paused\",\"label\":\"Play film\",\"paused\":true},\"f2\":{\"shown\":true,\"state\":\"playing\",\"label\":\"Pause film\",\"paused\":false}}"
+    },
+    {
+      "name": "no script errors (home hero, 1440px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home has one H1, the hero's (390px)",
+      "ok": true,
+      "detail": "[{\"t\":\"Best Cultivators in California.\",\"inHero\":true}]"
+    },
+    {
+      "name": "hero store switch sets html[data-store] to San Diego and moves the hero's Shop Now to the San Diego menu (390px)",
+      "ok": true,
+      "detail": "{\"done\":true,\"store\":\"sd\",\"pressed\":\"la:false sd:true\",\"shop\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"sd\":\"https://weedmaps.com/dispensaries/originals-san-diego\",\"la\":\"https://originalsca.com/menu/los-angeles/\"}"
+    },
+    {
+      "name": "hero film toggle pauses and plays the film (390px)",
+      "ok": true,
+      "detail": "{\"f0\":{\"shown\":true,\"state\":\"playing\",\"label\":\"Pause film\",\"paused\":false},\"f1\":{\"shown\":true,\"state\":\"paused\",\"label\":\"Play film\",\"paused\":true},\"f2\":{\"shown\":true,\"state\":\"playing\",\"label\":\"Pause film\",\"paused\":false}}"
+    },
+    {
+      "name": "no script errors (home hero, 390px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "the category wall is a bento box: four interlocking columns (2,2,2,3), flat edges, gaps of 12px or less, no seam shared by neighbours, one screen tall (1440x900)",
+      "ok": true,
+      "detail": "{\"cols\":[2,2,2,3],\"flatTop\":0,\"flatBottom\":0,\"maxGap\":12,\"sharedSeams\":0,\"height\":599,\"vh\":900}"
+    },
+    {
+      "name": "the category wall: photos black and white, frames and numbers white at rest; hovering a card colours its photo, turns its frame and number gold, grows it and dims the others, nothing leaves its card; it settles back (1440px)",
+      "ok": true,
+      "detail": "{\"rest\":{\"scale\":\"none\",\"dimmed\":false,\"escapes\":false,\"gray\":true,\"othersGray\":true,\"noWhite\":true,\"noGold\":false,\"othersNoWhite\":true,\"frame\":\"color(srgb 1 1 1 / 0.7) 0px 0px 0px 1px inset\"},\"on\":{\"scale\":\"1.04\",\"dimmed\":true,\"escapes\":false,\"gray\":false,\"othersGray\":true,\"noWhite\":false,\"noGold\":true,\"othersNoWhite\":true,\"frame\":\"color(srgb 0.952941 0.764706 0.309804 / 0.62) 0px 0px 0px 1px inset\"},\"back\":{\"scale\":\"none\",\"dimmed\":false,\"escapes\":false,\"gray\":true,\"othersGray\":true,\"noWhite\":true,\"noGold\":false,\"othersNoWhite\":true,\"frame\":\"color(srgb 1 1 1 / 0.7) 0px 0px 0px 1px inset\"}}"
+    },
+    {
+      "name": "no script errors (category wall, 1440px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "deals reel: a short pin (70-90vh of scroll); at its start the titles fill the stage, centred, tabs and cards hidden (1440px)",
+      "ok": true,
+      "detail": "{\"pin\":{\"top\":3387,\"end\":4107,\"run\":720,\"vh\":900},\"a0\":{\"act\":\"-1\",\"y\":3387,\"vw\":1440,\"sign\":[460,287,980,445],\"h2\":[536,471,904,542],\"rail\":[1110,100,1384,609],\"tab1\":[1150,344,1424,407],\"tabsOp\":0,\"cardsOp\":0,\"tabs\":\"true:0 false:-1 false:-1 false:-1\"}}"
+    },
+    {
+      "name": "deals reel: at its end the titles have docked in the rail above the tabs, the tabs show and deal 01 plays (1440px)",
+      "ok": true,
+      "detail": "{\"act\":\"0\",\"y\":4107,\"vw\":1440,\"sign\":[1126,100,1368,173],\"h2\":[1126,187,1368,234],\"rail\":[1110,100,1384,609],\"tab1\":[1110,344,1384,407],\"tabsOp\":1,\"cardsOp\":1,\"tabs\":\"true:0 false:-1 false:-1 false:-1\"}"
+    },
+    {
+      "name": "deals reel: scrolling back to its start returns the same opening screen (1440px)",
+      "ok": true,
+      "detail": "{\"a0\":{\"act\":\"-1\",\"y\":3387,\"vw\":1440,\"sign\":[460,287,980,445],\"h2\":[536,471,904,542],\"rail\":[1110,100,1384,609],\"tab1\":[1150,344,1424,407],\"tabsOp\":0,\"cardsOp\":0,\"tabs\":\"true:0 false:-1 false:-1 false:-1\"},\"a2\":{\"act\":\"-1\",\"y\":3387,\"vw\":1440,\"sign\":[460,287,980,445],\"h2\":[536,471,904,542],\"rail\":[1110,100,1384,609],\"tab1\":[1150,344,1424,407],\"tabsOp\":0,\"cardsOp\":0,\"tabs\":\"true:0 false:-1 false:-1 false:-1\"}}"
+    },
+    {
+      "name": "deals reel: its background layers fade in from ink at the top edge and back out at the foot (1440px)",
+      "ok": true,
+      "detail": "linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 18%, rgb(0, 0, 0) 82%, rgba(0, 0, 0, 0))"
+    },
+    {
+      "name": "deals reel: the Happy Hour photo fills its card; the woman's head clears the giant words by 40px+ and the deal number by 24px+ (1440px)",
+      "ok": true,
+      "detail": "{\"photo\":\"happy-hour-lowrider-2400.webp\",\"covers\":true,\"words\":459,\"number\":53}"
+    },
+    {
+      "name": "deals reel: each tab picks its deal, aria-selected and roving tabindex follow, the page does not move (1440px)",
+      "ok": true,
+      "detail": "[{\"i\":2,\"act\":\"2\",\"dy\":0,\"tab\":\"true:0\"},{\"i\":1,\"act\":\"1\",\"dy\":0,\"tab\":\"true:0\"},{\"i\":3,\"act\":\"3\",\"dy\":0,\"tab\":\"true:0\"},{\"i\":0,\"act\":\"0\",\"dy\":0,\"tab\":\"true:0\"}]"
+    },
+    {
+      "name": "deals reel: arrows move between tabs, Enter picks, Tab enters the deal on stage (1440px)",
+      "ok": true,
+      "detail": "{\"k1\":{\"act\":\"0\",\"y\":4107,\"vw\":1440,\"focus\":\"deal-la-tab\",\"sign\":[1126,100,1368,173],\"h2\":[1126,187,1368,234],\"rail\":[1110,100,1384,609],\"tab1\":[1110,344,1384,407],\"tabsOp\":1,\"cardsOp\":1,\"tabs\":\"true:0 false:-1 false:-1 false:-1\"},\"k2\":{\"act\":\"1\",\"y\":4107,\"vw\":1440,\"focus\":\"deal-la-tab\",\"sign\":[1126,100,1368,173],\"h2\":[1126,187,1368,234],\"rail\":[1110,100,1384,609],\"tab1\":[1110,344,1384,407],\"tabsOp\":1,\"cardsOp\":1,\"tabs\":\"false:-1 true:0 false:-1 false:-1\"},\"k3\":{\"act\":\"1\",\"y\":4107,\"vw\":1440,\"focus\":\"deal-la\",\"sign\":[1126,100,1368,173],\"h2\":[1126,187,1368,234],\"rail\":[1110,100,1384,609],\"tab1\":[1110,344,1384,407],\"tabsOp\":1,\"cardsOp\":1,\"tabs\":\"false:-1 true:0 false:-1 false:-1\"}}"
+    },
+    {
+      "name": "deals reel: the San Diego card shows the storefront photo (store-sd-front) over its whole card (1440px)",
+      "ok": true,
+      "detail": "{\"act\":\"2\",\"photo\":\"store-sd-front-2400.webp\",\"covers\":true}"
+    },
+    {
+      "name": "no script errors (deals reel, 1440px)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "deals reel: the San Diego sign (ORIGINALS and DISPENSARY) is whole inside its card and clear of the copy at every card shape (1565x784 to 390x844), at the start and end of the zoom",
+      "ok": true,
+      "detail": "[{\"at\":\"1565x784\",\"phase\":\"start\",\"inside\":24,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1565x784\",\"phase\":\"end\",\"inside\":21,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1440x760\",\"phase\":\"start\",\"inside\":24,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1440x760\",\"phase\":\"end\",\"inside\":21,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1366x768\",\"phase\":\"start\",\"inside\":32,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1366x768\",\"phase\":\"end\",\"inside\":29,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1920x1000\",\"phase\":\"start\",\"inside\":24,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1920x1000\",\"phase\":\"end\",\"inside\":20,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1440x900\",\"phase\":\"start\",\"inside\":82,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1440x900\",\"phase\":\"end\",\"inside\":80,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1280x800\",\"phase\":\"start\",\"inside\":64,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1280x800\",\"phase\":\"end\",\"inside\":62,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1024x768\",\"phase\":\"start\",\"inside\":110,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"1024x768\",\"phase\":\"end\",\"inside\":108,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"390x844\",\"phase\":\"start\",\"inside\":13,\"over\":0,\"hidden\":[],\"errors\":0},{\"at\":\"390x844\",\"phase\":\"end\",\"inside\":13,\"over\":0,\"hidden\":[],\"errors\":0}]"
+    },
+    {
+      "name": "deals reel: the Daily card shows the jar photo (daily-jar on the wide stage, its vertical version daily-jar-tall on the phone, with its alt), the whole jar inside its card and clear of the copy at every card shape (1565x784 to 390x844), at the start and end of the zoom",
+      "ok": true,
+      "detail": "[{\"at\":\"1565x784\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":84,\"over\":0,\"errors\":0},{\"at\":\"1565x784\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":57,\"over\":0,\"errors\":0},{\"at\":\"1440x760\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":78,\"over\":0,\"errors\":0},{\"at\":\"1440x760\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":53,\"over\":0,\"errors\":0},{\"at\":\"1366x768\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":81,\"over\":0,\"errors\":0},{\"at\":\"1366x768\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":58,\"over\":0,\"errors\":0},{\"at\":\"1920x1000\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":111,\"over\":0,\"errors\":0},{\"at\":\"1920x1000\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":75,\"over\":0,\"errors\":0},{\"at\":\"1440x900\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":104,\"over\":0,\"errors\":0},{\"at\":\"1440x900\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":83,\"over\":0,\"errors\":0},{\"at\":\"1280x800\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":89,\"over\":0,\"errors\":0},{\"at\":\"1280x800\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":69,\"over\":0,\"errors\":0},{\"at\":\"1024x768\",\"phase\":\"start\",\"photo\":\"daily-jar-2400.webp\",\"inside\":81,\"over\":0,\"errors\":0},{\"at\":\"1024x768\",\"phase\":\"end\",\"photo\":\"daily-jar-2400.webp\",\"inside\":67,\"over\":0,\"errors\":0},{\"at\":\"390x844\",\"phase\":\"start\",\"photo\":\"daily-jar-tall-800.webp\",\"inside\":40,\"over\":0,\"errors\":0},{\"at\":\"390x844\",\"phase\":\"end\",\"photo\":\"daily-jar-tall-800.webp\",\"inside\":40,\"over\":0,\"errors\":0}]"
+    },
+    {
+      "name": "deals reel: the Daily card fetches only the photo it draws (its other version, hidden, is never requested), wide stage to phone",
+      "ok": true,
+      "detail": "[\"1565x784 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1565x784 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1440x760 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1440x760 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1366x768 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1366x768 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1920x1000 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1920x1000 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1440x900 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1440x900 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1280x800 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1280x800 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1024x768 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"1024x768 daily-jar-2400.webp hidden:daily-jar-tall-800.webp\",\"390x844 daily-jar-tall-800.webp hidden:daily-jar-1600.webp\",\"390x844 daily-jar-tall-800.webp hidden:daily-jar-1600.webp\"]"
+    },
+    {
+      "name": "deals: every card's words clear their floors over its photo (eyebrow, title, body 4.5:1, numerals 3:1), at the start and end of the zoom (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"phase\":\"start\",\"store\":15.51,\"big\":4.8,\"small\":15.89,\"title\":8.68},{\"id\":\"deal-sun\",\"phase\":\"end\",\"store\":15.23,\"big\":4.82,\"small\":15.83,\"title\":9.13},{\"id\":\"deal-la\",\"phase\":\"start\",\"store\":14.72,\"big\":5.85,\"small\":3.89,\"title\":11.34,\"body\":8.97},{\"id\":\"deal-la\",\"phase\":\"end\",\"store\":13.67,\"big\":4.88,\"small\":3.79,\"title\":11.73,\"body\":10.52},{\"id\":\"deal-sd\",\"phase\":\"start\",\"store\":14.38,\"big\":5.52,\"small\":16.32,\"title\":15.45,\"body\":12.62},{\"id\":\"deal-sd\",\"phase\":\"end\",\"store\":14.21,\"big\":5.34,\"small\":15.87,\"title\":15.43,\"body\":11.41},{\"id\":\"deal-daily\",\"phase\":\"start\",\"store\":10.21,\"big\":13.52,\"small\":16.09,\"title\":11.05,\"body\":10.12},{\"id\":\"deal-daily\",\"phase\":\"end\",\"store\":11.59,\"big\":14.31,\"small\":15.47,\"title\":13.09,\"body\":9.7}]"
+    },
+    {
+      "name": "deals wall: every slide's words clear their floors over its photo (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"sun\",\"store\":9.87,\"big\":3.38,\"small\":11.81,\"title\":6.27},{\"id\":\"la\",\"store\":9.23,\"big\":8.83,\"small\":10.08,\"title\":10.59,\"body\":8.86},{\"id\":\"sd\",\"store\":6.07,\"big\":6.81,\"small\":9.36,\"title\":7.64,\"body\":6.69},{\"id\":\"daily\",\"store\":14.72,\"big\":11.07,\"small\":15.57,\"title\":15.26,\"body\":5.34}]"
+    },
+    {
+      "name": "deals: every card's words clear their floors over its photo (eyebrow, title, body 4.5:1, numerals 3:1), at the start and end of the zoom (390x844)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"phase\":\"start\",\"store\":11.38,\"big\":6.57,\"small\":13.17,\"title\":8.95},{\"id\":\"deal-sun\",\"phase\":\"end\",\"store\":12,\"big\":7.8,\"small\":12.59,\"title\":11.75},{\"id\":\"deal-la\",\"phase\":\"start\",\"store\":10.26,\"big\":10.43,\"small\":15.01,\"title\":14.98,\"body\":12.64},{\"id\":\"deal-la\",\"phase\":\"end\",\"store\":10.53,\"big\":10.71,\"small\":14.93,\"title\":15.3,\"body\":12.6},{\"id\":\"deal-sd\",\"phase\":\"start\",\"store\":7.2,\"big\":6.99,\"small\":9.25,\"title\":8.26,\"body\":7.25},{\"id\":\"deal-sd\",\"phase\":\"end\",\"store\":7.2,\"big\":6.99,\"small\":9.25,\"title\":8.26,\"body\":7.25},{\"id\":\"deal-daily\",\"phase\":\"start\",\"store\":14.76,\"big\":7.21,\"small\":15.57,\"title\":15.26,\"body\":6.75},{\"id\":\"deal-daily\",\"phase\":\"end\",\"store\":14.76,\"big\":7.21,\"small\":15.57,\"title\":15.26,\"body\":6.75}]"
+    },
+    {
+      "name": "deals wall: every slide's words clear their floors over its photo (390x844)",
+      "ok": true,
+      "detail": "[{\"id\":\"sun\",\"store\":12.93,\"big\":3.98,\"small\":11.81,\"title\":6.12},{\"id\":\"la\",\"store\":5.45,\"big\":8.95,\"small\":9.92,\"title\":9.82,\"body\":8.6},{\"id\":\"sd\",\"store\":6.28,\"big\":7.17,\"small\":9.66,\"title\":8.04,\"body\":6.97},{\"id\":\"daily\",\"store\":14.9,\"big\":11.75,\"small\":15.26,\"title\":15.26,\"body\":7.58}]"
+    },
+    {
+      "name": "deals gradients: eased, each card's steps within its cap (1.5 L* where its words leave room) and no sudden change of slope, home and the /deals wall (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"step\":0.84,\"bend\":0.27,\"cap\":1.5},{\"id\":\"deal-la\",\"step\":0.69,\"bend\":0.52,\"cap\":1.5},{\"id\":\"deal-sd\",\"step\":7.15,\"bend\":2.63,\"cap\":8},{\"id\":\"deal-daily\",\"step\":1.12,\"bend\":0.39,\"cap\":1.5},{\"id\":\"sun\",\"step\":3.07,\"bend\":0.87,\"cap\":3.4},{\"id\":\"la\",\"step\":2.11,\"bend\":0.57,\"cap\":2.3},{\"id\":\"sd\",\"step\":2.73,\"bend\":0.8,\"cap\":3},{\"id\":\"daily\",\"step\":5.59,\"bend\":1.71,\"cap\":6}]"
+    },
+    {
+      "name": "deals gradients: each card's subject stays clear of its gradient (the slides' subjects, the jar 6% ink at most; the San Diego sign and the Happy Hour head 25%, at their edge on a phone) (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"k\":\"head\",\"most\":0.25,\"ink\":0},{\"id\":\"deal-sd\",\"k\":\"sign\",\"most\":0.25,\"ink\":0},{\"id\":\"deal-daily\",\"k\":\"jar\",\"most\":0.06,\"ink\":0},{\"id\":\"sun\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.041},{\"id\":\"la\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.024},{\"id\":\"sd\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.037},{\"id\":\"daily\",\"k\":\"subject\",\"most\":0.06,\"ink\":0}]"
+    },
+    {
+      "name": "deals gradients: eased, each card's steps within its cap (1.5 L* where its words leave room) and no sudden change of slope, home and the /deals wall (390x844)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"step\":3.71,\"bend\":0.91,\"cap\":4},{\"id\":\"deal-la\",\"step\":0.75,\"bend\":0.33,\"cap\":1.5},{\"id\":\"deal-sd\",\"step\":4.41,\"bend\":1.78,\"cap\":4.8},{\"id\":\"deal-daily\",\"step\":5.62,\"bend\":1.72,\"cap\":6},{\"id\":\"sun\",\"step\":3.67,\"bend\":1.15,\"cap\":4},{\"id\":\"la\",\"step\":2.38,\"bend\":0.58,\"cap\":2.6},{\"id\":\"sd\",\"step\":3.28,\"bend\":1.01,\"cap\":3.6},{\"id\":\"daily\",\"step\":6.64,\"bend\":2.59,\"cap\":7}]"
+    },
+    {
+      "name": "deals gradients: each card's subject stays clear of its gradient (the slides' subjects, the jar 6% ink at most; the San Diego sign and the Happy Hour head 25%, at their edge on a phone) (390x844)",
+      "ok": true,
+      "detail": "[{\"id\":\"deal-sun\",\"k\":\"head\",\"most\":0.25,\"ink\":0.204},{\"id\":\"deal-sd\",\"k\":\"sign\",\"most\":0.25,\"ink\":0.2},{\"id\":\"deal-daily\",\"k\":\"jar\",\"most\":0.06,\"ink\":0},{\"id\":\"sun\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.041},{\"id\":\"la\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.029},{\"id\":\"sd\",\"k\":\"subject\",\"most\":0.06,\"ink\":0.037},{\"id\":\"daily\",\"k\":\"subject\",\"most\":0.06,\"ink\":0}]"
+    },
+    {
+      "name": "deals wall: each slide shows its home card's photo (the Daily slide the vertical version, daily-jar-tall) with its alt, and its key subject (the woman's head, the LA wall sign, the San Diego sign, the jar) is whole inside the card and clear of its words, at 1440, 1280, 1024 and 390, centred or turned",
+      "ok": true,
+      "detail": "{\"homeIds\":{\"sun\":[\"happy-hour-lowrider\"],\"la\":[\"store-la-floor\"],\"sd\":[\"store-sd-front\"],\"daily\":[\"daily-jar\",\"daily-jar-tall\"]},\"off\":[],\"least\":{\"sun\":48,\"la\":14,\"sd\":26,\"daily\":33}}"
+    },
+    {
+      "name": "deals photos: a phone (390x844, 3x) fetches none wider than 1600w on its initial load, home or /deals",
+      "ok": true,
+      "detail": "[\"/ night-street-1200\",\"/ happy-hour-lowrider-1600\",\"/ happy-hour-lowrider-960\",\"/ store-la-floor-800\",\"/ store-sd-front-960\",\"/ daily-jar-640\",\"/ store-la-floor-1280\",\"/ store-sd-front-1600\",\"/ daily-jar-tall-1024\",\"/deals night-street-1200\",\"/deals happy-hour-lowrider-1600\",\"/deals store-la-floor-1280\",\"/deals daily-jar-tall-1024\"]"
+    },
+    {
+      "name": "family wall: the strip sits beside the text (right of it, level with it), one screen tall (380-560px), bleeding off the right edge and overflowing sideways; a labelled, focusable region (1440x900)",
+      "ok": true,
+      "detail": "{\"view\":{\"l\":644,\"t\":170,\"r\":1440,\"b\":730},\"copy\":{\"l\":60,\"t\":170,\"r\":586,\"b\":730},\"x\":0,\"max\":3557,\"y\":5736,\"sx\":0,\"vw\":1440,\"vh\":900,\"side\":0,\"region\":\"region|Photos of the Originals family wall|0\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous photos\",\"shown\":true,\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next photos\",\"shown\":true,\"w\":48,\"h\":48}],\"prevOff\":true,\"nextOff\":false,\"imgs\":3}"
+    },
+    {
+      "name": "family wall: one continuous wall, R copies of family-wall-unit (R from its registry size), each the full strip height, each touching the next within 1px; the first carries the alt, the others are decorative (alt=\"\", aria-hidden) (1440x900)",
+      "ok": true,
+      "detail": "[{\"unit\":true,\"ok\":true,\"h\":560,\"l\":643.59,\"r\":2074.59,\"alt\":\"The black-and-white port\",\"hidden\":null},{\"unit\":true,\"ok\":false,\"h\":560,\"l\":2074.59,\"r\":3505.59,\"alt\":\"\",\"hidden\":\"true\"},{\"unit\":true,\"ok\":false,\"h\":560,\"l\":3505.59,\"r\":4936.59,\"alt\":\"\",\"hidden\":\"true\"}]"
+    },
+    {
+      "name": "family wall: prev/next are real buttons with labels, 44x44 or larger; at the start prev is disabled and next is not (1440x900)",
+      "ok": true,
+      "detail": "[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous photos\",\"shown\":true,\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next photos\",\"shown\":true,\"w\":48,\"h\":48}]"
+    },
+    {
+      "name": "family wall: next moves the strip forward step by step (60px or more a click), prev wakes, and next disables at the end (1440x900)",
+      "ok": true,
+      "detail": "{\"fwd\":[{\"x\":557,\"prevOff\":false},{\"x\":1114,\"prevOff\":false},{\"x\":1671,\"prevOff\":false},{\"x\":2228,\"prevOff\":false},{\"x\":2785,\"prevOff\":false},{\"x\":3342,\"prevOff\":false},{\"x\":3557,\"prevOff\":false}],\"max\":3557}"
+    },
+    {
+      "name": "family wall: all R copies of the wall unit load (1440x900)",
+      "ok": true,
+      "detail": "[{\"unit\":true,\"ok\":true,\"h\":560,\"l\":-2913.41,\"r\":-1482.41,\"alt\":\"The black-and-white port\",\"hidden\":null},{\"unit\":true,\"ok\":true,\"h\":560,\"l\":-1482.41,\"r\":-51.41,\"alt\":\"\",\"hidden\":\"true\"},{\"unit\":true,\"ok\":true,\"h\":560,\"l\":-51.41,\"r\":1379.59,\"alt\":\"\",\"hidden\":\"true\"}]"
+    },
+    {
+      "name": "family wall: prev moves it back step by step (60px or more a click), next wakes, and prev disables at the start (1440x900)",
+      "ok": true,
+      "detail": "{\"back\":[{\"x\":3000,\"nextOff\":false},{\"x\":2443,\"nextOff\":false},{\"x\":1886,\"nextOff\":false},{\"x\":1329,\"nextOff\":false},{\"x\":772,\"nextOff\":false},{\"x\":215,\"nextOff\":false},{\"x\":0,\"nextOff\":false}],\"from\":3557}"
+    },
+    {
+      "name": "family wall: a mouse drag moves the strip with the pointer and the page stays put (1440x900)",
+      "ok": true,
+      "detail": "{\"x\":320,\"y0\":5736,\"y1\":5736}"
+    },
+    {
+      "name": "family wall: a sideways wheel (trackpad) and the arrow keys move the strip; a vertical wheel over it scrolls the page, not the strip (1440x900)",
+      "ok": true,
+      "detail": "{\"drag\":320,\"wheel\":560,\"keys\":640,\"vertical\":640,\"y\":[5736,5736,5736,6036]}"
+    },
+    {
+      "name": "family wall: the band is plain white edge to edge: a white background, no grid image or brick layer, its empty left gutter all white pixels down its height (1440x900)",
+      "ok": true,
+      "detail": "{\"bg\":\"rgb(255, 255, 255)\",\"bgImage\":\"none\",\"painted\":[],\"pixels\":{\"w\":56,\"h\":552,\"off\":0}}"
+    },
+    {
+      "name": "family wall: the CTA is an ink button, its label and arrow 4.5:1 or more on it, its box 3:1 or more against the white band; prev/next shown and 3:1 or more on white (1440x900)",
+      "ok": true,
+      "detail": "{\"cta\":{\"kind\":\"btn btn--ink\",\"bg\":\"rgb(10, 10, 11)\",\"text\":19.79,\"icon\":19.79,\"box\":19.79,\"ring\":\"none 3px 1\",\"focus\":false},\"btns\":[{\"shown\":true,\"w\":48,\"ring\":18.04},{\"shown\":true,\"w\":48,\"ring\":18.04}]}"
+    },
+    {
+      "name": "family wall: the CTA under the pointer and in keyboard focus: its ink lightens, the label stays 4.5:1 or more, a solid focus ring 3:1 or more on white (1440x900)",
+      "ok": true,
+      "detail": "{\"rest\":\"rgb(10, 10, 11)\",\"hover\":{\"kind\":\"btn btn--ink\",\"bg\":\"color(srgb 0.250588 0.250588 0.253647)\",\"text\":10.38,\"icon\":10.38,\"box\":10.38,\"ring\":\"none 3px 1\",\"focus\":false},\"focus\":{\"kind\":\"btn btn--ink\",\"bg\":\"color(srgb 0.250588 0.250588 0.253647)\",\"text\":10.38,\"icon\":10.38,\"box\":10.38,\"ring\":\"solid 2px 18.04\",\"focus\":true}}"
+    },
+    {
+      "name": "no script errors (family wall, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "family wall: under the text, full-bleed, 380-560px tall and within the screen, overflowing sideways, the R copies full height and touching (390x844)",
+      "ok": true,
+      "detail": "{\"view\":{\"l\":0,\"t\":232,\"r\":390,\"b\":612},\"copy\":{\"l\":16,\"t\":-217,\"r\":374,\"b\":208},\"x\":0,\"max\":2555,\"y\":5869,\"sx\":0,\"vw\":390,\"vh\":844,\"side\":0,\"region\":\"region|Photos of the Originals family wall|0\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous photos\",\"shown\":true,\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next photos\",\"shown\":true,\"w\":48,\"h\":48}],\"prevOff\":true,\"nextOff\":false,\"imgs\":\"[{\\\"unit\\\":true,\\\"ok\\\":true,\\\"h\\\":380,\\\"l\\\":16,\\\"r\\\":987.03,\\\"alt\\\":\\\"The black-and-white port\\\",\\\"hidden\\\":null},{\\\"unit\\\":true,\\\"ok\\\":false,\\\"h\\\":380,\\\"l\\\":987.03,\\\"r\\\":1958.06,\\\"alt\\\":\\\"\\\",\\\"hidden\\\":\\\"true\\\"},{\\\"unit\\\":true,\\\"ok\\\":false,\\\"h\\\":380,\\\"l\\\":1958.06,\\\"r\\\":2929.09,\\\"alt\\\":\\\"\\\",\\\"hidden\\\":\\\"true\\\"}]\"}"
+    },
+    {
+      "name": "family wall: a swipe moves the strip (390x844)",
+      "ok": true,
+      "detail": "{\"before\":0,\"after\":238}"
+    },
+    {
+      "name": "family wall: a vertical swipe over the strip still scrolls the page; the page never scrolls sideways (390x844)",
+      "ok": true,
+      "detail": "{\"y\":[5869,6168],\"x\":[238,238],\"side\":[0,0,0],\"sx\":[0,0]}"
+    },
+    {
+      "name": "family wall: the band is plain white (background, no grid image, its empty left gutter all white pixels); the ink CTA 4.5:1 or more and 3:1 or more against the band; prev/next shown and 3:1 or more on white (390x844)",
+      "ok": true,
+      "detail": "{\"bg\":\"rgb(255, 255, 255)\",\"painted\":[],\"pixels\":{\"w\":12,\"h\":513,\"off\":0},\"cta\":{\"kind\":\"btn btn--ink\",\"bg\":\"rgb(10, 10, 11)\",\"text\":19.79,\"icon\":19.79,\"box\":19.79,\"ring\":\"none 3px 1\",\"focus\":false},\"btns\":[{\"shown\":true,\"w\":48,\"ring\":18.04},{\"shown\":true,\"w\":48,\"ring\":18.04}]}"
+    },
+    {
+      "name": "family wall on a phone: the text, then the controls under the button, then the strip, flush with the band's foot (within 1px); nothing above it touches the strip (390x844)",
+      "ok": true,
+      "detail": "{\"sec\":{\"l\":0,\"t\":-288.5,\"r\":390,\"b\":612},\"view\":{\"l\":0,\"t\":232,\"r\":390,\"b\":612},\"copy\":{\"l\":16,\"t\":-216.5,\"r\":374,\"b\":208},\"cta\":{\"l\":16,\"t\":86,\"r\":194.3,\"b\":136},\"ctrl\":{\"l\":16,\"t\":160,\"r\":374,\"b\":208},\"ctlTop\":160,\"ctlBottom\":208,\"n\":7,\"hits\":[]}"
+    },
+    {
+      "name": "no script errors (family wall, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "family wall: the band is exactly the strip's height, the strip's top and bottom its own (within 1px); the controls in the text column, under the button with clear space and above the band's foot; nothing in that column touches the strip (1440x900)",
+      "ok": true,
+      "detail": "{\"sec\":{\"l\":0,\"t\":170.2,\"r\":1440,\"b\":730.2},\"view\":{\"l\":643.6,\"t\":170.2,\"r\":1440,\"b\":730.2},\"copy\":{\"l\":60,\"t\":170.2,\"r\":586,\"b\":730.2},\"cta\":{\"l\":60,\"t\":575.3,\"r\":238.3,\"b\":625.3},\"ctrl\":{\"l\":60,\"t\":633.2,\"r\":586,\"b\":705.7},\"ctlTop\":657.7,\"ctlBottom\":705.7,\"n\":7,\"hits\":[],\"errs\":[]}"
+    },
+    {
+      "name": "family wall: the band is exactly the strip's height, the strip's top and bottom its own (within 1px); the controls in the text column, under the button with clear space and above the band's foot; nothing in that column touches the strip (1280x800)",
+      "ok": true,
+      "detail": "{\"sec\":{\"l\":0,\"t\":118.3,\"r\":1280,\"b\":680.8},\"view\":{\"l\":571.7,\"t\":118.3,\"r\":1280,\"b\":680.8},\"copy\":{\"l\":51.2,\"t\":118.3,\"r\":520.5,\"b\":680.8},\"cta\":{\"l\":51.2,\"t\":539.3,\"r\":229.5,\"b\":589.3},\"ctrl\":{\"l\":51.2,\"t\":589.3,\"r\":520.5,\"b\":659},\"ctlTop\":611,\"ctlBottom\":659,\"n\":7,\"hits\":[],\"errs\":[]}"
+    },
+    {
+      "name": "family wall: the band is exactly the strip's height, the strip's top and bottom its own (within 1px); the controls in the text column, under the button with clear space and above the band's foot; nothing in that column touches the strip (1024x768)",
+      "ok": true,
+      "detail": "{\"sec\":{\"l\":0,\"t\":107.4,\"r\":1024,\"b\":661},\"view\":{\"l\":457.4,\"t\":107.4,\"r\":1024,\"b\":661},\"copy\":{\"l\":41,\"t\":107.4,\"r\":416.4,\"b\":661},\"cta\":{\"l\":41,\"t\":527,\"r\":219.3,\"b\":577},\"ctrl\":{\"l\":41,\"t\":577,\"r\":416.4,\"b\":643},\"ctlTop\":595,\"ctlBottom\":643,\"n\":7,\"hits\":[],\"errs\":[]}"
+    },
+    {
+      "name": "family wall without JS: still a sideways scrolling row, the buttons hidden, no sideways page scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"js\":false,\"ov\":\"auto\",\"max\":3557,\"x\":200,\"btns\":0,\"side\":0}"
+    },
+    {
+      "name": "cruise: #cruise holds the copy, the 10 house-strain links (STRAINS, in order, to /strains#<id>) and the Strain library link; #farm is gone (1440x900)",
+      "ok": true,
+      "detail": "{\"farm\":false,\"cruise\":true,\"lines\":[[\"/strains#originals-og\",\"Originals OG\"],[\"/strains#king-louie\",\"King Louie\"],[\"/strains#gelato\",\"Gelato\"],[\"/strains#oaksterdam-og\",\"Oaksterdam OG\"],[\"/strains#skywalker\",\"Skywalker\"],[\"/strains#sfv-og\",\"SFV OG\"],[\"/strains#paris-og\",\"Paris OG\"],[\"/strains#wedding-cake\",\"Wedding Cake\"],[\"/strains#jack-herer\",\"Jack Herer\"],[\"/strains#bussin\",\"Bussin'\"]],\"lib\":1"
+    },
+    {
+      "name": "cruise: \"House strains\" (between two crowns) is the white board's header row, in dark letters, not in the dark cabinet (1440x900)",
+      "ok": true,
+      "detail": "{\"inBoard\":true,\"inCab\":false,\"text\":\"House strains\",\"crowns\":2,\"textLum\":0.003}"
+    },
+    {
+      "name": "cruise: the copy and the sign never touch the car, at --p 0, .25, .5, .75, 1 and through the hops (1440x900)",
+      "ok": true,
+      "detail": "closest 103px at --p 0.5 (car top 690); [{\"k\":0,\"p\":0,\"gap\":122,\"hits\":[]},{\"k\":0.25,\"p\":0.2499,\"gap\":122,\"hits\":[]},{\"k\":0.5,\"p\":0.4999,\"gap\":114,\"hits\":[]},{\"k\":0.75,\"p\":0.7499,\"gap\":122,\"hits\":[]},{\"k\":1,\"p\":0.9999,\"gap\":122,\"hits\":[]}]"
+    },
+    {
+      "name": "cruise: each strain line's hover highlight is a rounded tile 12px or more inside the white board on every side, with 24px or more between the columns (1440x900)",
+      "ok": true,
+      "detail": "closest 14px, columns 28px apart; [[\"Originals OG\",14,240,52,201,\"on\"],[\"King Louie\",14,240,98,154,\"on\"],[\"Gelato\",14,240,145,108,\"on\"],[\"Oaksterdam OG\",14,240,192,61,\"on\"],[\"Skywalker\",14,240,239,14,\"on\"],[\"SFV OG\",240,14,52,201,\"on\"],[\"Paris OG\",240,14,98,154,\"on\"],[\"Wedding Cake\",240,14,145,108,\"on\"],[\"Jack Herer\",240,14,192,61,\"on\"],[\"Bussin'\",240,14,239,14,\"on\"]]"
+    },
+    {
+      "name": "cruise: every text line reads 4.5:1 or more on the rendered pixels (kicker, title, lede, \"House strains\", the ten lines, Strain library) (1440x900)",
+      "ok": true,
+      "detail": "[{\"t\":\"From the farm\",\"ratio\":6.91},{\"t\":\"Originals was esta\",\"ratio\":13.66},{\"t\":\"Grown by OGs,\",\"ratio\":14.83},{\"t\":\"for OGs\",\"ratio\":15.9},{\"t\":\"House strains\",\"ratio\":16.99}] of 16"
+    },
+    {
+      "name": "cruise: the copy shade is seamless: over a flat tone its L* steps 1.5 or less per 8px and its slope bends 0.5 or less, across the lede and down the copy column (1440x900)",
+      "ok": true,
+      "detail": "{\"across\":{\"n\":180,\"span\":[11.4,43.2],\"step\":0.7,\"bend\":0.21},\"down\":{\"n\":94,\"span\":[14.5,31.6],\"step\":1.1,\"bend\":0.31}}"
+    },
+    {
+      "name": "cruise: no sideways page scroll and no script errors (1440x900)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "cruise: \"House strains\" (between two crowns) is the white board's header row, in dark letters, not in the dark cabinet (1280x800)",
+      "ok": true,
+      "detail": "{\"inBoard\":true,\"inCab\":false,\"text\":\"House strains\",\"crowns\":2,\"textLum\":0.003}"
+    },
+    {
+      "name": "cruise: the copy and the sign never touch the car, at --p 0, .25, .5, .75, 1 and through the hops (1280x800)",
+      "ok": true,
+      "detail": "closest 45px at --p 0.5 (car top 604); [{\"k\":0,\"p\":0.0002,\"gap\":63,\"hits\":[]},{\"k\":0.25,\"p\":0.2502,\"gap\":63,\"hits\":[]},{\"k\":0.5,\"p\":0.5002,\"gap\":55,\"hits\":[]},{\"k\":0.75,\"p\":0.7502,\"gap\":63,\"hits\":[]},{\"k\":1,\"p\":1,\"gap\":63,\"hits\":[]}]"
+    },
+    {
+      "name": "cruise: each strain line's hover highlight is a rounded tile 12px or more inside the white board on every side, with 24px or more between the columns (1280x800)",
+      "ok": true,
+      "detail": "closest 14px, columns 28px apart; [[\"Originals OG\",14,215,51,190,\"on\"],[\"King Louie\",14,215,95,146,\"on\"],[\"Gelato\",14,215,139,102,\"on\"],[\"Oaksterdam OG\",14,215,183,58,\"on\"],[\"Skywalker\",14,215,227,14,\"on\"],[\"SFV OG\",215,14,51,190,\"on\"],[\"Paris OG\",215,14,95,146,\"on\"],[\"Wedding Cake\",215,14,139,102,\"on\"],[\"Jack Herer\",215,14,183,58,\"on\"],[\"Bussin'\",215,14,227,14,\"on\"]]"
+    },
+    {
+      "name": "cruise: no sideways page scroll and no script errors (1280x800)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "cruise: \"House strains\" (between two crowns) is the white board's header row, in dark letters, not in the dark cabinet (1024x768)",
+      "ok": true,
+      "detail": "{\"inBoard\":true,\"inCab\":false,\"text\":\"House strains\",\"crowns\":2,\"textLum\":0.003}"
+    },
+    {
+      "name": "cruise: the copy and the sign never touch the car, at --p 0, .25, .5, .75, 1 and through the hops (1024x768)",
+      "ok": true,
+      "detail": "closest 8px at --p 0.5 (car top 578); [{\"k\":0,\"p\":0,\"gap\":25,\"hits\":[]},{\"k\":0.25,\"p\":0.2502,\"gap\":25,\"hits\":[]},{\"k\":0.5,\"p\":0.4995,\"gap\":17,\"hits\":[]},{\"k\":0.75,\"p\":0.7497,\"gap\":25,\"hits\":[]},{\"k\":1,\"p\":0.9999,\"gap\":25,\"hits\":[]}]"
+    },
+    {
+      "name": "cruise: each strain line's hover highlight is a rounded tile 12px or more inside the white board on every side, with 24px or more between the columns (1024x768)",
+      "ok": true,
+      "detail": "closest 14px, columns 28px apart; [[\"Originals OG\",14,190,49,190,\"on\"],[\"King Louie\",14,190,93,146,\"on\"],[\"Gelato\",14,190,137,102,\"on\"],[\"Oaksterdam OG\",14,190,181,58,\"on\"],[\"Skywalker\",14,190,225,14,\"on\"],[\"SFV OG\",190,14,49,190,\"on\"],[\"Paris OG\",190,14,93,146,\"on\"],[\"Wedding Cake\",190,14,137,102,\"on\"],[\"Jack Herer\",190,14,181,58,\"on\"],[\"Bussin'\",190,14,225,14,\"on\"]]"
+    },
+    {
+      "name": "cruise: no sideways page scroll and no script errors (1024x768)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "cruise: #cruise holds the copy, the 10 house-strain links (STRAINS, in order, to /strains#<id>) and the Strain library link; #farm is gone (390x844)",
+      "ok": true,
+      "detail": "{\"farm\":false,\"cruise\":true,\"lines\":[[\"/strains#originals-og\",\"Originals OG\"],[\"/strains#king-louie\",\"King Louie\"],[\"/strains#gelato\",\"Gelato\"],[\"/strains#oaksterdam-og\",\"Oaksterdam OG\"],[\"/strains#skywalker\",\"Skywalker\"],[\"/strains#sfv-og\",\"SFV OG\"],[\"/strains#paris-og\",\"Paris OG\"],[\"/strains#wedding-cake\",\"Wedding Cake\"],[\"/strains#jack-herer\",\"Jack Herer\"],[\"/strains#bussin\",\"Bussin'\"]],\"lib\":1"
+    },
+    {
+      "name": "cruise: \"House strains\" (between two crowns) is the white board's header row, in dark letters, not in the dark cabinet (390x844)",
+      "ok": true,
+      "detail": "{\"inBoard\":true,\"inCab\":false,\"text\":\"House strains\",\"crowns\":2,\"textLum\":0.003}"
+    },
+    {
+      "name": "cruise: the copy and the sign never touch the car, at --p 0, .25, .5, .75, 1 and through the hops (390x844)",
+      "ok": true,
+      "detail": "closest 32px at --p 0.5 (car top 451); [{\"k\":0,\"p\":0,\"gap\":45,\"hits\":[]},{\"k\":0.25,\"p\":0.2502,\"gap\":45,\"hits\":[]},{\"k\":0.5,\"p\":0.5003,\"gap\":39,\"hits\":[]},{\"k\":0.75,\"p\":0.7504,\"gap\":45,\"hits\":[]},{\"k\":1,\"p\":1,\"gap\":45,\"hits\":[]}]"
+    },
+    {
+      "name": "cruise: each strain line's focus highlight is a rounded tile 12px or more inside the white board on every side, with 24px or more between the columns (390x844)",
+      "ok": true,
+      "detail": "closest 14px, columns 28px apart; [[\"Originals OG\",14,189,48,190,\"on\"],[\"King Louie\",14,189,92,146,\"on\"],[\"Gelato\",14,189,136,102,\"on\"],[\"Oaksterdam OG\",14,189,180,58,\"on\"],[\"Skywalker\",14,189,224,14,\"on\"],[\"SFV OG\",189,14,48,190,\"on\"],[\"Paris OG\",189,14,92,146,\"on\"],[\"Wedding Cake\",189,14,136,102,\"on\"],[\"Jack Herer\",189,14,180,58,\"on\"],[\"Bussin'\",189,14,224,14,\"on\"]]"
+    },
+    {
+      "name": "cruise: every text line reads 4.5:1 or more on the rendered pixels (kicker, title, lede, \"House strains\", the ten lines, Strain library) (390x844)",
+      "ok": true,
+      "detail": "[{\"t\":\"From the farm\",\"ratio\":6.72},{\"t\":\"Originals was esta\",\"ratio\":9.94},{\"t\":\"Grown by OGs,\",\"ratio\":14.68},{\"t\":\"for OGs\",\"ratio\":15.57},{\"t\":\"House strains\",\"ratio\":16.76}] of 16"
+    },
+    {
+      "name": "cruise: the copy shade is seamless: over a flat tone its L* steps 1.5 or less per 8px and its slope bends 0.5 or less, across the lede and down the copy column (390x844)",
+      "ok": true,
+      "detail": "{\"across\":{\"n\":48,\"span\":[16.8,16.8],\"step\":0,\"bend\":0},\"down\":{\"n\":98,\"span\":[14.2,49.6],\"step\":1.1,\"bend\":0.3}}"
+    },
+    {
+      "name": "cruise on a phone: the copy, then the sign (a full-width board, tap targets 44px or more), then the car under its pole (390x844)",
+      "ok": true,
+      "detail": "{\"copy\":{\"t\":-302,\"b\":-58},\"sign\":{\"t\":-27,\"b\":62},\"lib\":{\"t\":369,\"b\":419},\"car\":{\"t\":464,\"b\":543},\"taps\":[[147,44],[147,44],[147,44],[147,44],[147,44],[147,44],[147,44],[147,44],[147,44],[147,44],[215,50]]}"
+    },
+    {
+      "name": "cruise: no sideways page scroll and no script errors (390x844)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "cruise, reduced motion: a still, complete scene (not pinned, the car parked under the sign, every bulb lit and still, all 11 links shown) (1440x900)",
+      "ok": true,
+      "detail": "{\"live\":false,\"pinned\":false,\"tall\":0,\"carMoved\":false,\"carOn\":true,\"carToPole\":0,\"bulbs\":4,\"still\":true,\"allLit\":true,\"lit\":\"1\",\"links\":11,\"side\":0} "
+    },
+    {
+      "name": "cruise, reduced motion: a still, complete scene (not pinned, the car parked under the sign, every bulb lit and still, all 11 links shown) (390x844)",
+      "ok": true,
+      "detail": "{\"live\":false,\"pinned\":false,\"tall\":0,\"carMoved\":false,\"carOn\":true,\"carToPole\":0,\"bulbs\":4,\"still\":true,\"allLit\":true,\"lit\":\"1\",\"links\":11,\"side\":0} "
+    },
+    {
+      "name": "cruise, no script: a still, complete scene (not pinned, the car parked under the sign, every bulb lit and still, all 11 links shown) (1440x900)",
+      "ok": true,
+      "detail": "{\"live\":false,\"pinned\":false,\"tall\":0,\"carMoved\":false,\"carOn\":true,\"carToPole\":0,\"bulbs\":4,\"still\":true,\"allLit\":true,\"lit\":\"1\",\"links\":11,\"side\":0} "
+    },
+    {
+      "name": "brand marquee: two rows rolling opposite ways, row 1 left and row 2 right, 40-60 s a loop (1440x900)",
+      "ok": true,
+      "detail": "{\"d\":[-40,36],\"dur\":[52,58],\"play\":[[\"running\"],[\"running\"]]}"
+    },
+    {
+      "name": "brand marquee: each rail is its track twice, 8 tiles each, the copy aria-hidden with every link tabindex -1 (1440x900)",
+      "ok": true,
+      "detail": "[[[null,8,\"0\"],[\"true\",8,\"-1\"]],[[null,8,\"0\"],[\"true\",8,\"-1\"]]]"
+    },
+    {
+      "name": "brand marquee: even spacing across the loop seam (the gap from copy to copy equals the gap between tiles) (1440x900)",
+      "ok": true,
+      "detail": "[[16,16],[16,16]]"
+    },
+    {
+      "name": "brand marquee: 16 unique brand links in the accessibility tree, each to its LA menu page (1440x900)",
+      "ok": true,
+      "detail": "{\"links\":16,\"unique\":16}"
+    },
+    {
+      "name": "brand marquee: every logo loaded, once per copy (1440x900)",
+      "ok": true,
+      "detail": "{\"imgs\":26,\"unique\":13,\"broken\":[]}"
+    },
+    {
+      "name": "brand marquee: no tile boxes at rest; every logo near-white on the ink at 4.5:1 or more, the text items light; Wyld as its white badge (1440x900)",
+      "ok": true,
+      "detail": "{\"weak\":[],\"items\":16,\"logos\":13,\"min\":{\"ratio\":12,\"light\":0.88}}"
+    },
+    {
+      "name": "brand marquee: a hovered logo brightens (rest 0.82), and no box appears (1440x900)",
+      "ok": true,
+      "detail": "{\"rest\":0.82,\"op\":1,\"bg\":\"rgba(0, 0, 0, 0)\",\"shadow\":\"none\",\"border\":\"none\"}"
+    },
+    {
+      "name": "brand marquee: hovering row 1 pauses it while row 2 keeps rolling; moving away resumes it (1440x900)",
+      "ok": true,
+      "detail": "{\"hover\":[0,29.8],\"play\":[\"paused\",\"running\"],\"after\":-33.2}"
+    },
+    {
+      "name": "brand marquee: one pause button for both rows, named \"Pause brand logos\", 44x44 or more, reached by Tab with a focus ring (1440x900)",
+      "ok": true,
+      "detail": "{\"tag\":\"BUTTON\",\"type\":\"button\",\"name\":\"Pause brand logos\",\"state\":\"playing\",\"shown\":true,\"w\":48,\"h\":48,\"ctl\":\"brands-marquee\",\"named\":1,\"focused\":true,\"fv\":true,\"ring\":\"solid 2\"}"
+    },
+    {
+      "name": "brand marquee: a press pauses both rows and the button reads \"Play brand logos\"; a second press plays both again (1440x900)",
+      "ok": true,
+      "detail": "{\"paused\":{\"name\":\"Play brand logos\",\"d\":[0,0]},\"played\":{\"name\":\"Pause brand logos\",\"d\":[-33.2,29.8]}}"
+    },
+    {
+      "name": "brand marquee: the paused choice is kept on reload, and a press plays again (1440x900)",
+      "ok": true,
+      "detail": "{\"reload\":\"Play brand logos\",\"d\":[0,0],\"after\":\"Pause brand logos\"}"
+    },
+    {
+      "name": "brand marquee: Tab walks the 16 first-copy links in order and never a copy; every tabbed tile is fully on screen (1440x900)",
+      "ok": true,
+      "detail": "{\"off\":[],\"copies\":0,\"n\":16}"
+    },
+    {
+      "name": "collab tape: the 8 collabs in order, each its logo or its name over its with / collab line as in COLLABS, then all again aria-hidden one half-track on (1440x900)",
+      "ok": true,
+      "detail": "{\"items\":[[\"Bussin'\",\"with Chris Brown and OHB Farms\"],[\"Napalm\",\"with Xzibit\"],[\"Caviar Gold\",\"with Ice Cube\"],[\"Tyson Ranch\",\"with Mike Tyson\"],[\"Marathon OG\",\"with Nipsey Hussle\"],[\"Royal Blunts logo\",\"collab\"],[\"Beast Mode logo\",\"collab\"],[\"Dodi Oakland\",\"collab\"]],\"copies\":8,\"seam\":0}"
+    },
+    {
+      "name": "collab tape: every collab logo loads and reads white on the ink at 4.5:1 or more with no box; the names light (1440x900)",
+      "ok": true,
+      "detail": "{\"logos\":[\"Royal Blunts logo\",\"Beast Mode logo\"],\"weak\":[],\"min\":18}"
+    },
+    {
+      "name": "collab tape: it rolls left; its pause button (named, 44x44 or more) stops it and reads \"Play collabs\", a second press plays it again (1440x900)",
+      "ok": true,
+      "detail": "{\"d\":[-25.6,0,-25.6],\"btn\":{\"name\":\"Pause collabs\",\"shown\":true,\"w\":48,\"h\":48},\"paused\":\"Play collabs\",\"played\":\"Pause collabs\"}"
+    },
+    {
+      "name": "brand marquee: no sideways page scroll and no script errors (1440x900)",
+      "ok": true,
+      "detail": "{\"side\":[0,0],\"sx\":0,\"errs\":[]}"
+    },
+    {
+      "name": "brand marquee: two rows rolling opposite ways, row 1 left and row 2 right, 40-60 s a loop (390x844)",
+      "ok": true,
+      "detail": "{\"d\":[-28,25],\"dur\":[52,58],\"play\":[[\"running\"],[\"running\"]]}"
+    },
+    {
+      "name": "brand marquee: each rail is its track twice, 8 tiles each, the copy aria-hidden with every link tabindex -1 (390x844)",
+      "ok": true,
+      "detail": "[[[null,8,\"0\"],[\"true\",8,\"-1\"]],[[null,8,\"0\"],[\"true\",8,\"-1\"]]]"
+    },
+    {
+      "name": "brand marquee: even spacing across the loop seam (the gap from copy to copy equals the gap between tiles) (390x844)",
+      "ok": true,
+      "detail": "[[12,12],[12,12]]"
+    },
+    {
+      "name": "brand marquee: 16 unique brand links in the accessibility tree, each to its LA menu page (390x844)",
+      "ok": true,
+      "detail": "{\"links\":16,\"unique\":16}"
+    },
+    {
+      "name": "brand marquee: every logo loaded, once per copy (390x844)",
+      "ok": true,
+      "detail": "{\"imgs\":26,\"unique\":13,\"broken\":[]}"
+    },
+    {
+      "name": "brand marquee: no tile boxes at rest; every logo near-white on the ink at 4.5:1 or more, the text items light; Wyld as its white badge (390x844)",
+      "ok": true,
+      "detail": "{\"weak\":[],\"items\":16,\"logos\":13,\"min\":{\"ratio\":12,\"light\":0.88}}"
+    },
+    {
+      "name": "brand marquee: one pause button for both rows, named \"Pause brand logos\", 44x44 or more, reached by Tab with a focus ring (390x844)",
+      "ok": true,
+      "detail": "{\"tag\":\"BUTTON\",\"type\":\"button\",\"name\":\"Pause brand logos\",\"state\":\"playing\",\"shown\":true,\"w\":48,\"h\":48,\"ctl\":\"brands-marquee\",\"named\":1,\"focused\":true,\"fv\":true,\"ring\":\"solid 2\"}"
+    },
+    {
+      "name": "brand marquee: a press pauses both rows and the button reads \"Play brand logos\"; a second press plays both again (390x844)",
+      "ok": true,
+      "detail": "{\"paused\":{\"name\":\"Play brand logos\",\"d\":[0,0]},\"played\":{\"name\":\"Pause brand logos\",\"d\":[-23.4,21]}}"
+    },
+    {
+      "name": "brand marquee: Tab walks the 16 first-copy links in order and never a copy; every tabbed tile is fully on screen (390x844)",
+      "ok": true,
+      "detail": "{\"off\":[],\"copies\":0,\"n\":16}"
+    },
+    {
+      "name": "collab tape: the 8 collabs in order, each its logo or its name over its with / collab line as in COLLABS, then all again aria-hidden one half-track on (390x844)",
+      "ok": true,
+      "detail": "{\"items\":[[\"Bussin'\",\"with Chris Brown and OHB Farms\"],[\"Napalm\",\"with Xzibit\"],[\"Caviar Gold\",\"with Ice Cube\"],[\"Tyson Ranch\",\"with Mike Tyson\"],[\"Marathon OG\",\"with Nipsey Hussle\"],[\"Royal Blunts logo\",\"collab\"],[\"Beast Mode logo\",\"collab\"],[\"Dodi Oakland\",\"collab\"]],\"copies\":8,\"seam\":0}"
+    },
+    {
+      "name": "collab tape: every collab logo loads and reads white on the ink at 4.5:1 or more with no box; the names light (390x844)",
+      "ok": true,
+      "detail": "{\"logos\":[\"Royal Blunts logo\",\"Beast Mode logo\"],\"weak\":[],\"min\":18}"
+    },
+    {
+      "name": "collab tape: it rolls left; its pause button (named, 44x44 or more) stops it and reads \"Play collabs\", a second press plays it again (390x844)",
+      "ok": true,
+      "detail": "{\"d\":[-20.5,0,-20.8],\"btn\":{\"name\":\"Pause collabs\",\"shown\":true,\"w\":48,\"h\":48},\"paused\":\"Play collabs\",\"played\":\"Pause collabs\"}"
+    },
+    {
+      "name": "brand marquee: no sideways page scroll and no script errors (390x844)",
+      "ok": true,
+      "detail": "{\"side\":[0,0],\"sx\":0,\"errs\":[]}"
+    },
+    {
+      "name": "brand marquee, reduced motion: no animation; each row a sideways-scrolling row of its 8 tiles, the copies not shown; 16 links (1440x900)",
+      "ok": true,
+      "detail": "{\"rows\":[{\"play\":0,\"x\":0,\"ovx\":\"auto\",\"scroll\":518,\"copy\":false},{\"play\":0,\"x\":0,\"ovx\":\"auto\",\"scroll\":518,\"copy\":false}],\"links\":16}"
+    },
+    {
+      "name": "brand marquee, reduced motion: no sideways page scroll and no script errors (1440x900)",
+      "ok": true,
+      "detail": "{\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "brand marquee, reduced motion: the pause button is hidden, nothing moves (1440x900)",
+      "ok": true,
+      "detail": "{\"shown\":false,\"hiddenAttr\":false}"
+    },
+    {
+      "name": "collab tape, reduced motion: static (no animation), its pause button hidden, the copy not shown (1440x900)",
+      "ok": true,
+      "detail": "{\"anims\":0,\"x\":0,\"btn\":0,\"copies\":0,\"items\":16}"
+    },
+    {
+      "name": "brand marquee, reduced motion: no animation; each row a sideways-scrolling row of its 8 tiles, the copies not shown; 16 links (390x844)",
+      "ok": true,
+      "detail": "{\"rows\":[{\"play\":0,\"x\":0,\"ovx\":\"auto\",\"scroll\":888,\"copy\":false},{\"play\":0,\"x\":0,\"ovx\":\"auto\",\"scroll\":888,\"copy\":false}],\"links\":16}"
+    },
+    {
+      "name": "brand marquee, reduced motion: no sideways page scroll and no script errors (390x844)",
+      "ok": true,
+      "detail": "{\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "brand marquee, reduced motion: the pause button is hidden, nothing moves (390x844)",
+      "ok": true,
+      "detail": "{\"shown\":false,\"hiddenAttr\":false}"
+    },
+    {
+      "name": "collab tape, reduced motion: static (no animation), its pause button hidden, the copy not shown (390x844)",
+      "ok": true,
+      "detail": "{\"anims\":0,\"x\":0,\"btn\":0,\"copies\":0,\"items\":16}"
+    },
+    {
+      "name": "brand marquee and collab tape without JS: both pause buttons stay hidden (they need the script); the marquee rows still show (1440x900)",
+      "ok": true,
+      "detail": "{\"js\":false,\"exists\":true,\"shown\":false,\"rows\":2,\"tape\":true,\"tapeShown\":false}"
+    },
+    {
+      "name": "deals wall: a carousel region (aria-roledescription carousel) labelled by the \"Store deals\" heading; four slides, each a group (aria-roledescription slide) labelled \"n of 4: <deal>\"; the wall focusable and labelled; a polite live region; prev/next real buttons with labels, 44x44 or larger; the 3D on (1440x900)",
+      "ok": true,
+      "detail": "{\"on\":true,\"role\":\"region\",\"rd\":\"carousel\",\"label\":\"Store deals\",\"slides\":[[\"group\",\"slide\",\"1 of 4: All-day Sunday happy hour\"],[\"group\",\"slide\",\"2 of 4: 30% OFF FTP\"],[\"group\",\"slide\",\"3 of 4: 50% OFF FTP\"],[\"group\",\"slide\",\"4 of 4: San Diego daily deals\"]],\"stage\":{\"tab\":0,\"role\":\"group\",\"label\":\"Store deals: use the arrow keys or the buttons to turn the wall\"},\"polite\":\"polite\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous deal\",\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next deal\",\"w\":48,\"h\":48}]}"
+    },
+    {
+      "name": "deals wall: concave at rest, the first deal centred: it faces front (rotateY about 0) and sits furthest back; both neighbours turn in (outer edge taller than inner) and step toward the viewer; the fourth hides behind (1440x900)",
+      "ok": true,
+      "detail": "left: rotateY 17.3deg, z 56px, scale 1.051 (left edge 1.106, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 56px, scale 1.051 (left edge 1.002, right edge 1.106)"
+    },
+    {
+      "name": "deals wall: the centred card and both neighbours show whole within the window (1440x900)",
+      "ok": true,
+      "detail": "{\"vw\":1440,\"centre\":[540,900,360],\"left\":[121,521],\"right\":[919,1319]}"
+    },
+    {
+      "name": "deals wall: each card holds one button, a real link with its plaque's label and href (new tab); only the centred card's button is in the tab order (1440x900)",
+      "ok": true,
+      "detail": "[[\"Shop Sunday\",\"https://originalsca.com/menu/los-angeles/\",0],[\"Shop LA\",\"https://originalsca.com/menu/los-angeles/\",-1],[\"Shop San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego\",-1],[\"See today's deals\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",-1]]"
+    },
+    {
+      "name": "deals wall: next and prev turn it one card, the live region, the counter and the caption name the new deal, and prev from the first wraps to the fourth, concave again (endless ring) (1440x900)",
+      "ok": true,
+      "detail": "{\"next\":[1,\"2 of 4: 30% OFF FTP\",\"02\",\"30% OFF FTP\"],\"prev\":[0,\"1 of 4: All-day Sunday happy hour\"],\"wrap\":[3,\"4 of 4: San Diego daily deals\",\"04\"],\"arc\":\"left: rotateY 17.3deg, z 56px, scale 1.051 (left edge 1.106, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 56px, scale 1.051 (left edge 1.002, right edge 1.106)\"}"
+    },
+    {
+      "name": "deals wall: with the wall focused, the arrow keys turn it (right, right, left) and the live region follows; Tab then reaches the centred card's button (1440x900)",
+      "ok": true,
+      "detail": "{\"keys\":[0,1,0],\"live\":\"1 of 4: All-day Sunday happy hour\",\"focus\":[true,true],\"tab\":{\"inCentre\":true,\"href\":\"https://originalsca.com/menu/los-angeles/\"}}"
+    },
+    {
+      "name": "deals wall: a mouse drag of 0.7 of a card turns it to the next deal and the live region follows; 0.3 snaps back; a quick flick carries on to a later card; each settles concave on a card (1440x900)",
+      "ok": true,
+      "detail": "{\"drag\":[1,\"2 of 4: 30% OFF FTP\"],\"snapBack\":1,\"flick\":2,\"opened\":0}"
+    },
+    {
+      "name": "deals wall: a click on a side card centres it, on its photo or on its button, and opens nothing (1440x900)",
+      "ok": true,
+      "detail": "{\"photo\":{\"ok\":true,\"at\":{\"x\":1119,\"y\":273},\"active\":3},\"button\":{\"ok\":true,\"at\":{\"x\":1018,\"y\":573},\"active\":0},\"opened\":0,\"sameUrl\":true}"
+    },
+    {
+      "name": "deals wall: the centred card's button is a working link: a click on it requests its href in a new tab and this page stays put (1440x900)",
+      "ok": true,
+      "detail": "{\"want\":\"https://originalsca.com/menu/los-angeles/\",\"requested\":true,\"samePage\":true,\"popupSeen\":true}"
+    },
+    {
+      "name": "deals wall: a vertical wheel over the wall scrolls the page and leaves the wall on its card; a sideways wheel turns it one card and leaves the page (1440x900)",
+      "ok": true,
+      "detail": "{\"y\":[872,1172],\"active\":[0,0],\"sideways\":{\"ok\":true,\"active\":[0,1],\"y\":[872,872]}}"
+    },
+    {
+      "name": "deals wall: turning reduced motion on live lays the cards flat in a row (no 3D, every button tabbable, no caption or controls), and turning it off restores the wall on the same card (1440x900)",
+      "ok": true,
+      "detail": "{\"reduce\":{\"on\":false,\"flat\":[true,true,true,true],\"tops\":[86,86,86,86],\"tabs\":[0,0,0,0]},\"again\":{\"on\":true,\"active\":[1,1]}}"
+    },
+    {
+      "name": "deals wall: no sideways page scroll and no script errors (1440x900)",
+      "ok": true,
+      "detail": "{\"sides\":[0,0,0,0,0,0,0,0,0,0,0,0],\"errs\":[]}"
+    },
+    {
+      "name": "deals wall: a carousel region (aria-roledescription carousel) labelled by the \"Store deals\" heading; four slides, each a group (aria-roledescription slide) labelled \"n of 4: <deal>\"; the wall focusable and labelled; a polite live region; prev/next real buttons with labels, 44x44 or larger; the 3D on (1280x800)",
+      "ok": true,
+      "detail": "{\"on\":true,\"role\":\"region\",\"rd\":\"carousel\",\"label\":\"Store deals\",\"slides\":[[\"group\",\"slide\",\"1 of 4: All-day Sunday happy hour\"],[\"group\",\"slide\",\"2 of 4: 30% OFF FTP\"],[\"group\",\"slide\",\"3 of 4: 50% OFF FTP\"],[\"group\",\"slide\",\"4 of 4: San Diego daily deals\"]],\"stage\":{\"tab\":0,\"role\":\"group\",\"label\":\"Store deals: use the arrow keys or the buttons to turn the wall\"},\"polite\":\"polite\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous deal\",\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next deal\",\"w\":48,\"h\":48}]}"
+    },
+    {
+      "name": "deals wall: concave at rest, the first deal centred: it faces front (rotateY about 0) and sits furthest back; both neighbours turn in (outer edge taller than inner) and step toward the viewer; the fourth hides behind (1280x800)",
+      "ok": true,
+      "detail": "left: rotateY 17.3deg, z 50px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 50px, scale 1.051 (left edge 1.002, right edge 1.105)"
+    },
+    {
+      "name": "deals wall: the centred card and both neighbours show whole within the window (1280x800)",
+      "ok": true,
+      "detail": "{\"vw\":1280,\"centre\":[480,800,320],\"left\":[108,463],\"right\":[817,1172]}"
+    },
+    {
+      "name": "deals wall: each card holds one button, a real link with its plaque's label and href (new tab); only the centred card's button is in the tab order (1280x800)",
+      "ok": true,
+      "detail": "[[\"Shop Sunday\",\"https://originalsca.com/menu/los-angeles/\",0],[\"Shop LA\",\"https://originalsca.com/menu/los-angeles/\",-1],[\"Shop San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego\",-1],[\"See today's deals\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",-1]]"
+    },
+    {
+      "name": "deals wall: next and prev turn it one card, the live region, the counter and the caption name the new deal, and prev from the first wraps to the fourth, concave again (endless ring) (1280x800)",
+      "ok": true,
+      "detail": "{\"next\":[1,\"2 of 4: 30% OFF FTP\",\"02\",\"30% OFF FTP\"],\"prev\":[0,\"1 of 4: All-day Sunday happy hour\"],\"wrap\":[3,\"4 of 4: San Diego daily deals\",\"04\"],\"arc\":\"left: rotateY 17.3deg, z 50px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 50px, scale 1.051 (left edge 1.002, right edge 1.105)\"}"
+    },
+    {
+      "name": "deals wall: no sideways page scroll and no script errors (1280x800)",
+      "ok": true,
+      "detail": "{\"sides\":[0,0,0,0,0,0],\"errs\":[]}"
+    },
+    {
+      "name": "deals wall: a carousel region (aria-roledescription carousel) labelled by the \"Store deals\" heading; four slides, each a group (aria-roledescription slide) labelled \"n of 4: <deal>\"; the wall focusable and labelled; a polite live region; prev/next real buttons with labels, 44x44 or larger; the 3D on (1024x768)",
+      "ok": true,
+      "detail": "{\"on\":true,\"role\":\"region\",\"rd\":\"carousel\",\"label\":\"Store deals\",\"slides\":[[\"group\",\"slide\",\"1 of 4: All-day Sunday happy hour\"],[\"group\",\"slide\",\"2 of 4: 30% OFF FTP\"],[\"group\",\"slide\",\"3 of 4: 50% OFF FTP\"],[\"group\",\"slide\",\"4 of 4: San Diego daily deals\"]],\"stage\":{\"tab\":0,\"role\":\"group\",\"label\":\"Store deals: use the arrow keys or the buttons to turn the wall\"},\"polite\":\"polite\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous deal\",\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next deal\",\"w\":48,\"h\":48}]}"
+    },
+    {
+      "name": "deals wall: concave at rest, the first deal centred: it faces front (rotateY about 0) and sits furthest back; both neighbours turn in (outer edge taller than inner) and step toward the viewer; the fourth hides behind (1024x768)",
+      "ok": true,
+      "detail": "left: rotateY 17.3deg, z 47px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 47px, scale 1.051 (left edge 1.002, right edge 1.105)"
+    },
+    {
+      "name": "deals wall: the centred card and both neighbours show whole within the window (1024x768)",
+      "ok": true,
+      "detail": "{\"vw\":1024,\"centre\":[362,662,300],\"left\":[13,347],\"right\":[677,1011]}"
+    },
+    {
+      "name": "deals wall: each card holds one button, a real link with its plaque's label and href (new tab); only the centred card's button is in the tab order (1024x768)",
+      "ok": true,
+      "detail": "[[\"Shop Sunday\",\"https://originalsca.com/menu/los-angeles/\",0],[\"Shop LA\",\"https://originalsca.com/menu/los-angeles/\",-1],[\"Shop San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego\",-1],[\"See today's deals\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",-1]]"
+    },
+    {
+      "name": "deals wall: next and prev turn it one card, the live region, the counter and the caption name the new deal, and prev from the first wraps to the fourth, concave again (endless ring) (1024x768)",
+      "ok": true,
+      "detail": "{\"next\":[1,\"2 of 4: 30% OFF FTP\",\"02\",\"30% OFF FTP\"],\"prev\":[0,\"1 of 4: All-day Sunday happy hour\"],\"wrap\":[3,\"4 of 4: San Diego daily deals\",\"04\"],\"arc\":\"left: rotateY 17.3deg, z 47px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 47px, scale 1.051 (left edge 1.002, right edge 1.105)\"}"
+    },
+    {
+      "name": "deals wall: no sideways page scroll and no script errors (1024x768)",
+      "ok": true,
+      "detail": "{\"sides\":[0,0,0,0,0,0],\"errs\":[]}"
+    },
+    {
+      "name": "deals wall: a carousel region (aria-roledescription carousel) labelled by the \"Store deals\" heading; four slides, each a group (aria-roledescription slide) labelled \"n of 4: <deal>\"; the wall focusable and labelled; a polite live region; prev/next real buttons with labels, 44x44 or larger; the 3D on (390x844)",
+      "ok": true,
+      "detail": "{\"on\":true,\"role\":\"region\",\"rd\":\"carousel\",\"label\":\"Store deals\",\"slides\":[[\"group\",\"slide\",\"1 of 4: All-day Sunday happy hour\"],[\"group\",\"slide\",\"2 of 4: 30% OFF FTP\"],[\"group\",\"slide\",\"3 of 4: 50% OFF FTP\"],[\"group\",\"slide\",\"4 of 4: San Diego daily deals\"]],\"stage\":{\"tab\":0,\"role\":\"group\",\"label\":\"Store deals: use the arrow keys or the buttons to turn the wall\"},\"polite\":\"polite\",\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous deal\",\"w\":48,\"h\":48},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next deal\",\"w\":48,\"h\":48}]}"
+    },
+    {
+      "name": "deals wall: concave at rest, the first deal centred: it faces front (rotateY about 0) and sits furthest back; both neighbours turn in (outer edge taller than inner) and step toward the viewer; the fourth hides behind (390x844)",
+      "ok": true,
+      "detail": "left: rotateY 17.3deg, z 47px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 47px, scale 1.051 (left edge 1.002, right edge 1.105)"
+    },
+    {
+      "name": "deals wall: on a phone the centred card is about 78vw wide (74-80%) and both neighbours peek in from the edges (390x844)",
+      "ok": true,
+      "detail": "{\"vw\":390,\"centre\":[45,345,300],\"left\":[-304,30],\"right\":[360,694]}"
+    },
+    {
+      "name": "deals wall: each card holds one button, a real link with its plaque's label and href (new tab); only the centred card's button is in the tab order (390x844)",
+      "ok": true,
+      "detail": "[[\"Shop Sunday\",\"https://originalsca.com/menu/los-angeles/\",0],[\"Shop LA\",\"https://originalsca.com/menu/los-angeles/\",-1],[\"Shop San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego\",-1],[\"See today's deals\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",-1]]"
+    },
+    {
+      "name": "deals wall: next and prev turn it one card, the live region, the counter and the caption name the new deal, and prev from the first wraps to the fourth, concave again (endless ring) (390x844)",
+      "ok": true,
+      "detail": "{\"next\":[1,\"2 of 4: 30% OFF FTP\",\"02\",\"30% OFF FTP\"],\"prev\":[0,\"1 of 4: All-day Sunday happy hour\"],\"wrap\":[3,\"4 of 4: San Diego daily deals\",\"04\"],\"arc\":\"left: rotateY 17.3deg, z 47px, scale 1.051 (left edge 1.105, right edge 1.002) | centre: rotateY 0.0deg, z 0px, scale 1.000 (left edge 1.000, right edge 1.000) | right: rotateY -17.3deg, z 47px, scale 1.051 (left edge 1.002, right edge 1.105)\"}"
+    },
+    {
+      "name": "deals wall: with the wall focused, the arrow keys turn it (right, right, left) and the live region follows; Tab then reaches the centred card's button (390x844)",
+      "ok": true,
+      "detail": "{\"keys\":[0,1,0],\"live\":\"1 of 4: All-day Sunday happy hour\",\"focus\":[true,true],\"tab\":{\"inCentre\":true,\"href\":\"https://originalsca.com/menu/los-angeles/\"}}"
+    },
+    {
+      "name": "deals wall: a swipe of 0.7 of a card turns it to the next deal and the live region follows; 0.3 snaps back; a quick flick carries on to a later card; each settles concave on a card (390x844)",
+      "ok": true,
+      "detail": "{\"drag\":[1,\"2 of 4: 30% OFF FTP\"],\"snapBack\":1,\"flick\":2,\"opened\":0}"
+    },
+    {
+      "name": "deals wall: a tap on a side card centres it and opens nothing (390x844)",
+      "ok": true,
+      "detail": "{\"photo\":{\"ok\":true,\"at\":{\"x\":375,\"y\":234},\"active\":3},\"button\":{\"ok\":true,\"skip\":\"a phone peek is too narrow for its button\"},\"opened\":0,\"sameUrl\":true}"
+    },
+    {
+      "name": "deals wall: the centred card's button is a working link: a tap on it requests its href in a new tab and this page stays put (390x844)",
+      "ok": true,
+      "detail": "{\"want\":\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",\"requested\":true,\"samePage\":true,\"popupSeen\":true}"
+    },
+    {
+      "name": "deals wall: a vertical swipe over the wall scrolls the page and leaves the wall on its card (390x844)",
+      "ok": true,
+      "detail": "{\"y\":[726,1028],\"active\":[3,3],\"sideways\":{\"ok\":true,\"skip\":\"touch\"}}"
+    },
+    {
+      "name": "deals wall: no sideways page scroll and no script errors (390x844)",
+      "ok": true,
+      "detail": "{\"sides\":[0,0,0,0,0,0,0,0,0,0,0,0],\"errs\":[]}"
+    },
+    {
+      "name": "deals wall (reduced motion, 1440x900): a flat sideways scroll-snap row: no 3D, the four cards side by side in one line, each button a tabbable link with its plaque's label and href, no caption or controls, no sideways page scroll",
+      "ok": true,
+      "detail": "{\"on\":false,\"js\":true,\"flat\":[true,true,true,true],\"tops\":[958,958,958,958],\"lefts\":[56,410,764,1118],\"wall\":{\"ov\":\"auto\",\"snap\":\"x mandatory\",\"max\":74},\"chrome\":false,\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "deals wall (no JS, 1440x900): a flat sideways scroll-snap row: no 3D, the four cards side by side in one line, each button a tabbable link with its plaque's label and href, no caption or controls, no sideways page scroll",
+      "ok": true,
+      "detail": "{\"on\":false,\"js\":false,\"flat\":[true,true,true,true],\"tops\":[958,958,958,958],\"lefts\":[56,410,764,1118],\"wall\":{\"ov\":\"auto\",\"snap\":\"x mandatory\",\"max\":74},\"chrome\":false,\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "deals wall (reduced motion, 390x844): a flat sideways scroll-snap row: no 3D, the four cards side by side in one line, each button a tabbable link with its plaque's label and href, no caption or controls, no sideways page scroll",
+      "ok": true,
+      "detail": "{\"on\":false,\"js\":true,\"flat\":[true,true,true,true],\"tops\":[812,812,812,812],\"lefts\":[16,309,602,896],\"wall\":{\"ov\":\"auto\",\"snap\":\"x mandatory\",\"max\":801},\"chrome\":false,\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "deals wall (no JS, 390x844): a flat sideways scroll-snap row: no 3D, the four cards side by side in one line, each button a tabbable link with its plaque's label and href, no caption or controls, no sideways page scroll",
+      "ok": true,
+      "detail": "{\"on\":false,\"js\":false,\"flat\":[true,true,true,true],\"tops\":[812,812,812,812],\"lefts\":[16,309,602,896],\"wall\":{\"ov\":\"auto\",\"snap\":\"x mandatory\",\"max\":801},\"chrome\":false,\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "the creed is gone from the home page (no [data-creed]); the Sunday Cruise and the stores meet edge to edge, no gap (1440x900)",
+      "ok": true,
+      "detail": "{\"creed\":0,\"next\":\"stores\",\"gap\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/our-story has no creed band; the chapters and the family-wall band meet edge to edge, no gap (1440x900)",
+      "ok": true,
+      "detail": "{\"band\":0,\"kicker\":false,\"next\":\"fam-h\",\"gap\":0,\"errs\":[]}"
+    },
+    {
+      "name": "the creed is gone from the home page (no [data-creed]); the Sunday Cruise and the stores meet edge to edge, no gap (390x844)",
+      "ok": true,
+      "detail": "{\"creed\":0,\"next\":\"stores\",\"gap\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/our-story has no creed band; the chapters and the family-wall band meet edge to edge, no gap (390x844)",
+      "ok": true,
+      "detail": "{\"band\":0,\"kicker\":false,\"next\":\"fam-h\",\"gap\":0,\"errs\":[]}"
+    },
+    {
+      "name": "drop list (1440x900): two columns that start together (kickers 0px apart, 8 or less) and end together (form card and ALL FAQS 0px apart, 16 or less)",
+      "ok": true,
+      "detail": "{\"h\":486,\"tops\":0,\"bottoms\":0,\"twoCols\":true,\"n\":3,\"rowTops\":[358,358,358],\"labelled\":[true,true,true],\"faqs\":4,\"side\":0}"
+    },
+    {
+      "name": "drop list (1440x900): the section is 600px tall or less",
+      "ok": true,
+      "detail": "height 486"
+    },
+    {
+      "name": "drop list (1440x900): Name, Email and Phone in one row, every input labelled",
+      "ok": true,
+      "detail": "{\"tops\":[358,358,358],\"labelled\":[true,true,true]}"
+    },
+    {
+      "name": "drop list (1440x900): each FAQ opens and closes on a click",
+      "ok": true,
+      "detail": "[[true,false],[true,false],[true,false],[true,false]]"
+    },
+    {
+      "name": "drop list (1440x900): no sideways page scroll and no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "drop list (1024x768): two columns that start together (kickers 0px apart, 8 or less) and end together (form card and ALL FAQS 0px apart, 16 or less)",
+      "ok": true,
+      "detail": "{\"h\":519,\"tops\":0,\"bottoms\":0,\"twoCols\":true,\"n\":3,\"rowTops\":[379,379,462],\"labelled\":[true,true,true],\"faqs\":4,\"side\":0}"
+    },
+    {
+      "name": "drop list (1024x768): each FAQ opens and closes on a click",
+      "ok": true,
+      "detail": "[[true,false],[true,false],[true,false],[true,false]]"
+    },
+    {
+      "name": "drop list (1024x768): no sideways page scroll and no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "drop list (390x844): the columns stack on a phone",
+      "ok": true,
+      "detail": "{\"twoCols\":false,\"h\":920}"
+    },
+    {
+      "name": "drop list (390x844): each FAQ opens and closes on a click",
+      "ok": true,
+      "detail": "[[true,false],[true,false],[true,false],[true,false]]"
+    },
+    {
+      "name": "drop list (390x844): no sideways page scroll and no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "home stores: three numbered columns (01 Los Angeles, 02 San Diego, 03 Originals Clothing, whose status slot says Online), two in view lined up with the wrap, the third past its right edge; x mandatory snap at each column's start; a labelled, focusable region; one screen tall (1440x900)",
+      "ok": true,
+      "detail": "{\"cols\":[{\"l\":60,\"r\":690,\"t\":262,\"b\":728,\"no\":\"01\",\"name\":\"Originals Los Angeles\",\"status\":\"Closed · opens 7 AM today\",\"today\":1,\"rows\":2},{\"l\":750,\"r\":1380,\"t\":262,\"b\":728,\"no\":\"02\",\"name\":\"Originals San Diego\",\"status\":\"Closed · opens 8 AM today\",\"today\":1,\"rows\":2},{\"l\":1440,\"r\":2070,\"t\":262,\"b\":728,\"no\":\"03\",\"name\":\"Originals Clothing\",\"status\":\"Online\",\"today\":0,\"rows\":0}],\"pad\":60,\"snap\":\"x mandatory\",\"align\":[\"start\",\"start\",\"start\"],\"region\":\"region|Our stores|0\",\"max\":690,\"h\":700}"
+    },
+    {
+      "name": "home stores: the live status is site.js's own: each store's line filled in from its hours, its dot set to match, today's hours row marked (1440x900)",
+      "ok": true,
+      "detail": "{\"live\":[\"Closed · opens 7 AM today\",\"Closed · opens 8 AM today\"],\"dots\":[\"la=0\",\"sd=0\"],\"today\":[1,1,0]}"
+    },
+    {
+      "name": "home stores: every link is there (each store's page, phone, menu and directions; the clothing shop's name and Shop merch), external ones in a new tab, none following the selected store (no data-shop), each 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":10,\"missing\":[],\"small\":[]}"
+    },
+    {
+      "name": "home stores: prev/next are real buttons with labels, controlling the row, 44x44 or larger; at the start prev is disabled and next is not; the Scroll hint is shown (1440x900)",
+      "ok": true,
+      "detail": "{\"btns\":[{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Previous store\",\"controls\":\"stores-view\",\"shown\":true,\"w\":48,\"h\":48,\"off\":true},{\"tag\":\"BUTTON\",\"type\":\"button\",\"label\":\"Next store\",\"controls\":\"stores-view\",\"shown\":true,\"w\":48,\"h\":48,\"off\":false}],\"hint\":\"Scroll\"}"
+    },
+    {
+      "name": "home stores: next moves the row on one column and it comes to rest there (two in view at 1440, so that is the end): next disables, prev wakes, the page stays put (1440x900)",
+      "ok": true,
+      "detail": "{\"x\":690,\"max\":690,\"stops\":[0,690],\"y\":8546,\"btns\":[false,true],\"side\":0}"
+    },
+    {
+      "name": "home stores: prev moves it back to the first column, at rest, and disables at the start (1440x900)",
+      "ok": true,
+      "detail": "{\"x\":0,\"max\":690,\"stops\":[0,690],\"y\":8546,\"btns\":[true,false],\"side\":0}"
+    },
+    {
+      "name": "home stores: a mouse drag moves the row with the pointer, then lets go onto the next column, at rest; the page stays put and no link opens (1440x900)",
+      "ok": true,
+      "detail": "{\"held\":300,\"after\":{\"x\":690,\"max\":690,\"stops\":[0,690],\"y\":8546,\"btns\":[false,true],\"side\":0},\"pages\":1}"
+    },
+    {
+      "name": "home stores: with the row focused the arrow keys move it a column at a time, at rest on a column; a vertical wheel over it scrolls the page, not the row (1440x900)",
+      "ok": true,
+      "detail": "{\"left\":{\"x\":0,\"max\":690,\"stops\":[0,690],\"y\":8546,\"btns\":[true,false],\"side\":0},\"right\":{\"x\":690,\"max\":690,\"stops\":[0,690],\"y\":8546,\"btns\":[false,true],\"side\":0},\"wheel\":{\"x\":690,\"max\":690,\"stops\":[0,690],\"y\":8846,\"btns\":[false,true],\"side\":0}}"
+    },
+    {
+      "name": "home stores: the page never scrolls sideways, at the start and with the row moved (1440x900)",
+      "ok": true,
+      "detail": "[0,0,0,0]"
+    },
+    {
+      "name": "home stores: every text run 4.5:1 or more against its background (3:1 large), from the computed colours (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":44,\"low\":[],\"lowest\":{\"t\":\"Our stores\",\"k\":7.9,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (home stores, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home stores on a phone: one column in view (84vw), lined up with the gutter, the next peeking past it (390x844)",
+      "ok": true,
+      "detail": "{\"cols\":[{\"l\":16,\"r\":344},{\"l\":368,\"r\":695},{\"l\":719,\"r\":1047}],\"vw\":390,\"pad\":16}"
+    },
+    {
+      "name": "home stores on a phone: a swipe moves the row and it comes to rest on a column further on (390x844)",
+      "ok": true,
+      "detail": "{\"x\":352,\"max\":673,\"stops\":[0,352,673],\"y\":7334,\"btns\":[false,false],\"side\":0}"
+    },
+    {
+      "name": "home stores on a phone: a vertical swipe over the row still scrolls the page; the page never scrolls sideways (390x844)",
+      "ok": true,
+      "detail": "{\"y\":[7334,7636],\"x\":[352,352],\"side\":[0,0,0]}"
+    },
+    {
+      "name": "home stores on a phone: every text run 4.5:1 or more against its background (3:1 large) (390x844)",
+      "ok": true,
+      "detail": "{\"n\":44,\"low\":[],\"lowest\":{\"t\":\"Our stores\",\"k\":7.9,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (home stores, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "home stores with reduced motion: a step is instant (at rest on the next column straight away) and no reveal is armed (1440x900)",
+      "ok": true,
+      "detail": "{\"x\":690,\"max\":690,\"stops\":[0,690],\"y\":6443,\"btns\":[false,true],\"side\":0,\"cls\":\"band stores is-end\"}"
+    },
+    {
+      "name": "home stores without JS: a plain sideways scrolling row of all three columns, the buttons hidden, the hours fallback line, no sideways page scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"js\":false,\"ov\":\"auto\",\"max\":690,\"x\":690,\"btns\":0,\"cols\":3,\"status\":[\"Hours below\",\"Hours below\"],\"side\":0}"
+    },
+    {
+      "name": "save now (1440x900): the four tiles; the First Time Patient tile's counter photo (store-counter) loads, object-fit cover, with its registry alt",
+      "ok": true,
+      "detail": "{\"tiles\":4,\"photo\":true,\"file\":\"store-counter-834.webp\",\"alt\":\"An Originals budtender helping customers at a store counter\",\"cover\":true,\"side\":0}"
+    },
+    {
+      "name": "save now (1440x900): every line clears AA on rendered pixels (large 3:1, the rest 4.5:1), the First Time Patient words over the counter photo included",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"missing\":[],\"min\":7.47,\"pct\":[{\"t\":\"First Time Patient Deals\",\"large\":false,\"ratio\":7.52},{\"t\":\"30%\",\"large\":true,\"ratio\":9.58},{\"t\":\"excludes Originals, Flig\",\"large\":true,\"ratio\":16.36},{\"t\":\"SHOP NOW\",\"large\":false,\"ratio\":19.62}]}"
+    },
+    {
+      "name": "save now (1440x900): the bud's top rises above its tile's top border by 10%+ of the tile's height, and its clip box meets no text on the page",
+      "ok": true,
+      "detail": "{\"tileTop\":287,\"tileH\":418,\"budTop\":197,\"pop\":0.216,\"clip\":[1059,191,1380,705],\"scanFrom\":120,\"hits\":[]}"
+    },
+    {
+      "name": "save now (1440x900): the three links are exact (labels, hrefs, data-shop=\"menu\" on SHOP NOW, new tab); no sideways page scroll; no script errors",
+      "ok": true,
+      "detail": "{\"links\":[[\"SHOP NOW\",\"https://originalsca.com/menu/los-angeles/\",\"menu\",\"_blank\",\"noopener\"],[\"SHOP NOW · LA\",\"https://weedmaps.com/dispensaries/originalslashop\",null,\"_blank\",\"noopener\"],[\"San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",null,\"_blank\",\"noopener\"]],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "save now (1280x800): the four tiles; the First Time Patient tile's counter photo (store-counter) loads, object-fit cover, with its registry alt",
+      "ok": true,
+      "detail": "{\"tiles\":4,\"photo\":true,\"file\":\"store-counter-834.webp\",\"alt\":\"An Originals budtender helping customers at a store counter\",\"cover\":true,\"side\":0}"
+    },
+    {
+      "name": "save now (1280x800): every line clears AA on rendered pixels (large 3:1, the rest 4.5:1), the First Time Patient words over the counter photo included",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"missing\":[],\"min\":7.32,\"pct\":[{\"t\":\"First Time Patient Deals\",\"large\":false,\"ratio\":7.32},{\"t\":\"30%\",\"large\":true,\"ratio\":9.73},{\"t\":\"excludes Originals, Flig\",\"large\":true,\"ratio\":16.37},{\"t\":\"SHOP NOW\",\"large\":false,\"ratio\":19.79}]}"
+    },
+    {
+      "name": "save now (1280x800): the bud's top rises above its tile's top border by 10%+ of the tile's height, and its clip box meets no text on the page",
+      "ok": true,
+      "detail": "{\"tileTop\":227,\"tileH\":437,\"budTop\":137,\"pop\":0.206,\"clip\":[943,131,1229,665],\"scanFrom\":76,\"hits\":[]}"
+    },
+    {
+      "name": "save now (1280x800): the three links are exact (labels, hrefs, data-shop=\"menu\" on SHOP NOW, new tab); no sideways page scroll; no script errors",
+      "ok": true,
+      "detail": "{\"links\":[[\"SHOP NOW\",\"https://originalsca.com/menu/los-angeles/\",\"menu\",\"_blank\",\"noopener\"],[\"SHOP NOW · LA\",\"https://weedmaps.com/dispensaries/originalslashop\",null,\"_blank\",\"noopener\"],[\"San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",null,\"_blank\",\"noopener\"]],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "save now (1024x768): the four tiles; the First Time Patient tile's counter photo (store-counter) loads, object-fit cover, with its registry alt",
+      "ok": true,
+      "detail": "{\"tiles\":4,\"photo\":true,\"file\":\"store-counter-834.webp\",\"alt\":\"An Originals budtender helping customers at a store counter\",\"cover\":true,\"side\":0}"
+    },
+    {
+      "name": "save now (1024x768): every line clears AA on rendered pixels (large 3:1, the rest 4.5:1), the First Time Patient words over the counter photo included",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"missing\":[],\"min\":7.16,\"pct\":[{\"t\":\"First Time Patient Deals\",\"large\":false,\"ratio\":7.16},{\"t\":\"30%\",\"large\":true,\"ratio\":17.52},{\"t\":\"excludes Originals, Flig\",\"large\":true,\"ratio\":13.72},{\"t\":\"SHOP NOW\",\"large\":false,\"ratio\":19.79}]}"
+    },
+    {
+      "name": "save now (1024x768): the bud's top rises above its tile's top border by 10%+ of the tile's height, and its clip box meets no text on the page",
+      "ok": true,
+      "detail": "{\"tileTop\":245,\"tileH\":412,\"budTop\":155,\"pop\":0.218,\"clip\":[757,149,983,657],\"scanFrom\":118,\"hits\":[]}"
+    },
+    {
+      "name": "save now (1024x768): the three links are exact (labels, hrefs, data-shop=\"menu\" on SHOP NOW, new tab); no sideways page scroll; no script errors",
+      "ok": true,
+      "detail": "{\"links\":[[\"SHOP NOW\",\"https://originalsca.com/menu/los-angeles/\",\"menu\",\"_blank\",\"noopener\"],[\"SHOP NOW · LA\",\"https://weedmaps.com/dispensaries/originalslashop\",null,\"_blank\",\"noopener\"],[\"San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",null,\"_blank\",\"noopener\"]],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "save now (390x844): the four tiles; the First Time Patient tile's counter photo (store-counter) loads, object-fit cover, with its registry alt",
+      "ok": true,
+      "detail": "{\"tiles\":4,\"photo\":true,\"file\":\"store-counter-834.webp\",\"alt\":\"An Originals budtender helping customers at a store counter\",\"cover\":true,\"side\":0}"
+    },
+    {
+      "name": "save now (390x844): every line clears AA on rendered pixels (large 3:1, the rest 4.5:1), the First Time Patient words over the counter photo included",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"missing\":[],\"min\":7.16,\"pct\":[{\"t\":\"First Time Patient Deals\",\"large\":false,\"ratio\":7.16},{\"t\":\"30%\",\"large\":true,\"ratio\":9.57},{\"t\":\"excludes Originals, Flig\",\"large\":true,\"ratio\":15.95},{\"t\":\"SHOP NOW\",\"large\":false,\"ratio\":19.79}]}"
+    },
+    {
+      "name": "save now (390x844): the bud's top rises above its tile's top border by 10%+ of the tile's height, and its clip box meets no text on the page",
+      "ok": true,
+      "detail": "{\"tileTop\":352,\"tileH\":269,\"budTop\":295,\"pop\":0.214,\"clip\":[16,288,374,621],\"scanFrom\":245,\"hits\":[]}"
+    },
+    {
+      "name": "save now (390x844): the three links are exact (labels, hrefs, data-shop=\"menu\" on SHOP NOW, new tab); no sideways page scroll; no script errors",
+      "ok": true,
+      "detail": "{\"links\":[[\"SHOP NOW\",\"https://originalsca.com/menu/los-angeles/\",\"menu\",\"_blank\",\"noopener\"],[\"SHOP NOW · LA\",\"https://weedmaps.com/dispensaries/originalslashop\",null,\"_blank\",\"noopener\"],[\"San Diego\",\"https://weedmaps.com/dispensaries/originals-san-diego/deals\",null,\"_blank\",\"noopener\"]],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "events carousel: a labelled carousel region of 3 slides (\"n of 3\"), real prev/next buttons 44px or more, a live region (1440x900)",
+      "ok": true,
+      "detail": "{\"role\":\"region\",\"rd\":\"carousel\",\"named\":true,\"slides\":[[\"slide\",\"1 of 3\"],[\"slide\",\"2 of 3\"],[\"slide\",\"3 of 3\"]],\"links\":[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events"
+    },
+    {
+      "name": "events carousel: the card links, labels and image texts exactly as before (1440x900)",
+      "ok": true,
+      "detail": "[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events\",\"Coming to a city near you Originals Takeover Palm Springs\",\"\"]]"
+    },
+    {
+      "name": "events carousel: a pointer sweep across a card turns its 56 strips progressively (none at the near side, some mid-turn on the way, all at the far side) (1440x900)",
+      "ok": true,
+      "detail": "[{\"n\":56,\"turned\":0,\"mid\":0,\"mean\":0},{\"n\":56,\"turned\":6,\"mid\":24,\"mean\":26},{\"n\":56,\"turned\":28,\"mid\":36,\"mean\":90},{\"n\":56,\"turned\":50,\"mid\":24,\"mean\":153},{\"n\":56,\"turned\":56,\"mid\":0,\"mean\":180}]"
+    },
+    {
+      "name": "events carousel: the pointer leaving turns the card back; keyboard focus brings a card in front and turns it over (1440x900)",
+      "ok": true,
+      "detail": "{\"back\":{\"n\":56,\"turned\":0,\"mid\":1,\"mean\":0},\"active\":1,\"foc\":{\"n\":56,\"turned\":56,\"mid\":0,\"mean\":180}}"
+    },
+    {
+      "name": "events carousel: the arrow keys (moving the focus), prev/next and a drag change the active slide, and a drag never follows a link (1440x900)",
+      "ok": true,
+      "detail": "{\"key\":{\"active\":2,\"focus\":\"3 of 3\",\"status\":\"3 of 3\"},\"prev\":1,\"next\":2,\"drag\":[1,2],\"stayed\":true}"
+    },
+    {
+      "name": "events carousel: no sideways page scroll and no script errors (1440x900)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "events carousel: a labelled carousel region of 3 slides (\"n of 3\"), real prev/next buttons 44px or more, a live region (1024x768)",
+      "ok": true,
+      "detail": "{\"role\":\"region\",\"rd\":\"carousel\",\"named\":true,\"slides\":[[\"slide\",\"1 of 3\"],[\"slide\",\"2 of 3\"],[\"slide\",\"3 of 3\"]],\"links\":[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events"
+    },
+    {
+      "name": "events carousel: the card links, labels and image texts exactly as before (1024x768)",
+      "ok": true,
+      "detail": "[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events\",\"Coming to a city near you Originals Takeover Palm Springs\",\"\"]]"
+    },
+    {
+      "name": "events carousel: a pointer sweep across a card turns its 46 strips progressively (none at the near side, some mid-turn on the way, all at the far side) (1024x768)",
+      "ok": true,
+      "detail": "[{\"n\":46,\"turned\":0,\"mid\":0,\"mean\":0},{\"n\":46,\"turned\":5,\"mid\":19,\"mean\":26},{\"n\":46,\"turned\":23,\"mid\":28,\"mean\":90},{\"n\":46,\"turned\":41,\"mid\":20,\"mean\":153},{\"n\":46,\"turned\":46,\"mid\":0,\"mean\":180}]"
+    },
+    {
+      "name": "events carousel: the pointer leaving turns the card back; keyboard focus brings a card in front and turns it over (1024x768)",
+      "ok": true,
+      "detail": "{\"back\":{\"n\":46,\"turned\":0,\"mid\":1,\"mean\":0},\"active\":1,\"foc\":{\"n\":46,\"turned\":46,\"mid\":0,\"mean\":180}}"
+    },
+    {
+      "name": "events carousel: the arrow keys (moving the focus), prev/next and a drag change the active slide, and a drag never follows a link (1024x768)",
+      "ok": true,
+      "detail": "{\"key\":{\"active\":2,\"focus\":\"3 of 3\",\"status\":\"3 of 3\"},\"prev\":1,\"next\":2,\"drag\":[1,2],\"stayed\":true}"
+    },
+    {
+      "name": "events carousel: no sideways page scroll and no script errors (1024x768)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "events carousel: a labelled carousel region of 3 slides (\"n of 3\"), real prev/next buttons 44px or more, a live region (390x844)",
+      "ok": true,
+      "detail": "{\"role\":\"region\",\"rd\":\"carousel\",\"named\":true,\"slides\":[[\"slide\",\"1 of 3\"],[\"slide\",\"2 of 3\"],[\"slide\",\"3 of 3\"]],\"links\":[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events"
+    },
+    {
+      "name": "events carousel: the card links, labels and image texts exactly as before (390x844)",
+      "ok": true,
+      "detail": "[[\"/events#lowrider-super-show\",\"Lowrider Magazine Super Show\",\"Lowrider car show flyer: Los Angeles 2026 Finale\"],[\"/originals-hall-of-flowers-palm-springs-recap\",\"Hall of Flowers recap\",\"Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company\"],[\"/events\",\"Coming to a city near you Originals Takeover Palm Springs\",\"\"]]"
+    },
+    {
+      "name": "events carousel on a phone: a swipe brings the next slide in front; a tap turns the card over (fewer strips than desktop) and stays on the page (390x844)",
+      "ok": true,
+      "detail": "{\"swiped\":1,\"said\":\"2 of 3\",\"tap\":{\"n\":32,\"turned\":32,\"mid\":0,\"mean\":180},\"stayed\":true}"
+    },
+    {
+      "name": "events carousel: no sideways page scroll and no script errors (390x844)",
+      "ok": true,
+      "detail": "overflow 0px "
+    },
+    {
+      "name": "events carousel, reduced motion: no strips and no turning, the colour face and its label shown still; prev/next still work (1440x900)",
+      "ok": true,
+      "detail": "{\"still\":true,\"strips\":0,\"art\":[1,1,1],\"masks\":[\"none\",\"none\"],\"next\":1}"
+    },
+    {
+      "name": "events carousel without JS: the plain row of three cards, no controls, no sideways page scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"live\":false,\"ctrl\":false,\"cards\":3,\"row\":true,\"side\":0}"
+    },
+    {
+      "name": "footer (/, 1440x900): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/, 1440x900): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/, 1440x900): no sideways page scroll; at the page end the last text line clears the store bar (417px); the link groups stay open; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":417,\"groups\":[true,true,true,true],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/, 1440x900): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":67,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/, 390x844): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/, 390x844): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/, 390x844): no sideways page scroll; at the page end the last text line clears the store bar (162px); the link groups start closed and a tap opens one; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":162,\"groups\":[false,false,false,false],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/, 390x844): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":71,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/deals, 1440x900): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/deals, 1440x900): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/deals, 1440x900): no sideways page scroll; at the page end the last text line clears the store bar (417px); the link groups stay open; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":417,\"groups\":[true,true,true,true],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/deals, 1440x900): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":67,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/deals, 390x844): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/deals, 390x844): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/deals, 390x844): no sideways page scroll; at the page end the last text line clears the store bar (162px); the link groups start closed and a tap opens one; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":162,\"groups\":[false,false,false,false],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/deals, 390x844): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":71,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/retail, 1440x900): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/retail, 1440x900): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/retail, 1440x900): no sideways page scroll; at the page end the last text line clears the store bar (417px); the link groups stay open; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":417,\"groups\":[true,true,true,true],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/retail, 1440x900): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":67,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/retail, 390x844): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/retail, 390x844): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/retail, 390x844): no sideways page scroll; at the page end the last text line clears the store bar (162px); the link groups start closed and a tap opens one; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":162,\"groups\":[false,false,false,false],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/retail, 390x844): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":71,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 1440x900): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 1440x900): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 1440x900): no sideways page scroll; at the page end the last text line clears the store bar (418px); the link groups stay open; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":418,\"groups\":[true,true,true,true],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 1440x900): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":67,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 390x844): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 390x844): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 390x844): no sideways page scroll; at the page end the last text line clears the store bar (162px); the link groups start closed and a tap opens one; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":162,\"groups\":[false,false,false,false],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/cannabis-edibles-guide-originals-la, 390x844): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":71,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/strains, 1440x900): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/strains, 1440x900): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/strains, 1440x900): no sideways page scroll; at the page end the last text line clears the store bar (417px); the link groups stay open; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":417,\"groups\":[true,true,true,true],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/strains, 1440x900): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":67,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "footer (/strains, 390x844): the 39 links of the old footer, each with the same text, href and target (none missing, none added)",
+      "ok": true,
+      "detail": "{\"n\":39,\"missing\":[],\"extra\":[]}"
+    },
+    {
+      "name": "footer (/strains, 390x844): the legal lines word for word, no creed text, the ORIGINALS wordmark drawn",
+      "ok": true,
+      "detail": "{\"legal\":4,\"same\":true,\"creed\":false,\"word\":true}"
+    },
+    {
+      "name": "footer (/strains, 390x844): no sideways page scroll; at the page end the last text line clears the store bar (162px); the link groups start closed and a tap opens one; no script errors",
+      "ok": true,
+      "detail": "{\"side\":0,\"atEnd\":true,\"clear\":162,\"groups\":[false,false,false,false],\"tap\":{\"open\":true,\"shown\":6},\"errs\":[]}"
+    },
+    {
+      "name": "footer (/strains, 390x844): every text line 4.5:1 or more on the rendered pixels (lowest 7.9, \"#beoriginal\")",
+      "ok": true,
+      "detail": "{\"n\":71,\"min\":7.9,\"worst\":\"#beoriginal\"}"
+    },
+    {
+      "name": "legal pages: the parity copy saved before the redesign is present (audit/legal-parity.json)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "legal /privacy-policy: every word as saved before the redesign (43102 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 29\",\"links\":\"43 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /terms-of-service: every word as saved before the redesign (35642 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 28\",\"links\":\"25 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /cookie-policy: every word as saved before the redesign (9300 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 12\",\"links\":\"1 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /disclaimer: every word as saved before the redesign (5937 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 7\",\"links\":\"2 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /prop-65-warning: every word as saved before the redesign (407 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 1\",\"links\":\"2 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /california-opt-in: every word as saved before the redesign (218 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 1\",\"links\":\"3 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /rewards-program-and-opt-in: every word as saved before the redesign (335 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"2 -> 2\",\"links\":\"3 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal /membership_agreement: every word as saved before the redesign (1128 characters), the same links in order, no heading lost (JavaScript off)",
+      "ok": true,
+      "detail": "{\"heads\":\"1 -> 1\",\"links\":\"1 same\",\"lost\":[]}"
+    },
+    {
+      "name": "legal pages (1440x900): no script errors, no sideways page scroll, one h1 on each of the 8",
+      "ok": true,
+      "detail": "[\"/privacy-policy 0\",\"/terms-of-service 0\",\"/cookie-policy 0\",\"/disclaimer 0\",\"/prop-65-warning 0\",\"/california-opt-in 0\",\"/rewards-program-and-opt-in 0\",\"/membership_agreement 0\"]"
+    },
+    {
+      "name": "legal policies (1440x900): the \"On this page\" list is shown beside the text, one link per section title, each landing on its h2 and 44px or taller",
+      "ok": true,
+      "detail": "[{\"u\":\"/privacy-policy\",\"shown\":true,\"n\":17,\"h2\":17,\"broken\":0,\"minH\":44},{\"u\":\"/terms-of-service\",\"shown\":true,\"n\":23,\"h2\":23,\"broken\":0,\"minH\":44},{\"u\":\"/cookie-policy\",\"shown\":true,\"n\":8,\"h2\":8,\"broken\":0,\"minH\":44},{\"u\":\"/disclaimer\",\"shown\":true,\"n\":6,\"h2\":6,\"broken\":0,\"minH\":44}]"
+    },
+    {
+      "name": "legal policy (1440x900): deep in the text the contents list stays pinned under the header and ends above the store bar; a contents link brings its title in just below the header",
+      "ok": true,
+      "detail": "{\"st\":{\"y\":9000,\"top\":100,\"bottom\":796,\"head\":76,\"dash\":822},\"jump\":{\"hash\":\"#sec-7-how-long-do-we-keep-your-information\",\"top\":92,\"head\":76}}"
+    },
+    {
+      "name": "legal pages (1440x900): no script errors after the interactions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "legal pages (390x844): no script errors, no sideways page scroll, one h1 on each of the 8",
+      "ok": true,
+      "detail": "[\"/privacy-policy 0\",\"/terms-of-service 0\",\"/cookie-policy 0\",\"/disclaimer 0\",\"/prop-65-warning 0\",\"/california-opt-in 0\",\"/rewards-program-and-opt-in 0\",\"/membership_agreement 0\"]"
+    },
+    {
+      "name": "legal policies (390x844): the \"On this page\" list is hidden on a narrow screen",
+      "ok": true,
+      "detail": "[{\"u\":\"/privacy-policy\",\"shown\":false,\"n\":17,\"h2\":17,\"broken\":0,\"minH\":null},{\"u\":\"/terms-of-service\",\"shown\":false,\"n\":23,\"h2\":23,\"broken\":0,\"minH\":null},{\"u\":\"/cookie-policy\",\"shown\":false,\"n\":8,\"h2\":8,\"broken\":0,\"minH\":null},{\"u\":\"/disclaimer\",\"shown\":false,\"n\":6,\"h2\":6,\"broken\":0,\"minH\":null}]"
+    },
+    {
+      "name": "legal opt-in form (390x844): 4 controls, each labelled and 44px or more; the preview hooks kept (an empty submit asks for the required box, a filled one is marked sent and stays on the page)",
+      "ok": true,
+      "detail": "{\"f0\":{\"preview\":true,\"status\":true,\"n\":4,\"unlabelled\":[],\"small\":[]},\"empty\":{\"note\":\"Please fill in the required fields.\",\"focus\":\"optin\"},\"sent\":{\"sent\":true,\"path\":\"/membership_agreement\"}}"
+    },
+    {
+      "name": "legal pages (390x844): no script errors after the interactions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "legal pages (1440x900, reduced motion): every text line in view reads 4.5:1 or more on the rendered pixels (231 lines over 28 views, lowest 7.41 \"Rewards Program an\")",
+      "ok": true,
+      "detail": "[{\"t\":\"Rewards Program an\",\"ratio\":7.41},{\"t\":\"Opt In\",\"ratio\":7.41},{\"t\":\"Opt in\",\"ratio\":7.41},{\"t\":\"California Opt-in\",\"ratio\":7.47}]"
+    },
+    {
+      "name": "legal pages (390x844, reduced motion): every text line in view reads 4.5:1 or more on the rendered pixels (148 lines over 28 views, lowest 7.47 \"Rewards Program an\")",
+      "ok": true,
+      "detail": "[{\"t\":\"Rewards Program an\",\"ratio\":7.47},{\"t\":\"Opt In\",\"ratio\":7.47},{\"t\":\"California Opt-in\",\"ratio\":7.54},{\"t\":\"PRIVACY POLICY\",\"ratio\":7.59}]"
+    },
+    {
+      "name": "/shop: one h1, every link and data-shop hook of the version before, no sideways scroll, no script errors (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":1,\"links\":34,\"missLinks\":[],\"missHooks\":[],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/shop: the hero is the LA store's own photo (not the AI warehouse) and it loads; every image loads (1440x900)",
+      "ok": true,
+      "detail": "{\"hero\":{\"src\":\"store-la-wall-1600.webp\",\"ok\":true},\"broken\":[]}"
+    },
+    {
+      "name": "/shop: every text run 4.5:1 or more on its rendered background, 3:1 when large (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":58,\"low\":[],\"lowest\":{\"t\":\"Shop\",\"need\":4.5,\"ratio\":6.42}}"
+    },
+    {
+      "name": "/shop: one h1, every link and data-shop hook of the version before, no sideways scroll, no script errors (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":1,\"links\":34,\"missLinks\":[],\"missHooks\":[],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/shop: the hero is the LA store's own photo (not the AI warehouse) and it loads; every image loads (390x844)",
+      "ok": true,
+      "detail": "{\"hero\":{\"src\":\"store-la-wall-1600.webp\",\"ok\":true},\"broken\":[]}"
+    },
+    {
+      "name": "/shop: every text run 4.5:1 or more on its rendered background, 3:1 when large (390x844)",
+      "ok": true,
+      "detail": "{\"n\":58,\"low\":[],\"lowest\":{\"t\":\"Shop\",\"need\":4.5,\"ratio\":5.12}}"
+    },
+    {
+      "name": "/clothing: one h1, every link and data-shop hook of the version before, no sideways scroll, no script errors (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":1,\"links\":5,\"missLinks\":[],\"missHooks\":[],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/clothing: every image loads (1440x900)",
+      "ok": true,
+      "detail": "{\"hero\":null,\"broken\":[]}"
+    },
+    {
+      "name": "/clothing: every text run 4.5:1 or more on its rendered background, 3:1 when large (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"lowest\":{\"t\":\"Originals Clothing\",\"need\":4.5,\"ratio\":6.35}}"
+    },
+    {
+      "name": "/clothing: one h1, every link and data-shop hook of the version before, no sideways scroll, no script errors (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":1,\"links\":5,\"missLinks\":[],\"missHooks\":[],\"side\":0,\"errs\":[]}"
+    },
+    {
+      "name": "/clothing: every image loads (390x844)",
+      "ok": true,
+      "detail": "{\"hero\":null,\"broken\":[]}"
+    },
+    {
+      "name": "/clothing: every text run 4.5:1 or more on its rendered background, 3:1 when large (390x844)",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"lowest\":{\"t\":\"Originals Clothing\",\"need\":4.5,\"ratio\":6.02}}"
+    },
+    {
+      "name": "culture pages /events: one h1 (\"Lit like our events\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Lit like our events\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /events: every link the page had before the redesign is still there and shown (9) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":14}"
+    },
+    {
+      "name": "culture pages /events: every form control labelled (0); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "culture pages /events: the lenticular carousel is live with its controls; every event keeps its id (/events#lowrider-super-show from the home) in the ruled list (1440x900)",
+      "ok": true,
+      "detail": "{\"ids\":[],\"live\":true,\"ctrl\":true,\"rows\":10}"
+    },
+    {
+      "name": "no script errors (/events, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /events: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":65,\"low\":[],\"lowest\":{\"t\":\"Coming to a city near \",\"need\":4.5,\"k\":7.32}}"
+    },
+    {
+      "name": "culture pages /media: one h1 (\"The film\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The film\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /media: every link the page had before the redesign is still there and shown (5) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":5}"
+    },
+    {
+      "name": "culture pages /media: every form control labelled (0); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/media, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /media: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":20,\"low\":[],\"lowest\":{\"t\":\"Media\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "culture pages /drops: one h1 (\"Don't miss the next drop\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Don't miss the next drop\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /drops: every link the page had before the redesign is still there and shown (3) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":3}"
+    },
+    {
+      "name": "culture pages /drops: every form control labelled (6); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "culture pages /drops: the preview form keeps its hooks: an empty submit stays on the page and asks for the required fields (1440x900)",
+      "ok": true,
+      "detail": "{\"hook\":true,\"action\":\"/form-sent\",\"method\":\"get\",\"note\":\"Please fill in the required fields.\",\"req\":[\"email\",\"optin\"]}"
+    },
+    {
+      "name": "no script errors (/drops, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /drops: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":30,\"low\":[],\"lowest\":{\"t\":\"Drops\",\"need\":4.5,\"k\":7.08}}"
+    },
+    {
+      "name": "culture pages /find-originals: one h1 (\"Find Originals\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Find Originals\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /find-originals: every link the page had before the redesign is still there and shown (11) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":12}"
+    },
+    {
+      "name": "culture pages /find-originals: every form control labelled (0); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/find-originals, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /find-originals: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":43,\"low\":[],\"lowest\":{\"t\":\"Find Originals\",\"need\":4.5,\"k\":6.99}}"
+    },
+    {
+      "name": "culture pages /collabs: one h1 (\"The brand behind the brands\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The brand behind the brands\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /collabs: every link the page had before the redesign is still there and shown (3) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":3}"
+    },
+    {
+      "name": "culture pages /collabs: every form control labelled (0); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/collabs, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /collabs: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":36,\"low\":[],\"lowest\":{\"t\":\"Collabs\",\"need\":4.5,\"k\":7.84}}"
+    },
+    {
+      "name": "culture pages /bussin-merch: one h1 (\"Bussin'\"), no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Bussin'\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /bussin-merch: every link the page had before the redesign is still there and shown (6) (1440x900)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":6}"
+    },
+    {
+      "name": "culture pages /bussin-merch: every form control labelled (0); every visible link and button 44x44 or larger (1440x900)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/bussin-merch, 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /bussin-merch: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"lowest\":{\"t\":\"Collab strain\",\"need\":4.5,\"k\":7.15}}"
+    },
+    {
+      "name": "culture pages /events: one h1 (\"Lit like our events\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Lit like our events\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /events: every link the page had before the redesign is still there and shown (9) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":14}"
+    },
+    {
+      "name": "culture pages /events: every form control labelled (0); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "culture pages /events: the lenticular carousel is live with its controls; every event keeps its id (/events#lowrider-super-show from the home) in the ruled list (390x844)",
+      "ok": true,
+      "detail": "{\"ids\":[],\"live\":true,\"ctrl\":true,\"rows\":10}"
+    },
+    {
+      "name": "no script errors (/events, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /events: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":61,\"low\":[],\"lowest\":{\"t\":\"Events\",\"need\":4.5,\"k\":5.68}}"
+    },
+    {
+      "name": "culture pages /media: one h1 (\"The film\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The film\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /media: every link the page had before the redesign is still there and shown (5) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":5}"
+    },
+    {
+      "name": "culture pages /media: every form control labelled (0); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/media, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /media: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":20,\"low\":[],\"lowest\":{\"t\":\"Media\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "culture pages /drops: one h1 (\"Don't miss the next drop\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Don't miss the next drop\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /drops: every link the page had before the redesign is still there and shown (3) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":3}"
+    },
+    {
+      "name": "culture pages /drops: every form control labelled (6); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "culture pages /drops: the preview form keeps its hooks: an empty submit stays on the page and asks for the required fields (390x844)",
+      "ok": true,
+      "detail": "{\"hook\":true,\"action\":\"/form-sent\",\"method\":\"get\",\"note\":\"Please fill in the required fields.\",\"req\":[\"email\",\"optin\"]}"
+    },
+    {
+      "name": "no script errors (/drops, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /drops: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":30,\"low\":[],\"lowest\":{\"t\":\"The drop list\",\"need\":4.5,\"k\":5.88}}"
+    },
+    {
+      "name": "culture pages /find-originals: one h1 (\"Find Originals\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Find Originals\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /find-originals: every link the page had before the redesign is still there and shown (11) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":12}"
+    },
+    {
+      "name": "culture pages /find-originals: every form control labelled (0); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/find-originals, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /find-originals: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":43,\"low\":[],\"lowest\":{\"t\":\"Find Originals\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "culture pages /collabs: one h1 (\"The brand behind the brands\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The brand behind the brands\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /collabs: every link the page had before the redesign is still there and shown (3) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":3}"
+    },
+    {
+      "name": "culture pages /collabs: every form control labelled (0); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/collabs, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /collabs: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":36,\"low\":[],\"lowest\":{\"t\":\"Collabs\",\"need\":4.5,\"k\":5}}"
+    },
+    {
+      "name": "culture pages /bussin-merch: one h1 (\"Bussin'\"), no sideways scroll (390x844)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Bussin'\"],\"side\":0}"
+    },
+    {
+      "name": "culture pages /bussin-merch: every link the page had before the redesign is still there and shown (6) (390x844)",
+      "ok": true,
+      "detail": "{\"missing\":[],\"n\":6}"
+    },
+    {
+      "name": "culture pages /bussin-merch: every form control labelled (0); every visible link and button 44x44 or larger (390x844)",
+      "ok": true,
+      "detail": "{\"unlabelled\":[],\"small\":[]}"
+    },
+    {
+      "name": "no script errors (/bussin-merch, 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "culture pages /bussin-merch: every text line 4.5:1 or more (3:1 large) against the rendered pixels behind it (390x844)",
+      "ok": true,
+      "detail": "{\"n\":13,\"low\":[],\"lowest\":{\"t\":\"Collab strain\",\"need\":4.5,\"k\":5.8}}"
+    },
+    {
+      "name": "culture pages /events without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Lit like our events\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "culture pages /media without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The film\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "culture pages /drops without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Don't miss the next drop\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "culture pages /find-originals without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Find Originals\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "culture pages /collabs without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"The brand behind the brands\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "culture pages /bussin-merch without JS: the h1, every link shown, no sideways scroll (1440x900)",
+      "ok": true,
+      "detail": "{\"h1\":[\"Bussin'\"],\"missing\":[],\"side\":0}"
+    },
+    {
+      "name": "blog parity: every post (21), without JS: one h1, the post's own title, head title, description and JSON-LD; the hero is the body's first image, lifted, and the body is the captured post tag for tag (a gallery row a wrapper only); \"More from the Cannablog\" is the live list (title, author bar, excerpt, link, image, in order), every entry shown",
+      "ok": true,
+      "detail": "{\"n\":21,\"lifted\":21,\"bad\":[]}"
+    },
+    {
+      "name": "blog parity: the index, without JS: one h1; every post in order (the newest as the lead story) with its title, author bar, excerpt, link and image, every entry shown",
+      "ok": true,
+      "detail": "{\"h1\":1,\"lead\":\"/thc-extract-for-fast-relief\",\"n\":21,\"hidden\":0}"
+    },
+    {
+      "name": "blog: /blog at 1440x900: one h1, no sideways scroll, every image in main loaded",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":22,\"broken\":[],\"measure\":null,\"axis\":[null,null,null],\"heads\":[]}"
+    },
+    {
+      "name": "blog: /blog at 1440x900: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":51,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.28,\"need\":4.5}}"
+    },
+    {
+      "name": "blog: the index at 1440x900: the lead story a split, its photo beside the title, then 20 numbered entries over hairlines, no boxes, four columns",
+      "ok": true,
+      "detail": "{\"split\":true,\"cols\":4,\"row\":false,\"thumb\":304,\"n\":20,\"flat\":true,\"rule\":\"1px\"}"
+    },
+    {
+      "name": "blog: the index at 1440x900: gold only on interaction (an entry title white at rest, gold on hover)",
+      "ok": true,
+      "detail": "{\"rest\":\"rgba(255, 255, 255, 0.737)\",\"hover\":\"rgb(243, 195, 79)\",\"gold\":\"rgb(243, 195, 79)\"}"
+    },
+    {
+      "name": "no script errors (/blog at 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /gelato-strain-originals at 1440x900: one h1, no sideways scroll, every image in main loaded, the measure 65-75ch, the title, the hero and the body on one left edge, the body headings in the display face",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":13,\"broken\":[],\"measure\":[67.9,67.9],\"axis\":[200,200,200],\"heads\":[\"League Gothic\"]}"
+    },
+    {
+      "name": "blog: /gelato-strain-originals at 1440x900: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":42,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.47,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/gelato-strain-originals at 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /thc-extract-for-fast-relief at 1440x900: one h1, no sideways scroll, every image in main loaded, the measure 65-75ch, the title, the hero and the body on one left edge, the body headings in the display face",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":11,\"broken\":[],\"measure\":[67.9,67.9],\"axis\":[200,200,200],\"heads\":[\"League Gothic\"]}"
+    },
+    {
+      "name": "blog: /thc-extract-for-fast-relief at 1440x900: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":45,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.59,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/thc-extract-for-fast-relief at 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /originals-san-diego-cannabis-dispensary at 1440x900: one h1, no sideways scroll, every image in main loaded, the measure 65-75ch, the title, the hero and the body on one left edge, the body headings in the display face",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":11,\"broken\":[],\"measure\":[67.9,67.9],\"axis\":[200,200,200],\"heads\":[\"League Gothic\"]}"
+    },
+    {
+      "name": "blog: /originals-san-diego-cannabis-dispensary at 1440x900: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":43,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.47,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/originals-san-diego-cannabis-dispensary at 1440x900)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /blog at 390x844: one h1, no sideways scroll, every image in main loaded, every link and button in main 44px tall or more",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":22,\"broken\":[],\"measure\":null,\"axis\":[null,null,null],\"heads\":[],\"small\":[]}"
+    },
+    {
+      "name": "blog: /blog at 390x844: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":38,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":5.91,\"need\":4.5}}"
+    },
+    {
+      "name": "blog: the index at 390x844: the lead story stacked, then 20 numbered entries over hairlines, no boxes, compact rows with a square thumbnail",
+      "ok": true,
+      "detail": "{\"split\":false,\"cols\":1,\"row\":true,\"thumb\":92,\"n\":20,\"flat\":true,\"rule\":\"1px\"}"
+    },
+    {
+      "name": "no script errors (/blog at 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /gelato-strain-originals at 390x844: one h1, no sideways scroll, every image in main loaded, the measure 75ch or less, the title, the hero and the body on one left edge, the body headings in the display face, every link and button in main 44px tall or more",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":13,\"broken\":[],\"measure\":[40,40],\"axis\":[16,16,16],\"heads\":[\"League Gothic\"],\"small\":[]}"
+    },
+    {
+      "name": "blog: /gelato-strain-originals at 390x844: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":32,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.54,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/gelato-strain-originals at 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /thc-extract-for-fast-relief at 390x844: one h1, no sideways scroll, every image in main loaded, the measure 75ch or less, the title, the hero and the body on one left edge, the body headings in the display face, every link and button in main 44px tall or more",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":11,\"broken\":[],\"measure\":[40,40],\"axis\":[16,16,16],\"heads\":[\"League Gothic\"],\"small\":[]}"
+    },
+    {
+      "name": "blog: /thc-extract-for-fast-relief at 390x844: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":33,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.65,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/thc-extract-for-fast-relief at 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: /originals-san-diego-cannabis-dispensary at 390x844: one h1, no sideways scroll, every image in main loaded, the measure 75ch or less, the title, the hero and the body on one left edge, the body headings in the display face, every link and button in main 44px tall or more",
+      "ok": true,
+      "detail": "{\"h1\":1,\"side\":0,\"imgs\":11,\"broken\":[],\"measure\":[40,40],\"axis\":[16,16,16],\"heads\":[\"League Gothic\"],\"small\":[]}"
+    },
+    {
+      "name": "blog: /originals-san-diego-cannabis-dispensary at 390x844: every text run 4.5:1 or more (3:1 large) on the rendered pixels, at the top, mid-page and the end",
+      "ok": true,
+      "detail": "{\"n\":36,\"low\":[],\"lowest\":{\"t\":\"Cannablog\",\"k\":7.64,\"need\":4.5}}"
+    },
+    {
+      "name": "no script errors (/originals-san-diego-cannabis-dispensary at 390x844)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "blog: no sideways scroll at 1280 and 1024 (the index and the three posts)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "blog with reduced motion: every entry shown at once (none waiting for a reveal) and no hover zoom (1440x900)",
+      "ok": true,
+      "detail": "{\"hidden\":0,\"scale\":\"none\"}"
+    },
+    {
+      "name": "info pages /404: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"Wrong turn\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /404: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":6,\"low\":[],\"lowest\":{\"t\":\"Error 404\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "info pages /contact: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"DISPENSARY downtown LA\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"contact\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /contact: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":41,\"low\":[],\"lowest\":{\"t\":\"Contact\",\"need\":4.5,\"k\":7.41}}"
+    },
+    {
+      "name": "info pages /los-angeles: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"DISPENSARY downtown LA\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"la-contact\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /los-angeles: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":39,\"low\":[],\"lowest\":{\"t\":\"Preview build: this fo\",\"need\":4.5,\"k\":7.47}}"
+    },
+    {
+      "name": "info pages /faqs: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"ORIGINALS FACTORY AND WEED SHOP FAQs\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"faq-drop\",\"ok\":true,\"msgs\":\"\"}]}"
+    },
+    {
+      "name": "info pages /faqs: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":28,\"low\":[],\"lowest\":{\"t\":\"Preview build: this fo\",\"need\":4.5,\"k\":7.47}}"
+    },
+    {
+      "name": "info pages /form-sent: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"Nothing was sent\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /form-sent: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":5,\"low\":[],\"lowest\":{\"t\":\"Preview build\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "info pages /jobs: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"CALIFORNIA ORIGINALS CANNABIS INDUSTRY jobs\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"jobs\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /jobs: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":57,\"low\":[],\"lowest\":{\"t\":\"Preview build: this fo\",\"need\":4.5,\"k\":7.47}}"
+    },
+    {
+      "name": "info pages /wholesale: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"The brand behind the brands\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"wholesale\",\"ok\":true,\"msgs\":\"\"}]}"
+    },
+    {
+      "name": "info pages /wholesale: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":27,\"low\":[],\"lowest\":{\"t\":\"Home\",\"need\":4.5,\"k\":4.97}}"
+    },
+    {
+      "name": "info pages /san-diego-store: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (1440x900)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"SAN DIEGO ORIGINALS store\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /san-diego-store: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":57,\"low\":[],\"lowest\":{\"t\":\"Home\",\"need\":4.5,\"k\":6.75}}"
+    },
+    {
+      "name": "info pages /404: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"Wrong turn\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /404: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":6,\"low\":[],\"lowest\":{\"t\":\"Error 404\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "info pages /404: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /contact: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"DISPENSARY downtown LA\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"contact\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /contact: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":40,\"low\":[],\"lowest\":{\"t\":\"Preview build: this fo\",\"need\":4.5,\"k\":7.47}}"
+    },
+    {
+      "name": "info pages /contact: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /los-angeles: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"DISPENSARY downtown LA\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"la-contact\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /los-angeles: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":40,\"low\":[],\"lowest\":{\"t\":\"Preview build: this fo\",\"need\":4.5,\"k\":7.47}}"
+    },
+    {
+      "name": "info pages /los-angeles: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /faqs: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"ORIGINALS FACTORY AND WEED SHOP FAQs\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"faq-drop\",\"ok\":true,\"msgs\":\"\"}]}"
+    },
+    {
+      "name": "info pages /faqs: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":30,\"low\":[],\"lowest\":{\"t\":\"Home\",\"need\":4.5,\"k\":4.88}}"
+    },
+    {
+      "name": "info pages /faqs: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /form-sent: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"Nothing was sent\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /form-sent: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":5,\"low\":[],\"lowest\":{\"t\":\"Preview build\",\"need\":4.5,\"k\":7.9}}"
+    },
+    {
+      "name": "info pages /form-sent: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /jobs: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"CALIFORNIA ORIGINALS CANNABIS INDUSTRY jobs\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"jobs\",\"ok\":true,\"msgs\":\"okerr\"}]}"
+    },
+    {
+      "name": "info pages /jobs: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":58,\"low\":[],\"lowest\":{\"t\":\"Home\",\"need\":4.5,\"k\":5.74}}"
+    },
+    {
+      "name": "info pages /jobs: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /wholesale: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"The brand behind the brands\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[{\"id\":\"wholesale\",\"ok\":true,\"msgs\":\"\"}]}"
+    },
+    {
+      "name": "info pages /wholesale: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":27,\"low\":[],\"lowest\":{\"t\":\"Home\",\"need\":4.5,\"k\":5.31}}"
+    },
+    {
+      "name": "info pages /wholesale: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /san-diego-store: no script errors, no sideways scroll, one h1; every link and form field from before the redesign is there, the forms field for field and still the preview forms, every control labelled (390x844)",
+      "ok": true,
+      "detail": "{\"errs\":[],\"side\":0,\"h1\":[\"SAN DIEGO ORIGINALS store\"],\"missing\":[],\"fields\":\"same\",\"unlabelled\":[],\"forms\":[]}"
+    },
+    {
+      "name": "info pages /san-diego-store: every text line in view 4.5:1 or more against the pixels behind it (3:1 large), the page walked top to bottom (390x844)",
+      "ok": true,
+      "detail": "{\"n\":47,\"low\":[],\"lowest\":{\"t\":\"Our Stores\",\"need\":4.5,\"k\":5.59}}"
+    },
+    {
+      "name": "info pages /san-diego-store: every link, button, FAQ row and choice is 44x44 or more (390x844)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "info pages /faqs: all seven questions are numbered rows that open on a click, show their answer and close again (1440x900)",
+      "ok": true,
+      "detail": "{\"n\":7,\"ok\":[true,true,true,true,true,true,true],\"nums\":[\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\",\"counter(ifaq, decimal-leading-zero) / \\\"\\\"\"]}"
+    },
+    {
+      "name": "info pages /contact: the editorial fact grid for la and sd: its live status line and dot from site.js, today's hours row marked, ADDRESS / HOURS / CALL ruled (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"la\",\"status\":\"Closed · opens 7 AM today\",\"dot\":\"0\",\"today\":1,\"rows\":2,\"labels\":\"Address/Hours/Call\"},{\"id\":\"sd\",\"status\":\"Closed · opens 8 AM today\",\"dot\":\"0\",\"today\":1,\"rows\":2,\"labels\":\"Address/Hours/Call\"}]"
+    },
+    {
+      "name": "info pages /los-angeles: the editorial fact grid for la: its live status line and dot from site.js, today's hours row marked, ADDRESS / HOURS / CALL ruled (1440x900)",
+      "ok": true,
+      "detail": "[{\"id\":\"la\",\"status\":\"Closed · opens 7 AM today\",\"dot\":\"0\",\"today\":1,\"rows\":2,\"labels\":\"Address/Hours/Call\"}]"
+    },
+    {
+      "name": "info pages /san-diego-store: the hero is the business's own storefront photo (store-sd-exterior), loaded, not marked AI, its big ORIGINALS sign whole in frame and clear of the title (1440x900)",
+      "ok": true,
+      "detail": "{\"src\":\"store-sd-exterior-2560.webp\",\"loaded\":true,\"ai\":false,\"inFrame\":true,\"clear\":true,\"sign\":{\"l\":847,\"t\":178,\"r\":1064,\"b\":353},\"hero\":[1440,646]}"
+    },
+    {
+      "name": "info pages /san-diego-store: the hero's CONFIRM note names the photo and no longer says the hero stays an illustration",
+      "ok": true,
+      "detail": "San Diego store photos: the store cards and this page's photo stack use the San Diego interior photo from the live /retail page (730 px, the store's back wall; "
+    },
+    {
+      "name": "info pages /jobs: the hero is a real LA store photo (not the AI warehouse), loaded, with the photo hero's dim (1440x900)",
+      "ok": true,
+      "detail": "{\"src\":\"store-la-interior-1600.webp\",\"loaded\":true,\"ai\":false,\"filter\":\"brightness(0.62) saturate(1.05)\"}"
+    },
+    {
+      "name": "info pages /san-diego-store: the hero is the business's own storefront photo (store-sd-exterior), loaded, not marked AI, its big ORIGINALS sign whole in frame and clear of the title (1024x768)",
+      "ok": true,
+      "detail": "{\"src\":\"store-sd-exterior-2560.webp\",\"loaded\":true,\"ai\":false,\"inFrame\":true,\"clear\":true,\"sign\":{\"l\":609,\"t\":188,\"r\":776,\"b\":322},\"hero\":[1024,624]}"
+    },
+    {
+      "name": "info pages /san-diego-store: the hero is the business's own storefront photo (store-sd-exterior), loaded, not marked AI, its big ORIGINALS sign whole in frame and clear of the title (390x844)",
+      "ok": true,
+      "detail": "{\"src\":\"store-sd-exterior-1920.webp\",\"loaded\":true,\"ai\":false,\"inFrame\":true,\"clear\":true,\"sign\":{\"l\":211,\"t\":166,\"r\":357,\"b\":284},\"hero\":[390,550]}"
+    },
+    {
+      "name": "info pages without JS: every page complete (one h1, every link and field, nothing left hidden), a FAQ opens, the store facts show their fallback line (1440x900)",
+      "ok": true,
+      "detail": "{\"bad\":[],\"open\":true,\"fb\":[\"See hours\",\"See hours\"]}"
     }
   ]
 }

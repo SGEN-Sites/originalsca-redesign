@@ -34,7 +34,7 @@ The build reads the live site's words from `src/content/capture.json` (recorded 
 | check | result | evidence |
 |---|---|---|
 | every shop, category and brand destination shows products with add-to-cart and a cart | 33/33 pass, cart reacted in both stores | `audit/menu-verification.json`, `audit/menu-cart-*.png` |
-| 21+ gate, store bar, store switch, drawer (phone and desktop) | 28/28 pass | `audit/ui-test.json` |
+| 21+ gate, store bar, store switch, header and More panel (phone and desktop) | 487/487 pass | `audit/ui-test.json` |
 | site-reforge gate | 21 pass, 8 fail, 0 unproven | `audit/gate.json`, `docs/PUBLISH.md` |
 | the live preview: every page answers with noindex; on a phone the gate, store bar and store switch work | 11/11 pass | `audit/preview-smoke.json` |
 
@@ -50,6 +50,9 @@ defects, every [CONFIRM WITH CLIENT] question), `docs/CHANGE-LOG.md` (a decision
 
 ## Imagery and marks
 
-Some scene photography is AI-generated; every such file is labelled (`data-ai="generated"` and IPTC
-"trainedAlgorithmicMedia" in its metadata) and listed in `docs/MEDIA.md`. No AI image depicts a real person. The
-Originals names, marks, photography and copy belong to Originals.
+Some scene photography is AI-generated (35 files): each such file carries `data-ai="generated"` on the page and
+IPTC "trainedAlgorithmicMedia" in its metadata, is listed in `docs/MEDIA.md`, and shows no person. 5 owner-supplied photos are also marked `data-ai="generated"` on the page, without the IPTC field: the Happy Hour card's photo (`happy-hour-lowrider`), whose
+left part is an AI extension of the scene around the owner's photo (its own pixels kept), and 4 marked generated
+until the owner confirms their source (`merch-hoodie`, `store-wall`, `store-sd-front`, `daily-jar-tall`).
+A few client photos were enlarged with an AI upscaler. `src/content/images.json` records each image's source;
+`docs/MEDIA.md` describes the AI steps. The Originals names, marks, photography and copy belong to Originals.

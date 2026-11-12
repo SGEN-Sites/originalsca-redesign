@@ -4,7 +4,7 @@
   "targetUrl": "https://originalsca.com/",
   "origin": "https://originalsca.com",
   "createdAt": "2026-11-10T23:23:26.974Z",
-  "updatedAt": "2026-11-11T01:36:30.465Z",
+  "updatedAt": "2026-11-12T12:20:41.421Z",
   "config": {
     "maxPages": 400,
     "concurrency": 2,
@@ -93,7 +93,7 @@
     },
     "responsive": {
       "status": "fail",
-      "at": "2026-11-11T01:31:02.095Z",
+      "at": "2026-11-12T12:01:57.028Z",
       "note": "212 sweeps at 1024/1440/390/768"
     },
     "seo": {
@@ -108,22 +108,22 @@
     },
     "decontaminate": {
       "status": "done",
-      "at": "2026-11-11T01:36:11.785Z",
+      "at": "2026-11-12T12:06:35.971Z",
       "note": "CLEAN (0 traces)"
     },
     "parity": {
       "status": "fail",
-      "at": "2026-11-11T01:36:10.531Z",
+      "at": "2026-11-12T12:06:34.986Z",
       "note": "DRIFT — 806 findings"
     },
     "fabrication": {
       "status": "done",
-      "at": "2026-11-11T01:36:11.440Z",
+      "at": "2026-11-12T12:06:35.710Z",
       "note": "SOURCED — 0 findings"
     },
     "pixeldiff": {
       "status": "fail",
-      "at": "2026-11-11T01:36:10.213Z",
+      "at": "2026-11-12T12:06:34.727Z",
       "note": "DRIFT — 64/64 pairs over threshold"
     },
     "sweep": {
@@ -138,7 +138,7 @@
     },
     "gate": {
       "status": "fail",
-      "at": "2026-11-11T01:36:30.465Z",
+      "at": "2026-11-12T12:20:41.421Z",
       "note": "NOT-READY — 21/29 passing"
     },
     "package": {

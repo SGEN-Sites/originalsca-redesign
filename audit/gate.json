@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/gate@1",
-  "generated": "2026-11-11T01:36:30.464Z",
+  "generated": "2026-11-12T12:20:41.420Z",
   "project": "originalsca-com",
   "target": "https://originalsca.com/",
   "verdict": "NOT-READY",
@@ -99,14 +99,14 @@
       "label": "Brand token layer emitted and actually referenced",
       "stage": "brand",
       "status": "PASS",
-      "evidence": "207 tokens declared, 88 referenced across 6 authored sheet(s), 0 off-token colour literal(s)"
+      "evidence": "223 tokens declared, 103 referenced across 23 authored sheet(s), 0 off-token colour literal(s)"
     },
     {
       "id": "C14",
       "label": "Every source section has a change-control decision",
       "stage": "ux",
       "status": "PASS",
-      "evidence": "1134 rows decided"
+      "evidence": "1142 rows decided"
     },
     {
       "id": "C15",
@@ -148,28 +148,28 @@
       "label": "No invented content",
       "stage": "fabrication",
       "status": "PASS",
-      "evidence": "437 claims checked, all traced to source or declared facts"
+      "evidence": "329 claims checked, all traced to source or declared facts"
     },
     {
       "id": "C21",
       "label": "No trace of the source platform",
       "stage": "decontaminate",
       "status": "PASS",
-      "evidence": "63 files scanned, 0 blocker traces"
+      "evidence": "66 files scanned, 0 blocker traces"
     },
     {
       "id": "C22",
       "label": "Design matches the source pixel-for-pixel at every breakpoint",
       "stage": "pixeldiff",
       "status": "FAIL",
-      "evidence": "worst drift 99.402% on privacy-policy.1024.png"
+      "evidence": "worst drift 98.797% on privacy-policy.1024.png"
     },
     {
       "id": "C23",
       "label": "Responsive swept at every configured breakpoint",
       "stage": "responsive",
       "status": "FAIL",
-      "evidence": "0 blocker + 64 major introduced across 390/768/1024/1440px"
+      "evidence": "0 blocker + 126 major introduced across 390/768/1024/1440px"
     },
     {
       "id": "C24",
@@ -183,7 +183,7 @@
       "label": "Handoff documentation present and filled in",
       "stage": "package",
       "status": "PASS",
-      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, DESIGN.md, MEDIA.md, PITCH-NOTES.md, README.md — no unfilled placeholders"
+      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, DESIGN-LANGUAGE.md, DESIGN.md, MEDIA.md, PITCH-NOTES.md, PUBLISH.md, README.md — no unfilled placeholders"
     },
     {
       "id": "C26",
@@ -204,14 +204,14 @@
       "label": "Every rebuilt section names a preset that exists",
       "stage": "presetMatch",
       "status": "PASS",
-      "evidence": "0 matched by layout at a mean rate of 0.0%, 991 row(s) name a known preset"
+      "evidence": "0 matched by layout at a mean rate of 0.0%, 998 row(s) name a known preset"
     },
     {
       "id": "C29",
       "label": "SEO emitted and derivable fields repaired",
       "stage": "seo",
       "status": "PASS",
-      "evidence": "emitted robots.txt, sitemap.xml, llms.txt · repaired 527 field(s) on 53 page(s)"
+      "evidence": "emitted robots.txt, sitemap.xml, llms.txt · repaired 521 field(s) on 53 page(s)"
     }
   ]
 }

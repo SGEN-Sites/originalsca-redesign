@@ -1,0 +1,59 @@
+/* flat.css: the default brand layer. Flat black and white, like the live site: the logo, the lettering, buttons,
+   rims, plaques and tapes are solid white on dark and ink on paper, with no chrome, glow, neon, shine or coloured
+   light. Photography and video keep their own colour (tokens.css --ai-photo is off).
+   The brief's original look (red accent, chrome lettering, coloured stage light) skips this whole file: it applies
+   only while <html> has no data-accent="red" (preview that look with ?accent=red). */
+
+:root:not([data-accent='red']) {
+  --accent-tint: transparent;               /* no hazes behind heroes, panels and posters */
+  --accent-glow: 0 0 0 0 transparent;       /* no glows (valid inside a shadow list) */
+  --stage-1: transparent;                   /* no stage light pools or beams */
+  --stage-2: transparent;
+  --stage-3: transparent;
+}
+
+/* ---- the logo and the lettering: solid, never chrome ---- */
+:root:not([data-accent='red']) :is(.cs1, .cs2, .cs3, .cs4, .cs5, .cs6, .cs7) { stop-color: var(--white); }
+:root:not([data-accent='red']) :is(.sh0, .sh1, .sh2) { stop-opacity: 0; }
+:root:not([data-accent='red']) .foot__wordmark g { fill: var(--white); }
+:root:not([data-accent='red']) :is(.chrome-word, .chrome-word--accent, .band--paper .chrome-word--accent) {
+  background: none; color: inherit; -webkit-text-fill-color: currentColor; filter: none; }
+:root:not([data-accent='red']) :is(.stat__n, .collab-tape__track strong) { background: none; color: inherit; }
+:root:not([data-accent='red']) :is(.plaque__big, .neon, .neon--sub) { text-shadow: none; }
+:root:not([data-accent='red']) .neon, :root:not([data-accent='red']) .neon.is-on, :root:not([data-accent='red']) .neon--sub.is-on { color: var(--white); text-shadow: none; }
+:root:not([data-accent='red']) .neon--sub { color: var(--white); }
+:root:not([data-accent='red']) :is(.brand__crown, .gate__crown, .nf__crown, .event__crown .ico) { filter: none; }
+:root:not([data-accent='red']) .kicker::before, :root:not([data-accent='red']) .band--paper .kicker::before { box-shadow: none; }
+
+/* ---- buttons: flat fills and outlines ---- */
+:root:not([data-accent='red']) .btn::after { display: none; }
+:root:not([data-accent='red']) .btn--accent { box-shadow: none; }
+:root:not([data-accent='red']) .btn--accent:hover::before, :root:not([data-accent='red']) .btn--accent:focus-visible::before { opacity: 0; }
+:root:not([data-accent='red']) :is(.btn--accent:hover, .btn--accent:focus-visible) { --b-bg: var(--accent-hover); }
+:root:not([data-accent='red']) .btn--chrome { background: var(--white); box-shadow: none; }
+:root:not([data-accent='red']) :is(.btn--chrome:hover, .btn--chrome:focus-visible) { background: var(--accent-hover); }
+:root:not([data-accent='red']) .btn--ghost { box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--white) 70%, transparent); }
+:root:not([data-accent='red']) .band--paper .btn--ghost { box-shadow: inset 0 0 0 1.5px var(--text-on-paper); }
+
+/* ---- rims, plaques, cards and chips: one flat line, one flat fill ---- */
+:root:not([data-accent='red']) .plaque { padding: 2px; background: var(--white); box-shadow: none; }
+:root:not([data-accent='red']) .plaque__face { background: var(--ink); }
+:root:not([data-accent='red']) .plaque__face::before { display: none; }
+:root:not([data-accent='red']) .cat__link { background: linear-gradient(var(--ink-3), var(--ink-3)) padding-box, linear-gradient(var(--hair-2), var(--hair-2)) border-box; }
+:root:not([data-accent='red']) .cat__link::before, :root:not([data-accent='red']) .cat__link::after { display: none; }
+:root:not([data-accent='red']) :is(.cat__link:hover, .cat__link:focus-visible) { box-shadow: none; background: linear-gradient(var(--concrete), var(--concrete)) padding-box, linear-gradient(var(--white), var(--white)) border-box; }
+:root:not([data-accent='red']) .strain-card__holo { background: linear-gradient(var(--ink-3), var(--ink-3)) padding-box, linear-gradient(var(--hair-2), var(--hair-2)) border-box; box-shadow: none; }
+:root:not([data-accent='red']) .strain-card__holo::after { display: none; }
+:root:not([data-accent='red']) .chip-fall { background: var(--white); box-shadow: none; }
+:root:not([data-accent='red']) .vip__card { background: var(--white); color: var(--ink); box-shadow: none; }
+:root:not([data-accent='red']) .vip__sheen { display: none; }
+:root:not([data-accent='red']) .vip__name { background: none; color: inherit; -webkit-text-fill-color: currentColor; }
+:root:not([data-accent='red']) .vip__chip { background: none; box-shadow: inset 0 0 0 1.5px var(--ink); }
+:root:not([data-accent='red']) :is(.vip__crown, .vip__hash) { color: var(--ink); }
+:root:not([data-accent='red']) .sd-deal { background: var(--concrete); box-shadow: none; }
+:root:not([data-accent='red']) :is(.up-card, .poster--type, .event__poster, .locator) { background: var(--ink-3); }
+:root:not([data-accent='red']) .tumble { background: var(--ink-2); }
+:root:not([data-accent='red']) .phero--ink { background: var(--ink); }
+
+/* ---- the light effects: off ---- */
+:root:not([data-accent='red']) :is(.showroom__pool, .wall__light, .gate__beam, .neon-tube) { display: none; }

@@ -88,15 +88,15 @@ export const STORE_ORDER = ['la', 'sd'];
 // category, so the tile opens the store's full menu (which has products) and says so. Verified 2026-11-11
 // (tools/verify-menus.mjs): San Diego's Weedmaps menu has no drinks, tinctures, topicals or merch shelf.
 export const CATEGORIES = [
-  { id: 'flower', label: 'Flower', live: 'FLOWER', img: 'cat-flower', la: 'flower', sd: 'flower' },
-  { id: 'preroll', label: 'Pre-Rolls', live: 'PREROLLS', img: 'cat-preroll', la: 'preroll', sd: 'pre-roll' },
-  { id: 'cartridge', label: 'Cartridges', live: 'CARTRIDGES', img: 'cat-vape', la: 'cartridge', sd: 'vape-pens' },
-  { id: 'extract', label: 'Extracts', live: 'EXTRACTS', img: 'cat-extract', la: 'extract', sd: 'concentrates' },
-  { id: 'edible', label: 'Edibles', live: null, img: 'cat-edible', la: 'edible', sd: 'edibles' },
-  { id: 'beverage', label: 'Drinks', live: 'DRINKS', img: 'cat-drink', la: 'beverage', sd: null },
-  { id: 'tincture', label: 'Tinctures', live: 'TINCTURES', img: 'cat-tincture', la: 'tincture', sd: null },
-  { id: 'topical', label: 'Topicals', live: 'TOPICALS', img: 'cat-topical', la: 'topical', sd: null },
-  { id: 'merch', label: 'Merch', live: null, img: 'merch', la: 'merch', sd: null },
+  { id: 'flower', label: 'Flower', live: 'FLOWER', img: 'cat-flower', la: 'flower', sd: 'flower' , blurb: 'Whole buds from our house strains and the brands we carry.' },
+  { id: 'preroll', label: 'Pre-Rolls', live: 'PREROLLS', img: 'cat-preroll', la: 'preroll', sd: 'pre-roll' , blurb: 'Rolled and ready to go.' },
+  { id: 'cartridge', label: 'Cartridges', live: 'CARTRIDGES', img: 'cat-vape', la: 'cartridge', sd: 'vape-pens' , blurb: 'Vape cartridges for your battery.' },
+  { id: 'extract', label: 'Extracts', live: 'EXTRACTS', img: 'cat-extract', la: 'extract', sd: 'concentrates' , blurb: 'Concentrates for dabbing and topping a bowl.' },
+  { id: 'edible', label: 'Edibles', live: null, img: 'cat-edible', la: 'edible', sd: 'edibles' , blurb: 'Cannabis-infused chocolates, gummies and other treats.' },
+  { id: 'beverage', label: 'Drinks', live: 'DRINKS', img: 'cat-drink', la: 'beverage', sd: null , blurb: 'Cannabis-infused drinks.' },
+  { id: 'tincture', label: 'Tinctures', live: 'TINCTURES', img: 'cat-tincture', la: 'tincture', sd: null , blurb: 'Cannabis tinctures, dosed by the dropper.' },
+  { id: 'topical', label: 'Topicals', live: 'TOPICALS', img: 'cat-topical', la: 'topical', sd: null , blurb: 'Cannabis balms and lotions for the skin.' },
+  { id: 'merch', label: 'Merch', live: null, img: 'merch-hoodie', la: 'merch', sd: null , blurb: 'Originals clothing and gear.' },
 ];
 export function catHref(storeId, cat) {
   const s = STORES[storeId];
@@ -132,7 +132,7 @@ export const BRANDS = [
 export const STRAINS = [
   { id: 'originals-og', name: 'Originals OG', post: '/originals-weed-originals-factory-weed-shop-la', from: 'The Mac Daddy of OG Kush' },
   { id: 'king-louie', name: 'King Louie', post: '/king-louie-strain-originals' },
-  { id: 'gelato', name: 'Gelato', post: '/gelato-strain-originals', img: 'gelato-jar' },
+  { id: 'gelato', name: 'Gelato', post: '/gelato-strain-originals', img: 'gelato-bud' },   // the client's own Gelato bud, cut out on black like the other strain cards (owner, 2026-11-12)
   { id: 'oaksterdam-og', name: 'Oaksterdam OG', post: '/oakstradam-og-strain' },
   { id: 'skywalker', name: 'Skywalker', post: null },
   { id: 'sfv-og', name: 'SFV OG', post: null },
@@ -230,5 +230,7 @@ export const CONFIRM = {
   massachusetts: 'A large cultivation facility is being built in Massachusetts; not shown as a store until confirmed.',
   sdMenu: 'San Diego online menu: https://www.originalssandiego.com/ has no DNS record and originalssandiego.com redirects to originalsca.com (2026-11-11); links use the store\'s live Weedmaps menu until the client confirms its own store site.',
   sdHours: 'Weedmaps showed San Diego "open until 10:00pm" on 2026-11-11; the brief and the live /retail page say Mon-Sat 8AM-9PM, Sun 9AM-9PM.',
+  sdPhoto: 'San Diego store photos: the store cards and this page\'s photo stack use the San Diego interior photo from the live /retail page (730 px, the store\'s back wall; enhanced locally, a crisper upscale awaits the owner\'s OK). The live site\'s storefront photo is a Google Street View capture (2022 Google watermark), so it is not used. This page\'s hero is the business\'s own exterior photo from the Originals (San Diego) Google Maps listing ("By owner", Sep 2022, 4000 px; store-sd-exterior, a light grade, no AI): confirm the client\'s licence covers the website.',
+  accent: 'Brand finish and accent: the brand is flat black and white (logo, lettering, buttons, rims), like the live site and its logo files; photography keeps its colour. The brief proposed Originals red #E11D2C with chrome lettering and coloured stage light (add ?accent=red to any URL to preview it, ?accent=mono to return). Confirm the look with the client.',
   laHours: 'LA hours differ across the live site: /retail 7AM-9:45PM / Sun 8AM-7:45PM (used here), /los-angeles-store 9AM-9:45PM / Sun 10AM-7:45PM, /faqs 9AM-10PM / Sun 10AM-8PM.',
 };

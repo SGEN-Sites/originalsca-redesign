@@ -28,7 +28,7 @@ fs.rmSync(path.join(OUT, 'assets/brand/originals-letters.json'), { force: true }
 fs.rmSync(path.join(OUT, 'assets/fonts/fonts.json'), { force: true });
 
 // ---- css (token layer first; one file) ----
-const CSS = ['tokens.css', 'base.css', 'chrome.css', 'components.css', 'signature.css', 'pages.css'];
+const CSS = ['tokens.css', 'base.css', 'chrome.css', 'components.css', 'signature.css', 'cruise.css', 'pages.css', 'nav.css', 'flat.css', 'hero.css', 'home.css', 'deals.css', 'carousel.css', 'marquee.css', 'stores.css', 'save.css', 'droplist.css', 'lenticular.css', 'culture-pages.css', 'info-pages.css', 'blog.css', 'legal.css', 'shop-pages.css'];   // a file not created yet is skipped
 const css = CSS.filter((f) => fs.existsSync(path.join(ROOT, 'src/styles', f)))
   .map((f) => fs.readFileSync(path.join(ROOT, 'src/styles', f), 'utf8')).join('\n')
   .replace(/\/\*[\s\S]*?\*\//g, '').replace(/\n\s*\n/g, '\n').replace(/[ \t]+/g, ' ').trim();

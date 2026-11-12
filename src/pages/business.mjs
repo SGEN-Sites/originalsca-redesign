@@ -9,25 +9,27 @@ export function pages() {
   const faqs = extractFaqs();
   const whatIs = (faqs.find((f) => /What is Originals/.test(f.q)) || {}).a || '';
   const hiring = (faqs.find((f) => /hiring/.test(f.q)) || {}).a || '';
+  // a CONTACT INFO row: a whole-row link, ruled, no box (the /contact rows; info-pages.css .irow)
+  const row = (href, ico, k, v) => `<li><a class="irow" href="${href}">${icon(ico)}<span class="irow__k">${k}</span><span class="irow__v">${v}</span>${icon('arrow', 'irow__go')}</a></li>`;
 
   const wholesale = {
     path: '/wholesale', title: 'Wholesale | Originals', description: 'Originals wholesale: The Brand Behind The Brands. Carry Originals flower, grown in-house, in your dispensary.',
     jsonld: [crumbsLd([{ name: 'Wholesale', path: '/wholesale' }])], bodyClass: 'is-wholesale',
     main: h`${pageHero({ kicker: 'Wholesale', title: 'The brand behind <span class="chrome-word">the brands</span>', crumbs: [{ label: 'Wholesale', href: '/wholesale' }], lede: '<p>Best Cultivators in California. Carry Originals flower, grown in-house, in your dispensary.</p>', video: '', media: img('grow-room', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
 ${confirm('Wholesale: the live footer links /wholesale but the page returns 404. Confirm the wholesale contact, process and product list with the client; the form is a preview and does not send.')}
-<section class="band" aria-labelledby="ws-h">
-  <div class="wrap split split--wide-left">
-    <div class="stack">
-      ${kicker('Grown in-house')}
-      <h2 id="ws-h">Built to <span class="chrome-word">supply</span></h2>
+<!-- 2026-11-12 redesign to docs/DESIGN-LANGUAGE.md (info-pages.css): two ruled columns, each title over a hairline: the
+     copy on the left, the inquiry form (a flat panel) on the right; one screen tall at 1440x900. -->
+<section class="band info-band info-ws" aria-labelledby="ws-h">
+  <div class="wrap info-split info-split--even">
+    <div class="info-split__main info-ws__copy">
+      <div class="info-rule">${kicker('Grown in-house')}<h2 id="ws-h">Built to <span class="chrome-word">supply</span></h2></div>
       <div class="prose">${whatIs}</div>
-      <p>The Originals house brand is stocked at many other dispensaries in California and Massachusetts.</p>
+      <p class="info-ws__line">The Originals house brand is stocked at many other dispensaries in California and Massachusetts.</p>
       <p class="btn-row">${btn('Find Originals', '/find-originals', { kind: 'ghost' })}${btn('Strain library', '/strains', { kind: 'ghost' })}</p>
     </div>
-    <div>
-      ${kicker('Become a retailer')}
-      <h3 class="h3">Wholesale inquiry</h3>
-      ${form({ id: 'wholesale', fields: [{ name: 'name', label: 'Name', autocomplete: 'name', required: true }, { name: 'company', label: 'Dispensary or company', autocomplete: 'organization', required: true }, { name: 'email', label: 'Email', type: 'email', autocomplete: 'email', required: true }, { name: 'phone', label: 'Phone', type: 'tel', autocomplete: 'tel' }, { name: 'licence', label: 'State licence number' }, { name: 'state', label: 'State', type: 'radio', options: ['California', 'Massachusetts'] }, { name: 'message', label: 'What would you like to carry?', type: 'textarea' }], submit: 'Send inquiry', confirmNote: 'wholesale inquiry routing' })}
+    <div class="info-split__side">
+      <div class="info-rule">${kicker('Become a retailer')}<h3 class="h3">Wholesale inquiry</h3></div>
+      ${form({ id: 'wholesale', fields: [{ name: 'name', label: 'Name', autocomplete: 'name', required: true }, { name: 'company', label: 'Dispensary or company', autocomplete: 'organization', required: true }, { name: 'email', label: 'Email', type: 'email', autocomplete: 'email', required: true }, { name: 'phone', label: 'Phone', type: 'tel', autocomplete: 'tel' }, { name: 'licence', label: 'State licence number' }, { name: 'state', label: 'State', type: 'radio', options: ['California', 'Massachusetts'] }, { name: 'message', label: 'What would you like to carry?', type: 'textarea' }], submit: 'Send inquiry', confirmNote: 'wholesale inquiry routing', cls: 'info-form' })}
     </div>
   </div>
 </section>`,
@@ -59,23 +61,30 @@ ${confirm('Wholesale: the live footer links /wholesale but the page returns 404.
   const jobs = {
     path: '/jobs', title: 'California Cannabis Industry Jobs | Originals LA', description: 'Reach out to us if you think you\'d be a good fit for one of our California cannabis industry jobs. We seek friendly and dependable people to join our team.',
     jsonld: [crumbsLd([{ name: 'Jobs', path: '/jobs' }])], active: '/jobs', bodyClass: 'is-jobs',
-    main: h`${pageHero({ kicker: 'Jobs', title: 'CALIFORNIA ORIGINALS CANNABIS INDUSTRY <span class="chrome-word">jobs</span>', crumbs: [{ label: 'Jobs', href: '/jobs' }], lede: '<p>Reach out to us if you think you\'d be a good fit for one of our California cannabis industry jobs. We seek friendly and dependable people to join our team.</p>', media: img('warehouse', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
-<section class="band" aria-labelledby="apply-h">
-  <div class="wrap split split--wide-left jobs__grid">
-    <div>
-      ${kicker('Apply today')}
-      <h2 id="apply-h">APPLY <span class="chrome-word">today</span></h2>
+    main: h`${pageHero({ kicker: 'Jobs', title: 'CALIFORNIA ORIGINALS CANNABIS INDUSTRY <span class="chrome-word">jobs</span>', crumbs: [{ label: 'Jobs', href: '/jobs' }], lede: '<p>Reach out to us if you think you\'d be a good fit for one of our California cannabis industry jobs. We seek friendly and dependable people to join our team.</p>', media: img('store-la-interior', { sizes: '(max-width: 900px) 200vw, 100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
+<!-- 2026-11-12 redesign to docs/DESIGN-LANGUAGE.md (info-pages.css). The hero is the LA store's own photo (store-la-interior,
+     the business's Google Maps listing), in place of the AI warehouse illustration. A split head (the title, the line
+     beside it), then the application (a flat panel, field for field the live form) beside the hiring note and CONTACT
+     INFO as ruled rows, pinned while the form scrolls from 900px. -->
+<section class="band info-band info-jobs" aria-labelledby="apply-h">
+  <div class="wrap">
+    <div class="info-head">
+      <div>${kicker('Apply today')}<h2 id="apply-h">APPLY <span class="chrome-word">today</span></h2></div>
       <p class="lede">ONCE APPLICATION HAS BEEN REVIEWED, YOU’LL RECEIVE A CALL WITHIN 1-2 WEEKS TO SCHEDULE AN INTERVIEW</p>
-      ${form({ id: 'jobs', fields: jobFields, submit: 'Submit application', confirmNote: 'job application inbox / ATS', ok: 'Thank you for applying. We will get back to you as soon as possible.', err: 'Oops, there was an error sending your message. Please try again later.' })}
     </div>
-    <aside class="contact-cards">
-      <div class="prose">${hiring}</div>
-      ${confirm('Hiring contact: the live /jobs page lists the placeholder phone 555.555.5555 and "3 STORES"; the store phones and "2 STORES" are shown instead.')}
-      <h2 class="kicker">CONTACT INFO</h2>
-      ${STORE_ORDER.map((id) => `<a class="contact-card" href="tel:${STORES[id].tel}">${icon('phone')}<span class="contact-card__k">${esc(STORES[id].short)}</span><span class="contact-card__v">${esc(STORES[id].phone)}</span></a>`).join('')}
-      <a class="contact-card" href="mailto:${SITE.jobsEmail}">${icon('mail')}<span class="contact-card__k">EMAIL</span><span class="contact-card__v">SUPPORT@ORIGINALSCA . COM</span></a>
-      <a class="contact-card" href="${u('/retail')}">${icon('pin')}<span class="contact-card__k">2 STORES</span><span class="contact-card__v">VIEW STORES</span></a>
-    </aside>
+    <div class="info-split">
+      <div class="info-split__main">
+        ${form({ id: 'jobs', fields: jobFields, submit: 'Submit application', confirmNote: 'job application inbox / ATS', cls: 'info-form', ok: 'Thank you for applying. We will get back to you as soon as possible.', err: 'Oops, there was an error sending your message. Please try again later.' })}
+      </div>
+      <aside class="info-split__side info-split__side--pin">
+        <div class="prose">${hiring}</div>
+        ${confirm('Hiring contact: the live /jobs page lists the placeholder phone 555.555.5555 and "3 STORES"; the store phones and "2 STORES" are shown instead.')}
+        <h2 class="kicker">CONTACT INFO</h2>
+        <ul class="irows" role="list">
+          ${[...STORE_ORDER.map((id) => row('tel:' + STORES[id].tel, 'phone', esc(STORES[id].short), esc(STORES[id].phone))), row('mailto:' + SITE.jobsEmail, 'mail', 'EMAIL', 'SUPPORT@ORIGINALSCA . COM'), row(u('/retail'), 'pin', '2 STORES', 'VIEW STORES')]}
+        </ul>
+      </aside>
+    </div>
   </div>
 </section>`,
   };

@@ -1,0 +1,130 @@
+/* home.css: owner-requested pieces of the home page (2026-11-11/12): the category wall, the seam award emblem, the smoke titles. Tokens only. */
+
+
+/* the menu band's background (owner request): the store wall in black and white, dark and slightly soft so it stays subtle */
+.showroom .showroom__bg--wall { filter: grayscale(1) brightness(.24) contrast(1.04) blur(4px); scale: 1.08; }   /* soft enough that no sign or screen text reads */
+/* the menu band's heading (owner request 2026-11-12): on wide screens the title and its lede sit side by side on one
+   line. The heading and the note under the wall share the category wall's width, so all three left edges line up. */
+.showroom .cats__note { margin-left: max(0px, (100% - var(--wall-max)) / 2); }   /* the wall is --wall-max at most, centred in the same wrap */
+@media (min-width: 900px) {
+  .showroom .section-head { max-width: var(--wall-max); margin-inline: auto; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: clamp(32px, 5vw, 80px); align-items: end; }
+  .showroom .section-head > :is(.kicker, .section-head__tools) { grid-column: 1 / -1; }
+  .showroom .section-head > h2 { white-space: nowrap; }
+}
+
+/* ---------- category wall (parts.mjs categoryWall; owner requests 2026-11-12 from a reference, replacing the fan): a
+   bento box of nine photo cards packed close, each with a thin gold inner frame (the gold exception). Three columns of
+   three cards that interlock: each column holds a tall, a square and a short card in a different order (12 row units
+   per column: 5, 4 and 3), so no seam runs across and the box keeps flat edges. The order suits the photos: merch, the
+   one landscape photo, takes a short card. Phones: two columns of squares, merch across both. On hover or keyboard
+   focus a card grows a little and the other cards dim. ---------- */
+.showroom { --wall-max: 1120px; }
+@media (min-width: 1180px) { .showroom { --wall-max: 1320px; } }
+.cwall-box { container-type: inline-size; max-width: var(--wall-max); margin: clamp(28px, 4vw, 52px) auto 0; }
+ul.cwall { --gap: clamp(8px, 1vw, 12px); list-style: none; margin: 0; padding: 0; display: grid; gap: var(--gap); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cwall__item { position: relative; z-index: 1; display: grid; }
+.cwall__card { aspect-ratio: 1; }
+.cwall__item:last-child { grid-column: 1 / -1; }
+.cwall__item:last-child .cwall__card { aspect-ratio: 3 / 2; }
+@media (min-width: 600px) {
+  /* a square card is one column wide: 4 units and the 3 gaps inside it */
+  ul.cwall { --u: calc(((100cqw - 2 * var(--gap)) / 3 - 3 * var(--gap)) / 4); grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(12, var(--u)); grid-auto-flow: column; }
+  .cwall__item:last-child { grid-column: auto; }
+  .cwall__card, .cwall__item:last-child .cwall__card { aspect-ratio: auto; }
+  .cwall__item:nth-child(1), .cwall__item:nth-child(5), .cwall__item:nth-child(8) { grid-row: span 5; }   /* tall */
+  .cwall__item:nth-child(2), .cwall__item:nth-child(6), .cwall__item:nth-child(7) { grid-row: span 4; }   /* square */
+  .cwall__item:nth-child(3), .cwall__item:nth-child(4), .cwall__item:nth-child(9) { grid-row: span 3; }   /* short */
+}
+@media (min-width: 1180px) {
+  /* wide screens: four interlocking columns of 6 units (4+2, 2+4, 3+3, 2+2+2), so all nine cards fit about one screen
+     (owner, 2026-11-12: "so tall it makes user scroll a lot"). A unit is .28 of a column: a short card is about 5:3, a
+     medium one about square, a tall one portrait. The tall products (flower, the cartridge, the can, the tincture) get
+     the tall and medium cards, and every product stays whole in its card. Placed in reading order. */
+  ul.cwall { --u: calc((100cqw - 3 * var(--gap)) / 4 * .28); grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(6, var(--u)); grid-auto-flow: row; }
+  .cwall__item:nth-child(1) { grid-area: 1 / 1 / span 4 / span 1; }
+  .cwall__item:nth-child(2) { grid-area: 1 / 2 / span 2 / span 1; }
+  .cwall__item:nth-child(3) { grid-area: 1 / 3 / span 3 / span 1; }
+  .cwall__item:nth-child(4) { grid-area: 1 / 4 / span 2 / span 1; }
+  .cwall__item:nth-child(5) { grid-area: 3 / 2 / span 4 / span 1; }
+  .cwall__item:nth-child(6) { grid-area: 3 / 4 / span 2 / span 1; }
+  .cwall__item:nth-child(7) { grid-area: 4 / 3 / span 3 / span 1; }
+  .cwall__item:nth-child(8) { grid-area: 5 / 1 / span 2 / span 1; }
+  .cwall__item:nth-child(9) { grid-area: 5 / 4 / span 2 / span 1; }
+  .cwall__item:is(:nth-child(2), :nth-child(4), :nth-child(6), :nth-child(8), :nth-child(9)) .cwall__desc { display: none; }   /* short cards: name and menu link */
+}
+.cwall__card { --r: 16px; position: relative; display: block; border-radius: var(--r); color: var(--white); text-decoration: none; background: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--hair-2), 0 24px 48px -28px var(--black); transition: scale .5s var(--ease), filter .5s var(--ease), box-shadow .5s var(--ease); }
+.cwall__card::after { content: ''; position: absolute; inset: 9px; z-index: 1; border-radius: 10px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--white) 70%, transparent); pointer-events: none; transition: box-shadow .6s var(--ease); }
+.cwall__photo { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; }
+/* the photos stay black and white until a card is pointed at, focused or pressed (owner request 2026-11-12; an explicit
+   exception to "images keep their colour", for these tiles only). Same filter list both ways, so the colour fades in. */
+.cwall__photo img { width: 100%; height: 100%; object-fit: cover; filter: var(--ai-photo) grayscale(1) brightness(1.3) saturate(1.06); transition: filter .6s var(--ease); }
+.cwall__card:is(:focus-visible, :active) .cwall__photo img { filter: var(--ai-photo) grayscale(0) brightness(1.3) saturate(1.06); }
+@media (hover: hover) { .cwall__card:hover .cwall__photo img { filter: var(--ai-photo) grayscale(0) brightness(1.3) saturate(1.06); } }   /* touch screens keep the last tapped element "hovered", so hover colours only where hover is real */
+/* the frame and the number are white at rest, like the photo, and turn gold with its colour (owner request 2026-11-12) */
+.cwall__card:is(:focus-visible, :active)::after { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 62%, transparent); }
+.cwall__card:is(:focus-visible, :active) .cwall__no { color: var(--gold); }
+@media (hover: hover) {
+  .cwall__card:hover::after { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 62%, transparent); }
+  .cwall__card:hover .cwall__no { color: var(--gold); }
+}
+.cwall__shade { position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(0deg, var(--ink) 8%, color-mix(in srgb, var(--ink) 92%, transparent) 28%, color-mix(in srgb, var(--ink) 60%, transparent) 44%, transparent 62%); }
+.cwall__no { position: absolute; top: 22px; left: 22px; z-index: 3; font: 700 .74rem/1 var(--f-ui); letter-spacing: .16em; color: var(--white); transition: color .6s var(--ease); }
+/* the name, the short description and the Shop Now sit in one stack on the card's foot, on the same 22px inner margin as
+   the number (13px inside the gold frame); the button is part of the card's link (the whole card is the link), so it is
+   a styled span, not a link inside a link (owner request 2026-11-12: a Shop Now button instead of the menu line) */
+.cwall__body { position: absolute; left: 22px; right: 22px; bottom: 22px; z-index: 3; display: grid; justify-items: start; gap: 6px; }
+.cwall__name { font: 400 clamp(1.35rem, .9rem + 1vw, 2rem)/.95 var(--f-display); text-transform: uppercase; letter-spacing: .01em; }
+.cwall__desc { font-size: .86rem; line-height: 1.4; color: var(--steel); }
+.cwall__card { container-type: size; }   /* each card's own height sets its button size (below) */
+.cwall__cta { margin-top: 10px; }
+.cwall__cta .ico { width: 16px; height: 16px; }
+@container (max-height: 180px) { .cwall__cta { min-height: 40px; margin-top: 6px; font-size: .8rem; } }   /* a short card keeps clear space under its number */
+.cwall__card:is(:hover, :focus-visible) .cwall__cta { --b-bg: var(--accent-hover); }
+.cwall__card:is(:hover, :focus-visible) .cwall__cta::after { left: 130%; }
+.cwall__card:is(:hover, :focus-visible) .cwall__cta .ico { translate: 3px 0; }
+:root[data-accent='red'] .cwall__card:is(:hover, :focus-visible) .cwall__cta::before { opacity: 1; }
+.cwall__card:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+/* smaller cards (phones, and the three columns below 900px): number, name and menu link only (the short description
+   would cover the product) */
+@media (max-width: 899.98px) { .cwall__desc { display: none; } }
+@media (max-width: 599.98px) {
+  .cwall__card { --r: 14px; }
+  .cwall__card::after { inset: 6px; border-radius: 9px; }
+  .cwall__no { top: 14px; left: 14px; font-size: .6875rem; }
+  .cwall__body { left: 14px; right: 14px; bottom: 14px; }
+  .cwall__name { font-size: 1.3rem; }
+  .cwall__cta { min-height: 38px; margin-top: 6px; padding: 0 .9em; font-size: .75rem; }
+}
+@media (hover: hover) {
+  .cwall:has(.cwall__card:is(:hover, :focus-visible)) .cwall__card:not(:hover, :focus-visible) { filter: brightness(.42) saturate(.75); }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .cwall__item:has(> .cwall__card:is(:hover, :focus-visible)) { z-index: 3; }
+  .cwall__card:is(:hover, :focus-visible) { scale: 1.04; box-shadow: inset 0 0 0 1px var(--hair-2), 0 40px 70px -30px var(--black); }
+}
+
+/* ---------- the award emblem at the seam (owner request): below 1100px the hero hides its badge, so it sits between
+   the hero and the menu, lighting up gold (glint and glow from hero.css) as it comes into view ---------- */
+.seam-award { display: none; }
+@media (max-width: 1099.98px) {
+  .seam-award { display: grid; place-items: center; margin: calc(-1 * clamp(28px, 10vw, 56px)) 0 clamp(44px, 11vw, 72px); }   /* pulled up toward the hero (owner request) */
+  .seam-award img { display: block; width: min(50vw, 200px); height: auto; }
+  .hx-live .seam-award.is-lit .hx-award__gold { filter: var(--gold-glow); transition-delay: .15s; }
+  .hx-live .seam-award.is-lit .hx-award__gold::after { opacity: 1; transition-delay: .15s; animation: hx-glint 1.8s var(--ease) .55s both; }
+}
+
+/* ---------- section titles: smoke (owner pick from the title-effects lab; site.js "title smoke"): the letters
+   condense out of a rising haze in random order, blurred to sharp, then the title's own markup comes back ---------- */
+.fx-split { display: inline; }
+.fx-w, .fx-c { display: inline-block; }
+.fx-w { white-space: nowrap; }
+[data-smoke='wait'] .fx-u { opacity: 0; }
+[data-smoke='play'] .fx-u { animation: fx-smoke 1.6s cubic-bezier(.2, .65, .25, 1) var(--d) both; }
+@keyframes fx-smoke {
+  0% { opacity: 0; filter: blur(14px); transform: translate(var(--sx, 0em), .55em) scale(1.35) skewX(var(--sk, 0deg)); }
+  40% { opacity: .7; filter: blur(5px); }
+  100% { opacity: 1; filter: blur(0); transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { [data-smoke] .fx-u { animation: none; opacity: 1; } }

@@ -1,1058 +1,1854 @@
 {
- "warehouse": {
-  "alt": "Illustration: an empty brick warehouse at dusk, tall arched windows glowing gold above a mirror-polished concrete floor",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/warehouse-3136.webp",
-    "w": 3136,
-    "h": 1344,
-    "bytes": 592020
-   }
-  ],
-  "source": "private/gen/warehouse-hero.result.json"
- },
- "arches": {
-  "alt": "Illustration: shafts of light through tall arched warehouse windows onto a concrete floor",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/arches-1792.webp",
-    "w": 1792,
-    "h": 2368,
-    "bytes": 242078
-   }
-  ],
-  "source": "private/gen/warehouse-arches.result.json"
- },
- "boulevard": {
-  "alt": "Illustration: a palm-lined Los Angeles boulevard at sunset under an orange, pink and violet sky",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/boulevard-3136.webp",
-    "w": 3136,
-    "h": 1344,
-    "bytes": 313206
-   }
-  ],
-  "source": "private/gen/la-boulevard-sunset.result.json"
- },
- "sd-palms": {
-  "alt": "Illustration: a palm-lined San Diego street at sunset",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/sd-palms-2400.webp",
-    "w": 2400,
-    "h": 1340,
-    "bytes": 196156
-   },
-   {
-    "file": "img/sd-palms-1200.webp",
-    "w": 1200,
-    "h": 670,
-    "bytes": 79814
-   }
-  ],
-  "source": "private/gen/sd-palms-sunset.result.json"
- },
- "night-street": {
-  "alt": "Illustration: a Los Angeles warehouse street at night, wet asphalt glowing red and violet",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/night-street-2400.webp",
-    "w": 2400,
-    "h": 1340,
-    "bytes": 303028
-   },
-   {
-    "file": "img/night-street-1200.webp",
-    "w": 1200,
-    "h": 670,
-    "bytes": 121488
-   }
-  ],
-  "source": "private/gen/la-night-street.result.json"
- },
- "grow-room": {
-  "alt": "Illustration: rows of flowering cannabis plants under magenta grow lights",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/grow-room-3136.webp",
-    "w": 3136,
-    "h": 1344,
-    "bytes": 623560
-   }
-  ],
-  "source": "private/gen/grow-room.result.json"
- },
- "trichomes": {
-  "alt": "Illustration: macro view of cannabis trichomes in amber and violet light",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/trichomes-2400.webp",
-    "w": 2400,
-    "h": 1029,
-    "bytes": 239912
-   },
-   {
-    "file": "img/trichomes-1200.webp",
-    "w": 1200,
-    "h": 514,
-    "bytes": 66544
-   }
-  ],
-  "source": "private/gen/trichome-field.result.json"
- },
- "stage": {
-  "alt": "Illustration: an empty stage lit by purple and pink spotlights through haze",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/stage-2400.webp",
-    "w": 2400,
-    "h": 1340,
-    "bytes": 97416
-   },
-   {
-    "file": "img/stage-1200.webp",
-    "w": 1200,
-    "h": 670,
-    "bytes": 42768
-   }
-  ],
-  "source": "private/gen/stage-crown.result.json"
- },
- "stage-wide": {
-  "alt": "Illustration: an empty festival stage under a fan of purple and pink light beams",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/stage-wide-3136.webp",
-    "w": 3136,
-    "h": 1344,
-    "bytes": 151128
-   }
-  ],
-  "source": "private/gen/stage-wide-b.result.json"
- },
- "lowrider": {
-  "alt": "Illustration: a candy-red lowrider convertible with chrome trim and wire wheels",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/lowrider-2400.webp",
-    "w": 2400,
-    "h": 1029,
-    "bytes": 150916
-   },
-   {
-    "file": "img/lowrider-1200.webp",
-    "w": 1200,
-    "h": 514,
-    "bytes": 54950
-   },
-   {
-    "file": "img/lowrider-640.webp",
-    "w": 640,
-    "h": 274,
-    "bytes": 20826
-   }
-  ],
-  "source": "private/gen/lowrider-cut.result.json"
- },
- "bud-a": {
-  "alt": "Illustration: a frosty cannabis flower",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/bud-a-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 371344
-   },
-   {
-    "file": "img/bud-a-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 127656
-   }
-  ],
-  "source": "private/gen/bud-a-cut.result.json"
- },
- "bud-b": {
-  "alt": "Illustration: a lime-green cannabis flower with lavender tips",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/bud-b-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 267688
-   },
-   {
-    "file": "img/bud-b-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 89516
-   }
-  ],
-  "source": "private/gen/bud-b-cut.result.json"
- },
- "bud-c": {
-  "alt": "Illustration: a deep purple cannabis flower dusted with frost",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/bud-c-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 270232
-   },
-   {
-    "file": "img/bud-c-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 95410
-   }
-  ],
-  "source": "private/gen/bud-c-cut.result.json"
- },
- "cat-flower": {
-  "alt": "Illustration: a frosty cannabis flower on a black mirror",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-flower-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 155704
-   },
-   {
-    "file": "img/cat-flower-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 48286
-   }
-  ],
-  "source": "private/gen/cat-flower.result.json"
- },
- "cat-preroll": {
-  "alt": "Illustration: three cannabis pre-roll cones on black glass",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-preroll-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 60058
-   },
-   {
-    "file": "img/cat-preroll-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 21304
-   }
-  ],
-  "source": "private/gen/cat-preroll.result.json"
- },
- "cat-vape": {
-  "alt": "Illustration: a blank vape cartridge of amber oil",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-vape-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 29938
-   },
-   {
-    "file": "img/cat-vape-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 10920
-   }
-  ],
-  "source": "private/gen/cat-vape.result.json"
- },
- "cat-extract": {
-  "alt": "Illustration: amber cannabis resin shards on slate",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-extract-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 107012
-   },
-   {
-    "file": "img/cat-extract-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 32220
-   }
-  ],
-  "source": "private/gen/cat-extract.result.json"
- },
- "cat-edible": {
-  "alt": "Illustration: squares of dark chocolate on slate",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-edible-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 103896
-   },
-   {
-    "file": "img/cat-edible-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 31776
-   }
-  ],
-  "source": "private/gen/cat-edible.result.json"
- },
- "cat-drink": {
-  "alt": "Illustration: a plain black beverage can with condensation",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-drink-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 34986
-   },
-   {
-    "file": "img/cat-drink-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 10278
-   }
-  ],
-  "source": "private/gen/cat-drink.result.json"
- },
- "cat-tincture": {
-  "alt": "Illustration: an amber dropper bottle",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-tincture-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 57918
-   },
-   {
-    "file": "img/cat-tincture-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 20626
-   }
-  ],
-  "source": "private/gen/cat-tincture.result.json"
- },
- "cat-topical": {
-  "alt": "Illustration: an open jar of balm",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/cat-topical-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 23030
-   },
-   {
-    "file": "img/cat-topical-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 8802
-   }
-  ],
-  "source": "private/gen/cat-topical.result.json"
- },
- "wall-gloves": {
-  "alt": "Black-and-white illustration: boxing gloves hanging on a brick wall",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-gloves-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 378520
-   },
-   {
-    "file": "img/wall-gloves-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 93800
-   }
-  ],
-  "source": "private/gen/wall-gloves.result.json"
- },
- "wall-mic": {
-  "alt": "Black-and-white illustration: a vintage microphone in a spotlight",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-mic-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 43460
-   },
-   {
-    "file": "img/wall-mic-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 14408
-   }
-  ],
-  "source": "private/gen/wall-mic.result.json"
- },
- "wall-basketball": {
-  "alt": "Black-and-white illustration: a basketball on an outdoor court",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-basketball-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 258316
-   },
-   {
-    "file": "img/wall-basketball-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 54848
-   }
-  ],
-  "source": "private/gen/wall-basketball.result.json"
- },
- "wall-wheel": {
-  "alt": "Black-and-white illustration: a chrome wire-spoke wheel",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-wheel-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 215492
-   },
-   {
-    "file": "img/wall-wheel-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 82486
-   }
-  ],
-  "source": "private/gen/wall-wheel.result.json"
- },
- "wall-trumpet": {
-  "alt": "Black-and-white illustration: a trumpet resting on a chair",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-trumpet-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 121692
-   },
-   {
-    "file": "img/wall-trumpet-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 47810
-   }
-  ],
-  "source": "private/gen/wall-trumpet.result.json"
- },
- "wall-brushes": {
-  "alt": "Black-and-white illustration: paint brushes in a paint can",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-brushes-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 165932
-   },
-   {
-    "file": "img/wall-brushes-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 48222
-   }
-  ],
-  "source": "private/gen/wall-brushes.result.json"
- },
- "wall-typewriter": {
-  "alt": "Black-and-white illustration: a vintage typewriter",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-typewriter-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 162088
-   },
-   {
-    "file": "img/wall-typewriter-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 61202
-   }
-  ],
-  "source": "private/gen/wall-typewriter.result.json"
- },
- "wall-crown": {
-  "alt": "Black-and-white illustration: an antique crown on velvet",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-crown-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 175970
-   },
-   {
-    "file": "img/wall-crown-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 56680
-   }
-  ],
-  "source": "private/gen/wall-crown.result.json"
- },
- "wall-records": {
-  "alt": "Black-and-white illustration: vinyl records leaning on a turntable",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-records-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 144388
-   },
-   {
-    "file": "img/wall-records-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 48384
-   }
-  ],
-  "source": "private/gen/wall-records.result.json"
- },
- "wall-reels": {
-  "alt": "Black-and-white illustration: vintage film reels on a table",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-reels-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 123562
-   },
-   {
-    "file": "img/wall-reels-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 56540
-   }
-  ],
-  "source": "private/gen/wall-reels-a.result.json"
- },
- "wall-reels-alt": {
-  "alt": "Black-and-white illustration: vintage film reels on a table",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/wall-reels-alt-1200.webp",
-    "w": 1200,
-    "h": 1490,
-    "bytes": 191860
-   },
-   {
-    "file": "img/wall-reels-alt-600.webp",
-    "w": 600,
-    "h": 745,
-    "bytes": 59192
-   }
-  ],
-  "source": "private/gen/wall-reels-b.result.json"
- },
- "store-la-interior": {
-  "alt": "Inside Originals Los Angeles: arched windows, timber trusses, glass cases and the black-and-white wall",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/store-la-interior-854.webp",
-    "w": 854,
-    "h": 480,
-    "bytes": 102392
-   }
-  ],
-  "source": "private/client-media/intailbox-new.jpeg"
- },
- "store-la-floor": {
-  "alt": "The sales floor at Originals Los Angeles",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/store-la-floor-1920.webp",
-    "w": 1920,
-    "h": 1280,
-    "bytes": 351502
-   }
-  ],
-  "source": "private/client-media/originals-factory-weed-shop-dispensary-2-1980x1320.jpeg"
- },
- "store-la-front": {
-  "alt": "Originals Los Angeles storefront with its giant ORIGINALS letters",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/store-la-front-730.webp",
-    "w": 730,
-    "h": 439,
-    "bytes": 45336
-   }
-  ],
-  "source": "private/client-media/Originals-dispensary.jpeg"
- },
- "store-sd-building": {
-  "alt": "The Originals San Diego building on Federal Blvd",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/store-sd-building-483.webp",
-    "w": 483,
-    "h": 450,
-    "bytes": 33372
-   }
-  ],
-  "source": "private/client-media/Picture-of-Originals-SD-Building.png"
- },
- "sd-banner": {
-  "alt": "Originals San Diego banner: sunset palms, the crown and 50% off for first-time customers",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/sd-banner-1605.webp",
-    "w": 1605,
-    "h": 903,
-    "bytes": 276082
-   }
-  ],
-  "source": "private/client-media/443775029_blob.jpg"
- },
- "sd-script": {
-  "alt": "Originals San Diego graphic",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/sd-script-1900.webp",
-    "w": 1900,
-    "h": 910,
-    "bytes": 125012
-   }
-  ],
-  "source": "private/client-media/Screen-Shot-2021-09-01-at-8.37.28-AM.png"
- },
- "flyer-carshow": {
-  "alt": "Lowrider car show flyer: Los Angeles 2026 Finale",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/flyer-carshow-1880.webp",
-    "w": 1880,
-    "h": 1058,
-    "bytes": 374040
-   }
-  ],
-  "source": "private/client-media/carshowflyerlowrider.jpg"
- },
- "hof-graphic": {
-  "alt": "Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/hof-graphic-1920.webp",
-    "w": 1920,
-    "h": 1280,
-    "bytes": 83698
-   }
-  ],
-  "source": "private/client-media/HOF-ORIGINALS-AND-CURE-.jpeg"
- },
- "hof-mixer": {
-  "alt": "Lite Up The Nite: Hall of Flowers welcome mixer graphic",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/hof-mixer-617.webp",
-    "w": 617,
-    "h": 246,
-    "bytes": 15784
-   }
-  ],
-  "source": "private/client-media/liteupthenight.png"
- },
- "farmers-cup": {
-  "alt": "Farmers Cup 2021: first place, licensed flower, Originals Gelato",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/farmers-cup-768.webp",
-    "w": 768,
-    "h": 779,
-    "bytes": 87380
-   }
-  ],
-  "source": "private/client-media/Farmers-Cup-768x779.png"
- },
- "gelato-box": {
-  "alt": "Originals Gelato 3.5g packaging",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/gelato-box-1200.webp",
-    "w": 1200,
-    "h": 1200,
-    "bytes": 93156
-   },
-   {
-    "file": "img/gelato-box-600.webp",
-    "w": 600,
-    "h": 600,
-    "bytes": 32390
-   }
-  ],
-  "source": "private/client-media/Originals-Flower---Gelato---3.5g.png"
- },
- "gelato-jar": {
-  "alt": "Originals Gelato flower with its jar",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/gelato-jar-599.webp",
-    "w": 599,
-    "h": 599,
-    "bytes": 65996
-   }
-  ],
-  "source": "private/client-media/originals_ca-Gelato.png"
- },
- "preroll-3": {
-  "alt": "Originals pre-roll three-pack",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/preroll-3-768.webp",
-    "w": 768,
-    "h": 768,
-    "bytes": 30236
-   }
-  ],
-  "source": "private/client-media/originalspreroll1-768x768.jpeg"
- },
- "preroll-1": {
-  "alt": "Originals single pre-roll pack",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/preroll-1-768.webp",
-    "w": 768,
-    "h": 768,
-    "bytes": 19840
-   }
-  ],
-  "source": "private/client-media/originalspreroll2-768x768.jpeg"
- },
- "bud-box": {
-  "alt": "Originals Family Farms flower beside its box",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/bud-box-1920.webp",
-    "w": 1920,
-    "h": 1247,
-    "bytes": 97424
-   }
-  ],
-  "source": "private/client-media/E37C5D9A-82DE-4421-872E-366E773BA15E-1980x1286.jpeg"
- },
- "grow-real": {
-  "alt": "Cannabis plants in an indoor grow room",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/grow-real-640.webp",
-    "w": 640,
-    "h": 639,
-    "bytes": 171438
-   }
-  ],
-  "source": "private/client-media/Screen-Shot-2022-04-08-at-2.46.50-PM-640w.webp"
- },
- "backdrop": {
-  "alt": "The Originals crown and leaf pattern",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/backdrop-1920.webp",
-    "w": 1920,
-    "h": 1344,
-    "bytes": 383868
-   }
-  ],
-  "source": "private/client-media/Originals-Backdrop-copy.jpg"
- },
- "clothing-shop": {
-  "alt": "The Originals Clothing online store",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/clothing-shop-854.webp",
-    "w": 854,
-    "h": 480,
-    "bytes": 33154
-   }
-  ],
-  "source": "private/client-media/originals-clothings-new-img.jpeg"
- },
- "award-badge": {
-  "alt": "Award Winning",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/award-badge-1000.webp",
-    "w": 1000,
-    "h": 500,
-    "bytes": 21956
-   }
-  ],
-  "source": "private/client-media/awardwinning_vers2.png"
- },
- "crown-black": {
-  "alt": "Originals crown",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/crown-black-600.webp",
-    "w": 600,
-    "h": 597,
-    "bytes": 25244
-   }
-  ],
-  "source": "private/client-media/blackhero-logo-copy.png"
- },
- "la-lockup": {
-  "alt": "Originals Los Angeles logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/la-lockup-800.webp",
-    "w": 800,
-    "h": 450,
-    "bytes": 19738
-   }
-  ],
-  "source": "private/client-media/big_la_wm_logo-3f6e9e31-74c97722.png"
- },
- "film-poster": {
-  "alt": "Originals brand film",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/film-poster-1280.webp",
-    "w": 1280,
-    "h": 720,
-    "bytes": 38338
-   }
-  ],
-  "source": "private/client-media/N62qIsrLQZSRHSbiwQof_video-new.v2.0000000-1920w.jpg"
- },
- "logo-jeeter": {
-  "alt": "JEETER logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-jeeter-400.webp",
-    "w": 400,
-    "h": 175,
-    "bytes": 7458
-   }
-  ],
-  "source": "private/client-media/jeeter.jpg"
- },
- "logo-stiiizy": {
-  "alt": "STIIIZY logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-stiiizy-186.webp",
-    "w": 186,
-    "h": 91,
-    "bytes": 2008
-   }
-  ],
-  "source": "private/client-media/STIIIZY-copy.jpg"
- },
- "logo-wcc": {
-  "alt": "WCC logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-wcc-400.webp",
-    "w": 400,
-    "h": 294,
-    "bytes": 7302
-   }
-  ],
-  "source": "private/client-media/wcc_logo-copy.jpg"
- },
- "logo-lime": {
-  "alt": "LIME logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-lime-400.webp",
-    "w": 400,
-    "h": 137,
-    "bytes": 1954
-   }
-  ],
-  "source": "private/client-media/lime2.0_logo-1-copy.jpg"
- },
- "logo-roach": {
-  "alt": "ROACH logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-roach-154.webp",
-    "w": 154,
-    "h": 70,
-    "bytes": 1562
-   }
-  ],
-  "source": "private/client-media/roach.jpg"
- },
- "logo-cbx": {
-  "alt": "CBX logo",
-  "ai": false,
-  "kind": "client",
-  "files": [
-   {
-    "file": "img/logo-cbx-400.webp",
-    "w": 400,
-    "h": 196,
-    "bytes": 5176
-   }
-  ],
-  "source": "private/client-media/cannabiotic-lowres.jpg"
- },
- "loop-stage": {
-  "alt": "Illustration: first frame of a generated stage loop",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/loop-stage-1280.webp",
-    "w": 1280,
-    "h": 712,
-    "bytes": 32494
-   }
-  ],
-  "source": "private/gen/vid-stage.result.json"
- },
- "loop-grow": {
-  "alt": "Illustration: first frame of a generated grow loop",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/loop-grow-1600.webp",
-    "w": 1600,
-    "h": 684,
-    "bytes": 183776
-   }
-  ],
-  "source": "private/gen/vid-grow.result.json"
- },
- "loop-arches": {
-  "alt": "Illustration: first frame of a generated arches loop",
-  "ai": true,
-  "kind": "generated",
-  "files": [
-   {
-    "file": "img/loop-arches-720.webp",
-    "w": 720,
-    "h": 950,
-    "bytes": 42440
-   }
-  ],
-  "source": "private/gen/vid-arches.result.json"
- }
+  "warehouse": {
+    "alt": "Illustration: an empty brick warehouse at dusk, tall arched windows glowing gold above a mirror-polished concrete floor",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/warehouse-3136.webp",
+        "w": 3136,
+        "h": 1344,
+        "bytes": 592020
+      }
+    ],
+    "source": "private/gen/warehouse-hero.result.json"
+  },
+  "arches": {
+    "alt": "Illustration: shafts of light through tall arched warehouse windows onto a concrete floor",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/arches-1792.webp",
+        "w": 1792,
+        "h": 2368,
+        "bytes": 242078
+      }
+    ],
+    "source": "private/gen/warehouse-arches.result.json"
+  },
+  "boulevard": {
+    "alt": "Illustration: a palm-lined Los Angeles boulevard at sunset under an orange, pink and violet sky",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/boulevard-3136.webp",
+        "w": 3136,
+        "h": 1344,
+        "bytes": 313206
+      }
+    ],
+    "source": "private/gen/la-boulevard-sunset.result.json"
+  },
+  "sd-palms": {
+    "alt": "Illustration: a palm-lined San Diego street at sunset",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/sd-palms-2400.webp",
+        "w": 2400,
+        "h": 1340,
+        "bytes": 196156
+      },
+      {
+        "file": "img/sd-palms-1200.webp",
+        "w": 1200,
+        "h": 670,
+        "bytes": 79814
+      }
+    ],
+    "source": "private/gen/sd-palms-sunset.result.json"
+  },
+  "night-street": {
+    "alt": "Illustration: a Los Angeles warehouse street at night, wet asphalt glowing red and violet",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/night-street-2400.webp",
+        "w": 2400,
+        "h": 1340,
+        "bytes": 303028
+      },
+      {
+        "file": "img/night-street-1200.webp",
+        "w": 1200,
+        "h": 670,
+        "bytes": 121488
+      }
+    ],
+    "source": "private/gen/la-night-street.result.json"
+  },
+  "grow-room": {
+    "alt": "Illustration: rows of flowering cannabis plants under magenta grow lights",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/grow-room-3136.webp",
+        "w": 3136,
+        "h": 1344,
+        "bytes": 623560
+      }
+    ],
+    "source": "private/gen/grow-room.result.json"
+  },
+  "trichomes": {
+    "alt": "Illustration: macro view of cannabis trichomes in amber and violet light",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/trichomes-2400.webp",
+        "w": 2400,
+        "h": 1029,
+        "bytes": 239912
+      },
+      {
+        "file": "img/trichomes-1200.webp",
+        "w": 1200,
+        "h": 514,
+        "bytes": 66544
+      }
+    ],
+    "source": "private/gen/trichome-field.result.json"
+  },
+  "stage": {
+    "alt": "Illustration: an empty stage lit by purple and pink spotlights through haze",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/stage-2400.webp",
+        "w": 2400,
+        "h": 1340,
+        "bytes": 97416
+      },
+      {
+        "file": "img/stage-1200.webp",
+        "w": 1200,
+        "h": 670,
+        "bytes": 42768
+      }
+    ],
+    "source": "private/gen/stage-crown.result.json"
+  },
+  "stage-wide": {
+    "alt": "Illustration: an empty festival stage under a fan of purple and pink light beams",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/stage-wide-3136.webp",
+        "w": 3136,
+        "h": 1344,
+        "bytes": 151128
+      }
+    ],
+    "source": "private/gen/stage-wide-b.result.json"
+  },
+  "lowrider": {
+    "alt": "Illustration: a candy-red lowrider convertible with chrome trim and wire wheels",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/lowrider-2400.webp",
+        "w": 2400,
+        "h": 1029,
+        "bytes": 150916
+      },
+      {
+        "file": "img/lowrider-1200.webp",
+        "w": 1200,
+        "h": 514,
+        "bytes": 54950
+      },
+      {
+        "file": "img/lowrider-640.webp",
+        "w": 640,
+        "h": 274,
+        "bytes": 20826
+      }
+    ],
+    "source": "private/gen/lowrider-cut.result.json"
+  },
+  "bud-a": {
+    "alt": "Illustration: a frosty cannabis flower",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/bud-a-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 371344
+      },
+      {
+        "file": "img/bud-a-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 127656
+      }
+    ],
+    "source": "private/gen/bud-a-cut.result.json"
+  },
+  "bud-b": {
+    "alt": "Illustration: a lime-green cannabis flower with lavender tips",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/bud-b-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 267688
+      },
+      {
+        "file": "img/bud-b-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 89516
+      }
+    ],
+    "source": "private/gen/bud-b-cut.result.json"
+  },
+  "bud-c": {
+    "alt": "Illustration: a deep purple cannabis flower dusted with frost",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/bud-c-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 270232
+      },
+      {
+        "file": "img/bud-c-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 95410
+      }
+    ],
+    "source": "private/gen/bud-c-cut.result.json"
+  },
+  "cat-flower": {
+    "alt": "Illustration: a frosty cannabis flower on a black mirror",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-flower-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 155704
+      },
+      {
+        "file": "img/cat-flower-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 48286
+      }
+    ],
+    "source": "private/gen/cat-flower.result.json"
+  },
+  "cat-preroll": {
+    "alt": "Illustration: three cannabis pre-roll cones on black glass",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-preroll-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 60058
+      },
+      {
+        "file": "img/cat-preroll-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 21304
+      }
+    ],
+    "source": "private/gen/cat-preroll.result.json"
+  },
+  "cat-vape": {
+    "alt": "Illustration: a blank vape cartridge of amber oil",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-vape-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 29938
+      },
+      {
+        "file": "img/cat-vape-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 10920
+      }
+    ],
+    "source": "private/gen/cat-vape.result.json"
+  },
+  "cat-extract": {
+    "alt": "Illustration: amber cannabis resin shards on slate",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-extract-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 107012
+      },
+      {
+        "file": "img/cat-extract-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 32220
+      }
+    ],
+    "source": "private/gen/cat-extract.result.json"
+  },
+  "cat-edible": {
+    "alt": "Illustration: squares of dark chocolate on slate",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-edible-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 103896
+      },
+      {
+        "file": "img/cat-edible-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 31776
+      }
+    ],
+    "source": "private/gen/cat-edible.result.json"
+  },
+  "cat-drink": {
+    "alt": "Illustration: a plain black beverage can with condensation",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-drink-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 34986
+      },
+      {
+        "file": "img/cat-drink-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 10278
+      }
+    ],
+    "source": "private/gen/cat-drink.result.json"
+  },
+  "cat-tincture": {
+    "alt": "Illustration: an amber dropper bottle",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-tincture-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 57918
+      },
+      {
+        "file": "img/cat-tincture-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 20626
+      }
+    ],
+    "source": "private/gen/cat-tincture.result.json"
+  },
+  "cat-topical": {
+    "alt": "Illustration: an open jar of balm",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/cat-topical-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 23030
+      },
+      {
+        "file": "img/cat-topical-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 8802
+      }
+    ],
+    "source": "private/gen/cat-topical.result.json"
+  },
+  "wall-gloves": {
+    "alt": "Black-and-white illustration: boxing gloves hanging on a brick wall",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-gloves-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 378520
+      },
+      {
+        "file": "img/wall-gloves-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 93800
+      }
+    ],
+    "source": "private/gen/wall-gloves.result.json"
+  },
+  "wall-mic": {
+    "alt": "Black-and-white illustration: a vintage microphone in a spotlight",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-mic-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 43460
+      },
+      {
+        "file": "img/wall-mic-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 14408
+      }
+    ],
+    "source": "private/gen/wall-mic.result.json"
+  },
+  "wall-basketball": {
+    "alt": "Black-and-white illustration: a basketball on an outdoor court",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-basketball-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 258316
+      },
+      {
+        "file": "img/wall-basketball-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 54848
+      }
+    ],
+    "source": "private/gen/wall-basketball.result.json"
+  },
+  "wall-wheel": {
+    "alt": "Black-and-white illustration: a chrome wire-spoke wheel",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-wheel-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 215492
+      },
+      {
+        "file": "img/wall-wheel-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 82486
+      }
+    ],
+    "source": "private/gen/wall-wheel.result.json"
+  },
+  "wall-trumpet": {
+    "alt": "Black-and-white illustration: a trumpet resting on a chair",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-trumpet-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 121692
+      },
+      {
+        "file": "img/wall-trumpet-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 47810
+      }
+    ],
+    "source": "private/gen/wall-trumpet.result.json"
+  },
+  "wall-brushes": {
+    "alt": "Black-and-white illustration: paint brushes in a paint can",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-brushes-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 165932
+      },
+      {
+        "file": "img/wall-brushes-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 48222
+      }
+    ],
+    "source": "private/gen/wall-brushes.result.json"
+  },
+  "wall-typewriter": {
+    "alt": "Black-and-white illustration: a vintage typewriter",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-typewriter-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 162088
+      },
+      {
+        "file": "img/wall-typewriter-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 61202
+      }
+    ],
+    "source": "private/gen/wall-typewriter.result.json"
+  },
+  "wall-crown": {
+    "alt": "Black-and-white illustration: an antique crown on velvet",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-crown-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 175970
+      },
+      {
+        "file": "img/wall-crown-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 56680
+      }
+    ],
+    "source": "private/gen/wall-crown.result.json"
+  },
+  "wall-records": {
+    "alt": "Black-and-white illustration: vinyl records leaning on a turntable",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-records-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 144388
+      },
+      {
+        "file": "img/wall-records-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 48384
+      }
+    ],
+    "source": "private/gen/wall-records.result.json"
+  },
+  "wall-reels": {
+    "alt": "Black-and-white illustration: vintage film reels on a table",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-reels-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 123562
+      },
+      {
+        "file": "img/wall-reels-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 56540
+      }
+    ],
+    "source": "private/gen/wall-reels-a.result.json"
+  },
+  "wall-reels-alt": {
+    "alt": "Black-and-white illustration: vintage film reels on a table",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/wall-reels-alt-1200.webp",
+        "w": 1200,
+        "h": 1490,
+        "bytes": 191860
+      },
+      {
+        "file": "img/wall-reels-alt-600.webp",
+        "w": 600,
+        "h": 745,
+        "bytes": 59192
+      }
+    ],
+    "source": "private/gen/wall-reels-b.result.json"
+  },
+  "store-la-interior": {
+    "alt": "Inside Originals Los Angeles: giant white ORIGINALS letters in front of arched brick windows, reflected in the polished concrete floor",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-interior-1600.webp",
+        "w": 1600,
+        "h": 1066,
+        "bytes": 359528
+      },
+      {
+        "file": "img/store-la-interior-1200.webp",
+        "w": 1200,
+        "h": 800,
+        "bytes": 240028
+      },
+      {
+        "file": "img/store-la-interior-800.webp",
+        "w": 800,
+        "h": 533,
+        "bytes": 125086
+      }
+    ],
+    "source": "private/client-media/maps-la/la-05.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 6231x4154, Sony ILCE-7M4, Photoshop, 2022-07); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, with a light grade (grade_rich s 0.4). Replaces the 854 px live-site photo (private/client-media/intailbox-new.jpeg). Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-la-floor": {
+    "alt": "The sales floor at Originals Los Angeles: glass display cases, timber roof trusses and brick walls under the ORIGINALS sign",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-floor-2560.webp",
+        "w": 2560,
+        "h": 1622,
+        "bytes": 812508
+      },
+      {
+        "file": "img/store-la-floor-1920.webp",
+        "w": 1920,
+        "h": 1217,
+        "bytes": 536188
+      },
+      {
+        "file": "img/store-la-floor-1280.webp",
+        "w": 1280,
+        "h": 811,
+        "bytes": 280784
+      },
+      {
+        "file": "img/store-la-floor-800.webp",
+        "w": 800,
+        "h": 507,
+        "bytes": 126438
+      }
+    ],
+    "source": "private/client-media/maps-la/la-60.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 6695x4243, Sony ILCE-7M4, Photoshop, 2022-09); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, with a light grade (grade_rich s 0.4). Replaces the 1920 px blog-post photo (private/client-media/originals-factory-weed-shop-dispensary-2-1980x1320.jpeg). Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-la-front": {
+    "alt": "The Originals Los Angeles storefront at night in black and white: an ornate entrance with columns, an ORIGINALS umbrella and palm trees",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-front-800.webp",
+        "w": 800,
+        "h": 800,
+        "bytes": 107144
+      },
+      {
+        "file": "img/store-la-front-480.webp",
+        "w": 480,
+        "h": 480,
+        "bytes": 48088
+      }
+    ],
+    "source": "private/client-media/maps-la/la-35.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 6000x4000, Sony ILCE-7M3, Photoshop, 2022-01, the photographer's black and white); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, square crop on the entrance, no grade (kept black and white). Until 2026-11-12 this id held private/client-media/Originals-dispensary.jpeg with an \"LA storefront\" alt; that photo is the San Diego store's back wall and is now store-sd-interior. Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-sd-building": {
+    "alt": "The Originals San Diego building on Federal Blvd",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-sd-building-483.webp",
+        "w": 483,
+        "h": 450,
+        "bytes": 33372
+      }
+    ],
+    "source": "private/client-media/Picture-of-Originals-SD-Building.png"
+  },
+  "sd-banner": {
+    "alt": "Originals San Diego banner: sunset palms, the crown and 50% off for first-time customers",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/sd-banner-1605.webp",
+        "w": 1605,
+        "h": 903,
+        "bytes": 276082
+      }
+    ],
+    "source": "private/client-media/443775029_blob.jpg"
+  },
+  "sd-script": {
+    "alt": "Originals San Diego graphic",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/sd-script-1900.webp",
+        "w": 1900,
+        "h": 910,
+        "bytes": 125012
+      }
+    ],
+    "source": "private/client-media/Screen-Shot-2021-09-01-at-8.37.28-AM.png"
+  },
+  "flyer-carshow": {
+    "alt": "Lowrider car show flyer: Los Angeles 2026 Finale",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/flyer-carshow-1880.webp",
+        "w": 1880,
+        "h": 1058,
+        "bytes": 374040
+      }
+    ],
+    "source": "private/client-media/carshowflyerlowrider.jpg"
+  },
+  "hof-graphic": {
+    "alt": "Hall of Flowers Palm Springs 2021 graphic with Originals and The Cure Company",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/hof-graphic-1920.webp",
+        "w": 1920,
+        "h": 1280,
+        "bytes": 83698
+      }
+    ],
+    "source": "private/client-media/HOF-ORIGINALS-AND-CURE-.jpeg"
+  },
+  "hof-mixer": {
+    "alt": "Lite Up The Nite: Hall of Flowers welcome mixer graphic",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/hof-mixer-617.webp",
+        "w": 617,
+        "h": 246,
+        "bytes": 15784
+      }
+    ],
+    "source": "private/client-media/liteupthenight.png"
+  },
+  "farmers-cup": {
+    "alt": "Farmers Cup 2021: first place, licensed flower, Originals Gelato",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/farmers-cup-768.webp",
+        "w": 768,
+        "h": 779,
+        "bytes": 87380
+      }
+    ],
+    "source": "private/client-media/Farmers-Cup-768x779.png"
+  },
+  "gelato-box": {
+    "alt": "Originals Gelato 3.5g packaging",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/gelato-box-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 93156
+      },
+      {
+        "file": "img/gelato-box-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 32390
+      }
+    ],
+    "source": "private/client-media/Originals-Flower---Gelato---3.5g.png"
+  },
+  "gelato-jar": {
+    "alt": "Originals Gelato flower with its jar",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/gelato-jar-599.webp",
+        "w": 599,
+        "h": 599,
+        "bytes": 65996
+      }
+    ],
+    "source": "private/client-media/originals_ca-Gelato.png"
+  },
+  "preroll-3": {
+    "alt": "Originals pre-roll three-pack",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/preroll-3-768.webp",
+        "w": 768,
+        "h": 768,
+        "bytes": 30236
+      }
+    ],
+    "source": "private/client-media/originalspreroll1-768x768.jpeg"
+  },
+  "preroll-1": {
+    "alt": "Originals single pre-roll pack",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/preroll-1-768.webp",
+        "w": 768,
+        "h": 768,
+        "bytes": 19840
+      }
+    ],
+    "source": "private/client-media/originalspreroll2-768x768.jpeg"
+  },
+  "bud-box": {
+    "alt": "Originals Family Farms flower beside its box",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/bud-box-1920.webp",
+        "w": 1920,
+        "h": 1247,
+        "bytes": 97424
+      }
+    ],
+    "source": "private/client-media/E37C5D9A-82DE-4421-872E-366E773BA15E-1980x1286.jpeg"
+  },
+  "grow-real": {
+    "alt": "Cannabis plants in an indoor grow room",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/grow-real-640.webp",
+        "w": 640,
+        "h": 639,
+        "bytes": 171438
+      }
+    ],
+    "source": "private/client-media/Screen-Shot-2022-04-08-at-2.46.50-PM-640w.webp"
+  },
+  "backdrop": {
+    "alt": "The Originals crown and leaf pattern",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/backdrop-1920.webp",
+        "w": 1920,
+        "h": 1344,
+        "bytes": 383868
+      }
+    ],
+    "source": "private/client-media/Originals-Backdrop-copy.jpg"
+  },
+  "clothing-shop": {
+    "alt": "The Originals Clothing online store",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/clothing-shop-854.webp",
+        "w": 854,
+        "h": 480,
+        "bytes": 33154
+      }
+    ],
+    "source": "private/client-media/originals-clothings-new-img.jpeg"
+  },
+  "award-badge": {
+    "alt": "Award Winning",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/award-badge-1000.webp",
+        "w": 1000,
+        "h": 500,
+        "bytes": 21956
+      }
+    ],
+    "source": "private/client-media/awardwinning_vers2.png"
+  },
+  "crown-black": {
+    "alt": "Originals crown",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/crown-black-600.webp",
+        "w": 600,
+        "h": 597,
+        "bytes": 25244
+      }
+    ],
+    "source": "private/client-media/blackhero-logo-copy.png"
+  },
+  "la-lockup": {
+    "alt": "Originals Los Angeles logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/la-lockup-800.webp",
+        "w": 800,
+        "h": 450,
+        "bytes": 19738
+      }
+    ],
+    "source": "private/client-media/big_la_wm_logo-3f6e9e31-74c97722.png"
+  },
+  "film-poster": {
+    "alt": "Originals brand film",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/film-poster-1280.webp",
+        "w": 1280,
+        "h": 720,
+        "bytes": 41104
+      },
+      {
+        "file": "img/film-poster-1920.webp",
+        "w": 1920,
+        "h": 1080,
+        "bytes": 66196
+      }
+    ],
+    "source": "private/client-media/N62qIsrLQZSRHSbiwQof_video-new.v2.0000000-1920w.jpg"
+  },
+  "logo-jeeter": {
+    "alt": "Jeeter logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-jeeter.svg",
+        "w": 576,
+        "h": 240,
+        "bytes": 8495
+      }
+    ],
+    "source": "The brand's official site https://www.jeeter.com/: its header logo, the inline navbar SVG copied from the page (paths unchanged). Download: private/client-media/brand-logos/site-jeeter-inline.svg, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Replaces the 400 px JPG from the live site (private/client-media/jeeter.jpg)."
+  },
+  "logo-stiiizy": {
+    "alt": "STIIIZY logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-stiiizy.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 3996
+      }
+    ],
+    "source": "The brand's official site https://www.stiiizy.com/: its header logo, https://www.stiiizy.com/cdn/shop/files/logo_0caf6a54-acea-40c2-b6e0-781dc2d43211.png?v=1614509924 (350x196 PNG). Download: private/client-media/brand-logos/site-stiiizy.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Replaces the 186 px JPG from the live site (private/client-media/STIIIZY-copy.jpg)."
+  },
+  "logo-wcc": {
+    "alt": "West Coast Cure logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-wcc.svg",
+        "w": 576,
+        "h": 240,
+        "bytes": 2608
+      }
+    ],
+    "source": "The brand's official site https://wcc.com/: its header logo, https://wcc.com/wp-content/themes/wcc/img/wcc_logo.svg (paths unchanged, its invisible frame dropped). Download: private/client-media/brand-logos/site-west-coast-cure.svg, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Replaces the 400 px JPG from the live site (private/client-media/wcc_logo-copy.jpg)."
+  },
+  "logo-lime": {
+    "alt": "LIME logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-lime-400.webp",
+        "w": 400,
+        "h": 137,
+        "bytes": 1954
+      }
+    ],
+    "source": "private/client-media/lime2.0_logo-1-copy.jpg"
+  },
+  "logo-roach": {
+    "alt": "ROACH logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-roach-154.webp",
+        "w": 154,
+        "h": 70,
+        "bytes": 1562
+      }
+    ],
+    "source": "private/client-media/roach.jpg"
+  },
+  "logo-cbx": {
+    "alt": "CBX logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-cbx-400.webp",
+        "w": 400,
+        "h": 196,
+        "bytes": 5176
+      }
+    ],
+    "source": "private/client-media/cannabiotic-lowres.jpg"
+  },
+  "loop-stage": {
+    "alt": "Illustration: first frame of a generated stage loop",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/loop-stage-1280.webp",
+        "w": 1280,
+        "h": 712,
+        "bytes": 32494
+      }
+    ],
+    "source": "private/gen/vid-stage.result.json"
+  },
+  "loop-grow": {
+    "alt": "Illustration: first frame of a generated grow loop",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/loop-grow-1600.webp",
+        "w": 1600,
+        "h": 684,
+        "bytes": 183776
+      }
+    ],
+    "source": "private/gen/vid-grow.result.json"
+  },
+  "loop-arches": {
+    "alt": "Illustration: first frame of a generated arches loop",
+    "ai": true,
+    "kind": "generated",
+    "files": [
+      {
+        "file": "img/loop-arches-720.webp",
+        "w": 720,
+        "h": 950,
+        "bytes": 42440
+      }
+    ],
+    "source": "private/gen/vid-arches.result.json"
+  },
+  "happy-hour-meet": {
+    "alt": "Two smiling men at an Originals car show at golden hour, one holding up a glass jar, with a classic lowrider and the Originals Family tent behind them",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/happy-hour-meet-1405.webp",
+        "w": 1405,
+        "h": 1120,
+        "bytes": 245054
+      },
+      {
+        "file": "img/happy-hour-meet-900.webp",
+        "w": 900,
+        "h": 717,
+        "bytes": 109978
+      }
+    ],
+    "source": "private/client-media/happy-hour.png"
+  },
+  "merch-hoodie": {
+    "alt": "A folded taupe zip hoodie with the ORIGINALS wordmark and crown on the chest, resting on dark rock",
+    "ai": true,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/merch-hoodie-1448.webp",
+        "w": 1448,
+        "h": 1086,
+        "bytes": 222200
+      },
+      {
+        "file": "img/merch-hoodie-800.webp",
+        "w": 800,
+        "h": 600,
+        "bytes": 62578
+      }
+    ],
+    "source": "private/client-media/merch-hoodie.png (owner-supplied 2026-11-11; marked generated until the owner confirms it is a real product photo)"
+  },
+  "store-wall": {
+    "alt": "An Originals store wall: the ORIGINALS sign between two crowns over wood panelling, three screens and glass display cases",
+    "ai": true,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-wall-1535.webp",
+        "w": 1535,
+        "h": 1024,
+        "bytes": 269118
+      },
+      {
+        "file": "img/store-wall-900.webp",
+        "w": 900,
+        "h": 600,
+        "bytes": 104240
+      }
+    ],
+    "source": "private/client-media/store-wall.png (owner-supplied 2026-11-11; not among the live-site images; marked generated until the owner confirms its source)"
+  },
+  "happy-hour-lowrider": {
+    "alt": "A woman in a yellow top and sunglasses leans down holding a leashed bulldog in front of a red 1963 Chevrolet Impala lowrider and a long red brick building under a blue sky",
+    "ai": true,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/happy-hour-lowrider-2400.webp",
+        "w": 2400,
+        "h": 1600,
+        "bytes": 628112
+      },
+      {
+        "file": "img/happy-hour-lowrider-1600.webp",
+        "w": 1600,
+        "h": 1067,
+        "bytes": 324124
+      },
+      {
+        "file": "img/happy-hour-lowrider-960.webp",
+        "w": 960,
+        "h": 640,
+        "bytes": 136030
+      }
+    ],
+    "source": "private/client-media/happy-hour-lowrider.png (owner-supplied 2026-11-12, for the Happy Hour deal card). The left 54% of the frame is an AI generative extension of the scene (fal bria/fibo-edit-1.5/expand, request 01a1cdc8-5acb-7180-b93e-fa6fc120ebfb, seed 288698243; the photo's own pixels kept), seam blended locally (seam_fix.py), upscaled 1.5x (fal topaz/upscale/image/precision High Fidelity V2, face enhancement off, request 01a1cdca-4fa0-7123-be3b-a255fbb33b0b). After the independent review (review/, FAIL: plate lettering, seam), with the owner's OK for a fix round: the same expansion was re-run with its own frame (request 01a1cdf0-c0ea-7b70-86ef-bab2925d2a8e, same seed), and crossfade.py faded the photo in over 200 px from the seam (28 px at the car). That was upscaled again (Topaz HF V2 1.5x, face enhancement off, request 01a1cdf1-b032-7e23-8555-5b59050eee00); post_v5.py then pasted the plate, sign and hood lettering back from the source with Lanczos only and graded with grade_rich s=0.7 plus highlight protection. Marked generated because of the extension.",
+    "faceBox": [
+      0.81,
+      0.19,
+      0.91,
+      0.3
+    ]
+  },
+  "story-family-wall": {
+    "alt": "A man in a dark green outfit, rings and a skull pendant holds an Originals bag in front of a wall of black-and-white portraits",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/story-family-wall-900.webp",
+        "w": 900,
+        "h": 1038,
+        "bytes": 180152
+      },
+      {
+        "file": "img/story-family-wall-600.webp",
+        "w": 600,
+        "h": 692,
+        "bytes": 96718
+      }
+    ],
+    "source": "private/client-media/our-story/wall.png (owner-supplied 2026-11-12 for the home story album; owner: not confirmed these are the client's images). Light matched to the set and graded locally (private/gen/our-story/grade_set.py); no AI generation."
+  },
+  "story-pouch": {
+    "alt": "A man in sunglasses and a green plaid shirt holds an Originals cannabis flower pouch toward the camera, between two women in black with fishnet stockings and yellow socks",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/story-pouch-900.webp",
+        "w": 900,
+        "h": 842,
+        "bytes": 85688
+      },
+      {
+        "file": "img/story-pouch-600.webp",
+        "w": 600,
+        "h": 561,
+        "bytes": 54018
+      }
+    ],
+    "source": "private/client-media/our-story/pouch.png (owner-supplied 2026-11-12 for the home story album; owner: not confirmed these are the client's images). Light matched to the set and graded locally (private/gen/our-story/grade_set.py); no AI generation."
+  },
+  "story-grower-bud": {
+    "alt": "A grower in a navy cap and a black glove looks closely at a frosty cannabis bud in a grow room",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/story-grower-bud-900.webp",
+        "w": 900,
+        "h": 506,
+        "bytes": 48120
+      },
+      {
+        "file": "img/story-grower-bud-600.webp",
+        "w": 600,
+        "h": 338,
+        "bytes": 27728
+      }
+    ],
+    "source": "private/client-media/our-story/grower-bud.png (owner-supplied 2026-11-12 for the home story album; owner: not confirmed these are the client's images). Light matched to the set and graded locally (private/gen/our-story/grade_set.py); no AI generation."
+  },
+  "story-family-farms": {
+    "alt": "A grower in a crown cap and an Originals Family Farms work shirt stands with his tattooed arms crossed in a greenhouse",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/story-family-farms-676.webp",
+        "w": 676,
+        "h": 598,
+        "bytes": 78814
+      },
+      {
+        "file": "img/story-family-farms-600.webp",
+        "w": 600,
+        "h": 531,
+        "bytes": 59890
+      }
+    ],
+    "source": "private/client-media/our-story/family-farms.png (owner-supplied 2026-11-12 for the home story album; owner: not confirmed these are the client's images). Light matched to the set and graded locally (private/gen/our-story/grade_set.py); no AI generation."
+  },
+  "wall-strip-1": {
+    "alt": "The left end of the store's black-and-white portrait wall, with a potted plant and the first white letters of ORIGINALS standing in front",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-1-1120.webp",
+        "w": 586,
+        "h": 1120,
+        "bytes": 109458
+      },
+      {
+        "file": "img/wall-strip-1-560.webp",
+        "w": 293,
+        "h": 560,
+        "bytes": 35966
+      }
+    ],
+    "source": "private/client-media/maps-la/la-photo-b.jpg (7008x4672, Sony ILCE-7M4, Photoshop, 2022-02; owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); the full-size original of the owner's 1432x816 screenshot private/client-media/family-wall/wall-letters.png, mapped onto it as a pure 4.63x scale by ORB features + RANSAC), crop x 334-6964 / y 0-3771 (the screenshot's framing), x 537-2510 (the screenshot's x 44-470). Light-matched to wall-strip-4..6 and graded (grade_rich s 0.5) by private/gen/family-wall/slice_wall.py. Rights: posted by the business itself; the wall shows famous people (PITCH-NOTES #30)."
+  },
+  "wall-strip-2": {
+    "alt": "The store's black-and-white portrait wall behind the middle white letters of ORIGINALS",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-2-1120.webp",
+        "w": 674,
+        "h": 1120,
+        "bytes": 117672
+      },
+      {
+        "file": "img/wall-strip-2-560.webp",
+        "w": 337,
+        "h": 560,
+        "bytes": 39868
+      }
+    ],
+    "source": "private/client-media/maps-la/la-photo-b.jpg (7008x4672, Sony ILCE-7M4, Photoshop, 2022-02; owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); the full-size original of the owner's 1432x816 screenshot private/client-media/family-wall/wall-letters.png, mapped onto it as a pure 4.63x scale by ORB features + RANSAC), crop x 334-6964 / y 0-3771 (the screenshot's framing), x 2510-4778 (the screenshot's x 470-960). Light-matched to wall-strip-4..6 and graded (grade_rich s 0.5) by private/gen/family-wall/slice_wall.py. Rights: posted by the business itself; the wall shows famous people (PITCH-NOTES #30)."
+  },
+  "wall-strip-3": {
+    "alt": "The right end of the white ORIGINALS letters in front of the store's portrait wall, beside a glass display case",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-3-1120.webp",
+        "w": 649,
+        "h": 1120,
+        "bytes": 132914
+      },
+      {
+        "file": "img/wall-strip-3-560.webp",
+        "w": 324,
+        "h": 560,
+        "bytes": 47074
+      }
+    ],
+    "source": "private/client-media/maps-la/la-photo-b.jpg (7008x4672, Sony ILCE-7M4, Photoshop, 2022-02; owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); the full-size original of the owner's 1432x816 screenshot private/client-media/family-wall/wall-letters.png, mapped onto it as a pure 4.63x scale by ORB features + RANSAC), crop x 334-6964 / y 0-3771 (the screenshot's framing), x 4778-6963 (the screenshot's x 960-1432). Light-matched to wall-strip-4..6 and graded (grade_rich s 0.5) by private/gen/family-wall/slice_wall.py. Rights: posted by the business itself; the wall shows famous people (PITCH-NOTES #30)."
+  },
+  "wall-strip-4": {
+    "alt": "A section of the store's black-and-white portrait wall above a glass display case",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-4-878.webp",
+        "w": 352,
+        "h": 878,
+        "bytes": 97716
+      },
+      {
+        "file": "img/wall-strip-4-560.webp",
+        "w": 225,
+        "h": 560,
+        "bytes": 36502
+      }
+    ],
+    "source": "private/client-media/family-wall/wall-seated.png, x 0-352 (owner-supplied 2026-11-12; source unconfirmed). Light-matched and graded locally; no AI."
+  },
+  "wall-strip-5": {
+    "alt": "A man in a dark green outfit holds an Originals bag, seated in front of the store's black-and-white portrait wall",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-5-878.webp",
+        "w": 658,
+        "h": 878,
+        "bytes": 156796
+      },
+      {
+        "file": "img/wall-strip-5-560.webp",
+        "w": 420,
+        "h": 560,
+        "bytes": 57982
+      }
+    ],
+    "source": "private/client-media/family-wall/wall-seated.png, x 352-1010 (owner-supplied 2026-11-12; source unconfirmed; shows an identifiable person). Light-matched and graded locally; no AI."
+  },
+  "wall-strip-6": {
+    "alt": "A section of the store's black-and-white portrait wall beside a wooden stool",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/wall-strip-6-878.webp",
+        "w": 422,
+        "h": 878,
+        "bytes": 103802
+      },
+      {
+        "file": "img/wall-strip-6-560.webp",
+        "w": 269,
+        "h": 560,
+        "bytes": 37490
+      }
+    ],
+    "source": "private/client-media/family-wall/wall-seated.png, x 1010-1432 (owner-supplied 2026-11-12; source unconfirmed). Light-matched and graded locally; no AI."
+  },
+  "store-la-wall": {
+    "alt": "Inside Originals Los Angeles: the ORIGINALS letters in front of the black-and-white portrait wall, with timber trusses and glass display cases",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-wall-1600.webp",
+        "w": 1600,
+        "h": 1066,
+        "bytes": 361144
+      },
+      {
+        "file": "img/store-la-wall-1000.webp",
+        "w": 1000,
+        "h": 666,
+        "bytes": 185428
+      }
+    ],
+    "source": "private/client-media/maps-la/la-21.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 7008x4672, Sony ILCE-7M4, Photoshop, 2022-11); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, with a light grade (grade_rich s 0.4). Shoppers at the counter are small and seen from behind; a screen shows a store promo with two models. Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-la-window": {
+    "alt": "An arched brick window at Originals Los Angeles above a wooden table of Originals hats and tees",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-window-1000.webp",
+        "w": 1000,
+        "h": 1001,
+        "bytes": 282602
+      },
+      {
+        "file": "img/store-la-window-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 123664
+      }
+    ],
+    "source": "private/client-media/maps-la/la-206.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 4542x6813, Sony ILCE-7M4, Photoshop, 2022-10); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, square crop (the arch and the table top), light grade (grade_rich s 0.4). Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-la-letters-bw": {
+    "alt": "The giant ORIGINALS letters in front of the black-and-white portrait wall at Originals Los Angeles, in black and white",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-la-letters-bw-2560.webp",
+        "w": 2560,
+        "h": 1706,
+        "bytes": 383456
+      },
+      {
+        "file": "img/store-la-letters-bw-1920.webp",
+        "w": 1920,
+        "h": 1280,
+        "bytes": 259482
+      },
+      {
+        "file": "img/store-la-letters-bw-1280.webp",
+        "w": 1280,
+        "h": 853,
+        "bytes": 148476
+      },
+      {
+        "file": "img/store-la-letters-bw-800.webp",
+        "w": 800,
+        "h": 533,
+        "bytes": 75190
+      }
+    ],
+    "source": "private/client-media/maps-la/la-304.jpg (owner photo from the business's own Google Maps listing (Originals Factory, \"By owner\" tab); 7008x4672, Sony ILCE-7M4, Photoshop, 2022-02, the photographer's black and white); downloaded 2026-11-12 at original size (owner, 2026-11-12: use the listing's LA interior photos, \"enhance em and make them clear and crisp\"); web sizes are area-average downscales from the original, sharpened at each size by private/gen/store-photos/process.py, no grade (kept black and white). Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  },
+  "store-sd-interior": {
+    "alt": "Inside Originals San Diego: white ORIGINALS letters and potted plants above dark shelving, screens and white crown sculptures",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-sd-interior-1460.webp",
+        "w": 1460,
+        "h": 878,
+        "bytes": 192024
+      },
+      {
+        "file": "img/store-sd-interior-960.webp",
+        "w": 960,
+        "h": 577,
+        "bytes": 85536
+      }
+    ],
+    "source": "private/client-media/Originals-dispensary.jpeg (730x439, from the live /retail page, no alt there). Registered until 2026-11-12 as store-la-front with an LA storefront alt, but it is the San Diego store's back wall: the same letters, plants, slatwall shelves and crown sculptures as the interior photo on the San Diego listing's own \"By owner\" tab (private/client-media/maps-sd/sd-owner-interior.jpg, 828x621, with staff and shoppers, not used). Upscaled 2x by fal Topaz High Fidelity V2, face enhancement off (topaz/upscale/image/precision, request 01a1ce42-21d9-7ae1-9385-d4d549ce7532; owner OK 2026-11-12), then the light store grade (grade_rich s 0.4; private/gen/store-photos/sd_interior_topaz.py). A screen on the wall shows a promo video with a model."
+  },
+  "family-wall-unit": {
+    "alt": "The black-and-white portrait wall at Originals Los Angeles, rebuilt flat from the store's own photos",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/family-wall-unit-1120.webp",
+        "w": 2862,
+        "h": 1120,
+        "bytes": 384400
+      },
+      {
+        "file": "img/family-wall-unit-560.webp",
+        "w": 1431,
+        "h": 560,
+        "bytes": 154780
+      }
+    ],
+    "source": "Rebuilt flat from the business's own Google Maps 'By owner' photos of the LA store; no AI, no generative or inpainted pixels. la-13 is the base (99.7% of pixels); la-photo-b and la-317 fill where a prop hid the wall; la-50, la-318, la-315, la-304, la-164, la-251, la-70 and la-243 were registered and tried. Method: rectified with vanishing points and the wall's own repeat shift; the three print panels registered per repeat (SIFT/RANSAC + optical flow); letters, props, plants, cases, tree, balloons and neon masked; tone-matched, fused, graded to crisp black and white. One true horizontal repeat (P = 3069 px at master scale). Coverage: 100% real photo pixels, 0 holes; cropped to the top 62.4% of the wall height because the lower rows stand behind the letters in every photo; no print substituted; a thin dark seam sits on the tile edge (a print border)."
+  },
+  "store-sd-front": {
+    "alt": "The Originals San Diego storefront on Federal Blvd at golden hour, under its ORIGINALS DISPENSARY sign",
+    "ai": true,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-sd-front-2400.webp",
+        "w": 2400,
+        "h": 1800,
+        "bytes": 575008
+      },
+      {
+        "file": "img/store-sd-front-1600.webp",
+        "w": 1600,
+        "h": 1200,
+        "bytes": 315806
+      },
+      {
+        "file": "img/store-sd-front-960.webp",
+        "w": 960,
+        "h": 720,
+        "bytes": 138680
+      }
+    ],
+    "source": "private/client-media/sd-front/sd-storefront-golden.png (owner-supplied 2026-11-12 for the San Diego deals card, 1448x1086, md5 426d6a85f5549877b209caad90b27b88). Marked generated until the owner confirms its source: its door lettering is garbled pseudo-text, and its building number read 6240 where the store is 6220 Federal Blvd (the business's own Sep 2022 listing photo shows 6220 on the same column). The third digit was replaced locally by a copy of the photo's own \"2\" (no AI; private/gen/sd-front/number-fixed.png). Upscaled 2x by fal Topaz High Fidelity V2, face enhancement off (topaz/upscale/image/precision, request 01a1ce42-1b65-7b32-8035-297572015a8b; owner OK 2026-11-12), then graded locally for a bit more golden hour (warm highlights, cool deep shadows, amber bloom, a faint warm glow from the sun side, grade_rich s 0.3; private/gen/sd-front/process.py --topaz). Its banner shows \"$25 grams top shelf\" and \"Mondays: $10 off any 1/2 oz\": confirm those are current."
+  },
+  "logo-originals": {
+    "alt": "Originals logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-originals.svg",
+        "w": 576,
+        "h": 240,
+        "bytes": 38790
+      }
+    ],
+    "source": "The site's own Originals lockup, src/assets/brand/originals-lockup.svg (the trace of the client's WHITELOGOCROWN.png from the live site: the la-lockup's arched wordmark and crown, without its LOS ANGELES line). Paths unchanged, re-inked. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12."
+  },
+  "logo-the-cure-company": {
+    "alt": "The Cure Company logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-the-cure-company.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 12768
+      }
+    ],
+    "source": "The client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/the-cure-company-61318/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-61318/3ecd97e6-a621-4f2f-bacd-f3cb82c89798.png; read from the project capture, since originalsca.com/robots.txt disallows crawling). Download: private/client-media/brand-logos/menu-the-cure-company.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. The black line art kept; its green fill reads as paper."
+  },
+  "logo-raw-garden": {
+    "alt": "Raw Garden logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-raw-garden.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 5572
+      }
+    ],
+    "source": "The client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/raw-garden-61365/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-61365/e12cb5eb-cff3-456d-bf25-613b44c11c65.jpeg; read from the project capture, since originalsca.com/robots.txt disallows crawling). Download: private/client-media/brand-logos/menu-raw-garden.jpg, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12."
+  },
+  "logo-alien-labs": {
+    "alt": "Alien Labs logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-alien-labs.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 12706
+      }
+    ],
+    "source": "The client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/alien-labs-91626/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-91626/492f226d-2eed-4efd-abc2-6b3d8939260f.jpeg; read from the project capture, since originalsca.com/robots.txt disallows crawling). Download: private/client-media/brand-logos/menu-alien-labs.jpg, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. The orange lettering taken off its black square."
+  },
+  "logo-kanha": {
+    "alt": "Kanha logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-kanha.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 9504
+      }
+    ],
+    "source": "The brand's official site https://kanhalife.com/: its header logo, https://kanhalife.com/cdn/shop/files/white_kanha_logo.png?v=1745231511 (776x168, white on clear). Download: private/client-media/brand-logos/site-kanha.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Chosen over the LA menu image, whose multicolour mandala has no single-ink reading."
+  },
+  "logo-wyld": {
+    "alt": "Wyld logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-wyld.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 8646
+      }
+    ],
+    "source": "The client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/wyld-61369/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-61369/8700294c-3001-4bb7-9120-e0dc6ca17e53.png; read from the project capture, since originalsca.com/robots.txt disallows crawling). Download: private/client-media/brand-logos/menu-wyld.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. The red disc reads as ink, the antlers and name as paper."
+  },
+  "logo-papa-barkley": {
+    "alt": "Papa & Barkley logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-papa-barkley.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 3914
+      }
+    ],
+    "source": "The client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/papa-barkley-61401/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-61401/e06b953e-1c45-46f4-8a28-73fefdae3f9b.png; read from the project capture, since originalsca.com/robots.txt disallows crawling). Download: private/client-media/brand-logos/menu-papa-barkley.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. The white lettering taken off its blue square (a 225 px source, upscaled with crisp edges)."
+  },
+  "logo-pacific-stone": {
+    "alt": "Pacific Stone logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-pacific-stone.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 12340
+      }
+    ],
+    "source": "The brand's official site https://pacificstonebrand.com/: its header logo, https://pacificstonebrand.com/wp-content/uploads/2024/10/pacific-stone-logo-2.jpg (256x120, gold on black). Download: private/client-media/brand-logos/site-pacific-stone.jpg, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. A small source: upscaled with crisp edges."
+  },
+  "logo-maven-genetics": {
+    "alt": "Maven Genetics logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-maven-genetics.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 8720
+      }
+    ],
+    "source": "The brand's official site https://mavenmvn.com/ (www.mavengenetics.com redirects there): its header logo, https://images.squarespace-cdn.com/content/v1/68f6f5537a1ab710e91bd582/3c5b4abf-929c-479d-946e-eccba7ad384d/MAVEN+GENETICS+GOLD+LOGO+TRANSPARENT+BACK+LARGER.png (gold on clear). Download: private/client-media/brand-logos/site-maven-genetics.webp, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12."
+  },
+  "logo-rove": {
+    "alt": "Rove logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-rove.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 4642
+      }
+    ],
+    "source": "The brand's official site https://rovebrand.com/: its header logo, https://rovebrand.com/cdn/shop/files/10yr_sig_main.png?v=1774647137 (192x90, the ROVE wordmark over its \"Ten Years\" anniversary script). Download: private/client-media/brand-logos/site-rove.png, see provenance.json. Single ink (--text-on-paper), trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. A small source: upscaled with crisp edges."
+  },
+  "daily-jar": {
+    "alt": "An ORIGINALS glass jar of flower with a wooden lid on a reflective counter",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/daily-jar-2400.webp",
+        "w": 2400,
+        "h": 1351,
+        "bytes": 190418
+      },
+      {
+        "file": "img/daily-jar-1600.webp",
+        "w": 1600,
+        "h": 900,
+        "bytes": 107524
+      },
+      {
+        "file": "img/daily-jar-1280.webp",
+        "w": 1280,
+        "h": 720,
+        "bytes": 76806
+      },
+      {
+        "file": "img/daily-jar-960.webp",
+        "w": 960,
+        "h": 540,
+        "bytes": 50272
+      },
+      {
+        "file": "img/daily-jar-640.webp",
+        "w": 640,
+        "h": 360,
+        "bytes": 27288
+      }
+    ],
+    "source": "private/client-media/jar/originals-jar.png (owner-supplied 2026-11-12 for the San Diego Daily deals card, 1672x941, md5 e1b1058d23153900d81009d7b5f44461; provenance unconfirmed: confirm it is the client's own photo, PITCH-NOTES #32). Upscaled 2x by fal Topaz High Fidelity V2, face enhancement off (topaz/upscale/image/precision, request 01a1cf0a-579e-70b0-99d9-a3e60895b046; owner OK 2026-11-12), then a light grade (grade_rich s 0.35; private/gen/store-photos/daily_jar_topaz.py); no generative AI."
+  },
+  "daily-jar-tall": {
+    "alt": "An ORIGINALS glass jar of flower with a wooden lid on a reflective counter",
+    "ai": true,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/daily-jar-tall-1024.webp",
+        "w": 1024,
+        "h": 1536,
+        "bytes": 153888
+      },
+      {
+        "file": "img/daily-jar-tall-800.webp",
+        "w": 800,
+        "h": 1200,
+        "bytes": 102942
+      },
+      {
+        "file": "img/daily-jar-tall-640.webp",
+        "w": 640,
+        "h": 960,
+        "bytes": 75744
+      }
+    ],
+    "source": "private/client-media/jar/originals-jar-vertical-2.png (owner-supplied 2026-11-12, the vertical version of daily-jar, for the Daily deals card wherever it is taller than wide: owner, \"use this and replace all the vertical versions\", then this second version, \"is this version will help you?\"; 1024x1536, md5 17871092d8c75f98bba4365a578d04ee; the first version, originals-jar-vertical.png, is kept unused). Marked generated until the owner confirms its source: 1024x1536 is a standard output size of AI image generators. Checked at full size: the ORIGINALS lettering is whole and correct, and the jar's crown matches the brand's crown mark (crown-black-600) and daily-jar's jar; its reflection mirrors both. The jar, lid to base, stands at x 60-89% and y 36.5-62.5% of the frame (measured: lid x 622-905, top y 570; base rim y 950-955, of 1024x1536). The same light grade as daily-jar (grade_rich s 0.35; private/gen/store-photos/daily_jar_tall.py); no upscale, no generative AI by us. PITCH-NOTES #32."
+  },
+  "gelato-bud": {
+    "alt": "A Gelato flower bud on black",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/gelato-bud-1200.webp",
+        "w": 1200,
+        "h": 1200,
+        "bytes": 172214
+      },
+      {
+        "file": "img/gelato-bud-600.webp",
+        "w": 600,
+        "h": 600,
+        "bytes": 54858
+      }
+    ],
+    "source": "private/client-media/originals_ca-Gelato.png (the client's own Gelato photo from the live site, 599x599). Owner, 2026-11-12: make the Gelato strain card look like the others (a single bud on black). The bud was cut out of the photo with macOS Vision's on-device foreground segmentation (private/gen/strain-gelato/cutout.swift), then GrabCut separated it from the jar and box (bud.py). No pixels generated by the cut-out. Placed on black and graded (grade_rich s 0.8), then upscaled 4x by fal Topaz High Fidelity V2, face enhancement off (topaz/upscale/image/precision, request 01a1cf0a-54af-75e3-a7a4-8e6e2f786db1; owner OK 2026-11-12), and downscaled to 1200/600 (bud_topaz.py)."
+  },
+  "logo-wyld-white": {
+    "alt": "Wyld logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-wyld-white.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 8272
+      }
+    ],
+    "source": "White version for the dark home brand marquee, from the same source as logo-wyld: the client's own LA menu brand page https://originalsca.com/menu/los-angeles/brands/wyld-61369/ (its brand image https://tymber-s3.imgix.net/originals-la-307/product-brand-61369/8700294c-3001-4bb7-9120-e0dc6ca17e53.png; private/client-media/brand-logos/menu-wyld.png, see provenance.json). The badge's own white parts (antlers, name, inner ring) kept as one white ink on clear, so the red disc does not invert into a solid white blob. Trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12."
+  },
+  "store-counter": {
+    "alt": "An Originals budtender helping customers at a store counter",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-counter-834.webp",
+        "w": 834,
+        "h": 1286,
+        "bytes": 159286
+      },
+      {
+        "file": "img/store-counter-600.webp",
+        "w": 600,
+        "h": 925,
+        "bytes": 81236
+      },
+      {
+        "file": "img/store-counter-400.webp",
+        "w": 400,
+        "h": 617,
+        "bytes": 44426
+      }
+    ],
+    "source": "private/client-media/save-now/counter.png (owner-supplied 2026-11-12 as the background of the /deals \"Save now\" 30% first-time-patient tile, 834x1286; provenance unconfirmed). It shows identifiable people (staff and customers): confirm the client owns the photo and has their permission (PITCH-NOTES #33). Local light grade only (grade_rich s 0.4; private/gen/store-photos/counter.py); no AI."
+  },
+  "logo-beast-mode": {
+    "alt": "Beast Mode logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-beast-mode.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 6678
+      }
+    ],
+    "source": "Beast Mode's official site https://www.beastmodeonline.com/ (Marshawn Lynch's brand): its header logo, https://www.beastmodeonline.com/cdn/shop/files/BM_LOGO_LANDSCAPE_Vegas_Gold.png?v=1727289492 (2278x715, gold on clear). Download: private/client-media/brand-logos/site-beast-mode.png, see provenance.json. White single ink on clear for the dark home collab tape, trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Celebrity-partner mark: confirm use with the client."
+  },
+  "logo-royal-blunts": {
+    "alt": "Royal Blunts logo",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/logo-royal-blunts.webp",
+        "w": 576,
+        "h": 240,
+        "bytes": 15742
+      }
+    ],
+    "source": "Royal Blunts' official site https://royalblunts.com/: its full ROYAL BLUNTS crown lockup, https://royalblunts.com/wp-content/uploads/2025/06/Golden_Logo@2x-1-1.png (369x173, gold on clear; the header shows the crown alone). Download: private/client-media/brand-logos/site-royal-blunts-footer.png, see provenance.json. White single ink on clear for the dark home collab tape, trimmed and size-balanced on the shared 576x240 brand-logo canvas, 2026-11-12. Partner mark: confirm use with the client."
+  },
+  "store-sd-exterior": {
+    "alt": "The Originals San Diego storefront: ORIGINALS signs and the number 6220 on the building under a blue sky",
+    "ai": false,
+    "kind": "client",
+    "files": [
+      {
+        "file": "img/store-sd-exterior-2560.webp",
+        "w": 2560,
+        "h": 1448,
+        "bytes": 238822
+      },
+      {
+        "file": "img/store-sd-exterior-1920.webp",
+        "w": 1920,
+        "h": 1086,
+        "bytes": 159406
+      },
+      {
+        "file": "img/store-sd-exterior-1280.webp",
+        "w": 1280,
+        "h": 724,
+        "bytes": 87642
+      },
+      {
+        "file": "img/store-sd-exterior-800.webp",
+        "w": 800,
+        "h": 452,
+        "bytes": 43824
+      }
+    ],
+    "source": "private/client-media/maps-sd/sd-owner-exterior.jpg (4000x2262): the business's own \"By owner\" photo from the Originals (San Diego) Google Maps listing, Sep 2022. Web sizes are area-average downscales from the original with a light grade (grade_rich s 0.4) and a light unsharp mask at each size (private/gen/store-photos/sd-exterior.py); no AI. Rights: posted by the business itself; confirm the photographer's licence covers the website (PITCH-NOTES #30)."
+  }
 }

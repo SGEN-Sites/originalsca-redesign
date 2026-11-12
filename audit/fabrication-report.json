@@ -1,9 +1,9 @@
 {
   "schema": "site-reforge/fabrication-report@1",
-  "generated": "2026-11-11T01:36:11.439Z",
+  "generated": "2026-11-12T12:06:35.710Z",
   "rebuildDir": "dist",
   "filesScanned": 53,
-  "claimsChecked": 437,
+  "claimsChecked": 329,
   "sourceCorpusChars": 650554,
   "declaredFactsChars": 4442,
   "counts": {},

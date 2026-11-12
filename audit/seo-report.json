@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/seo-report@1",
-  "generated": "2026-11-11T01:28:44.212Z",
+  "generated": "2026-11-12T11:59:44.711Z",
   "origin": "https://originalsca.com",
   "buildDir": "dist",
   "siteUrl": "https://originalsca.com",
@@ -40,7 +40,7 @@
   "externalLinks": null,
   "repaired": {
     "pagesTouched": 53,
-    "fieldsWritten": 527
+    "fieldsWritten": 521
   },
   "counts": {
     "source": {
@@ -6613,5 +6613,5 @@
       }
     ]
   },
-  "note": "APPLIED. This run wrote into the build: 527 field(s) on 53 page(s), each recorded in audit/seo-changes.json with its source. SOURCE findings are the live site's own defects and repairing them is an improvement, not a preservation. MIGRATION findings are damage the rebuild created and did not exist on the source."
+  "note": "APPLIED. This run wrote into the build: 521 field(s) on 53 page(s), each recorded in audit/seo-changes.json with its source. SOURCE findings are the live site's own defects and repairing them is an improvement, not a preservation. MIGRATION findings are damage the rebuild created and did not exist on the source."
 }

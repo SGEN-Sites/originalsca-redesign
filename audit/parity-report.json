@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/parity-report@1",
-  "generated": "2026-11-11T01:36:10.526Z",
+  "generated": "2026-11-12T12:06:34.981Z",
   "sourcePages": 724,
   "rebuiltFiles": 53,
   "mappedPages": 41,
@@ -705,7 +705,7 @@
   ],
   "recallFloor": 0.95,
   "contentRunFloor": 12,
-  "meanRecall": 0.7785,
+  "meanRecall": 0.7804,
   "counts": {
     "minor": 48,
     "blocker": 720,
@@ -718,11 +718,11 @@
       "file": "index.html",
       "pageType": "home",
       "status": "DIFFERS",
-      "recall": 0.7791,
-      "missingWords": 95,
+      "recall": 0.7814,
+      "missingWords": 94,
       "longestMissingRun": 8,
       "sourceWords": 423,
-      "rebuiltWords": 1145,
+      "rebuiltWords": 1128,
       "sourceH1": [
         "BEST CULTIVATORS IN CALIFORNIA",
         "SHOP BY CATEGORY"
@@ -731,7 +731,7 @@
         "Best Cultivators in California."
       ],
       "sourceLinks": 11,
-      "rebuiltLinks": 176,
+      "rebuiltLinks": 162,
       "findings": [
         {
           "severity": "minor",
@@ -748,13 +748,13 @@
         {
           "severity": "blocker",
           "code": "content-loss",
-          "title": "Body content recall 77.9% (floor 95%)",
-          "detail": "missing words: news contact locations now dispensary level experience every source ultimate customer satisfaction lorem ipsim button prerolls pills ipsum top bull popular zwnj events have legal"
+          "title": "Body content recall 78.1% (floor 95%)",
+          "detail": "missing words: news contact locations dispensary level experience every source ultimate customer satisfaction lorem ipsim button prerolls pills ipsum top bull popular zwnj events best have legal"
         },
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "19 image(s) without alt",
+          "title": "39 image(s) without alt",
           "detail": "index.html"
         }
       ]
@@ -774,7 +774,7 @@
         "Best-Selling Affordable Cannabis Brands At Originals Factory & Weed Shop"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -813,7 +813,7 @@
         "Cannabis news"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 137,
+      "rebuiltLinks": 100,
       "findings": [
         {
           "severity": "minor",
@@ -856,7 +856,7 @@
         "Brands"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 135,
+      "rebuiltLinks": 98,
       "findings": [
         {
           "severity": "blocker",
@@ -893,7 +893,7 @@
         "Bussin'"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 121,
+      "rebuiltLinks": 84,
       "findings": [
         {
           "severity": "minor",
@@ -930,7 +930,7 @@
         "COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS SAN DIEGO"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 132,
+      "rebuiltLinks": 95,
       "findings": [
         {
           "severity": "major",
@@ -969,7 +969,7 @@
         "CALIFORNIA opt-in"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 118,
+      "rebuiltLinks": 81,
       "findings": [
         {
           "severity": "minor",
@@ -1006,7 +1006,7 @@
         "Cannabis Books For Handy Reference"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 133,
+      "rebuiltLinks": 96,
       "findings": [
         {
           "severity": "major",
@@ -1043,7 +1043,7 @@
         "The Complete Guide to Buying Edibles At Originals Factory & Weed Shop"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 133,
+      "rebuiltLinks": 96,
       "findings": [
         {
           "severity": "blocker",
@@ -1074,7 +1074,7 @@
         "Cannabis Legal States And Economic Growth"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 136,
+      "rebuiltLinks": 99,
       "findings": [
         {
           "severity": "major",
@@ -1171,11 +1171,11 @@
       "file": "contact.html",
       "pageType": "contact",
       "status": "DIFFERS",
-      "recall": 0.522,
-      "missingWords": 76,
-      "longestMissingRun": 26,
+      "recall": 0.5849,
+      "missingWords": 66,
+      "longestMissingRun": 20,
       "sourceWords": 157,
-      "rebuiltWords": 91,
+      "rebuiltWords": 145,
       "sourceH1": [
         "DISPENSARY DOWNTOWN LA",
         "CONTACT INFO"
@@ -1184,7 +1184,7 @@
         "DISPENSARY downtown LA"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 119,
+      "rebuiltLinks": 90,
       "findings": [
         {
           "severity": "minor",
@@ -1195,14 +1195,14 @@
         {
           "severity": "blocker",
           "code": "content-loss",
-          "title": "Body content recall 52.2% (floor 95%)",
-          "detail": "missing words: shop deals brands locations news events now wholesale info the best dispensary in los angeles and have a top level cannabis experience every time originals"
+          "title": "Body content recall 58.5% (floor 95%)",
+          "detail": "missing words: deals brands locations news events now shop wholesale info the best dispensary in and have a top level cannabis experience every time clothing legal terms"
         },
         {
           "severity": "major",
           "code": "content-block-missing",
-          "title": "26 consecutive source words absent from the rebuild (limit 12)",
-          "detail": "\"los angeles originals san diego originals clothing legal terms of service privacy policy prop 65 warning california opt in rewards program and opt in disclaimer links\""
+          "title": "20 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"clothing legal terms of service privacy policy prop 65 warning california opt in rewards program and opt in disclaimer links\""
         }
       ]
     },
@@ -1215,7 +1215,7 @@
       "missingWords": 75,
       "longestMissingRun": 25,
       "sourceWords": 1552,
-      "rebuiltWords": 1483,
+      "rebuiltWords": 1535,
       "sourceH1": [
         "COOKIE POLICY"
       ],
@@ -1223,7 +1223,7 @@
         "COOKIE POLICY"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 116,
+      "rebuiltLinks": 87,
       "findings": [
         {
           "severity": "minor",
@@ -1258,7 +1258,7 @@
         "CANNABIS deals"
       ],
       "sourceLinks": 10,
-      "rebuiltLinks": 123,
+      "rebuiltLinks": 86,
       "findings": [
         {
           "severity": "minor",
@@ -1281,7 +1281,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "1 image(s) without alt",
+          "title": "2 image(s) without alt",
           "detail": "deals.html"
         }
       ]
@@ -1291,11 +1291,11 @@
       "file": "disclaimer.html",
       "pageType": "legal",
       "status": "DIFFERS",
-      "recall": 0.9257,
-      "missingWords": 75,
+      "recall": 0.9287,
+      "missingWords": 72,
       "longestMissingRun": 25,
       "sourceWords": 985,
-      "rebuiltWords": 914,
+      "rebuiltWords": 931,
       "sourceH1": [
         "DISCLAIMER"
       ],
@@ -1303,7 +1303,7 @@
         "DISCLAIMER"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 117,
+      "rebuiltLinks": 86,
       "findings": [
         {
           "severity": "minor",
@@ -1314,7 +1314,7 @@
         {
           "severity": "major",
           "code": "content-loss",
-          "title": "Body content recall 92.6% (floor 95%)",
+          "title": "Body content recall 92.9% (floor 95%)",
           "detail": "missing words: shop deals brands locations news contact now events the best dispensary in los angeles and have a top level cannabis experience every time originals san"
         },
         {
@@ -1342,7 +1342,7 @@
         "ORIGINALS FACTORY AND WEED SHOP FAQs"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 121,
+      "rebuiltLinks": 84,
       "findings": [
         {
           "severity": "blocker",
@@ -1379,7 +1379,7 @@
         "5 Reasons Why Originals Gelato And Oakstradam OG Is The Best Weed In Los Angeles"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 133,
+      "rebuiltLinks": 96,
       "findings": [
         {
           "severity": "major",
@@ -1416,7 +1416,7 @@
         "Gelato Strain by Originals: Sweet, Doughy Terps and A Heavy Euphoria"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -1453,7 +1453,7 @@
         "The Complete Guide To Buying Glass House Farms at Originals LA"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -1490,7 +1490,7 @@
         "The Complete Guide To Buying The Cure Company Flower At Originals LA"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 137,
+      "rebuiltLinks": 100,
       "findings": [
         {
           "severity": "major",
@@ -1527,7 +1527,7 @@
         "Jack Herer Strain by Originals: Robust Fruity Flavors And Pure Sativa Power"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 130,
+      "rebuiltLinks": 93,
       "findings": [
         {
           "severity": "major",
@@ -1564,7 +1564,7 @@
         "Jeeter Brand Guide: Extremely Flavorful And Potent Infused Pre-Rolls, Blunts, and Vapes at Originals LA"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -1603,7 +1603,7 @@
         "CALIFORNIA ORIGINALS CANNABIS INDUSTRY jobs"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 120,
+      "rebuiltLinks": 83,
       "findings": [
         {
           "severity": "minor",
@@ -1646,7 +1646,7 @@
         "The King Louie Strain By Originals Has A Funky Lemon Stench And Royal Highs"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 134,
+      "rebuiltLinks": 97,
       "findings": [
         {
           "severity": "major",
@@ -1673,11 +1673,11 @@
       "file": "los-angeles.html",
       "pageType": "page",
       "status": "DIFFERS",
-      "recall": 0.5,
-      "missingWords": 69,
+      "recall": 0.5072,
+      "missingWords": 68,
       "longestMissingRun": 16,
       "sourceWords": 136,
-      "rebuiltWords": 130,
+      "rebuiltWords": 134,
       "sourceH1": [
         "DISPENSARY DOWNTOWN LA"
       ],
@@ -1685,7 +1685,7 @@
         "DISPENSARY downtown LA"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 125,
+      "rebuiltLinks": 89,
       "findings": [
         {
           "severity": "minor",
@@ -1696,8 +1696,8 @@
         {
           "severity": "blocker",
           "code": "content-loss",
-          "title": "Body content recall 50.0% (floor 95%)",
-          "detail": "missing words: deals brands locations news events now shop open 9am 945pm 10am 745pm wholesale the best in and have top level experience every time originals san"
+          "title": "Body content recall 50.7% (floor 95%)",
+          "detail": "missing words: deals brands locations news events now shop open 9am 945pm 10am 745pm wholesale the best in and have top level experience every time san diego"
         },
         {
           "severity": "major",
@@ -1730,7 +1730,7 @@
         "LOS ANGELES store"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 138,
+      "rebuiltLinks": 101,
       "findings": [
         {
           "severity": "minor",
@@ -1767,7 +1767,7 @@
         "OPT IN to RECEIVE exclusive deals & EVENT INFO"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 116,
+      "rebuiltLinks": 79,
       "findings": [
         {
           "severity": "blocker",
@@ -11150,7 +11150,7 @@
         "The Oakstradam OG Strain by Originals Is One Of California’s Strongest Indicas"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 133,
+      "rebuiltLinks": 96,
       "findings": [
         {
           "severity": "major",
@@ -11187,7 +11187,7 @@
         "The Popular Gelato Strain by Originals Is Sweet, Doughy, And Strong"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 134,
+      "rebuiltLinks": 97,
       "findings": [
         {
           "severity": "major",
@@ -11224,7 +11224,7 @@
         "Originals Official Hall of Flowers Palm Springs Recap"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -11261,7 +11261,7 @@
         "Originals San Diego Is Now Open For Business!"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 134,
+      "rebuiltLinks": 97,
       "findings": [
         {
           "severity": "major",
@@ -11298,7 +11298,7 @@
         "COMPLETE GUIDE TO BUYING ORIGINALS WEED AT ORIGINALS FACTORY & WEED SHOP"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 132,
+      "rebuiltLinks": 95,
       "findings": [
         {
           "severity": "blocker",
@@ -11329,7 +11329,7 @@
         "Originals Factory & Weed Shop’s Pre-Roll Stocking Stuffer Gift Guide"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -11356,11 +11356,11 @@
       "file": "privacy-policy.html",
       "pageType": "page",
       "status": "DIFFERS",
-      "recall": 0.9894,
-      "missingWords": 74,
-      "longestMissingRun": 25,
+      "recall": 0.9907,
+      "missingWords": 65,
+      "longestMissingRun": 16,
       "sourceWords": 6893,
-      "rebuiltWords": 6824,
+      "rebuiltWords": 6960,
       "sourceH1": [
         "PRIVACY POLICY"
       ],
@@ -11368,7 +11368,7 @@
         "PRIVACY POLICY"
       ],
       "sourceLinks": 11,
-      "rebuiltLinks": 158,
+      "rebuiltLinks": 138,
       "findings": [
         {
           "severity": "minor",
@@ -11379,8 +11379,8 @@
         {
           "severity": "major",
           "code": "content-block-missing",
-          "title": "25 consecutive source words absent from the rebuild (limit 12)",
-          "detail": "\"shop the best dispensary in los angeles and have a top level cannabis experience every time locations originals los angeles originals san diego originals clothing\""
+          "title": "16 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"a top level cannabis experience every time locations originals los angeles originals san diego originals clothing\""
         }
       ]
     },
@@ -11541,7 +11541,7 @@
         "PROP 65 WARNING"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 117,
+      "rebuiltLinks": 80,
       "findings": [
         {
           "severity": "blocker",
@@ -11575,7 +11575,7 @@
         "OUR stores"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 127,
+      "rebuiltLinks": 90,
       "findings": [
         {
           "severity": "minor",
@@ -11620,7 +11620,7 @@
         "REWARDS PROGRAM and opt-in"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 118,
+      "rebuiltLinks": 81,
       "findings": [
         {
           "severity": "minor",
@@ -11659,7 +11659,7 @@
         "SAN DIEGO ORIGINALS store"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 138,
+      "rebuiltLinks": 101,
       "findings": [
         {
           "severity": "minor",
@@ -11682,7 +11682,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "10 image(s) without alt",
+          "title": "9 image(s) without alt",
           "detail": "san-diego-store.html"
         }
       ]
@@ -11702,7 +11702,7 @@
         "Four Sugar-Free Cannabis Edibles Worth Trying At Originals LA"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 131,
+      "rebuiltLinks": 94,
       "findings": [
         {
           "severity": "major",
@@ -11729,11 +11729,11 @@
       "file": "terms-of-service.html",
       "pageType": "page",
       "status": "DIFFERS",
-      "recall": 0.9874,
-      "missingWords": 74,
-      "longestMissingRun": 25,
+      "recall": 0.9882,
+      "missingWords": 69,
+      "longestMissingRun": 17,
       "sourceWords": 5813,
-      "rebuiltWords": 5745,
+      "rebuiltWords": 5824,
       "sourceH1": [
         "TERMS OF SERVICE"
       ],
@@ -11741,7 +11741,7 @@
         "TERMS OF SERVICE"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 140,
+      "rebuiltLinks": 126,
       "findings": [
         {
           "severity": "minor",
@@ -11752,8 +11752,8 @@
         {
           "severity": "major",
           "code": "content-block-missing",
-          "title": "25 consecutive source words absent from the rebuild (limit 12)",
-          "detail": "\"shop the best dispensary in los angeles and have a top level cannabis experience every time locations originals los angeles originals san diego originals clothing\""
+          "title": "17 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"have a top level cannabis experience every time locations originals los angeles originals san diego originals clothing\""
         }
       ]
     },
@@ -11772,7 +11772,7 @@
         "THC Extract For Fast Relief"
       ],
       "sourceLinks": 7,
-      "rebuiltLinks": 134,
+      "rebuiltLinks": 97,
       "findings": [
         {
           "severity": "major",
@@ -11809,7 +11809,7 @@
         "The Wedding Cake Strain by Originals Has Tart, Vanilla Flavors And High-THC"
       ],
       "sourceLinks": 8,
-      "rebuiltLinks": 134,
+      "rebuiltLinks": 97,
       "findings": [
         {
           "severity": "major",

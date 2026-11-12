@@ -1,0 +1,123 @@
+/* carousel.css: the /deals page's deals wall (owner request 2026-11-12), ported from an earlier redesign's cave
+   gallery (its cinema.css .cave rules; markup shop.mjs cave(), script site.js [data-cave]). site.js sets .cave-on, sizes
+   the cards (--pw, --ph: 3:4) and hangs each on the arc, so the side cards come closer and turn in; the stage fades into
+   the band at its left and right (--cave-fade: narrower on phones, where the neighbours only peek beside a card about
+   78vw wide) and a faint reflection lies on the floor below each card. Without the script, or with reduced motion, the
+   same cards stand in a plain swipe row, flat. Tokens only. */
+.cave { --cave-fade: 13%; position: relative; }
+.cave__stage { position: relative; }
+.cave-on .cave__stage { overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, var(--black) var(--cave-fade), var(--black) calc(100% - var(--cave-fade)), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, var(--black) var(--cave-fade), var(--black) calc(100% - var(--cave-fade)), transparent 100%); }
+.cave-on.is-dragging .cave__stage { cursor: grabbing; }
+/* the wall's keyboard focus shows on the centred card: the stage's own outline would fade into its masked edges */
+.cave-on .cave__stage:focus-visible { outline: none; }
+.cave-on .cave__stage:focus-visible .cave__panel[aria-current] { outline: 2px solid var(--focus); outline-offset: 5px; }
+.cave__wall { margin: 0; padding: 0; }
+/* the cards' middle line, and the eye, sit at 46% of the stage (the earlier build 42%: its floor reflection is taller) */
+.cave-on .cave__wall { position: absolute; inset: 0; perspective-origin: 50% 46%; }
+.cave__panel { position: relative; overflow: hidden; container-type: inline-size; border-radius: var(--radius-lg); background: var(--ink-3); color: var(--white); box-shadow: var(--shadow-card); }
+.cave__panel::after { content: ''; position: absolute; inset: 0; z-index: 2; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px var(--hair-2); }
+.cave-on .cave__panel { position: absolute; left: 50%; top: 46%; width: var(--pw); height: var(--ph); margin: calc(var(--ph) / -2) 0 0 calc(var(--pw) / -2);
+  backface-visibility: hidden; will-change: transform, opacity;
+  -webkit-box-reflect: below 10px linear-gradient(transparent 88%, color-mix(in srgb, var(--black) 7.5%, transparent)); }   /* faint, as on a showroom floor: only the cards' feet, so their buttons are not mirrored */
+.cave__photo { position: absolute; inset: 0; }
+.cave__photo img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; pointer-events: none; user-select: none; -webkit-user-drag: none; }
+
+/* the card: the plaque's words at its foot, in its lower 64% at every card size (the copy tightens on narrow cards, below),
+   on a dark gradient that rises from the foot and eases out (owner request, 2026-11-12: "more natural and gradual": 12
+   stops along an eased curve, no edge where it ends) before the slide's subject, which each photo is framed to keep in the
+   clear top band: the Los Angeles sign by default, its own end on the other slides (below) */
+.cave__shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 76%, transparent) 44%, color-mix(in srgb, var(--ink) 74.3%, transparent) 47.82%, color-mix(in srgb, var(--ink) 69.3%, transparent) 51.64%,
+  color-mix(in srgb, var(--ink) 61%, transparent) 55.45%, color-mix(in srgb, var(--ink) 51.8%, transparent) 59.27%, color-mix(in srgb, var(--ink) 42.6%, transparent) 63.09%,
+  color-mix(in srgb, var(--ink) 33.4%, transparent) 66.91%, color-mix(in srgb, var(--ink) 24.2%, transparent) 70.73%, color-mix(in srgb, var(--ink) 15%, transparent) 74.55%,
+  color-mix(in srgb, var(--ink) 6.7%, transparent) 78.36%, color-mix(in srgb, var(--ink) 1.7%, transparent) 82.18%, transparent 86%); }
+.cave__copy { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 8px; padding: clamp(18px, 7cqw, 28px); }
+.cave__copy > *, .cave__fig > * { margin: 0; }
+.cave__store { font: 700 var(--fs-kicker)/1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--chrome-1); }
+.cave__fig { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 4px .4em; }
+.cave__big { font: 400 27cqw/.82 var(--f-display); letter-spacing: .005em; text-transform: uppercase; color: var(--white); }
+.cave__small { padding-bottom: .45em; font: 700 clamp(1rem, 5.4cqw, 1.35rem)/1 var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--white); }
+.cave__head { margin-top: 2px; font-size: clamp(1.3rem, 8.4cqw, 2rem); color: var(--white); }
+.cave__body { max-width: 36ch; font-size: var(--fs-small); line-height: 1.4; color: var(--chrome-2); }
+.cave__copy > .btn { margin-top: 6px; }
+@container (max-width: 340px) {
+  .cave__copy { gap: 6px; padding: 18px; }
+  .cave__big { font-size: 25cqw; }
+  .cave__copy > .btn { margin-top: 4px; }
+}
+
+/* Happy Hour (happy-hour-lowrider, 3:2): its subjects stand in its right part (head boxes on the 1600px file, deals.css:
+   the woman x 80.5-92%, y 18.5-31%; the dog x 83.5-97.5%, y 64-87%), so the photo is anchored to the card's right edge
+   and the card shows its right half: the woman's head at x 61-84% of the card, the dog's at x 67-95%. The words keep the
+   card's left half (the street and the car), stacked, on a gradient from the left that is gone before both heads */
+.cave__panel--sun .cave__photo img { object-position: 100% 50%; }
+.cave__panel--sun .cave__shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 76%, transparent) 30%, color-mix(in srgb, var(--ink) 74.3%, transparent) 33.27%, color-mix(in srgb, var(--ink) 69.3%, transparent) 36.55%,
+  color-mix(in srgb, var(--ink) 61%, transparent) 39.82%, color-mix(in srgb, var(--ink) 51.8%, transparent) 43.09%, color-mix(in srgb, var(--ink) 42.6%, transparent) 46.36%,
+  color-mix(in srgb, var(--ink) 33.4%, transparent) 49.64%, color-mix(in srgb, var(--ink) 24.2%, transparent) 52.91%, color-mix(in srgb, var(--ink) 15%, transparent) 56.18%,
+  color-mix(in srgb, var(--ink) 6.7%, transparent) 59.45%, color-mix(in srgb, var(--ink) 1.7%, transparent) 62.73%, transparent 66%); }
+.cave__panel--sun :is(.cave__store, .cave__fig, .cave__head) { max-width: 48cqw; }
+.cave__panel--sun .cave__fig { flex-direction: column; align-items: flex-start; gap: 8px; }
+.cave__panel--sun .cave__big { font-size: 21cqw; line-height: .84; }
+.cave__panel--sun .cave__small { padding-bottom: 0; }
+/* Los Angeles (store-la-floor, 1.58:1): the photo's left part, drawn 1.2 times its cover size from the card's bottom left
+   (zoom 1.2 in shop.mjs), so the card shows x 3-43% and y 17-100% of it: the ORIGINALS wall sign, crown to S (x 5-25%,
+   y 26-32%), whole near the top of the card (y 11-18%; owner request 2026-11-12, "align images on these cards": the
+   home card shows it whole), the flag and the leaf beside it, the cases under the words; the hanging ORIGINALS banner
+   (y 1-15%) stays out of the frame rather than cut */
+.cave__panel--la .cave__photo img { object-position: 6% 50%; transform-origin: 0% 100%; scale: 1.2; }
+/* San Diego (store-sd-front, 4:3; deals.css: the ORIGINALS sign x 27-50%, y 29-35%, DISPENSARY y 39-42%, the doors x 66-79%):
+   the storefront sits right of centre; drawn 1.3 times its cover size from the card's bottom left (zoom 1.3 in shop.mjs),
+   the card shows x 22-65% and y 23-100% of it, the sign whole at the top (ORIGINALS y 8-16%, DISPENSARY y 21-25%) */
+.cave__panel--sd .cave__photo img { object-position: 50% 50%; transform-origin: 0% 100%; scale: 1.3; }
+.cave__panel--sd .cave__shade { background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 66%, transparent) 50%, color-mix(in srgb, var(--ink) 64.5%, transparent) 52.55%, color-mix(in srgb, var(--ink) 60.2%, transparent) 55.09%,
+  color-mix(in srgb, var(--ink) 54%, transparent) 57.64%, color-mix(in srgb, var(--ink) 46.2%, transparent) 60.18%, color-mix(in srgb, var(--ink) 37.5%, transparent) 62.73%,
+  color-mix(in srgb, var(--ink) 28.5%, transparent) 65.27%, color-mix(in srgb, var(--ink) 19.8%, transparent) 67.82%, color-mix(in srgb, var(--ink) 12%, transparent) 70.36%,
+  color-mix(in srgb, var(--ink) 5.8%, transparent) 72.91%, color-mix(in srgb, var(--ink) 1.5%, transparent) 75.45%, transparent 78%); }   /* gone below DISPENSARY (y 25% of the card) */
+/* daily deals: the owner's vertical photo of the ORIGINALS jar (daily-jar-tall, 2:3; owner, 2026-11-12: "use this and
+   replace all the vertical versions"; until then the 16:9 daily-jar as a band across the card's top). Every slide is
+   taller than wide, so the photo covers the slide like the others: drawn the slide's width, anchored to its foot, the
+   card shows y 11-100% of it. The jar, lid to base (x 60-89%, y 36.5-62.5% of the photo), stands at the card's right,
+   x 60-89% and y 28.5-58% of it, its reflection below it. The words stack in a column on the left (44cqw) over the
+   potted plant and the sunlit counter. The golden-hour photo is bright on all its left side, so the words sit on two
+   eased ramps: one from the left that holds to 34% and is gone at 59%, just short of the jar (60%); one
+   from the foot, under the title, the body and the button, gone at 40%, just under the jar's foot (42%) */
+.cave__panel--daily .cave__photo img { object-position: 100% 100%; }
+.cave__panel--daily .cave__shade { background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 88%, transparent) 34%, color-mix(in srgb, var(--ink) 86%, transparent) 36.27%, color-mix(in srgb, var(--ink) 80.3%, transparent) 38.55%,
+    color-mix(in srgb, var(--ink) 71.9%, transparent) 40.82%, color-mix(in srgb, var(--ink) 61.6%, transparent) 43.09%, color-mix(in srgb, var(--ink) 50%, transparent) 45.36%,
+    color-mix(in srgb, var(--ink) 38%, transparent) 47.64%, color-mix(in srgb, var(--ink) 26.4%, transparent) 49.91%, color-mix(in srgb, var(--ink) 16.1%, transparent) 52.18%,
+    color-mix(in srgb, var(--ink) 7.7%, transparent) 54.45%, color-mix(in srgb, var(--ink) 2%, transparent) 56.73%, transparent 59%),
+  linear-gradient(0deg, color-mix(in srgb, var(--ink) 80%, transparent) 12%, color-mix(in srgb, var(--ink) 78.1%, transparent) 14.55%, color-mix(in srgb, var(--ink) 73%, transparent) 17.09%,
+    color-mix(in srgb, var(--ink) 65.4%, transparent) 19.64%, color-mix(in srgb, var(--ink) 56%, transparent) 22.18%, color-mix(in srgb, var(--ink) 45.4%, transparent) 24.73%,
+    color-mix(in srgb, var(--ink) 34.6%, transparent) 27.27%, color-mix(in srgb, var(--ink) 24%, transparent) 29.82%, color-mix(in srgb, var(--ink) 14.6%, transparent) 32.36%,
+    color-mix(in srgb, var(--ink) 7%, transparent) 34.91%, color-mix(in srgb, var(--ink) 1.9%, transparent) 37.45%, transparent 40%); }
+.cave__panel--daily :is(.cave__store, .cave__fig, .cave__head, .cave__body) { max-width: 44cqw; }
+.cave__panel--daily .cave__fig { flex-direction: column; align-items: flex-start; gap: 8px; }
+.cave__panel--daily .cave__big { font-size: 22cqw; line-height: .84; }
+.cave__panel--daily .cave__small { padding-bottom: 0; }
+
+/* the caption names the centred deal (site.js writes it); the counter and the buttons below it */
+.cave__caption { display: grid; justify-items: center; gap: 6px; min-height: 3.1em; margin: 4px var(--gutter) 0; text-align: center; }
+.cave__caption.is-new { animation: cave-cap .55s var(--ease); }
+@keyframes cave-cap { from { opacity: 0; translate: 0 6px; } }
+.cave__title { font: 400 clamp(1.6rem, 1.3rem + .9vw, 2.2rem)/1 var(--f-display); letter-spacing: .01em; text-transform: uppercase; color: var(--white); }
+.cave__sub { font: 700 var(--fs-kicker)/1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--steel); }
+.cave__controls { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 14px; }
+.cave__btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--white); cursor: pointer;
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--white) 70%, transparent);
+  transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease), scale var(--t-1) var(--ease); }
+.cave__btn:focus-visible { border-radius: 50%; }
+.cave__btn .ico { width: 20px; height: 20px; stroke-width: 2; }
+.cave__btn[data-cave-prev] .ico { rotate: 180deg; }
+.cave__btn:active { scale: .94; }
+@media (hover: hover) { .cave__btn:hover { background: var(--white); color: var(--ink); } }
+.cave__count { min-width: 4.6em; text-align: center; font: 700 var(--fs-small)/1 var(--f-ui); letter-spacing: .16em; font-variant-numeric: tabular-nums; color: var(--steel); }
+.cave__count b { color: var(--white); }
+@media (max-width: 899.98px) { .cave__caption { margin-top: 0; } .cave__controls { margin-top: 10px; } }
+@media (max-width: 759.98px) { .cave { --cave-fade: 3%; } }
+
+/* no script, or reduced motion: the same cards in a swipe row, flat */
+.cave:not(.cave-on) .cave__wall { display: grid; grid-auto-flow: column; grid-auto-columns: min(78%, 340px); gap: 14px; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); padding: 6px var(--gutter) 18px; }
+.cave:not(.cave-on) .cave__panel { aspect-ratio: 3 / 4; scroll-snap-align: center; }
+.cave:not(.cave-on) .cave__caption, .cave:not(.cave-on) .cave__controls { display: none; }

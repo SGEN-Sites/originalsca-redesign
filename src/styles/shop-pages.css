@@ -1,0 +1,101 @@
+/* shop-pages.css: /shop and /clothing in the site's design language (owner 2026-11-12: "apply those on the remaining
+   pages"; docs/DESIGN-LANGUAGE.md). Markup: the shop and clothing page objects in src/pages/shop.mjs. Every rule is
+   scoped to body.is-shop or body.is-clothing and overrides the shared components from here; tokens only (C13). */
+
+/* ---- /shop: compact bands, each about one screen ---- */
+body.is-shop :is(.shop-cats, .shop-brands, .shop-strains) { padding-block: clamp(56px, 6vw, 96px); }
+body.is-shop :is(.shop-cats, .shop-brands) .section-head { margin-bottom: clamp(24px, 3vw, 36px); }
+
+/* ---- /shop categories: a bento of photo cards with flat edges and 12px gaps (the home category wall's look), the same
+   markup, links and data-shop hooks as everywhere (parts.mjs categoryGrid). Black and white at rest; under the pointer
+   or in keyboard focus the photo takes its colour and the inset frame and the menu line turn gold. ---- */
+body.is-shop .shop-cats .cats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-flow: row; grid-auto-rows: clamp(140px, 11.5vw, 172px); gap: 12px; margin: 0; padding: 0; overflow: visible; }
+body.is-shop .shop-cats .cat:is(:nth-child(1), :nth-child(6), :nth-child(8)) { grid-column: span 2; }
+body.is-shop .shop-cats .cat__link { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 6px; height: 100%; min-height: 0; padding: 18px 22px; border: 0; border-radius: 14px; overflow: hidden; background: var(--ink-2); box-shadow: none; color: var(--white); text-decoration: none; transform: none; }
+/* the words sit on the card's own ink at its left and the photo fills its right side, fading in through an eased
+   mask (smoothstep, 11 stops): the product never sits under the words, so they stay legible in every state */
+body.is-shop .shop-cats .cat__media { position: absolute; top: 0; right: 0; bottom: 0; left: auto; width: 58%; z-index: -2; grid-row: auto; aspect-ratio: auto; border-radius: 0; background: none;
+  --m: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--black) 2.8%, transparent) 4.2%, color-mix(in srgb, var(--black) 10.4%, transparent) 8.4%,
+    color-mix(in srgb, var(--black) 21.6%, transparent) 12.6%, color-mix(in srgb, var(--black) 35.2%, transparent) 16.8%, color-mix(in srgb, var(--black) 50%, transparent) 21%,
+    color-mix(in srgb, var(--black) 64.8%, transparent) 25.2%, color-mix(in srgb, var(--black) 78.4%, transparent) 29.4%, color-mix(in srgb, var(--black) 89.6%, transparent) 33.6%,
+    color-mix(in srgb, var(--black) 97.2%, transparent) 37.8%, var(--black) 42%);
+  -webkit-mask-image: var(--m); mask-image: var(--m); }
+body.is-shop .shop-cats .cat__media img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(.92); transition: filter .6s var(--ease), transform 1.2s var(--ease); }
+body.is-shop .shop-cats .cat__link::before { content: none; }
+/* the inset frame: a white hairline at rest, gold on interaction (the shared shine sweep is not used here) */
+body.is-shop .shop-cats .cat__link::after { content: ''; position: absolute; inset: 9px; width: auto; z-index: 1; border-radius: 9px; background: none; transform: none; opacity: 1; pointer-events: none;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--white) 55%, transparent); transition: box-shadow .6s var(--ease); }
+body.is-shop .shop-cats :is(.cat__name, .cat__go) { align-self: flex-start; }   /* the shared grid card puts them at opposite ends */
+body.is-shop .shop-cats .cat__name { font: 400 clamp(1.4rem, .9rem + 1.1vw, 2.1rem)/.95 var(--f-display); }
+body.is-shop .shop-cats .cat__go { color: var(--steel); transition: color .6s var(--ease); }
+body.is-shop .shop-cats .cat__link:is(:hover, :focus-visible) { box-shadow: none; background: var(--ink-2); }
+body.is-shop .shop-cats .cat__link:focus-visible .cat__media img { filter: none; }
+body.is-shop .shop-cats .cat__link:focus-visible::after { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 62%, transparent); }
+body.is-shop .shop-cats .cat__link:focus-visible .cat__go { color: var(--gold); }
+@media (hover: hover) {
+  body.is-shop .shop-cats .cat__link:hover .cat__media img { filter: none; transform: scale(1.04); }
+  body.is-shop .shop-cats .cat__link:hover::after { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 62%, transparent); }
+  body.is-shop .shop-cats .cat__link:hover .cat__go { color: var(--gold); }
+}
+@media (max-width: 1099.98px) {
+  body.is-shop .shop-cats .cats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.is-shop .shop-cats .cat:is(:nth-child(1), :nth-child(6), :nth-child(8)) { grid-column: auto; }
+}
+@media (max-width: 640px) {   /* phones: one row per category, words left, photo right (instead of the shared sideways rail) */
+  body.is-shop .shop-cats .cats { grid-template-columns: minmax(0, 1fr); grid-auto-columns: auto; grid-auto-rows: 96px; gap: 10px; scroll-snap-type: none; margin-inline: 0; padding: 0; }
+  body.is-shop .shop-cats .cat__link { justify-content: center; padding: 14px 18px; }
+  body.is-shop .shop-cats .cat__media { width: 50%; }
+}
+
+/* the two heroes: one more eased (smoothstep, 11 stops) ink layer from the left under the shared scrim, so the crumbs
+   and the kicker read over the bright parts of the store photo (/shop) and of the bandana (/clothing) */
+body:is(.is-shop, .is-clothing) .phero__scrim { background:
+  linear-gradient(90deg, color-mix(in srgb, var(--ink) 72%, transparent) 0%, color-mix(in srgb, var(--ink) 70%, transparent) 6.5%, color-mix(in srgb, var(--ink) 64.5%, transparent) 13%,
+    color-mix(in srgb, var(--ink) 56.4%, transparent) 19.5%, color-mix(in srgb, var(--ink) 46.7%, transparent) 26%, color-mix(in srgb, var(--ink) 36%, transparent) 32.5%,
+    color-mix(in srgb, var(--ink) 25.3%, transparent) 39%, color-mix(in srgb, var(--ink) 15.6%, transparent) 45.5%, color-mix(in srgb, var(--ink) 7.5%, transparent) 52%,
+    color-mix(in srgb, var(--ink) 2%, transparent) 58.5%, transparent 65%),
+  linear-gradient(180deg, var(--scrim-2), var(--scrim-3) 40%, var(--ink) 100%), radial-gradient(70% 60% at 15% 85%, color-mix(in srgb, var(--ink) 70%, transparent), transparent); }
+
+/* ---- /shop brands: white marks floating on the ink, no boxes (the home marquee's look; the link is an invisible hit
+   area whose radius only shapes the focus ring); a mark brightens on hover or focus ---- */
+body.is-shop .shop-marks { list-style: none; margin: clamp(20px, 3vw, 36px) 0 clamp(16px, 2.6vw, 28px); padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px clamp(12px, 2vw, 28px); align-items: center; }
+body.is-shop .shop-mark { display: grid; place-items: center; min-height: 96px; padding: 16px 18px; border-radius: 16px; color: var(--text); text-decoration: none; }
+body.is-shop .shop-mark > * { opacity: .82; transition: opacity var(--t-1) var(--ease); }
+body.is-shop .shop-mark img { display: block; width: min(100%, 168px); height: auto; filter: brightness(0) invert(1); }
+body.is-shop .shop-mark span { font: 400 clamp(1.2rem, 1rem + .6vw, 1.6rem)/1 var(--f-display); text-transform: uppercase; text-align: center; text-wrap: balance; }
+body.is-shop .shop-mark:focus-visible > * { opacity: 1; }
+@media (hover: hover) { body.is-shop .shop-mark:hover > * { opacity: 1; } }
+@media (max-width: 900px) { body.is-shop .shop-marks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 520px) { body.is-shop .shop-marks { grid-template-columns: repeat(2, minmax(0, 1fr)); } body.is-shop .shop-mark { min-height: 76px; } }
+
+/* ---- /shop house strains: a numbered editorial list (hairline rules, display names); the number and the arrow turn
+   gold on interaction. The numbers are drawn by CSS and kept from screen readers (an empty alternative). ---- */
+body.is-shop .shop-strains .split { align-items: start; }
+body.is-shop .shop-strains .strain-rail--grid { counter-reset: strain; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(20px, 3vw, 48px); margin: 0; max-width: none; }
+body.is-shop .shop-strains .strain-chip { counter-increment: strain; border-bottom: 1px solid var(--hair-2); }
+body.is-shop .shop-strains .strain-chip:nth-child(-n + 2) { border-top: 1px solid var(--hair-2); }
+body.is-shop .shop-strains .strain-chip a { display: grid; grid-template-columns: 2.6em minmax(0, 1fr) auto; grid-template-rows: auto auto; align-items: center; gap: 3px 12px; min-height: 64px; padding: 11px 4px; border-radius: 0; background: none; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; color: var(--text); text-decoration: none; }
+body.is-shop .shop-strains .strain-chip a::before { content: counter(strain, decimal-leading-zero); content: counter(strain, decimal-leading-zero) / ''; grid-column: 1; grid-row: 1 / 3; font: 700 var(--fs-kicker)/1 var(--f-ui); letter-spacing: .12em; color: var(--steel); transition: color var(--t-1) var(--ease); }
+body.is-shop .shop-strains .strain-chip__k { grid-column: 2; grid-row: 1; font: 700 var(--fs-kicker)/1 var(--f-ui); letter-spacing: var(--track-kicker); color: var(--steel); }
+body.is-shop .shop-strains .strain-chip__n { grid-column: 2; grid-row: 2; font: 400 clamp(1.45rem, 1.1rem + .9vw, 2rem)/1 var(--f-display); }
+body.is-shop .shop-strains .strain-chip .ico { grid-column: 3; grid-row: 1 / 3; width: 18px; transition: translate var(--t-1) var(--ease), color var(--t-1) var(--ease); }
+body.is-shop .shop-strains .strain-chip a:focus-visible::before, body.is-shop .shop-strains .strain-chip a:focus-visible .ico { color: var(--gold); }
+@media (hover: hover) {
+  body.is-shop .shop-strains .strain-chip a:hover { background: none; }
+  body.is-shop .shop-strains .strain-chip a:hover::before, body.is-shop .shop-strains .strain-chip a:hover .ico { color: var(--gold); }
+  body.is-shop .shop-strains .strain-chip a:hover .ico { translate: 4px 0; }
+}
+@media (max-width: 520px) {
+  body.is-shop .shop-strains .strain-rail--grid { grid-template-columns: minmax(0, 1fr); }
+  body.is-shop .shop-strains .strain-chip:nth-child(2) { border-top: 0; }
+}
+
+/* ---- /clothing: the hero's bandana calmer, as on the culture pages and the home Drop List (on phones the words run
+   across it, so quieter still); the store's own graphic without a frame, whole, and the text under a hairline ---- */
+body.is-clothing .phero__pattern { opacity: .45; }
+@media (max-width: 699.98px) { body.is-clothing .phero__pattern { opacity: .26; } }
+body.is-clothing .clothing-store { padding-block: clamp(56px, 6vw, 96px); }
+body.is-clothing .clothing-store__shot { margin: 0; }
+body.is-clothing .clothing-store__shot img { display: block; width: 100%; height: auto; }
+body.is-clothing .clothing-store .stack { padding-top: clamp(20px, 2.4vw, 28px); border-top: 1px solid var(--hair-2); }
+body.is-clothing .clothing-store .stack > h2 { margin-top: 12px; }   /* the shared .stack spacing is 1.1em, a gulf at display size */

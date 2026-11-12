@@ -1,0 +1,112 @@
+/* legal.css: the legal and opt-in pages (legal.mjs), one editorial template (owner brief 2026-11-12, DESIGN-LANGUAGE.md;
+   type after the picked footer C: small UI caps on hairlines). A compact head (crumbs, kicker, h1) that hugs its content;
+   the body one column at a reading measure under a hairline; section titles in the display face on hairline rules,
+   numbered (the policy's own "1." in small caps above the title, or a quiet 01, 02 drawn by CSS and hidden from assistive
+   tech); body type 17px / 1.7; the flattened tables as ruled grids; on wide screens a sticky "On this page" list. Flat
+   black and white, gold only on hover and focus. No motion of its own. Tokens only. */
+
+/* ---- the compact head ---- */
+.phero.phero--legal { min-height: 0; align-items: start; padding: calc(var(--header-h) + clamp(22px, 3.2vw, 50px)) 0 clamp(22px, 2.6vw, 38px); }
+.phero--legal .phero__inner > * + * { margin-top: 8px; }
+.phero--legal .crumbs ol { margin-bottom: 0; }
+.phero--legal .kicker { margin-bottom: 0; }
+.phero--legal .phero__title { max-width: 22ch; font-size: clamp(2.7rem, 1.5rem + 3.9vw, 5.4rem); }
+
+/* ---- the band: the body at a reading measure under a hairline, the contents list beside it on wide screens ---- */
+.band.legal { padding-block: 0 clamp(56px, 7vw, 112px); }
+.legal__grid { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; padding-top: clamp(26px, 3vw, 44px); border-top: 1px solid var(--hair-2); }
+.legal__body { min-width: 0; max-width: 68ch; font: 400 var(--fs-body) / 1.7 var(--f-body); color: var(--chrome-2); overflow-wrap: break-word; }
+.legal__body > * + * { margin-top: 1em; }
+.legal__body :is(p, li) { text-wrap: pretty; }
+.legal__body a:not([class]) { color: var(--white); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.legal__body a:not([class]):hover { text-decoration-thickness: 2px; }
+.legal__body ul { padding-left: 1.25em; }
+.legal__body li + li { margin-top: .4em; }
+.legal__body li::marker { color: var(--steel); }
+
+/* the policy's own name and date, set small above the text */
+.legal__body > .legal__doc { font: 700 var(--fs-kicker) / 1.3 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--white); }
+.legal__body > .legal__date { margin-top: 2px; font: 600 .9375rem / 1.4 var(--f-ui); letter-spacing: .06em; color: var(--steel); }
+
+/* section titles: display caps on a hairline, the number small above */
+.legal__body h2 { margin-top: clamp(44px, 4.6vw, 68px); padding-top: 18px; border-top: 1px solid var(--hair-2);
+  font: 400 clamp(1.8rem, 1.3rem + 1.3vw, 2.55rem) / 1 var(--f-display); letter-spacing: .01em; text-transform: uppercase; color: var(--white); }
+.legal__body h2 + * { margin-top: 16px; }
+.legal__n, .legal__body--count h2::before { display: block; margin-bottom: 10px; font: 700 var(--fs-kicker) / 1 var(--f-ui); letter-spacing: var(--track-kicker); color: var(--steel); font-variant-numeric: tabular-nums; }
+.legal__body--count { counter-reset: legal-sec; }
+.legal__body--count h2 { counter-increment: legal-sec; }
+.legal__body--count h2::before { content: counter(legal-sec, decimal-leading-zero); content: counter(legal-sec, decimal-leading-zero) / ""; }
+.legal__body h3 { margin-top: 1.9em; font: 700 1.0625rem / 1.3 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--white); }
+.legal__body h3 + * { margin-top: .5em; }
+
+/* the policy's own table of contents: a ruled list in two columns */
+.legal__index { border-top: 1px solid var(--hair); }
+.legal__index > p { break-inside: avoid; border-bottom: 1px solid var(--hair); }
+.legal__body .legal__index p > a:not([class]) { display: flex; align-items: center; min-height: 44px; padding: 7px 0; margin: 0; font: 600 .9375rem / 1.3 var(--f-ui); letter-spacing: .05em; color: var(--chrome-2); text-decoration: none; }
+.legal__body .legal__index p > a:not([class]):hover { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 760px) { .legal__index { columns: 2; column-gap: 28px; } }
+
+/* the cookie tables: key and value on ruled rows, each cookie opening on its Name row */
+.legal__facts { display: grid; grid-template-columns: minmax(6.5rem, max-content) minmax(0, 1fr); column-gap: 20px; border-bottom: 1px solid var(--hair); }
+.legal__facts > p { padding-block: 8px; border-top: 1px solid var(--hair); }
+.legal__facts > .legal__fk { font: 700 .8125rem / 1.95 var(--f-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--steel); }
+.legal__facts > .is-name { border-top-color: var(--hair-2); }
+.legal__facts > .legal__fv.is-name { color: var(--white); font-weight: 600; }
+
+/* the CCPA table: category, examples, collected; on phones the examples run under the first two */
+.legal__table { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) max-content; column-gap: 18px; border-bottom: 1px solid var(--hair); font-size: .9375rem; line-height: 1.55; }
+.legal__table > p { padding-block: 10px; border-top: 1px solid var(--hair); }
+.legal__table > .legal__th { font: 700 .8125rem / 1.4 var(--f-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--steel); border-top-color: var(--hair-2); }
+.legal__table > p:nth-child(3n+1):not(.legal__th) { color: var(--white); }
+.legal__table > p:nth-child(3n):not(.legal__th) { font: 700 .875rem / 1.75 var(--f-ui); letter-spacing: .1em; color: var(--white); }
+@media (max-width: 600px) {
+  .legal__table { grid-template-columns: minmax(0, 1fr) max-content; grid-auto-flow: row dense; }
+  .legal__table > p:nth-child(3n+2) { grid-column: 1 / -1; padding-top: 0; border-top: 0; }
+  .legal__table > p:nth-child(3n) { grid-column: 2; }
+}
+
+/* a postal address: its lines together */
+.legal__addr { color: var(--text); }
+.legal__addr > p + p { margin-top: 0; }
+
+/* ---- "On this page": sticky beside the text on wide screens; real anchor links ---- */
+.legal__toc { display: none; }
+@media (min-width: 1100px) {
+  .legal__grid--toc { grid-template-columns: minmax(0, 68ch) minmax(220px, 300px); justify-content: space-between; column-gap: clamp(40px, 5vw, 96px); }
+  .legal__grid--toc > .legal__body { grid-column: 1; grid-row: 1; }
+  /* its height stops above the store bar (the dash) at the foot of the screen */
+  .legal__toc { display: block; grid-column: 2; grid-row: 1; position: sticky; top: calc(var(--header-h) + 24px); max-height: calc(100vh - var(--header-h) - var(--bottom-stack) - 64px);
+    overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--hair-2) transparent; }
+}
+.legal__toc-h { margin-bottom: 8px; font: 700 var(--fs-kicker) / 1.2 var(--f-ui); letter-spacing: var(--track-kicker); text-transform: uppercase; color: var(--steel); }
+.legal__toc ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair-2); counter-reset: legal-toc; }
+.legal__toc li { border-bottom: 1px solid var(--hair); }
+.legal__toc a { display: flex; align-items: flex-start; gap: 10px; min-height: 44px; padding: 13px 0 12px; font: 600 .875rem / 1.25 var(--f-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--chrome-2); text-decoration: none; }
+.legal__toc a:hover { color: var(--white); }
+.legal__toc a:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; color: var(--white); }
+.legal__tn, .legal__toc--count a::before { flex: none; min-width: 2.4ch; color: var(--steel); font-variant-numeric: tabular-nums; }
+.legal__toc--count li { counter-increment: legal-toc; }
+.legal__toc--count a::before { content: counter(legal-toc, decimal-leading-zero); content: counter(legal-toc, decimal-leading-zero) / ""; }
+.legal__toc a:is(:hover, :focus-visible) .legal__tn, .legal__toc--count a:is(:hover, :focus-visible)::before { color: var(--gold); }
+
+/* ---- the short pages ---- */
+/* Prop 65: the warning large, on a hairline */
+.legal .p65 { gap: 16px; padding: 0 0 24px; border-radius: 0; background: none; box-shadow: none; border-bottom: 1px solid var(--hair-2);
+  font: 400 clamp(1.15rem, 1rem + .5vw, 1.4rem) / 1.55 var(--f-body); color: var(--text); }
+.legal .p65__icon { color: var(--white); font-size: 1.6rem; line-height: 1.1; }
+/* California opt-in: the invitation and its two links */
+.legal__body > .legal__lede { max-width: 52ch; font-size: clamp(1.15rem, 1.02rem + .5vw, 1.45rem); line-height: 1.5; color: var(--chrome-2); }
+.legal__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.legal__body > .legal__actions { margin-top: 24px; }
+/* rewards: the invitation beside the VIP card */
+.rewards .legal__body h2 { max-width: 16ch; margin-top: 0; padding-top: 0; border-top: 0; font-size: clamp(2.3rem, 1.5rem + 2.4vw, 3.8rem); }
+.rewards .legal__body > .kicker { margin-bottom: 0; }
+.legal__aside { min-width: 0; }
+@media (min-width: 860px) {
+  .legal__grid--aside { grid-template-columns: minmax(0, 1fr) minmax(300px, 440px); column-gap: clamp(40px, 6vw, 110px); align-items: center; }
+}
+@media (max-width: 859.98px) { .legal__grid--aside { row-gap: 36px; } }
+/* the opt-in form: flat on the band, its terms below on a hairline */
+.legal .form { margin-top: 0; padding: 0; border-radius: 0; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: none; }
+.legal__body > .legal__terms { max-width: none; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--hair); font-size: .9375rem; line-height: 1.65; color: var(--chrome-2); }
+.legal__terms > * + * { margin-top: .9em; }

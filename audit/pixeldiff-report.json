@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/pixeldiff-report@1",
-  "generated": "2026-11-11T01:36:10.207Z",
+  "generated": "2026-11-12T12:06:34.720Z",
   "threshold": 0.02,
   "tolerance": 8,
   "pairCount": 64,
@@ -8,27 +8,27 @@
   "worst": [
     {
       "file": "privacy-policy.1024.png",
-      "ratio": 0.994021,
+      "ratio": 0.987974,
       "verdict": "SIZE-MISMATCH"
     },
     {
       "file": "privacy-policy.390.png",
-      "ratio": 0.993826,
+      "ratio": 0.986203,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "jobs.390.png",
+      "ratio": 0.985674,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "san-diego-store.390.png",
+      "ratio": 0.984782,
       "verdict": "SIZE-MISMATCH"
     },
     {
       "file": "privacy-policy.768.png",
-      "ratio": 0.992537,
-      "verdict": "SIZE-MISMATCH"
-    },
-    {
-      "file": "privacy-policy.1440.png",
-      "ratio": 0.989964,
-      "verdict": "SIZE-MISMATCH"
-    },
-    {
-      "file": "brands.390.png",
-      "ratio": 0.979407,
+      "ratio": 0.984301,
       "verdict": "SIZE-MISMATCH"
     }
   ],
@@ -40,16 +40,16 @@
       "slug": "blog",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2548577,
+      "differing": 2569195,
       "compared": 2842624,
-      "ratio": 0.896558,
+      "ratio": 0.903811,
       "baselineSize": [
         1024,
         2776
       ],
       "rebuildSize": [
         1024,
-        5499
+        5749
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/blog.1024.png"
@@ -59,16 +59,16 @@
       "slug": "blog",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3457924,
+      "differing": 3460308,
       "compared": 3924000,
-      "ratio": 0.881224,
+      "ratio": 0.881832,
       "baselineSize": [
         1440,
         2725
       ],
       "rebuildSize": [
         1440,
-        6072
+        4959
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/blog.1440.png"
@@ -78,16 +78,16 @@
       "slug": "blog",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3613347,
+      "differing": 3470234,
       "compared": 3757824,
-      "ratio": 0.961553,
+      "ratio": 0.923469,
       "baselineSize": [
         768,
         4893
       ],
       "rebuildSize": [
         780,
-        25738
+        12012
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/blog.390.png"
@@ -97,16 +97,16 @@
       "slug": "blog",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2099440,
+      "differing": 2103834,
       "compared": 2278656,
-      "ratio": 0.92135,
+      "ratio": 0.923278,
       "baselineSize": [
         768,
         2967
       ],
       "rebuildSize": [
         768,
-        7852
+        7435
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/blog.768.png"
@@ -116,16 +116,16 @@
       "slug": "brands",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1531174,
+      "differing": 1537315,
       "compared": 1626112,
-      "ratio": 0.941617,
+      "ratio": 0.945393,
       "baselineSize": [
         1024,
         1588
       ],
       "rebuildSize": [
         1024,
-        3295
+        3060
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/brands.1024.png"
@@ -135,16 +135,16 @@
       "slug": "brands",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2094652,
+      "differing": 2062569,
       "compared": 2286720,
-      "ratio": 0.916007,
+      "ratio": 0.901977,
       "baselineSize": [
         1440,
         1588
       ],
       "rebuildSize": [
         1440,
-        3451
+        2985
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/brands.1440.png"
@@ -154,16 +154,16 @@
       "slug": "brands",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1256900,
+      "differing": 1246508,
       "compared": 1283328,
-      "ratio": 0.979407,
+      "ratio": 0.971309,
       "baselineSize": [
         768,
         1671
       ],
       "rebuildSize": [
         780,
-        10778
+        7264
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/brands.390.png"
@@ -173,16 +173,16 @@
       "slug": "brands",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1239958,
+      "differing": 1235444,
       "compared": 1283328,
-      "ratio": 0.966205,
+      "ratio": 0.962688,
       "baselineSize": [
         768,
         1671
       ],
       "rebuildSize": [
         768,
-        4247
+        3296
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/brands.768.png"
@@ -192,16 +192,16 @@
       "slug": "bussin-merch",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2247609,
-      "compared": 2863104,
-      "ratio": 0.785025,
+      "differing": 2125131,
+      "compared": 2499584,
+      "ratio": 0.850194,
       "baselineSize": [
         1024,
         2963
       ],
       "rebuildSize": [
         1024,
-        2796
+        2441
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/bussin-merch.1024.png"
@@ -211,16 +211,16 @@
       "slug": "bussin-merch",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3557893,
-      "compared": 4227840,
-      "ratio": 0.841539,
+      "differing": 2817003,
+      "compared": 3425760,
+      "ratio": 0.8223,
       "baselineSize": [
         1440,
         3227
       ],
       "rebuildSize": [
         1440,
-        2936
+        2379
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/bussin-merch.1440.png"
@@ -230,16 +230,16 @@
       "slug": "bussin-merch",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1763975,
+      "differing": 1784161,
       "compared": 1981440,
-      "ratio": 0.890249,
+      "ratio": 0.900437,
       "baselineSize": [
         768,
         2580
       ],
       "rebuildSize": [
         780,
-        8832
+        5198
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/bussin-merch.390.png"
@@ -249,16 +249,16 @@
       "slug": "bussin-merch",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1481664,
+      "differing": 1856103,
       "compared": 1981440,
-      "ratio": 0.747771,
+      "ratio": 0.936744,
       "baselineSize": [
         768,
         2580
       ],
       "rebuildSize": [
         768,
-        3765
+        2729
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/bussin-merch.768.png"
@@ -268,16 +268,16 @@
       "slug": "contact",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1763193,
+      "differing": 2269234,
       "compared": 2344960,
-      "ratio": 0.751907,
+      "ratio": 0.967707,
       "baselineSize": [
         1024,
         2290
       ],
       "rebuildSize": [
         1024,
-        3083
+        3000
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/contact.1024.png"
@@ -287,16 +287,16 @@
       "slug": "contact",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2439568,
+      "differing": 3015230,
       "compared": 3263040,
-      "ratio": 0.747637,
+      "ratio": 0.924055,
       "baselineSize": [
         1440,
         2266
       ],
       "rebuildSize": [
         1440,
-        3197
+        2833
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/contact.1440.png"
@@ -306,16 +306,16 @@
       "slug": "contact",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1730034,
+      "differing": 1715872,
       "compared": 1800192,
-      "ratio": 0.961027,
+      "ratio": 0.953161,
       "baselineSize": [
         768,
         2344
       ],
       "rebuildSize": [
         780,
-        9752
+        7418
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/contact.390.png"
@@ -325,16 +325,16 @@
       "slug": "contact",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1531199,
+      "differing": 1706335,
       "compared": 1800192,
-      "ratio": 0.850575,
+      "ratio": 0.947863,
       "baselineSize": [
         768,
         2344
       ],
       "rebuildSize": [
         768,
-        3988
+        3549
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/contact.768.png"
@@ -344,16 +344,16 @@
       "slug": "deals",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3709371,
-      "compared": 4552704,
-      "ratio": 0.814762,
+      "differing": 3609747,
+      "compared": 4058112,
+      "ratio": 0.889514,
       "baselineSize": [
         1024,
         4711
       ],
       "rebuildSize": [
         1024,
-        4446
+        3963
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/deals.1024.png"
@@ -363,16 +363,16 @@
       "slug": "deals",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 5305048,
-      "compared": 6454080,
-      "ratio": 0.821968,
+      "differing": 5068115,
+      "compared": 5800320,
+      "ratio": 0.873765,
       "baselineSize": [
         1440,
         5161
       ],
       "rebuildSize": [
         1440,
-        4482
+        4028
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/deals.1440.png"
@@ -382,16 +382,16 @@
       "slug": "deals",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3284694,
+      "differing": 3252484,
       "compared": 3594240,
-      "ratio": 0.913877,
+      "ratio": 0.904916,
       "baselineSize": [
         768,
         4680
       ],
       "rebuildSize": [
         780,
-        11882
+        9388
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/deals.390.png"
@@ -401,16 +401,16 @@
       "slug": "deals",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2814153,
-      "compared": 3594240,
-      "ratio": 0.782962,
+      "differing": 2927560,
+      "compared": 3207936,
+      "ratio": 0.912599,
       "baselineSize": [
         768,
         4680
       ],
       "rebuildSize": [
         768,
-        5240
+        4177
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/deals.768.png"
@@ -420,16 +420,16 @@
       "slug": "faqs",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2181947,
+      "differing": 2568413,
       "compared": 2648064,
-      "ratio": 0.823978,
+      "ratio": 0.969921,
       "baselineSize": [
         1024,
         2586
       ],
       "rebuildSize": [
         1024,
-        3600
+        2884
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/faqs.1024.png"
@@ -439,16 +439,16 @@
       "slug": "faqs",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3383291,
+      "differing": 3559147,
       "compared": 3723840,
-      "ratio": 0.908549,
+      "ratio": 0.955773,
       "baselineSize": [
         1440,
         2586
       ],
       "rebuildSize": [
         1440,
-        3836
+        2814
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/faqs.1440.png"
@@ -458,16 +458,16 @@
       "slug": "faqs",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1995979,
+      "differing": 1983367,
       "compared": 2095872,
-      "ratio": 0.952338,
+      "ratio": 0.946321,
       "baselineSize": [
         768,
         2729
       ],
       "rebuildSize": [
         780,
-        10752
+        6798
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/faqs.390.png"
@@ -477,16 +477,16 @@
       "slug": "faqs",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1844772,
+      "differing": 2015425,
       "compared": 2095872,
-      "ratio": 0.880193,
+      "ratio": 0.961616,
       "baselineSize": [
         768,
         2729
       ],
       "rebuildSize": [
         768,
-        4418
+        3168
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/faqs.768.png"
@@ -496,16 +496,16 @@
       "slug": "index",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 4492349,
+      "differing": 4496700,
       "compared": 4974592,
-      "ratio": 0.903059,
+      "ratio": 0.903933,
       "baselineSize": [
         1024,
         4858
       ],
       "rebuildSize": [
         1024,
-        14328
+        11590
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/index.1024.png"
@@ -515,16 +515,16 @@
       "slug": "index",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 6477421,
+      "differing": 6408909,
       "compared": 7060320,
-      "ratio": 0.91744,
+      "ratio": 0.907736,
       "baselineSize": [
         1440,
         4903
       ],
       "rebuildSize": [
         1440,
-        15199
+        11988
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/index.1440.png"
@@ -534,16 +534,16 @@
       "slug": "index",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3883399,
+      "differing": 3758296,
       "compared": 4297728,
-      "ratio": 0.903593,
+      "ratio": 0.874484,
       "baselineSize": [
         768,
         5596
       ],
       "rebuildSize": [
         780,
-        36112
+        29194
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/index.390.png"
@@ -553,16 +553,16 @@
       "slug": "index",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3424364,
+      "differing": 3345728,
       "compared": 3815424,
-      "ratio": 0.897505,
+      "ratio": 0.876895,
       "baselineSize": [
         768,
         4968
       ],
       "rebuildSize": [
         768,
-        17465
+        13054
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/index.768.png"
@@ -572,16 +572,16 @@
       "slug": "jobs",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3391217,
+      "differing": 3891215,
       "compared": 4000768,
-      "ratio": 0.847642,
+      "ratio": 0.972617,
       "baselineSize": [
         1024,
         3907
       ],
       "rebuildSize": [
         1024,
-        4585
+        4169
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/jobs.1024.png"
@@ -591,16 +591,16 @@
       "slug": "jobs",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 4571179,
+      "differing": 5329233,
       "compared": 5544000,
-      "ratio": 0.824527,
+      "ratio": 0.961261,
       "baselineSize": [
         1440,
         3850
       ],
       "rebuildSize": [
         1440,
-        4655
+        3996
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/jobs.1440.png"
@@ -610,16 +610,16 @@
       "slug": "jobs",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2985878,
+      "differing": 3009067,
       "compared": 3052800,
-      "ratio": 0.978078,
+      "ratio": 0.985674,
       "baselineSize": [
         768,
         3975
       ],
       "rebuildSize": [
         780,
-        13718
+        10068
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/jobs.390.png"
@@ -629,16 +629,16 @@
       "slug": "jobs",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2620371,
+      "differing": 2982532,
       "compared": 3052800,
-      "ratio": 0.85835,
+      "ratio": 0.976982,
       "baselineSize": [
         768,
         3975
       ],
       "rebuildSize": [
         768,
-        5441
+        4437
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/jobs.768.png"
@@ -648,16 +648,16 @@
       "slug": "los-angeles-store",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1388518,
+      "differing": 1364903,
       "compared": 1597440,
-      "ratio": 0.869214,
+      "ratio": 0.854431,
       "baselineSize": [
         1024,
         1560
       ],
       "rebuildSize": [
         1024,
-        5618
+        5384
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles-store.1024.png"
@@ -667,16 +667,16 @@
       "slug": "los-angeles-store",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1963039,
+      "differing": 1915774,
       "compared": 2246400,
-      "ratio": 0.87386,
+      "ratio": 0.85282,
       "baselineSize": [
         1440,
         1560
       ],
       "rebuildSize": [
         1440,
-        5478
+        5012
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles-store.1440.png"
@@ -686,16 +686,16 @@
       "slug": "los-angeles-store",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1192831,
+      "differing": 1159064,
       "compared": 1241088,
-      "ratio": 0.961117,
+      "ratio": 0.93391,
       "baselineSize": [
         768,
         1616
       ],
       "rebuildSize": [
         780,
-        14872
+        11440
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles-store.390.png"
@@ -705,16 +705,16 @@
       "slug": "los-angeles-store",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1099671,
+      "differing": 1067724,
       "compared": 1241088,
-      "ratio": 0.886054,
+      "ratio": 0.860313,
       "baselineSize": [
         768,
         1616
       ],
       "rebuildSize": [
         768,
-        7166
+        6216
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles-store.768.png"
@@ -724,16 +724,16 @@
       "slug": "los-angeles",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1578697,
+      "differing": 1578527,
       "compared": 1856512,
-      "ratio": 0.850356,
+      "ratio": 0.850265,
       "baselineSize": [
         1024,
         1813
       ],
       "rebuildSize": [
         1024,
-        3576
+        3242
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles.1024.png"
@@ -743,16 +743,16 @@
       "slug": "los-angeles",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2151405,
+      "differing": 2128936,
       "compared": 2610720,
-      "ratio": 0.824066,
+      "ratio": 0.815459,
       "baselineSize": [
         1440,
         1813
       ],
       "rebuildSize": [
         1440,
-        3724
+        3131
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles.1440.png"
@@ -762,16 +762,16 @@
       "slug": "los-angeles",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1209196,
+      "differing": 1199585,
       "compared": 1433856,
-      "ratio": 0.843318,
+      "ratio": 0.836615,
       "baselineSize": [
         768,
         1867
       ],
       "rebuildSize": [
         780,
-        11368
+        7590
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles.390.png"
@@ -781,16 +781,16 @@
       "slug": "los-angeles",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1226804,
+      "differing": 1235899,
       "compared": 1433856,
-      "ratio": 0.855598,
+      "ratio": 0.861941,
       "baselineSize": [
         768,
         1867
       ],
       "rebuildSize": [
         768,
-        4524
+        3891
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/los-angeles.768.png"
@@ -800,16 +800,16 @@
       "slug": "originals-gelato-strain-profile",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3825703,
+      "differing": 4269732,
       "compared": 4586496,
-      "ratio": 0.834123,
+      "ratio": 0.930936,
       "baselineSize": [
         1024,
         4479
       ],
       "rebuildSize": [
         1024,
-        5165
+        4965
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-gelato-strain-profile.1024.png"
@@ -819,16 +819,16 @@
       "slug": "originals-gelato-strain-profile",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 5329720,
+      "differing": 5712263,
       "compared": 6311520,
-      "ratio": 0.844443,
+      "ratio": 0.905053,
       "baselineSize": [
         1440,
         4383
       ],
       "rebuildSize": [
         1440,
-        5388
+        4968
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-gelato-strain-profile.1440.png"
@@ -838,16 +838,16 @@
       "slug": "originals-gelato-strain-profile",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 4801591,
+      "differing": 4578762,
       "compared": 5020416,
-      "ratio": 0.956413,
+      "ratio": 0.912028,
       "baselineSize": [
         768,
         6537
       ],
       "rebuildSize": [
         780,
-        15722
+        11904
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-gelato-strain-profile.390.png"
@@ -857,16 +857,16 @@
       "slug": "originals-gelato-strain-profile",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 3221865,
+      "differing": 3422606,
       "compared": 3590400,
-      "ratio": 0.897355,
+      "ratio": 0.953266,
       "baselineSize": [
         768,
         4675
       ],
       "rebuildSize": [
         768,
-        6345
+        5412
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-gelato-strain-profile.768.png"
@@ -876,16 +876,16 @@
       "slug": "originals-hall-of-flowers-palm-springs-recap",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 5460716,
+      "differing": 5556690,
       "compared": 5819392,
-      "ratio": 0.938365,
+      "ratio": 0.954857,
       "baselineSize": [
         1024,
         5683
       ],
       "rebuildSize": [
         1024,
-        9060
+        6565
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.1024.png"
@@ -895,16 +895,16 @@
       "slug": "originals-hall-of-flowers-palm-springs-recap",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 7503648,
+      "differing": 7463482,
       "compared": 7981920,
-      "ratio": 0.940081,
+      "ratio": 0.935048,
       "baselineSize": [
         1440,
         5543
       ],
       "rebuildSize": [
         1440,
-        9292
+        6644
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.1440.png"
@@ -914,16 +914,16 @@
       "slug": "originals-hall-of-flowers-palm-springs-recap",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 5398044,
+      "differing": 5421953,
       "compared": 5970432,
-      "ratio": 0.90413,
+      "ratio": 0.908134,
       "baselineSize": [
         768,
         7774
       ],
       "rebuildSize": [
         780,
-        22502
+        16472
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.390.png"
@@ -933,16 +933,16 @@
       "slug": "originals-hall-of-flowers-palm-springs-recap",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 4100865,
+      "differing": 4317928,
       "compared": 4539648,
-      "ratio": 0.903344,
+      "ratio": 0.951159,
       "baselineSize": [
         768,
         5911
       ],
       "rebuildSize": [
         768,
-        10289
+        7042
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/originals-hall-of-flowers-palm-springs-recap.768.png"
@@ -952,16 +952,16 @@
       "slug": "privacy-policy",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 15453409,
+      "differing": 15359408,
       "compared": 15546368,
-      "ratio": 0.994021,
+      "ratio": 0.987974,
       "baselineSize": [
         1024,
         15182
       ],
       "rebuildSize": [
         1024,
-        23853
+        25924
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/privacy-policy.1024.png"
@@ -971,16 +971,16 @@
       "slug": "privacy-policy",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 21157995,
+      "differing": 21032092,
       "compared": 21372480,
-      "ratio": 0.989964,
+      "ratio": 0.984074,
       "baselineSize": [
         1440,
         14842
       ],
       "rebuildSize": [
         1440,
-        23985
+        26275
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/privacy-policy.1440.png"
@@ -990,16 +990,16 @@
       "slug": "privacy-policy",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 15110229,
+      "differing": 14994324,
       "compared": 15204096,
-      "ratio": 0.993826,
+      "ratio": 0.986203,
       "baselineSize": [
         768,
         19797
       ],
       "rebuildSize": [
         780,
-        66738
+        72082
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/privacy-policy.390.png"
@@ -1009,16 +1009,16 @@
       "slug": "privacy-policy",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 15090626,
+      "differing": 14965408,
       "compared": 15204096,
-      "ratio": 0.992537,
+      "ratio": 0.984301,
       "baselineSize": [
         768,
         19797
       ],
       "rebuildSize": [
         768,
-        24569
+        25728
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/privacy-policy.768.png"
@@ -1028,16 +1028,16 @@
       "slug": "retail",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1809489,
+      "differing": 1817698,
       "compared": 1932288,
-      "ratio": 0.936449,
+      "ratio": 0.940697,
       "baselineSize": [
         1024,
         1887
       ],
       "rebuildSize": [
         1024,
-        3782
+        3548
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/retail.1024.png"
@@ -1047,16 +1047,16 @@
       "slug": "retail",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2464655,
+      "differing": 2468542,
       "compared": 2715840,
-      "ratio": 0.907511,
+      "ratio": 0.908942,
       "baselineSize": [
         1440,
         1886
       ],
       "rebuildSize": [
         1440,
-        3766
+        3296
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/retail.1440.png"
@@ -1066,16 +1066,16 @@
       "slug": "retail",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1425470,
+      "differing": 1393341,
       "compared": 1485312,
-      "ratio": 0.959711,
+      "ratio": 0.93808,
       "baselineSize": [
         768,
         1934
       ],
       "rebuildSize": [
         780,
-        12410
+        8874
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/retail.390.png"
@@ -1085,16 +1085,16 @@
       "slug": "retail",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1389204,
+      "differing": 1397213,
       "compared": 1485312,
-      "ratio": 0.935294,
+      "ratio": 0.940687,
       "baselineSize": [
         768,
         1934
       ],
       "rebuildSize": [
         768,
-        4436
+        3486
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/retail.768.png"
@@ -1104,16 +1104,16 @@
       "slug": "rewards-program-and-opt-in",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1292708,
+      "differing": 1187166,
       "compared": 1361920,
-      "ratio": 0.949181,
+      "ratio": 0.871686,
       "baselineSize": [
         1024,
         1330
       ],
       "rebuildSize": [
         1024,
-        2809
+        2314
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/rewards-program-and-opt-in.1024.png"
@@ -1123,16 +1123,16 @@
       "slug": "rewards-program-and-opt-in",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1716719,
+      "differing": 1546753,
       "compared": 1915200,
-      "ratio": 0.896365,
+      "ratio": 0.80762,
       "baselineSize": [
         1440,
         1330
       ],
       "rebuildSize": [
         1440,
-        2984
+        2130
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/rewards-program-and-opt-in.1440.png"
@@ -1142,16 +1142,16 @@
       "slug": "rewards-program-and-opt-in",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 990971,
+      "differing": 982236,
       "compared": 1048320,
-      "ratio": 0.945294,
+      "ratio": 0.936962,
       "baselineSize": [
         768,
         1365
       ],
       "rebuildSize": [
         780,
-        9046
+        5044
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/rewards-program-and-opt-in.390.png"
@@ -1161,16 +1161,16 @@
       "slug": "rewards-program-and-opt-in",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 984276,
+      "differing": 932651,
       "compared": 1048320,
-      "ratio": 0.938908,
+      "ratio": 0.889663,
       "baselineSize": [
         768,
         1365
       ],
       "rebuildSize": [
         768,
-        3679
+        2463
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/rewards-program-and-opt-in.768.png"
@@ -1180,16 +1180,16 @@
       "slug": "san-diego-store",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1215715,
+      "differing": 1406311,
       "compared": 1554432,
-      "ratio": 0.782096,
+      "ratio": 0.904711,
       "baselineSize": [
         1024,
         1518
       ],
       "rebuildSize": [
         1024,
-        5614
+        5380
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/san-diego-store.1024.png"
@@ -1199,16 +1199,16 @@
       "slug": "san-diego-store",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1729315,
+      "differing": 1994342,
       "compared": 2185920,
-      "ratio": 0.791115,
+      "ratio": 0.912358,
       "baselineSize": [
         1440,
         1518
       ],
       "rebuildSize": [
         1440,
-        5503
+        5037
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/san-diego-store.1440.png"
@@ -1218,16 +1218,16 @@
       "slug": "san-diego-store",
       "width": 390,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1073000,
+      "differing": 1201781,
       "compared": 1220352,
-      "ratio": 0.879255,
+      "ratio": 0.984782,
       "baselineSize": [
         768,
         1589
       ],
       "rebuildSize": [
         780,
-        14620
+        11136
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/san-diego-store.390.png"
@@ -1237,16 +1237,16 @@
       "slug": "san-diego-store",
       "width": 768,
       "verdict": "SIZE-MISMATCH",
-      "differing": 963637,
+      "differing": 1109513,
       "compared": 1220352,
-      "ratio": 0.789639,
+      "ratio": 0.909175,
       "baselineSize": [
         768,
         1589
       ],
       "rebuildSize": [
         768,
-        7191
+        6241
       ],
       "sizeMismatch": true,
       "diffImage": "audit/screens/diff/san-diego-store.768.png"

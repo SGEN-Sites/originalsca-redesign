@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/seo-changes@1",
-  "generated": "2026-11-11T01:28:44.192Z",
+  "generated": "2026-11-12T11:59:44.697Z",
   "note": "Every field written into the build by sr-seo --apply. Each carries where its value came from. A field the source already filled is never rewritten here.",
   "siteUrl": "https://originalsca.com",
   "siteName": "Originals Family Farms",
@@ -41,27 +41,6 @@
       "from": null,
       "to": "Originals",
       "source": "client-facts"
-    },
-    {
-      "page": "https://originalsca.com/404.html",
-      "field": "alt",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
-    },
-    {
-      "page": "https://originalsca.com/404.html",
-      "field": "img-dimensions",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
-    },
-    {
-      "page": "https://originalsca.com/404.html",
-      "field": "img-lazy",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/404.html",
@@ -816,21 +795,21 @@
       "page": "https://originalsca.com/collabs.html",
       "field": "alt",
       "from": null,
-      "to": "1 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/collabs.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "1 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/collabs.html",
       "field": "img-lazy",
       "from": null,
-      "to": "1 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -1019,21 +998,21 @@
       "page": "https://originalsca.com/deals",
       "field": "alt",
       "from": null,
-      "to": "1 images",
+      "to": "7 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/deals",
       "field": "img-dimensions",
       "from": null,
-      "to": "1 images",
+      "to": "7 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/deals",
       "field": "img-lazy",
       "from": null,
-      "to": "1 images",
+      "to": "7 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -1215,21 +1194,21 @@
       "page": "https://originalsca.com/events.html",
       "field": "alt",
       "from": null,
-      "to": "2 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/events.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "2 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/events.html",
       "field": "img-lazy",
       "from": null,
-      "to": "2 images",
+      "to": "3 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -1525,27 +1504,6 @@
       "from": null,
       "to": "Originals",
       "source": "client-facts"
-    },
-    {
-      "page": "https://originalsca.com/form-sent.html",
-      "field": "alt",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
-    },
-    {
-      "page": "https://originalsca.com/form-sent.html",
-      "field": "img-dimensions",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
-    },
-    {
-      "page": "https://originalsca.com/form-sent.html",
-      "field": "img-lazy",
-      "from": null,
-      "to": "1 images",
-      "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/form-sent.html",
@@ -1880,21 +1838,21 @@
       "page": "https://originalsca.com/",
       "field": "alt",
       "from": null,
-      "to": "42 images",
+      "to": "71 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/",
       "field": "img-dimensions",
       "from": null,
-      "to": "42 images",
+      "to": "71 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/",
       "field": "img-lazy",
       "from": null,
-      "to": "42 images",
+      "to": "71 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2216,21 +2174,21 @@
       "page": "https://originalsca.com/los-angeles",
       "field": "alt",
       "from": null,
-      "to": "1 images",
+      "to": "2 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/los-angeles",
       "field": "img-dimensions",
       "from": null,
-      "to": "1 images",
+      "to": "2 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/los-angeles",
       "field": "img-lazy",
       "from": null,
-      "to": "1 images",
+      "to": "2 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -3147,21 +3105,21 @@
       "page": "https://originalsca.com/shop.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "19 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/shop.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "19 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://originalsca.com/shop.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "19 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {

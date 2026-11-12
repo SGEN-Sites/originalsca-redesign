@@ -1,0 +1,109 @@
+/* blog.css: the Cannablog (blog.mjs), redesigned 2026-11-12 to the owner-approved design language
+   (docs/DESIGN-LANGUAGE.md): flat black and white, the photos in colour, gold only on hover and focus, hairline rules,
+   numbered items, no card boxes. Loaded after pages.css, so it overrides the older post styles from here.
+   - The index (/blog): the lead story (the newest post) as a large split, its photo beside the title, then the other
+     posts in a numbered editorial grid (02-21) over hairlines: four columns at 1200px+, three at 900px+, two at 600px+;
+     phones get compact numbered rows with a square thumbnail.
+   - An article: a compact title band on a ruled dateline (the byline), the post's own lead image as the hero figure,
+     whole (never cropped), then the body on one left axis at a 68ch measure, its headings in the display face, its
+     images as figures (a run of two or more as one gallery row, 12px gaps), and "More from the Cannablog" as numbered
+     ruled rows in two columns.
+   The numbers are a CSS counter (no new words). Tokens only. Reduced motion: no hover zoom (the reveal is base.css's,
+   static under reduced motion). Without JS everything shows. */
+@property --post-measure { syntax: '<length>'; inherits: true; initial-value: 0px; }
+
+/* ---------- the editorial entry (blog.mjs entry()): the dateline (number + author bar), photo, title, excerpt ---------- */
+.ed { counter-increment: ed; min-width: 0; }
+.ed__link { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 14px; height: 100%; color: var(--text); text-decoration: none; }
+.ed__link:focus-visible { outline-offset: 6px; }
+.ed__top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; font: 700 .78rem/1.35 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--steel); }
+.ed__no { letter-spacing: .24em; color: var(--white); }
+.ed__no::before { content: counter(ed, decimal-leading-zero); }
+.ed__media { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 2; background: var(--ink-3); }
+.ed__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: scale .9s var(--ease); }
+.ed__title { color: var(--white); transition: color .35s var(--ease); }
+.ed__excerpt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; align-self: start; font-size: var(--fs-small); line-height: 1.55; color: var(--steel); }
+.ed__go { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; color: var(--white); box-shadow: inset 0 0 0 1.5px var(--hair-2);
+  transition: background-color var(--t-1) var(--ease), color var(--t-1) var(--ease), box-shadow var(--t-1) var(--ease); }
+.ed__go .ico { width: 20px; height: 20px; stroke-width: 2; }
+/* the gold exception: hover and focus only */
+.ed__link:is(:hover, :focus-visible) .ed__title { color: var(--gold); }
+.ed__link:is(:hover, :focus-visible) .ed__go { background: var(--gold); color: var(--ink); box-shadow: none; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) { .ed__link:hover .ed__media img { scale: 1.04; } }
+
+/* ---------- the index ---------- */
+/* the hero's small caps sit over the photo's bright bokeh: set light enough to read 4.5:1 on its pixels */
+.is-blog .phero--photo :is(.kicker, .crumbs ol) { color: var(--chrome-2); }
+.band.blog-index { padding-block: clamp(32px, 4vw, 56px) clamp(56px, 6vw, 96px); counter-reset: ed; }
+/* the lead story */
+.ed--lead .ed__top { padding-top: 14px; border-top: 1px solid var(--hair-2); }
+.ed--lead .ed__title { font-size: clamp(2.6rem, 1.5rem + 3.4vw, 5.4rem); line-height: .9; }
+.ed--lead .ed__excerpt { -webkit-line-clamp: 4; max-width: 48ch; font-size: clamp(1.05rem, 1rem + .25vw, 1.2rem); color: var(--chrome-2); }
+@media (min-width: 900px) {
+  .ed--lead .ed__link { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); grid-template-rows: auto 1fr auto auto auto; column-gap: clamp(28px, 3.5vw, 56px);
+    grid-template-areas: "media top" "media ." "media title" "media excerpt" "media go"; }
+  .ed--lead .ed__top { grid-area: top; }
+  .ed--lead .ed__media { grid-area: media; aspect-ratio: 16 / 10; }
+  .ed--lead .ed__title { grid-area: title; }
+  .ed--lead .ed__excerpt { grid-area: excerpt; }
+  .ed--lead .ed__go { grid-area: go; margin-top: 6px; }
+}
+/* the numbered grid: a hairline over each entry, no boxes */
+.ed-grid { display: grid; grid-template-columns: repeat(var(--ed-cols, 1), minmax(0, 1fr)); column-gap: clamp(20px, 2.4vw, 36px); margin-top: clamp(36px, 4vw, 56px); }
+@media (min-width: 600px) { .ed-grid { --ed-cols: 2; } }
+@media (min-width: 900px) { .ed-grid { --ed-cols: 3; } }
+@media (min-width: 1200px) { .ed-grid { --ed-cols: 4; } }
+.ed--card { padding: 16px 0 clamp(28px, 3vw, 40px); border-top: 1px solid var(--hair-2); }
+.ed--card .ed__title { font-size: clamp(1.45rem, 1.1rem + .8vw, 1.95rem); line-height: .98; }
+
+/* compact numbered rows: an article's "More from the Cannablog" everywhere, and the index grid on phones */
+.ed--row { padding-block: 16px; border-top: 1px solid var(--hair-2); }
+:is(.ed--row, .ed--card) .ed__link { --ed-thumb: 112px; }
+.ed--row .ed__link { grid-template-columns: var(--ed-thumb) minmax(0, 1fr); grid-template-rows: auto auto 1fr; grid-template-areas: "media top" "media title" "media excerpt"; gap: 8px 18px; }
+.ed--row .ed__top { grid-area: top; }
+.ed--row .ed__media { grid-area: media; aspect-ratio: 1; }
+.ed--row .ed__title { grid-area: title; font-size: clamp(1.3rem, 1.1rem + .5vw, 1.6rem); line-height: 1; }
+.ed--row .ed__excerpt { grid-area: excerpt; -webkit-line-clamp: 2; }
+@media (max-width: 599px) {
+  .ed--card { padding: 14px 0 18px; }
+  .ed--card .ed__link { --ed-thumb: 92px; grid-template-columns: var(--ed-thumb) minmax(0, 1fr); grid-template-rows: auto auto 1fr; grid-template-areas: "media top" "media title" "media excerpt"; gap: 6px 14px; }
+  .ed--card .ed__top { grid-area: top; }
+  .ed--card .ed__media { grid-area: media; aspect-ratio: 1; }
+  .ed--card .ed__title { grid-area: title; font-size: 1.35rem; line-height: 1; }
+  .ed--card .ed__excerpt { grid-area: excerpt; -webkit-line-clamp: 2; }
+  .ed--row .ed__link { --ed-thumb: 92px; gap: 6px 14px; }
+}
+
+/* ---------- an article ---------- */
+.is-post { --post-col: min(100% - 2 * var(--gutter), 1040px); }   /* one left axis: the title, the hero, the body, the nav */
+/* the title band, compact, the byline on a ruled dateline */
+.phero.phero--post { min-height: 0; padding: calc(var(--header-h) + clamp(28px, 4vw, 56px)) 0 clamp(24px, 3vw, 36px); }
+.phero--post .phero__inner { width: var(--post-col); }
+.phero--post .phero__title { font-size: clamp(2.3rem, 1.1rem + 4.2vw, 5.6rem); line-height: .9; max-width: none; }
+.phero--post .phero__lede { max-width: none; margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--hair-2); }
+/* the hero figure: the post's own lead image, whole, at its own shape */
+.band.post { padding-block: 0 clamp(40px, 5vw, 72px); }
+.post__hero { width: var(--post-col); margin: 0 auto clamp(28px, 3.5vw, 48px); }
+.post__hero img { width: auto; max-width: 100%; max-height: min(76vh, 780px); }
+/* the body: a 68ch measure (frozen on the body, so every child reads it in the body's own size), the figures free to
+   run the full column */
+.post__body { --post-measure: 68ch; width: var(--post-col); max-width: none; margin-inline: auto; font-size: 1.125rem; line-height: 1.7; }
+.post__body > :not(img, .post__figs) { max-width: var(--post-measure); }
+.post__body > p:first-of-type { font-size: 1.3rem; line-height: 1.55; color: var(--white); }
+.post__body h2 { font-size: clamp(2rem, 1.4rem + 1.9vw, 3rem); margin-top: 1.5em; }
+.post__body h3 { font-size: clamp(1.6rem, 1.25rem + 1.1vw, 2.2rem); margin-top: 1.4em; }
+.post__body h4 { margin-top: 1.5em; font: 400 clamp(1.45rem, 1.2rem + .7vw, 1.85rem)/1 var(--f-display), 'League Gothic Fallback'; letter-spacing: .01em; text-transform: uppercase; }
+.post__body > :is(h2, h3, h4) + * { margin-top: .6em; }
+.post__body a:not([class]):hover { text-decoration-color: var(--gold); }
+.post__body li::marker { color: var(--steel); }
+/* the figures: square corners, never wider than they are, a run of images as one gallery row */
+.post__body > img { width: auto; max-width: 100%; max-height: min(80vh, 820px); margin-block: 1.8em; border-radius: 0; }
+.post__figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; align-items: start; margin-block: 1.8em; }
+.post__figs > img { width: 100%; height: auto; max-height: none; margin: 0; border-radius: 0; }
+@media (max-width: 599px) { .post__figs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.post .post-nav { width: var(--post-col); }
+
+/* "More from the Cannablog" */
+.band.post-more { padding-block: clamp(48px, 5vw, 80px); }
+.ed-rows { display: grid; grid-template-columns: repeat(var(--ed-cols, 1), minmax(0, 1fr)); column-gap: clamp(24px, 4vw, 60px); counter-reset: ed; }
+@media (min-width: 900px) { .ed-rows { --ed-cols: 2; } }

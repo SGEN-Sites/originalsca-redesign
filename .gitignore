@@ -4,6 +4,7 @@ node_modules/
 /publish/
 /private/
 /assets/
+/dist-lab/
 /audit/raw/
 /audit/screens/
 /audit/sweeps-raw/

@@ -18,6 +18,7 @@ const I = {
   'bag': '<path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>',
   'swap': '<path d="M7 7h11l-3-3M17 17H6l3 3"/>',
   'x': '<path d="M6 6l12 12M18 6L6 18"/>',
+  'plus': '<path d="M12 5v14M5 12h14"/>',
   'play': '<path d="M8 5l11 7-11 7z"/>',
   'pause': '<path d="M8 5v14M16 5v14"/>',
   'clock': '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
@@ -119,6 +120,30 @@ ${CATEGORIES.map((c, i) => h`<li class="cat" data-reveal style="--i:${i % 3}">
 </ul>${note ? `<p class="cats__note">${store ? `Each tile opens that category on ${esc(STORES[store].menuLabel)}, with its cart.${store === 'sd' ? ' The San Diego menu has no drinks, tinctures, topicals or merch shelf, so those tiles open the full San Diego menu.' : ''}` : 'Each tile opens that category on the selected store\'s live menu, with its cart. The San Diego menu has no drinks, tinctures, topicals or merch shelf, so in San Diego those tiles open the full menu.'}</p>` : ''}`;
 }
 
+// ---- category wall (home; owner requests 2026-11-12, from the owner's reference; it replaces the 2026-11-11 fan, kept
+// in private/retired/2026-11-12-category-fan/): the categories as a bento box of photo cards packed close, three
+// interlocking columns (home.css "category wall" sets each card's height by its place: tall, square or short). Each card
+// is one link to that category on the selected store's menu (data-shop: site.js swaps the href and the store name). On
+// hover or keyboard focus the card grows a little and the other cards dim. The wall's order follows the menu's except
+// that Drinks comes before Edibles, so the can (a tall product) gets a tall card and the edibles a short one.
+const WALL_ORDER = ['flower', 'preroll', 'cartridge', 'extract', 'beverage', 'edible', 'tincture', 'topical', 'merch'];
+export function categoryWall() {
+  const sizes = '(min-width: 1180px) 330px, (min-width: 600px) 31vw, 46vw';
+  const cats = [...CATEGORIES].sort((x, y) => WALL_ORDER.indexOf(x.id) - WALL_ORDER.indexOf(y.id));
+  if (cats.some((c) => !WALL_ORDER.includes(c.id))) throw new Error('categoryWall: a category is missing from WALL_ORDER');
+  return h`<div class="cwall-box"><ul class="cwall" role="list">
+${cats.map((c, i) => { const n = String(i + 1).padStart(2, '0'); return h`<li class="cwall__item">
+  <a class="cwall__card" href="${esc(catHref('la', c))}" target="_blank" rel="noopener" data-shop="${c.id}">
+    <span class="cwall__photo">${img(c.img, { sizes, alt: '' })}</span>
+    <span class="cwall__shade" aria-hidden="true"></span>
+    <span class="cwall__no" aria-hidden="true">${n}</span>
+    <span class="cwall__body"><span class="cwall__name">${esc(c.label)}</span><span class="cwall__desc">${esc(c.blurb || '')}</span><span class="cwall__cta btn btn--accent btn--sm"><span>Shop Now</span>${icon('arrow-ne')}</span></span>
+    <span class="sr-only"> (opens in a new tab)</span>
+  </a>
+</li>`; })}
+</ul></div>`;
+}
+
 // ---- store card -------------------------------------------------------------------------------
 export function storeCard(id, { photo = null, headingTag = 'h3', cls = '' } = {}) {
   const s = STORES[id];
@@ -168,8 +193,8 @@ export function pageHero({ kicker: k, title, lede = '', crumbs = [], media = nul
 }
 
 // ---- background video (poster first; source attached by site.js unless reduced motion / Save-Data) -----
-export function bgVideo({ src, srcSmall = null, poster, cls = '', label = '' }) {
-  return `<video class="bgvid ${cls}" muted loop playsinline preload="none" poster="${esc(poster)}" data-bgvid data-src="${esc(src)}"${srcSmall ? ` data-src-small="${esc(srcSmall)}"` : ''} aria-hidden="true"${label ? ` data-label="${esc(label)}"` : ''}></video>`;
+export function bgVideo({ src, srcSmall = null, poster, cls = '', label = '', ai = false }) {
+  return `<video class="bgvid ${cls}" muted loop playsinline preload="none" poster="${esc(poster)}" data-bgvid data-src="${esc(src)}"${srcSmall ? ` data-src-small="${esc(srcSmall)}"` : ''} aria-hidden="true"${ai ? ' data-ai="generated"' : ''}${label ? ` data-label="${esc(label)}"` : ''}></video>`;
 }
 
 // ---- post card -------------------------------------------------------------------------------
@@ -204,7 +229,7 @@ export function form({ id, fields, submit = 'Submit', note = '', confirmNote = '
   return h`${confirm('Form: preview build, no backend. Connect the ' + confirmNote + ' before launch.')}
 <form class="form ${cls}" id="${id}" action="${u('/form-sent')}" method="get" data-preview-form novalidate>
   <div class="form__grid">${fields.map(f)}</div>
-  <p class="form__actions"><button class="btn btn--red" type="submit"><span>${esc(submit)}</span>${icon('arrow')}</button></p>
+  <p class="form__actions"><button class="btn btn--accent" type="submit"><span>${esc(submit)}</span>${icon('arrow')}</button></p>
   <p class="form__note" role="status" data-form-status>${note || 'Preview build: this form does not send yet.'}</p>
   ${ok ? `<p class="form__msg form__msg--ok" role="status" data-form-ok hidden>${esc(ok)}</p>` : ''}${err ? `<p class="form__msg form__msg--err" role="alert" data-form-err hidden>${esc(err)}</p>` : ''}
 </form>`;

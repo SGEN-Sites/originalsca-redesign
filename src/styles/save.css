@@ -1,0 +1,77 @@
+/* save.css: the /deals "Save now" band (owner pick 2026-11-12: section lab option A "Bento", src/lab/parts/save-a.html,
+   with the owner's tweaks). Interlocking tiles like the home category wall (home.css), 12px apart, the site's card
+   radius: the heading tile, the First Time Patient tile (the owner's counter photo full-bleed behind its words, under an
+   eased dark scrim that starts just above them, so the photo shows clearly over the rest of the tile), the Weedmaps tile
+   and the bud tile (bud-c, a transparent cut-out). The bud's top pops out of its frame: its tile sits --pop lower than
+   its row's top and the plant rises over the frame into that space, about a fifth of the tile's height, with a soft
+   shadow and a slow float (still with reduced motion). The space is the bud tile's own, so the plant can never cover a
+   word: wide, it reaches the line of the other tiles' tops; on tablets and phones it stops short of the tile above.
+   The deal tiles' inner frames turn gold under the pointer or keyboard focus (the gold exception). Tokens only. */
+.save { --pop: 52px; }
+.save__grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "pct" "wm" "pic"; }
+.save__tile { position: relative; isolation: isolate; min-width: 0; display: flex; flex-direction: column; align-items: flex-start;
+  padding: clamp(20px, 2.2vw, 30px); border-radius: var(--radius); background: var(--ink-2); box-shadow: inset 0 0 0 1px var(--hair-2); }
+.save__tile::after { content: ''; position: absolute; inset: 8px; z-index: 2; border-radius: calc(var(--radius) - 6px); pointer-events: none;
+  box-shadow: inset 0 0 0 1px var(--hair); transition: box-shadow .5s var(--ease); }
+@media (hover: hover) { .save__deal:hover::after { box-shadow: inset 0 0 0 1.5px var(--gold); } }
+.save__deal:has(:focus-visible)::after { box-shadow: inset 0 0 0 1.5px var(--gold); }
+.save__act { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 20px; }
+
+/* the heading tile */
+.save__head { grid-area: head; }
+.save__head h2 { font-size: clamp(3rem, 1.8rem + 3.4vw, 5.6rem); line-height: .9; }
+.save__head .lede { margin-top: 16px; max-width: 52ch; font-size: clamp(1rem, .95rem + .25vw, 1.125rem); }
+
+/* the First Time Patient tile: the photo full-bleed (drawn 1.4 times the tile's height, its top 40% above the tile, so
+   the faces sit in the tile's top fifth, clear of the words), the words at the foot over the scrim */
+.save__pct { --fade: clamp(84px, 9vw, 120px); grid-area: pct; container-type: inline-size; min-height: 500px; padding: 0; overflow: hidden;
+  justify-content: flex-end; align-items: stretch; background: var(--ink-3); }
+.save__photo { position: absolute; inset: 0; z-index: 0; overflow: hidden; border-radius: inherit; }
+.save__photo img { position: absolute; left: 0; top: -40%; width: 100%; height: 140%; object-fit: cover; object-position: 62% 50%; }
+.save__body { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start;
+  padding: var(--fade) clamp(20px, 2.2vw, 30px) clamp(20px, 2.2vw, 30px); }
+.save__body::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, transparent 0, color-mix(in srgb, var(--ink) 8%, transparent) calc(var(--fade) * .3),
+    color-mix(in srgb, var(--ink) 28%, transparent) calc(var(--fade) * .58), color-mix(in srgb, var(--ink) 52%, transparent) calc(var(--fade) * .8),
+    color-mix(in srgb, var(--ink) 74%, transparent) var(--fade), color-mix(in srgb, var(--ink) 92%, transparent) 100%); }   /* eased: clear above the words, dark under them */
+.save__pct .kicker { color: var(--chrome-2); }
+.save__offer { font-size: 1rem; line-height: 1; }
+.save__big { display: block; margin-bottom: 10px; font-size: clamp(5.5rem, 40cqi, 10rem); line-height: .8; letter-spacing: -.005em; color: var(--white); }
+.save__ex { display: block; max-width: 18ch; font-size: clamp(1.5rem, 1.1rem + .9vw, 2.1rem); line-height: 1; color: var(--text); text-wrap: balance; }
+
+/* the Weedmaps tile; wide, its words at left and the buttons at right on one foot line */
+.save__wm { grid-area: wm; container-type: inline-size; }
+.save__wm-in { flex: 1; align-self: stretch; display: flex; flex-direction: column; }
+.save__wm h3 { font-size: clamp(1.6rem, 1.2rem + .9vw, 2.2rem); line-height: 1; text-wrap: balance; }
+.save__note { margin-top: 10px; font: 700 .95rem / 1.3 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--chrome-2); }
+.save__wm .save__act { margin-top: auto; }
+@container (min-width: 560px) {
+  .save__wm-in { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: 24px; }
+  .save__wm-in .save__act { padding-top: 0; }
+}
+
+/* the bud tile: the plant is drawn in a clip box from 12px above the pop-out down to the tile's foot (its sides and foot
+   are the tile's, so only the top breaks the frame); the cut-out's own clear top (7% of the image) is pulled above that
+   box, so the plant's tip sits 12px into it, with room to float 6px */
+.save__pic { grid-area: pic; aspect-ratio: 4 / 3; margin-top: calc(var(--pop) + 4px); padding: 0; background: var(--ink-3); }
+.save__pic::after { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--white) 70%, transparent); }
+.save__bud { position: absolute; z-index: 3; left: 0; right: 0; bottom: 0; top: calc(-1 * var(--pop) - 12px); overflow: hidden;
+  border-radius: 0 0 var(--radius) var(--radius); pointer-events: none; }
+.save__bud img { position: absolute; left: 0; width: 100%; top: calc(12.3px - 7.53%); height: calc(107.53% - 4.3px); object-fit: cover; object-position: 46% 0;
+  filter: var(--ai-photo) drop-shadow(0 14px 22px color-mix(in srgb, var(--black) 70%, transparent)); }
+@media (prefers-reduced-motion: no-preference) {
+  .save__bud img { animation: save-float 6s var(--ease-io) infinite alternate; }
+}
+@keyframes save-float { from { translate: 0 0; } to { translate: 0 -6px; } }
+
+/* tablets: the heading across the top, the First Time Patient tile beside the bud, the Weedmaps tile across the foot */
+@media (min-width: 640px) {
+  .save { --pop: 72px; }
+  .save__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "head head" "pct pic" "wm wm"; }
+  .save__pic { aspect-ratio: auto; }
+}
+/* wide: four columns that interlock (the heading over the Weedmaps tile, then the tall First Time Patient and bud tiles) */
+@media (min-width: 1024px) {
+  .save { --pop: 84px; }
+  .save__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "head head pct pic" "wm wm pct pic"; }
+}

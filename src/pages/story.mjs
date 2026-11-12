@@ -24,14 +24,14 @@ export function pages() {
   const story = {
     path: '/our-story', title: 'Our Story | Originals', description: 'Originals started with elementary school friends from one Los Angeles block. 100% family owned and operated since 2006, growing award-winning flower in-house.',
     jsonld: [crumbsLd([{ name: 'Our Story', path: '/our-story' }])], active: '/our-story', bodyClass: 'is-story',
-    main: h`${pageHero({ kicker: 'Our story', title: 'From the <span class="chrome-word">block</span>', crumbs: [{ label: 'Our Story', href: '/our-story' }], lede: '<p>Originals started with a group of elementary school friends, many from the same Los Angeles block, who pooled what they had to build a proud, world-class company driven by their Mexican American family values.</p>', video: bgVideo({ src: a('video/arches-720.mp4'), poster: imgFile('loop-arches', 720), cls: '' }), media: img('arches', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
+    main: h`${pageHero({ kicker: 'Our story', title: 'From the <span class="chrome-word">block</span>', crumbs: [{ label: 'Our Story', href: '/our-story' }], lede: '<p>Originals started with a group of elementary school friends, many from the same Los Angeles block, who pooled what they had to build a proud, world-class company driven by their Mexican American family values.</p>', video: bgVideo({ src: a('video/arches-720.mp4'), poster: imgFile('loop-arches', 720), cls: '', ai: true }), media: img('arches', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
 <section class="band chapters" aria-label="Chapters">
   <div class="wrap">
     <ol class="chapter-list" role="list">
       <li class="chapter" data-reveal>
         <p class="chapter__n">01</p>
         <div class="chapter__body"><h2>The <span class="chrome-word">block</span></h2><p class="lede">Brothers, parents and neighbors all pitched in.</p><p>What they pooled together became a company built the way a family is built: everybody contributes, and everybody is welcome at the table.</p></div>
-        <figure class="polaroid polaroid--inline" style="--r:-4deg">${img('store-la-front', { sizes: '320px', alt: 'Originals Los Angeles storefront with its giant ORIGINALS letters' })}<figcaption>Stanford Ave</figcaption></figure>
+        <figure class="polaroid polaroid--inline" style="--r:-4deg">${img('store-la-front', { sizes: '320px' })}<figcaption>Stanford Ave</figcaption></figure>
       </li>
       <li class="chapter" data-reveal>
         <p class="chapter__n">02</p>
@@ -49,13 +49,6 @@ export function pages() {
         <figure class="polaroid polaroid--inline" style="--r:4deg">${img('gelato-box', { sizes: '320px', alt: 'Originals Gelato 3.5g packaging' })}<figcaption>The house cut</figcaption></figure>
       </li>
     </ol>
-  </div>
-</section>
-<section class="band band--concrete creedband" aria-labelledby="creed2-h">
-  <div class="wrap">
-    <div class="section-head section-head--center">${kicker('The creed')}<h2 id="creed2-h" class="sr-only">${esc(SITE.creed.join(', ') + '.')}</h2></div>
-    <ol class="creed-static" role="list" aria-hidden="true">${SITE.creed.map((c, i) => `<li data-reveal style="--i:${i}"><span class="chrome-word">${esc(c)}</span><span class="creed__stop">.</span></li>`).join('')}</ol>
-    <p class="tags-line center">${SITE.tags.map(esc).join(' · ')}</p>
   </div>
 </section>
 <section class="band" aria-labelledby="fam-h">
@@ -89,22 +82,39 @@ export function pages() {
 </section>`,
   };
 
+  // /collabs and /bussin-merch redesigned 2026-11-12 to the owner-approved design language (docs/DESIGN-LANGUAGE.md;
+  // styles culture-pages.css). The roster is an editorial grid: numbered cells between hairlines, each partner's real
+  // logo (logo-<slug>, its -white version first, white on dark with no box, as the home collab tape finds it) or, where
+  // the registry has none yet, its name in the display face; the chips still tumble (site.js "collabs"), now loose on a
+  // hairline floor. The kicker no longer says "Text only, by design": the roster now shows the partners' logos.
+  const collabMark = (c) => {
+    const name = c.product || c.partner, id = 'logo-' + name.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    for (const k of [id + '-white', id]) {
+      try { return img(k, { cls: 'cp-roster__logo', sizes: '260px', alt: name + ' logo' }); }
+      catch (e) { if (!/^unknown image/.test(e.message)) throw e; }
+    }
+    return '';
+  };
   const collabs = {
     path: '/collabs', title: 'Collabs | Originals', description: 'The Brand Behind The Brands: Originals collabs with the family it builds with.',
     jsonld: [crumbsLd([{ name: 'Collabs', path: '/collabs' }])], active: '/events', bodyClass: 'is-collabs',
-    main: h`${pageHero({ kicker: 'Collabs', title: 'The brand behind <span class="chrome-word">the brands</span>', crumbs: [{ label: 'Collabs', href: '/collabs' }], lede: '<p>Originals grows for the family, and the family keeps growing. These are the names we have built with.</p>', media: img('stage', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'stage' })}
+    main: h`${pageHero({ kicker: 'Collabs', title: 'The brand behind <span class="chrome-word">the brands</span>', crumbs: [{ label: 'Collabs', href: '/collabs' }], lede: '<p>Originals grows for the family, and the family keeps growing. These are the names we have built with.</p>', media: img('stage', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'stage', cls: 'cp-hero' })}
 ${confirm('Every collab below (partner, product, co-grower) is from the operator brief and must be confirmed by the client before launch; no artist photos are used.')}
-<section class="band collabs" aria-labelledby="cl-h">
+<section class="band cp-band cp-roster" aria-labelledby="cl-h">
   <div class="wrap">
-    <div class="section-head">${kicker('Text only, by design')}<h2 id="cl-h">The <span class="chrome-word">roster</span></h2></div>
-    <div class="tumble" data-tumble aria-hidden="true">
+    <div class="cp-head">${kicker('Collabs')}<h2 id="cl-h">The <span class="chrome-word">roster</span></h2></div>
+    <div class="tumble cp-tumble" data-tumble aria-hidden="true">
       ${COLLABS.map((c) => `<span class="chip-fall">${esc(c.product || c.partner)}</span>`).join('')}
       ${SITE.tags.map((t) => `<span class="chip-fall chip-fall--tag">${esc(t)}</span>`).join('')}
     </div>
-    <ul class="collab-list" role="list">
-      ${COLLABS.map((c, i) => `<li class="collab" data-reveal style="--i:${i % 4}"><p class="collab__p">${esc(c.product || c.partner)}</p><p class="collab__w">${c.product ? 'with ' + esc(c.partner) + (c.with ? ' and ' + esc(c.with) : '') : 'Collab'}${c.recent ? ' · most recent' : ''}</p></li>`).join('')}
-    </ul>
-    <p class="btn-row mt">${btn('Get on the drop list', '/drops')}${btn('Events', '/events', { kind: 'ghost' })}</p>
+    <ol class="cp-roster__grid" role="list">
+      ${COLLABS.map((c, i) => { const mark = collabMark(c); return h`<li class="cp-roster__item" data-reveal style="--i:${i % 4}">
+        <p class="cp-roster__tab"><span class="cp-roster__no" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>${c.recent ? '<span class="cp-roster__flag">most recent</span>' : ''}</p>
+        <p class="cp-roster__mark${mark ? ' cp-roster__mark--logo' : ''}">${mark || esc(c.product || c.partner)}</p>
+        <p class="cp-roster__w">${c.product ? 'with ' + esc(c.partner) + (c.with ? ' and ' + esc(c.with) : '') : 'Collab'}</p>
+      </li>`; })}
+    </ol>
+    <p class="btn-row cp-roster__acts">${btn('Get on the drop list', '/drops')}${btn('Events', '/events', { kind: 'ghost' })}</p>
   </div>
 </section>`,
   };
@@ -112,12 +122,15 @@ ${confirm('Every collab below (partner, product, co-grower) is from the operator
   const bussin = {
     path: '/bussin-merch', title: 'Bussin\' | Originals', description: 'Bussin\': the Originals collab strain, its release party and the merch.',
     jsonld: [crumbsLd([{ name: 'Bussin\'', path: '/bussin-merch' }])], active: '/events', bodyClass: 'is-bussin',
-    main: h`${pageHero({ kicker: 'Collab strain', title: '<span class="chrome-word chrome-word--red">Bussin\'</span>', crumbs: [{ label: 'Collabs', href: '/collabs' }, { label: 'Bussin\'', href: '/bussin-merch' }], lede: '<p>Bussin\' is the Originals collab with Chris Brown and OHB Farms, launched with a strain release party.</p>', media: `<div class="phero__pattern bandana"></div>`, variant: 'pattern', actions: btn('Shop flower', STORES.la.cat('flower'), { shop: 'flower' }) + btn('Bussin\' merch', LINKS.clothing, { kind: 'chrome' }) })}
+    main: h`${pageHero({ kicker: 'Collab strain', title: '<span class="chrome-word chrome-word--accent">Bussin\'</span>', crumbs: [{ label: 'Collabs', href: '/collabs' }, { label: 'Bussin\'', href: '/bussin-merch' }], lede: '<p>Bussin\' is the Originals collab with Chris Brown and OHB Farms, launched with a strain release party.</p>', media: `<div class="phero__pattern bandana"></div>`, variant: 'pattern', cls: 'cp-hero', actions: btn('Shop flower', STORES.la.cat('flower'), { shop: 'flower' }) + btn('Bussin\' merch', LINKS.clothing, { kind: 'chrome' }) })}
 ${confirm('Bussin\' details (collab partners Chris Brown and OHB Farms, the release party): from the operator brief, confirm with the client. The live /bussin-merch page is a template placeholder titled EVENTS.')}
-<section class="band" aria-labelledby="bz-h">
-  <div class="wrap split">
-    <div class="stack">${kicker('Release night')}<h2 id="bz-h">The <span class="chrome-word">release party</span></h2><p class="lede">The Bussin' strain release party brought the family out for the drop.</p><p class="btn-row">${btn('All events', '/events', { kind: 'ghost' })}${btn('Drop list', '/drops')}</p></div>
-    <figure class="media-frame">${img('stage', { sizes: '(min-width: 900px) 46vw, 92vw' })}</figure>
+<!-- the release party as a bento (the /deals Save now pattern): the words tile and the stage tile (an illustration, for
+     mood only: no photo of the night exists) in one rectangle, 12px apart; the words tile's inner frame turns gold under
+     the pointer or keyboard focus -->
+<section class="band cp-band cp-bz" aria-labelledby="bz-h">
+  <div class="wrap cp-bento">
+    <div class="cp-tile cp-tile--head">${kicker('Release night')}<h2 id="bz-h">The <span class="chrome-word">release party</span></h2><p class="lede">The Bussin' strain release party brought the family out for the drop.</p><p class="btn-row">${btn('All events', '/events', { kind: 'ghost' })}${btn('Drop list', '/drops')}</p></div>
+    <figure class="cp-tile cp-tile--pic">${img('stage', { sizes: '(min-width: 900px) 56vw, 92vw' })}</figure>
   </div>
 </section>`,
   };

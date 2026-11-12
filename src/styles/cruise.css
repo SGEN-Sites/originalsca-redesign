@@ -1,0 +1,205 @@
+/* cruise.css: home section 7, the Sunday Cruise with "From the farm" merged in, as "The Roadside Sign" (owner-picked lab
+   option B, 2026-11-12; reference page src/lab/cruise-b.html; markup home.mjs section 7; script site.js "Sunday Cruise").
+   The house strains are part of the boulevard: a vintage Los Angeles pole sign on the far sidewalk. Top down: a dark lit
+   cabinet with the arched ORIGINALS wordmark (parts.mjs wordmark(), the header's own traced mark), framed by chaser
+   bulbs; a backlit white letter board whose header row is "House strains" between two crowns (parts.mjs crownMark()),
+   in ink, over two columns of tracks with the ten strains as black letters, each line a link with an arrow; the Strain
+   library panel hanging below on two chains; the pole down to its footing. The copy sits on the other side of the scene.
+   As you scroll, the lowrider rolls in along the road in front of the pole, eases to a stop under the sign, hops three
+   times (scaled by the script so its roof never reaches a panel) and pulls away; the sky dims toward dusk while the
+   sign's light grows, and the sign's light slides across the car's paint as it passes. The sign flickers on once as it
+   comes into view. Wide screens (900px+ wide, 760px+ tall): a pinned stage, the copy at left and the sign at right,
+   every panel above the car at every scroll position. Phones, tablets and short screens: the copy, then the sign as a
+   full-width board, then its pole and the car. html.cb-live (set before paint by the home page's head script unless
+   reduced motion; removed by site.js if its block cannot run) turns on the motion; without it (no script, reduced
+   motion) the scene is complete and still: the sign lit, every bulb on, the car parked under the sign.
+   Owner tweaks 2026-11-12: a line's hover and focus highlight (an ink tile with rounded corners) sits --cb-in (14px)
+   inside the white board on every side and 14px either side of the mullion; the "House strains" row moved from the
+   dark cabinet into the white board, in ink, and the board grew to hold it. Colours are tokens only. Prefix cb-. */
+
+@property --cb-lit { syntax: '<number>'; inherits: true; initial-value: 1; }   /* the sign's power, 0 off ... 1 lit */
+
+/* ---------- the section and its stage (phones first: one column) ---------- */
+.cb { --p: .5; --cb-row: 44px; --cb-curb: 16px; --cb-stub: 86px; --cb-in: 14px; --car-w: min(96vw, 560px);
+  position: relative; overflow-x: clip; background: var(--ink); color: var(--text); }
+.cb-stage { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; padding-top: var(--band-y); }
+
+/* the sky: the boulevard at sunset, dimming toward dusk as you scroll; a shade under the copy; hazes into the bands */
+.cb-sky { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.cb-sky img { object-position: 50% 100%; filter: var(--ai-photo) saturate(1.12) brightness(.9);
+  transform: scale(calc(1.06 - var(--p) * .05)); transform-origin: 50% 80%; }
+.cb-dusk, .cb-shade, .cb-haze { position: absolute; inset: 0; }
+.cb-dusk { background: var(--ink); opacity: calc(var(--p) * .3); }
+/* the shade under the copy (owner request 2026-11-12, "make the gradient here look more seamless"): eased, never a
+   linear ramp, so it has no edge, no knee and no band. Phones: 76% ink over the top fifth, then a smoothstep fade
+   (twelve stops) to clear by 64% of the section; it also stands in for the section's top haze. Wide screens: one soft
+   ellipse behind the copy (below). tools/test-ui.mjs block 8 reads its luminance profile over a flat tone. */
+.cb-shade { background: linear-gradient(180deg, color-mix(in srgb, var(--ink) 76%, transparent) 0%, color-mix(in srgb, var(--ink) 76%, transparent) 22%,
+  color-mix(in srgb, var(--ink) 74.2%, transparent) 25.8%, color-mix(in srgb, var(--ink) 69.4%, transparent) 29.6%, color-mix(in srgb, var(--ink) 62.1%, transparent) 33.5%,
+  color-mix(in srgb, var(--ink) 53.2%, transparent) 37.3%, color-mix(in srgb, var(--ink) 43.2%, transparent) 41.1%, color-mix(in srgb, var(--ink) 32.8%, transparent) 44.9%,
+  color-mix(in srgb, var(--ink) 22.8%, transparent) 48.7%, color-mix(in srgb, var(--ink) 13.9%, transparent) 52.5%, color-mix(in srgb, var(--ink) 6.6%, transparent) 56.4%,
+  color-mix(in srgb, var(--ink) 1.8%, transparent) 60.2%, transparent 64%); }
+/* the bottom haze into the next band, eased the same way */
+.cb-haze { background: linear-gradient(180deg, transparent 0%, transparent 84%, color-mix(in srgb, var(--ink) 7.4%, transparent) 86.7%,
+  color-mix(in srgb, var(--ink) 25.9%, transparent) 89.3%, color-mix(in srgb, var(--ink) 50%, transparent) 92%, color-mix(in srgb, var(--ink) 74.1%, transparent) 94.7%,
+  color-mix(in srgb, var(--ink) 92.6%, transparent) 97.3%, var(--ink) 100%); }
+
+/* ---------- the copy ---------- */
+.cb-scene { position: relative; display: flex; flex-direction: column; align-items: center; }
+.cb-copy { align-self: stretch; max-width: 40rem; }
+.cb-copy .kicker { margin-bottom: 14px; }
+.cb-h { font-size: clamp(2.7rem, 1.4rem + 3.3vw, 5.2rem); line-height: .88; text-shadow: 0 6px 30px var(--black); }
+.cb-h .script { display: block; margin-top: .04em; font-size: 1.1em; line-height: 1; text-transform: none; }
+.cb-lede { margin-top: 18px; max-width: 44ch; font-size: clamp(1.02rem, .95rem + .3vw, 1.16rem); color: var(--text);
+  text-shadow: 0 1px 14px color-mix(in srgb, var(--black) 80%, transparent); }
+
+/* ---------- the sign ---------- */
+.cb-sign { position: relative; width: min(100%, 560px); margin-top: clamp(30px, 8vw, 52px); display: flex; flex-direction: column; align-items: center; }
+
+/* the cabinet: the arched wordmark, lit, framed by chaser bulbs */
+.cb-cab { position: relative; width: 100%; display: grid; place-items: center; padding: clamp(12px, 1.8vh, 22px) 26px; border-radius: 14px;
+  background: linear-gradient(180deg, var(--ink-3), var(--ink) 75%);
+  box-shadow: inset 0 0 0 1px var(--hair-2), inset 0 0 0 4px var(--ink), inset 0 0 0 5px var(--hair), 0 18px 34px -20px var(--black); }
+.cb-word { display: block; width: 80%; height: auto; max-height: clamp(44px, 9vh - 18px, 96px); color: var(--white); opacity: calc(.3 + .7 * var(--cb-lit));
+  filter: drop-shadow(0 0 1.5px color-mix(in srgb, var(--white) 90%, transparent)) drop-shadow(0 0 14px color-mix(in srgb, var(--white) 40%, transparent)); }
+
+/* chaser bulbs: four strips, each an exact number of bulbs (round()). Two of every three are lit; the lit pattern steps
+   one bulb at a time, clockwise. Still (no script, reduced motion): every bulb lit. */
+.cb-bulbs { position: absolute; pointer-events: none; --cb-pt: 14px; --cb-tile: var(--cb-pt); opacity: calc(.2 + .8 * var(--cb-lit));
+  --cb-on: radial-gradient(circle closest-side, var(--white) 0 30%, color-mix(in srgb, var(--white) 45%, transparent) 44%, color-mix(in srgb, var(--white) 10%, transparent) 70%, transparent);
+  --cb-off: radial-gradient(circle closest-side, color-mix(in srgb, var(--white) 30%, transparent) 0 24%, transparent 32%); }
+.cb-bulbs--t, .cb-bulbs--b { left: 50%; width: round(down, 100% - 6px, var(--cb-pt)); height: var(--cb-pt); translate: -50% 0;
+  background: var(--cb-on) 0 0 / var(--cb-tile) 100% repeat-x, var(--cb-on) var(--cb-pt) 0 / calc(var(--cb-pt) * 3) 100% repeat-x, var(--cb-off) 0 0 / var(--cb-pt) 100% repeat-x; }
+.cb-bulbs--l, .cb-bulbs--r { top: 50%; width: var(--cb-pt); height: round(down, 100% - 6px - 2 * var(--cb-pt), var(--cb-pt)); translate: 0 -50%;
+  background: var(--cb-on) 0 0 / 100% var(--cb-tile) repeat-y, var(--cb-on) 0 var(--cb-pt) / 100% calc(var(--cb-pt) * 3) repeat-y, var(--cb-off) 0 0 / 100% var(--cb-pt) repeat-y; }
+.cb-bulbs--t { top: 3px; }
+.cb-bulbs--b { bottom: 3px; }
+.cb-bulbs--l { left: 3px; }
+.cb-bulbs--r { right: 3px; }
+
+/* the letter board: a dark frame around a backlit white panel; the panel's header row, then two columns of tracks */
+.cb-board { position: relative; width: 100%; margin-top: 6px; padding: 4px; border-radius: 14px; background: var(--ink-2);
+  box-shadow: inset 0 0 0 1px var(--hair-2), 0 22px 40px -22px var(--black); }
+.cb-board::before { content: ''; position: absolute; z-index: -1; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: 0 0 46px 4px color-mix(in srgb, var(--white) 26%, transparent), 0 0 130px 24px color-mix(in srgb, var(--white) 9%, transparent);
+  opacity: calc(var(--cb-lit) * (.55 + .45 * var(--p))); }
+.cb-panel { position: relative; container-type: inline-size; padding: 10px var(--cb-in) var(--cb-in); border-radius: 10px;
+  background: linear-gradient(180deg, var(--chrome-2), var(--white) 10%, var(--white) 90%, var(--chrome-2));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 28%, transparent), inset 0 0 20px color-mix(in srgb, var(--chrome-3) 55%, transparent); }
+.cb-panel::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--chrome-7); pointer-events: none;
+  opacity: calc((1 - var(--cb-lit)) * .5); }   /* unlit, the panel greys */
+/* the header row, inverted for the white board: ink words and crowns over a rule */
+.cb-title { position: relative; display: flex; align-items: center; justify-content: center; gap: .7em; margin: 0 0 6px; padding: 2px 0 10px;
+  border-bottom: 2px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  font: 700 clamp(.8125rem, .62rem + .42vw, 1rem) / 1.2 var(--f-ui); letter-spacing: .34em; text-transform: uppercase; color: var(--ink); }
+.cb-title > span { margin-right: -.34em; }   /* the tracking after the last letter, so the words sit centred */
+.cb-title .crown { flex: none; display: block; width: 1.35em; height: auto; }
+.cb-list { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column;
+  column-gap: calc(var(--cb-in) * 2); margin: 0; padding: 0; list-style: none; }
+.cb-list::after { content: ''; position: absolute; top: 4px; bottom: 4px; left: 50%; width: 2px; translate: -50% 0; pointer-events: none;
+  background: color-mix(in srgb, var(--ink) 18%, transparent); }   /* the mullion between the columns */
+.cb-list > li { position: relative; display: flex; min-width: 0; }
+.cb-list > li::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; pointer-events: none;
+  background: color-mix(in srgb, var(--ink) 14%, transparent); }   /* the letter track under each line */
+.cb-list > li:nth-child(5n)::after { display: none; }
+.cb-line { position: relative; flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 6px; min-width: 0; min-height: var(--cb-row);
+  padding: 0 12px; border-radius: 9px; color: var(--ink); text-decoration: none;
+  font: 400 clamp(1rem, 5.6cqi, 1.75rem) / 1 var(--f-display); letter-spacing: .05em; text-transform: uppercase;
+  transition: background-color .2s var(--ease), color .2s var(--ease); }
+.cb-line > span { white-space: nowrap; }
+.cb-line .ico, .cb-lib .ico { flex: none; width: 18px; height: 18px; stroke-width: 2.4; transition: translate .25s var(--ease); }
+@container (max-width: 330px) { .cb-line { padding: 0 10px; letter-spacing: .03em; } .cb-line .ico { width: 16px; height: 16px; } }
+@media (hover: hover) {
+  .cb-line:hover { background: var(--ink); color: var(--white); }
+  .cb-line:hover .ico { translate: 3px 0; }
+}
+/* focus: the same ink tile with a white ring inside it, so the whole highlight stays inside the tile's inset */
+.cb-line:focus-visible { background: var(--ink); color: var(--white); outline: 2px solid var(--white); outline-offset: -5px; border-radius: 9px; }
+.cb-line:focus-visible .ico { translate: 3px 0; }
+
+/* the Strain library panel, hanging from the board on two chains */
+.cb-hang { position: relative; width: 100%; display: flex; justify-content: center; padding-top: 12px; }
+.cb-chain { position: absolute; top: 0; width: 3px; height: 18px; border-radius: 2px;
+  background: repeating-linear-gradient(180deg, var(--steel) 0 3px, transparent 3px 5px); }
+.cb-chain--l { left: 24%; }
+.cb-chain--r { right: 24%; }
+.cb-lib { position: relative; z-index: 0; display: flex; width: 60%; min-width: 210px; padding: 3px; border-radius: 10px; background: var(--ink-2);
+  color: var(--ink); text-decoration: none; box-shadow: inset 0 0 0 1px var(--hair-2), 0 16px 30px -16px var(--black); }
+.cb-lib::before { content: ''; position: absolute; z-index: -1; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: 0 0 32px -4px color-mix(in srgb, var(--white) 40%, transparent); opacity: var(--cb-lit); }
+.cb-lib__face { flex: 1; display: flex; align-items: center; justify-content: center; gap: .6em; min-height: 44px; padding: 0 1em;
+  border-radius: 7px; background: var(--white); font: 700 clamp(.9rem, .8rem + .25vw, 1rem) / 1 var(--f-ui); letter-spacing: .14em;
+  text-transform: uppercase; transition: background-color .25s var(--ease); }
+@media (hover: hover) {
+  .cb-lib:hover .cb-lib__face { background: var(--chrome-2); }
+  .cb-lib:hover .ico { translate: 3px 0; }
+}
+.cb-lib:focus-visible { outline-offset: 4px; border-radius: 12px; }
+.cb-lib:focus-visible .cb-lib__face { background: var(--chrome-2); }
+
+/* the pole: from behind the board down to its footing, with a pool of the sign's light at its foot */
+.cb-pole { position: relative; z-index: -1; flex: 1 0 auto; width: clamp(14px, 1.15vw, 20px); min-height: calc(var(--cb-stub) + 90px); margin-top: -90px;
+  background: linear-gradient(90deg, var(--black), var(--concrete-2) 32%, var(--chrome-7) 48%, var(--concrete) 66%, var(--black)); }
+.cb-pole::before { content: ''; position: absolute; left: 50%; bottom: -26px; width: 1600%; height: 52px; translate: -50% 0; pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--white) 18%, transparent) 0%, color-mix(in srgb, var(--white) 16.1%, transparent) 20%,
+    color-mix(in srgb, var(--white) 11.7%, transparent) 40%, color-mix(in srgb, var(--white) 6.3%, transparent) 60%, color-mix(in srgb, var(--white) 1.9%, transparent) 80%, transparent 100%);
+  opacity: var(--cb-lit); }
+.cb-pole::after { content: ''; position: absolute; left: 50%; bottom: -3px; width: 300%; height: 10px; translate: -50% 0; border-radius: 3px 3px 1px 1px;
+  background: linear-gradient(180deg, var(--concrete-2), var(--ink-3)); }
+
+/* ---------- the road and the car (the car's box is cropped to the painted car, so it measures true; the glint's mask
+   is the same photo, --cb-car-mask from home.mjs) ---------- */
+.cb-road { position: relative; height: calc(var(--car-w) * .2122 + var(--cb-curb)); margin-top: calc(var(--car-w) * -.11); pointer-events: none; }
+.cb-car { position: absolute; left: calc(50% - var(--car-w) / 2); bottom: var(--cb-curb); width: var(--car-w); isolation: isolate;
+  --cb-gx: 50%; --cb-glint: .5; }
+.cb-car__body { position: relative; aspect-ratio: 4.712; overflow: hidden; transform-origin: 26% 100%;
+  filter: drop-shadow(0 14px 12px color-mix(in srgb, var(--black) 65%, transparent)); }
+.cb-car__body img { display: block; width: 100%; height: auto; margin-top: -7.932%; filter: var(--ai-photo) saturate(1.06); }
+.cb-car__glint { position: absolute; top: 0; left: 0; width: 100%; aspect-ratio: 2.3324; margin-top: -7.932%; pointer-events: none;
+  -webkit-mask: var(--cb-car-mask) 0 0 / 100% 100% no-repeat; mask: var(--cb-car-mask) 0 0 / 100% 100% no-repeat;
+  background: radial-gradient(24% 70% at var(--cb-gx) 36%, color-mix(in srgb, var(--white) 42%, transparent), color-mix(in srgb, var(--white) 12%, transparent) 55%, transparent 80%);
+  mix-blend-mode: screen; opacity: var(--cb-glint); }
+.cb-car__shadow { position: absolute; z-index: -1; left: 7%; right: 7%; bottom: -10px; height: 24px; border-radius: 50%;
+  background: radial-gradient(closest-side, var(--black), transparent); opacity: .85; }
+
+/* ---------- wide screens: the pinned stage, the copy at left, the sign at right ---------- */
+@media (min-width: 900px) and (min-height: 760px) {
+  /* --cb-y: the sign's top, 14 to 40px under the header (less on short screens); --cb-curb: the wheel line, just above
+     the store bar. The heights are sized so the sign's lowest panel stays above the parked car's roof down to 760px. */
+  .cb { --cb-row: clamp(44px, 5.2vh, 56px); --cb-curb: calc(var(--dash-h) + 16px); --car-w: clamp(320px, min(52vw, 62vh - 36px), 880px);
+    --sign-w: clamp(360px, 32vw, 520px); --cb-y: max(var(--header-h) + 14px, min(var(--header-h) + 40px, 15vh)); --cb-stub: 0px; }
+  .cb-stage { display: block; height: 100vh; height: 100svh; padding: 0; }
+  .cb-scene { position: absolute; inset: 0; margin-inline: auto; display: block; }
+  .cb-copy { position: absolute; left: 0; top: calc(var(--cb-y) + 6px); width: calc(100% - var(--sign-w) - clamp(40px, 5vw, 96px)); }
+  .cb-sign { position: absolute; right: 0; top: var(--cb-y); bottom: 19%; width: var(--sign-w); margin: 0; }
+  .cb-road { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
+  .cb-car { left: clamp(8px, calc(50% + min(50% - var(--gutter), var(--wrap) / 2) - var(--sign-w) / 2 - var(--car-w) / 2), calc(100% - var(--car-w) - 8px)); }
+  /* one soft ellipse centred behind the copy: 78% ink to 40% of its radius (the whole copy sits inside that), then a
+     smoothstep fade (twelve stops) to clear at its edge, about 570px across and 360px down; the sunset to the right of
+     the copy and on the road stays bright */
+  .cb-shade { background: radial-gradient(64% 66% at 24% 34%, color-mix(in srgb, var(--ink) 78%, transparent) 0%, color-mix(in srgb, var(--ink) 78%, transparent) 40%,
+    color-mix(in srgb, var(--ink) 76.2%, transparent) 45.5%, color-mix(in srgb, var(--ink) 71.2%, transparent) 50.9%, color-mix(in srgb, var(--ink) 63.8%, transparent) 56.4%,
+    color-mix(in srgb, var(--ink) 54.6%, transparent) 61.8%, color-mix(in srgb, var(--ink) 44.3%, transparent) 67.3%, color-mix(in srgb, var(--ink) 33.7%, transparent) 72.7%,
+    color-mix(in srgb, var(--ink) 23.4%, transparent) 78.2%, color-mix(in srgb, var(--ink) 14.2%, transparent) 83.6%, color-mix(in srgb, var(--ink) 6.8%, transparent) 89.1%,
+    color-mix(in srgb, var(--ink) 1.8%, transparent) 94.5%, transparent 100%); }
+  html.cb-live .cb { height: 240vh; }
+  html.cb-live .cb-stage { position: sticky; top: 0; }
+}
+
+/* ---------- live (html.cb-live) ---------- */
+html.cb-live .cb-car { left: 0; transform: translate3d(-120%, 0, 0); will-change: transform; }
+html.cb-live .cb-sign:not(.is-on) { --cb-lit: .14; }   /* dark until it comes into view, then it switches on */
+html.cb-live .cb-sign.is-on { animation: cb-power 1.3s linear both; }
+@keyframes cb-power { 0% { --cb-lit: .14; } 9% { --cb-lit: .9; } 15% { --cb-lit: .22; } 25% { --cb-lit: 1; } 30% { --cb-lit: .5; } 40%, 100% { --cb-lit: 1; } }
+html.cb-live .cb-bulbs { --cb-tile: calc(var(--cb-pt) * 3); }
+html.cb-live .cb-sign.is-on :is(.cb-bulbs--t, .cb-bulbs--b) { animation: cb-chase-x .96s steps(3) infinite; }
+html.cb-live .cb-sign.is-on :is(.cb-bulbs--l, .cb-bulbs--r) { animation: cb-chase-y .96s steps(3) infinite; }
+html.cb-live .cb-sign.is-on :is(.cb-bulbs--b, .cb-bulbs--l) { animation-direction: reverse; }
+html.cb-live .cb:not(.is-vis) .cb-bulbs { animation-play-state: paused; }
+@keyframes cb-chase-x { from { background-position: 0 0, var(--cb-pt) 0, 0 0; } to { background-position: calc(var(--cb-pt) * 3) 0, calc(var(--cb-pt) * 4) 0, 0 0; } }
+@keyframes cb-chase-y { from { background-position: 0 0, 0 var(--cb-pt), 0 0; } to { background-position: 0 calc(var(--cb-pt) * 3), 0 calc(var(--cb-pt) * 4), 0 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cb-line, .cb-lib__face, .cb-line .ico, .cb-lib .ico { transition: none; }
+  .cb-line:hover .ico, .cb-line:focus-visible .ico, .cb-lib:hover .ico { translate: none; }
+}

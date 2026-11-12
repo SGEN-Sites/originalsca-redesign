@@ -128,9 +128,9 @@
 
 /* ===========================================================================================
    SUNDAY CRUISE: the redesign's brand layer (docs/DESIGN.md). Built ON the measured tokens above:
-   the live site measures monochrome (ink #282828 = --c-6, warm dark #463939 = --c-7); the operator
-   brief adds Originals red #E11D2C. Every colour the authored sheets use is declared here.
-   Contrast notes are against --ink unless stated. FOUNDATION may tune values; nobody renames a token.
+   the live site measures monochrome (ink #282828 = --c-6, warm dark #463939 = --c-7), and so does this
+   layer by default; the brief's red is one switch away (:root[data-accent='red'], end of file).
+   Every colour the authored sheets use is declared here. Contrast notes are against --ink unless stated.
    =========================================================================================== */
 :root {
   /* grounds */
@@ -151,25 +151,41 @@
   --steel-2: #7d7d86;        /* tertiary, large text only (4.85:1 on --ink) */
   --text-on-paper: #16161a;  /* 15.99:1 on --paper */
   --muted-on-paper: #4d4646; /* 8.16:1 on --paper */
-  /* the accent */
-  --red: #e11d2c;            /* Originals red; large text and fills only (4.16:1 on --ink); white label on it 4.76:1 */
-  --red-hi: #ff3b47;         /* hover, links on ink (5.62:1) */
-  --red-deep: #9e0f1b;       /* links on paper (7.33:1 on --paper) */
-  --red-ink: #2a0508;        /* red shadow on dark */
-  /* candy paint (hover colour shifts, never body text) */
-  --candy-1: #e11d2c;
-  --candy-2: #ff3d6e;
-  --candy-3: #7b2cbf;
-  --candy-4: #ff8a3d;
+  /* THE ACCENT, one switch. Black and white by default, like the live site and its logo files (the measured
+     baseline above; the client's logo files sampled 2026-11-11 carry no colour). The brief's proposal, Originals
+     red #E11D2C with candy paint and coloured stage light, waits for the client [CONFIRM WITH CLIENT] in
+     :root[data-accent='red'] at the end of this file: set data-accent="red" on <html>, or add ?accent=red to a URL. */
+  --accent: var(--white);              /* fills: primary buttons, active segments, crowns, dots, rules */
+  --on-accent: var(--ink);             /* text on an accent fill: 19.8:1 on white */
+  --accent-hover: var(--chrome-2);     /* an accent fill under the pointer */
+  --accent-hi: var(--white);           /* accent text, links and hovers on dark (links stay underlined) */
+  --accent-deep: var(--text-on-paper); /* accent text and links on paper (15.99:1) */
+  --accent-ink: var(--black);          /* accent shadow on dark */
+  --accent-tint: color-mix(in srgb, var(--white) 40%, transparent); /* hazes and glows, mixed again where used */
+  --accent-fabric: var(--black);       /* the bandana trim and the second hashtag tape: white paisley on black */
+  --accent-panel: radial-gradient(120% 90% at 30% 10%, var(--concrete-2), var(--concrete) 40%, var(--ink-3)); /* the deal panel, white text */
+  --accent-glow: 0 0 0 1px color-mix(in srgb, var(--white) 30%, transparent), 0 10px 30px -10px color-mix(in srgb, var(--white) 28%, transparent);
+  --plaque-face: radial-gradient(120% 90% at 30% 10%, var(--concrete-2), var(--concrete) 38%, var(--ink-3) 75%, var(--black)); /* deal plaques, chrome text */
+  --ai-photo: grayscale(0);            /* generated scenes and loops keep their colour; grayscale(1) makes them black and white (off by owner decision) */
+  --film-filter: contrast(1.12) brightness(.62); /* the hero film in colour, darkened for the headline */
+  /* sheen on an accent button's hover (behind the --on-accent label) */
+  --sheen-1: var(--chrome-1);
+  --sheen-2: var(--chrome-2);
+  --sheen-3: var(--chrome-5);
+  /* candy paint: hover shifts behind white labels, never body text */
+  --candy-1: var(--concrete-2);
+  --candy-2: var(--plate-1);
+  --candy-3: var(--chrome-7);
+  --candy-4: var(--steel-2);
   /* stage light (pools and beams only) */
-  --stage-violet: #8b3dff;
-  --stage-pink: #ff2e93;
-  --stage-blue: #3d5cff;
+  --stage-1: var(--steel);
+  --stage-2: var(--white);
+  --stage-3: var(--steel-2);
   /* window light (shafts only) */
-  --dusk: #f2b15c;
-  --dusk-2: #ffd9a0;
+  --dusk: var(--chrome-2);
+  --dusk-2: var(--white);
   /* grow light */
-  --grow: #e04bff;
+  --grow: var(--white);
   /* chrome ramp (display only) */
   --chrome-1: #fdfdfe;
   --chrome-2: #e4e8ed;
@@ -195,10 +211,9 @@
   --shadow-deep: 0 30px 60px -20px rgba(0, 0, 0, 0.75), 0 12px 24px -12px rgba(0, 0, 0, 0.6);
   --shadow-card: 0 18px 40px -18px rgba(0, 0, 0, 0.8);
   --shadow-paper: 0 22px 40px -22px rgba(30, 20, 20, 0.45), 0 2px 6px rgba(30, 20, 20, 0.12);
-  --glow-red: 0 0 0 1px rgba(225, 29, 44, 0.5), 0 10px 30px -8px rgba(225, 29, 44, 0.55);
-  --status-open: #39d98a;
+  --status-open: #39d98a;      /* open / closed dots keep their meaning in either palette */
   --status-closed: #ff5a5f;
-  --focus: #ffd166;
+  --focus: var(--white);       /* on dark; paper bands use --accent-deep (base.css) */
 
   /* type */
   --f-black: 'UnifrakturCook', 'Old English Text MT', serif;
@@ -230,6 +245,13 @@
   --dash-h: 64px;
   --bottom-stack: var(--dash-h);
 
+  /* award gold: the award badge turns gold once the hero has revealed (owner request, 2026-11-11) */
+  --gold-hi: #fff4c8;
+  --gold: #f3c34f;
+  --gold-deep: #a8740f;
+  --gold-glow: drop-shadow(0 0 3px rgb(255 214 110 / .9)) drop-shadow(0 0 14px rgb(243 195 79 / .55)) drop-shadow(0 0 34px rgb(243 180 60 / .35));
+  --gold-glow-off: drop-shadow(0 0 0 rgb(255 214 110 / 0)) drop-shadow(0 0 0 rgb(243 195 79 / 0)) drop-shadow(0 0 0 rgb(243 180 60 / 0));
+
   /* motion */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
@@ -245,4 +267,36 @@
 }
 @media (max-width: 760px) {
   :root { --header-h: 62px; --dash-h: 72px; --radius-lg: 20px; }
+}
+
+/* ===========================================================================================
+   THE BRIEF'S PROPOSAL: Originals red #E11D2C with candy paint and coloured stage light. Off until the
+   client confirms an accent [CONFIRM WITH CLIENT]; data-accent="red" on <html> (or ?accent=red) turns it on.
+   =========================================================================================== */
+:root[data-accent='red'] {
+  --accent: #e11d2c;           /* large text and fills only (4.16:1 on --ink); white label on it 4.76:1 */
+  --on-accent: var(--white);
+  --accent-hover: #ff3b47;
+  --accent-hi: #ff3b47;        /* links on ink 5.62:1 */
+  --accent-deep: #9e0f1b;      /* links on paper 7.33:1 */
+  --accent-ink: #2a0508;
+  --accent-tint: #e11d2c;
+  --accent-fabric: #e11d2c;
+  --accent-panel: radial-gradient(120% 90% at 30% 10%, #ff3b47, #e11d2c 40%, #9e0f1b);
+  --accent-glow: 0 0 0 1px rgba(225, 29, 44, 0.5), 0 10px 30px -8px rgba(225, 29, 44, 0.55);
+  --plaque-face: radial-gradient(120% 90% at 30% 10%, #ff3b47, #e11d2c 38%, #9e0f1b 75%, #2a0508);
+  --sheen-1: #e11d2c;
+  --sheen-2: #ff3d6e;
+  --sheen-3: #7b2cbf;
+  --candy-1: #e11d2c;
+  --candy-2: #ff3d6e;
+  --candy-3: #7b2cbf;
+  --candy-4: #ff8a3d;
+  --stage-1: #8b3dff;
+  --stage-2: #ff2e93;
+  --stage-3: #3d5cff;
+  --dusk: #f2b15c;
+  --dusk-2: #ffd9a0;
+  --grow: #e04bff;
+  --focus: #ffd166;
 }

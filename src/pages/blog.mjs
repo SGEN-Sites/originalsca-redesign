@@ -1,8 +1,35 @@
 // blog.mjs: the Cannablog index and every live article at its live URL, words verbatim (src/lib/capture.mjs).
 import { h, esc, u, a } from '../lib/html.mjs';
 import { extractPost, extractPostList, postSlugs, postImages, normImg, decode, textOf } from '../lib/capture.mjs';
-import { pageHero, postCard, btn, shopBtn, kicker, img } from '../lib/parts.mjs';
+import { pageHero, btn, shopBtn, kicker, img, icon } from '../lib/parts.mjs';
 import { crumbsLd, postLd } from '../lib/seo.mjs';
+
+// one post in an editorial list (the index's lead story and numbered grid, an article's "More from the Cannablog";
+// blog.css): postCard()'s words and image in the same order (the author bar, the title, the live excerpt), the whole
+// entry one link. Its number is a CSS counter, so it adds no words.
+function entry(p, { cls, tag = 'h2', go = false }) {
+  const im = p.cardImage ? `<img src="${esc(p.cardImage.src)}" width="${p.cardImage.w}" height="${p.cardImage.h}" alt="" loading="lazy" decoding="async">` : '';
+  return h`<article class="ed ${cls}" data-reveal>
+  <a class="ed__link" href="${u(p.path)}">
+    <span class="ed__top"><span class="ed__no" aria-hidden="true"></span><span class="ed__meta">${esc(p.meta || p.dateText || '')}</span></span>
+    <span class="ed__media">${im}</span>
+    <${tag} class="ed__title">${esc(p.title)}</${tag}>
+    ${p.excerpt ? `<span class="ed__excerpt">${esc(p.excerpt)}</span>` : ''}
+    ${go ? `<span class="ed__go" aria-hidden="true">${icon('arrow')}</span>` : ''}
+  </a>
+</article>`;
+}
+
+// an article body, reshaped by markup only: its first image (the post's own card image in 20 of the 21 posts) is lifted
+// out into the hero figure, the same tag loaded first, so the page's images keep their order; each run of two or more
+// images in a row is wrapped as one gallery row (the same tags in the same order)
+function shape(body) {
+  const m = /<img\b[^>]*>/.exec(body);
+  const lead = m ? m[0].replace(' loading="lazy"', ' loading="eager" fetchpriority="high"') : '';
+  const rest = (m ? body.slice(0, m.index) + body.slice(m.index + m[0].length) : body)
+    .replace(/<img\b[^>]*>(?:\s*<img\b[^>]*>)+/g, (run) => `<div class="post__figs" data-n="${run.match(/<img\b/g).length}">${run}</div>`);
+  return { lead, rest };
+}
 
 let POSTS = null;
 export function loadPosts() {
@@ -32,10 +59,12 @@ function article(p, all) {
   const listed = extractPostList(p.path).filter((x) => x.slug !== p.slug);
   const more = listed.filter((x) => bySlug.has(x.slug)).map((x) => ({ ...bySlug.get(x.slug), title: x.title, meta: x.authorBar, excerpt: x.excerpt }));
   if (more.length !== listed.length) throw new Error(p.path + ': the live post list links a post this build does not have');
+  const { lead, rest } = shape(body);
   // the crumb trail stops at the Cannablog: the article title is the H1 right below it
   const main = h`${pageHero({ kicker: 'Cannablog', title: esc(p.title), crumbs: [{ label: 'Cannablog', href: '/blog', current: false }], lede: `<p class="byline">${esc(p.byline || '')}</p>`, variant: 'ink', cls: 'phero--post' })}
 <article class="band post">
-  <div class="wrap wrap--narrow prose post__body">${body}</div>
+  ${lead ? `<figure class="post__hero">${lead}</figure>` : ''}
+  <div class="wrap wrap--narrow prose post__body">${rest}</div>
   ${p.older || p.newer ? `<nav class="wrap wrap--narrow post-nav" aria-label="More posts">${p.older ? `<a class="btn btn--ghost post-nav__a" href="${u(p.older)}">&lt; Older Post</a>` : '<span></span>'}${p.newer ? `<a class="btn btn--ghost post-nav__a" href="${u(p.newer)}">Newer Post &gt;</a>` : ''}</nav>` : ''}
 </article>
 <section class="band post-more" aria-labelledby="more-h">
@@ -44,7 +73,7 @@ function article(p, all) {
       <div>${kicker('Keep reading')}<h2 id="more-h">More from the <span class="chrome-word">Cannablog</span></h2></div>
       <p class="btn-row">${shopBtn('Shop the menu')}${btn('All posts', '/blog', { kind: 'ghost' })}</p>
     </div>
-    <div class="post-grid post-grid--rows">${more.map((x) => postCard(x, { variant: 'row' }))}</div>
+    <div class="ed-rows">${more.map((x) => entry(x, { cls: 'ed--row', tag: 'h3' }))}</div>
   </div>
 </section>`;
   return { path: p.path, title: p.seoTitle || p.title, description: p.description, jsonld: [postLd(p), crumbsLd([{ name: 'Cannablog', path: '/blog' }, { name: p.title, path: p.path }])], bodyClass: 'is-post', main, active: '/blog' };
@@ -58,7 +87,8 @@ export function pages() {
     main: h`${pageHero({ kicker: 'Cannablog', title: 'Cannabis <span class="chrome-word">news</span>', crumbs: [{ label: 'Cannablog', href: '/blog' }], lede: '<p>Read our cannabis blog and get valuable information about general topics related to cannaculture in a short, relatable format that\'s perfect for a morning read. We cover countless topics and are always adding to our ever growing bank of informative articles. Check back frequently and keep up to date on the industry with us!</p>', media: img('trichomes', { sizes: '100vw', alt: '', decorative: true, eager: true }), variant: 'photo' })}
 <section class="band blog-index" aria-label="All posts">
   <div class="wrap">
-    <div class="post-grid post-grid--index">${all.map((p) => postCard(p, { headingTag: 'h2' }))}</div>
+    ${entry(all[0], { cls: 'ed--lead', go: true })}
+    <div class="ed-grid">${all.slice(1).map((p) => entry(p, { cls: 'ed--card' }))}</div>
   </div>
 </section>`,
   };
